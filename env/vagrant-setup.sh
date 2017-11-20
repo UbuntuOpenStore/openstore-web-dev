@@ -1,0 +1,19 @@
+#!/bin/bash
+
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+apt-get install -y nginx nodejs
+ln -s /srv/openstore/env/proxy.conf /etc/nginx/conf.d/proxy.conf
+rm /etc/nginx/sites-enabled/default
+service nginx restart
+
+sed -i 's/#force_color_prompt/force_color_prompt/g' /home/ubuntu/.bashrc
+echo 'cd /srv/openstore' >> /home/ubuntu/.bashrc
+
+ln -s /srv/openstore/env/attach_api.sh /usr/local/bin/attach_api
+ln -s /srv/openstore/env/attach_web.sh /usr/local/bin/attach_web
+
+chmod +x /usr/local/bin/attach_api
+chmod +x /usr/local/bin/attach_web
+
+#docker exec openstore_api_1 bash -c "cd /srv/openstore/api && npm install"
+#docker exec openstore_api_1 bash -c "cd /srv/openstore/www && npm install"

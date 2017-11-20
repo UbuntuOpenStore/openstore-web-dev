@@ -1,0 +1,8 @@
+[submodule "openstore-api"]
+	path = openstore-api
+	url = git@github.com:UbuntuOpenStore/openstore-api.git
+	branch = master
+[submodule "openstore-web"]
+	path = openstore-web
+	url = git@github.com:UbuntuOpenStore/openstore-web.git
+	branch = master
