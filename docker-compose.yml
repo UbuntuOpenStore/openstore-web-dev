@@ -20,3 +20,4 @@ mongo:
         - "27017:27017"
     volumes:
         - /data/db:/data/db
+        - /srv/openstore/openstore-api:/srv/openstore
