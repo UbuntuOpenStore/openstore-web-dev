@@ -2,3 +2,4 @@
 .vagrant
 scripts
 archive
+env.sh
