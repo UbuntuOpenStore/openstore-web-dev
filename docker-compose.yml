@@ -4,6 +4,7 @@ api:
         - "8080:8080"
     links:
         - mongo
+        - elasticsearch
     volumes:
         - /srv/openstore/openstore-api:/srv/openstore
 
@@ -21,3 +22,10 @@ mongo:
     volumes:
         - /data/db:/data/db
         - /srv/openstore/openstore-api:/srv/openstore
+
+elasticsearch:
+    image: elasticsearch:2-alpine
+    ports:
+        - "9200:9200"
+    volumes:
+        - /usr/share/elasticsearch/data:/usr/share/elasticsearch/data
