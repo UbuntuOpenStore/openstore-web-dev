@@ -1,8 +1,6 @@
 FROM node:6.11
 MAINTAINER Brian Douglass
 
-ENV HOST=http://local.open.uappexplorer.com
-
 RUN apt-get update
 RUN apt-get install -y \
     libstdc++6 \
