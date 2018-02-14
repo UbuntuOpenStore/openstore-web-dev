@@ -1,6 +1,6 @@
 # OpenStore Web
 
-Meta repo for getting setup with developing the [OpenStore](https://open.uappexplorer.com/).
+Meta repo for getting setup with developing the [OpenStore](https://open-store.io/).
 
 ## Reporting Bugs
 
@@ -27,9 +27,9 @@ project on the [UBports Weblate instance](https://translate.ubports.com/projects
     * Attach to the api container: `attach_api`
     * Attach to the web container: `attach_web`
 * Update your system's hosts file:
-    * Add `192.168.58.123 local.open.uappexplorer.com`
+    * Add `192.168.58.123 local.open-store.io`
 * Visit the site:
-    * In your browser go to: `local.open.uappexplorer.com`
+    * In your browser go to: `local.open-store.io`
 * Login
     * Login to the OpenStore to setup your user
     * Upgrade your user to an admin (From inside the vagrant VM): `docker exec -it openstore_api_1 node /srv/openstore/openstore-api/bin/setup-admin`
