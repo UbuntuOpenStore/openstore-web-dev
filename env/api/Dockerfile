@@ -17,6 +17,7 @@ RUN npm install supervisor -g
 RUN wget http://launchpadlibrarian.net/281607853/click-reviewers-tools_0.45_all.deb && \
     dpkg -i click-reviewers-tools_0.45_all.deb && \
     rm click-reviewers-tools_0.45_all.deb
+RUN mkdir /srv/screenshots
 
 EXPOSE 8080
 WORKDIR /srv/openstore

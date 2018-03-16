@@ -6,7 +6,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         v.memory = 2048
     end
 
-    config.vm.box = "ubuntu/xenial64"
+    config.vm.box = "ubuntu/trusty64"
     config.vm.network "private_network", ip: "192.168.58.123"
     config.vm.hostname = "openstore"
     config.vm.synced_folder "./", "/srv/openstore", id: "vagrant-root"
