@@ -4,7 +4,7 @@
 # Setup post-recieve hooks
 
 # Setup dependencies
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 add-apt-repository ppa:certbot/certbot
 
 apt-get update
