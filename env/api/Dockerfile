@@ -14,9 +14,9 @@ RUN apt-get install -y \
     python3-yaml \
     squashfs-tools
 RUN npm install supervisor -g
-RUN wget http://launchpadlibrarian.net/281607853/click-reviewers-tools_0.45_all.deb && \
-    dpkg -i click-reviewers-tools_0.45_all.deb && \
-    rm click-reviewers-tools_0.45_all.deb
+RUN wget https://launchpad.net/~bhdouglass/+archive/ubuntu/clickable/+files/click-reviewers-tools_0.49_all.deb && \
+    dpkg -i click-reviewers-tools_0.49_all.deb && \
+    rm click-reviewers-tools_0.49_all.deb
 RUN mkdir /srv/screenshots
 
 EXPOSE 8080

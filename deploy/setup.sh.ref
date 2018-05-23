@@ -6,15 +6,12 @@
 # Setup dependencies
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 add-apt-repository ppa:certbot/certbot
+add-apt-repository ppa:bhdouglass/clickable
 
 apt-get update
 apt-get upgrade
 
-apt-get install git nodejs nginx python-certbot-nginx build-essential liblzma-dev
-
-wget http://launchpadlibrarian.net/281607853/click-reviewers-tools_0.45_all.deb
-dpkg -i click-reviewers-tools_0.45_all.deb
-apt-get install -f
+apt-get install git nodejs nginx python-certbot-nginx build-essential liblzma-dev click-reviewers-tools
 
 # Setup nginx config
 # /etc/nginx/sites-enabled/default
