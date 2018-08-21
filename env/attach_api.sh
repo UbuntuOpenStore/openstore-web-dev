@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker attach --sig-proxy=false openstore_api_1
+docker attach --sig-proxy=false openstorewebdev_api_1

@@ -1,4 +1,4 @@
-FROM node:8.10
+FROM node:8.11
 MAINTAINER Brian Douglass
 
 RUN apt-get update

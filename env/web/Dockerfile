@@ -1,6 +1,6 @@
-FROM node:6.11
+FROM node:8.11
 MAINTAINER Brian Douglass
 
 EXPOSE 8081
 WORKDIR /srv/openstore
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "serve"]

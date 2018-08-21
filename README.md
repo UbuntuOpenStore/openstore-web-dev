@@ -15,25 +15,22 @@ project on the [UBports Weblate instance](https://translate.ubports.com/projects
 
 * Initialize submodules:
     * Run: `git submodule update --init --recursive`
-* Install [vagrant](http://vagrantup.com/)
-* Install the docker compose vagrant plugin:
-    * Run: `vagrant plugin install vagrant-docker-compose`
-* Start vagrant:
-    * Run: `vagrant up`
-* Install NPM dependencies (it's best to run this in the vagrant VM):
+* Install the [docker & docker-compose](https://docs.docker.com/install/linux/docker-ce/ubuntu/):
+* Install NPM dependencies:
     * Install api dependencies: `cd openstore-api; npm install; cd ..`
     * Install web dependencies: `cd openstore-web; npm install; cd ..`
-* Attach to the docker container (if needed - from inside the vagrant VM):
-    * Attach to the api container: `attach_api`
-    * Attach to the web container: `attach_web`
-* Update your system's hosts file:
-    * Add `192.168.58.123 local.open-store.io`
+* Start the docker containers
+    * Run: `docker-compose up -d`
+* Attach to the docker container:
+    * Attach to the api container: `./env/attach_api.sh`
+    * Attach to the web container: `./env/attach_web.sh`
 * Visit the site:
-    * In your browser go to: `local.open-store.io`
+    * In your browser go to: [http://localhost:8080](http://localhost:8080/)
 * Login
     * Login to the OpenStore to setup your user
-    * Upgrade your user to an admin (From inside the vagrant VM): `docker exec -it openstore_api_1 node /srv/openstore/openstore-api/bin/setup-admin`
-* Profit!
+    * Upgrade your user to an admin (From inside the vagrant VM): `docker exec -it openstorewebdev_api_1 node /srv/openstore/openstore-api/bin/setup-admin`
+* Stop the docker containers (when you are done):
+    * Run: `docker-compose stop`
 
 ## Configuration
 
@@ -41,7 +38,7 @@ For more info on configuration read the [openstore-api/README.md](https://github
 
 ## License
 
-Copyright (C) 2017 [Brian Douglass](http://bhdouglass.com/)
+Copyright (C) 2018 [Brian Douglass](http://bhdouglass.com/)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.
