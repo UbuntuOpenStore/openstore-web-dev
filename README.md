@@ -4,7 +4,7 @@ Meta repo for getting setup with developing the [OpenStore](https://open-store.i
 
 ## Reporting Bugs
 
-Please report any bugs/features/requests in our [bug tracker](https://github.com/UbuntuOpenStore/openstore-meta/issues).
+Please report any bugs/features/requests in our [bug tracker](https://gitlab.com/theopenstore/openstore-meta/issues).
 
 ## Translations
 
@@ -34,7 +34,7 @@ project on the [UBports Weblate instance](https://translate.ubports.com/projects
 
 ## Configuration
 
-For more info on configuration read the [openstore-api/README.md](https://github.com/UbuntuOpenStore/openstore-api/blob/master/README.md).
+For more info on configuration read the [openstore-api/README.md](https://gitlab.com/theopenstore/openstore-api/blob/master/README.md).
 
 ## License
 
