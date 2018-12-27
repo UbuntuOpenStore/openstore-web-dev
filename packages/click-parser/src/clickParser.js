@@ -114,7 +114,10 @@ function parseData(fileData, data, icon, callback) {
     .pipe(zlib.Unzip())
     .pipe(tarstream.extract())
     .on('entry', function(header, stream, cb) {
-        data.files.push(header.name.replace('./', ''));
+        var filename = header.name.replace('./', '');
+        if (filename) {
+            data.files.push(filename);
+        }
 
         var found = false;
         data.apps.forEach(function(app) {
@@ -283,10 +286,14 @@ function parseData(fileData, data, icon, callback) {
                 cb();
             }
             else if (header.name.indexOf('LC_MESSAGES') >= 0 && header.name.indexOf('.mo') >= 0) {
-                var lang = header.name.replace('./share/locale/', '');
-                lang = lang.substring(0, lang.indexOf('/LC_MESSAGES'));
+                var langs = header.name.split('/');
+                var pos = langs.indexOf('LC_MESSAGES');
+                var lang = null;
+                if (pos >= 1) {
+                    lang = langs[pos - 1].trim();
+                }
 
-                if (data.languages.indexOf(lang) == -1) {
+                if (lang && data.languages.indexOf(lang) == -1) {
                     data.languages.push(lang);
                 }
 

@@ -1,6 +1,6 @@
 {
   "name": "click-parser",
-  "version": "3.2.7",
+  "version": "3.2.8",
   "description": "Extract data from Ubuntu's click & snap packages",
   "main": "src/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bhdouglass/click-parser.git"
+    "url": "git+https://gitlab.com/theopenstore/click-parser.git"
   },
   "keywords": [
     "click",
@@ -27,9 +27,9 @@
   "author": "Brian Douglass",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/bhdouglass/click-parser/issues"
+    "url": "https://gitlab.com/theopenstore/click-parser/issues"
   },
-  "homepage": "https://github.com/bhdouglass/click-parser#readme",
+  "homepage": "https://gitlab.com/theopenstore/click-parser",
   "dependencies": {
     "ar": "0.0.1",
     "file-type": "^7.5.0",
@@ -49,10 +49,10 @@
     "yargs": "^11.0.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.0",
     "gulp-jshint": "^2.1.0",
-    "gulp-mocha": "^5.0.0",
-    "jshint": "^2.9.5",
+    "gulp-mocha": "^6.0.0",
+    "jshint": "^2.9.7",
     "jshint-stylish": "^2.0.0"
   }
 }

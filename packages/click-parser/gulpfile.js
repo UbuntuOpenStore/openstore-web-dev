@@ -15,4 +15,4 @@ gulp.task('test', function () {
         .pipe(mocha());
 });
 
-gulp.task('default', ['lint', 'test']);
+gulp.task('default', gulp.parallel('lint', 'test'));
