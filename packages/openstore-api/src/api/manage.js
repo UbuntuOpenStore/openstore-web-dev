@@ -330,11 +330,12 @@ router.post(
         }
 
         let channel = req.body.channel ? req.body.channel.toLowerCase() : '';
-        let bothChannels = (channel == 'vivid-xenial');
-        if (bothChannels) {
-            channel = Package.XENIAL;
+        if (!Package.CHANNELS.includes(channel)) {
+            return helpers.error(res, INVALID_CHANNEL, 400);
         }
-        else if (!Package.CHANNELS.includes(channel)) {
+
+        // TODO remove this when vivid gets removed from Package.CHANNELS
+        if (channel != Package.XENIAL) {
             return helpers.error(res, INVALID_CHANNEL, 400);
         }
 
@@ -344,7 +345,7 @@ router.post(
                 return helpers.error(res, APP_NOT_FOUND, 404);
             }
 
-            let previousRevision = (channel == Package.XENIAL) ? pkg.xenial_revision : pkg.vivid_revision;
+            let previousRevision = pkg.xenial_revision;
 
             if (!helpers.isAdminUser(req) && req.user._id != pkg.maintainer) {
                 return helpers.error(res, PERMISSION_DENIED, 400);
@@ -397,7 +398,7 @@ router.post(
                 parseData.version,
             );
 
-            let revision = (channel == Package.XENIAL) ? pkg.xenial_revision : pkg.vivid_revision;
+            let revision = pkg.xenial_revision;
             if (updateIcon) {
                 pkg.icon = iconUrl;
             }
@@ -405,27 +406,6 @@ router.post(
             if (!pkg.channels.includes(channel)) {
                 pkg.channels.push(channel);
             }
-
-            if (bothChannels) {
-                pkg = await packages.updateInfo(
-                    pkg,
-                    null,
-                    null,
-                    req.files.file[0],
-                    null,
-                    true,
-                    Package.VIVID,
-                    parseData.version,
-                    downloadSha512,
-                );
-
-                if (!pkg.channels.includes(Package.VIVID)) {
-                    pkg.channels.push(Package.VIVID);
-                }
-            }
-
-            let xenialRevisionData = pkg.xenial_revision_data;
-            let vividRevisionData = pkg.vivid_revision_data;
 
             for (let i = 0; i < pkg.revisions.length; i++) {
                 let revisionData = pkg.revisions[i];
@@ -435,29 +415,7 @@ router.post(
                     }
 
                     if (revisionData.revision == previousRevision) {
-                        if (
-                            revisionData.channel == Package.VIVID &&
-                            xenialRevisionData &&
-                            xenialRevisionData.download_url == revisionData.download_url
-                        ) {
-                            /*
-                            Do nothing, this revision has a migrated xenial revision
-                            relying on the same download_url.
-                            */
-                        }
-                        else if (
-                            revisionData.channel == Package.XENIAL &&
-                            vividRevisionData &&
-                            vividRevisionData.download_url == revisionData.download_url
-                        ) {
-                            /*
-                            Do nothing, this revision has a migrated vivid revision
-                            relying on the same download_url.
-                            */
-                        }
-                        else {
-                            await upload.removeFile(revisionData.download_url);
-                        }
+                        await upload.removeFile(revisionData.download_url);
                     }
                 }
 
