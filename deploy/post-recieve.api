@@ -2,6 +2,10 @@
 
 set -e
 
+VERSION=$(date +"%Y-%m-%d_%H-%M-%S")
+echo "Version $VERSION"
+echo -e '#!/bin/bash\nexport VERSION=$VERSION' > /srv/openstore/version.sh
+
 echo "Deploying code"
 git --work-tree=/srv/openstore-api --git-dir=/srv/repo/openstore-api.git checkout -f
 
