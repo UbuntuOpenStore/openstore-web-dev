@@ -2,6 +2,11 @@
 
 set -e
 
+VERSION=$(date +"%Y-%m-%d_%H-%M-%S")
+export VUE_APP_VERSION=$VERSION
+
+echo "Version $VERSION"
+
 echo "Deploying code"
 git --work-tree=/srv/openstore-web --git-dir=/srv/repo/openstore-web.git checkout -f
 

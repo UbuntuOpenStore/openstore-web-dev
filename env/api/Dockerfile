@@ -1,4 +1,4 @@
-FROM node:8.11
+FROM node:10-jessie
 MAINTAINER Brian Douglass
 
 RUN apt-get update
