@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha test/test.js",
-    "lint": "eslint src/*.js test/*.js"
+    "lint": "eslint src/*.js test/*.js bin/click-parser"
   },
   "bin": {
     "click-parser": "bin/click-parser"
@@ -36,11 +36,11 @@
     "minimist": "^1.1.1",
     "streamifier": "^0.1.1",
     "tar": "^4.4.10",
-    "tar-stream": "^1.5.5",
+    "tar-stream": "^2.1.0",
     "utf8": "^3.0.0",
-    "uuid": "^3.2.1",
+    "uuid": "^3.3.2",
     "xml2js": "^0.4.19",
-    "yargs": "^11.0.0"
+    "yargs": "^13.2.4"
   },
   "devDependencies": {
     "eslint": "^6.0.1",

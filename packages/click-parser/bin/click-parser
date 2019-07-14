@@ -1,26 +1,23 @@
 #!/usr/bin/env node
 
-var parse = require('../src/index');
-var argv = require('yargs').alias('v', 'version').alias('h', 'help').alias('i', 'icon').argv;
+const yargs = require('yargs');
 
-if (argv.version || argv.help) {
-    var pkg = require('../package.json');
+const parse = require('../src/index');
 
-    console.log('Version: ' + pkg.version);
-    console.log('Author: Brian Douglass');
-    console.log('Website: https://github.com/bhdouglass/click-parser');
-    console.log('\nUsage: click-parser /path/to/click');
+let argv = yargs.alias('v', 'version')
+    .alias('h', 'help')
+    .alias('i', 'icon')
+    .usage('$0 /path/to/click')
+    .argv;
 
-    process.exit(0);
-}
-else if (argv._.length != 1) {
+if (argv._.length != 1) {
     console.error('Usage: click-parser /path/to/click');
     process.exit(1);
 }
 else {
-    parse(process.argv[2], !!argv['icon'], function(err, data) {
+    parse(process.argv[2], !!argv.icon, (err, data) => {
         if (err) {
-            console.error('Failed to parse: ' + err);
+            console.error('Failed to parse: ', err);
             process.exit(1);
         }
         else {
