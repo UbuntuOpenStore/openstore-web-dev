@@ -1,6 +1,6 @@
 # Click Parser
 
-Extract data from Ubuntu's click & snap packages
+Extract data from Ubuntu's click packages
 
 ## Install
 
@@ -12,17 +12,13 @@ Extract data from Ubuntu's click & snap packages
 
 `npm install -g click-parser`
 
-OR as a [snap](https://uappexplorer.com/app/click-parser.bhdouglass)
-
-`snap install click-parser`
-
 ## Usage
 
 ### NodeJS
 ~~~
 var parse = require('click-parser');
 
-parse('//path/to/click/or/snap', function(err, data) {
+parse('//path/to/click', function(err, data) {
     if (err) {
         console.error(err);
     }
@@ -33,7 +29,7 @@ parse('//path/to/click/or/snap', function(err, data) {
             apps: Array of detailed app objects
                 {
                     name: String of the internal name of this app
-                    type: String of the apps type (app, webapp, scope, snappy, push)
+                    type: String of the apps type (app, webapp, scope, push)
                     features: Array of String of the app's special features (content_hub, url_dispatcher, push_helper, account_service)
                     desktop: Object of the app's desktop file (if one exists) (the keys are lowercase)
                     scopeIni: Object of the scope's ini file (if one exists) (the keys are lowercase)
@@ -46,8 +42,6 @@ parse('//path/to/click/or/snap', function(err, data) {
                     webappProperties: Object of the app's webapp properties (if it exists)
                     webappInject: Boolean, whether or not the webapp is injecting a js script (only applicable to type == 'webapp')
                     hooks: Object of the hooks for this app listed in the click's manifest
-                    daemon: String of the daemon type for this snap (or false)
-                    daemon: String of the command for this snap (or false)
                 }
             architecture: String of the package's architecture (all, armhf, i386, amd64, arm64)
             description: String of the package's description
@@ -61,7 +55,6 @@ parse('//path/to/click/or/snap', function(err, data) {
             types: Array of Strings of the types of all the apps
             urls: Array of Strings of the urls handled by all the apps
             version: String of the package's version
-            snappy_meta: Object of the snap's snap.yaml metadata file
         }
         */
     }
@@ -73,11 +66,11 @@ parse('/path/to/click/file.click', true, function(err, data) {});
 
 ### CLI
 
-`click-parser /path/to/click/or/snap`
+`click-parser /path/to/click`
 
 ## License
 
-Copyright (C) 2016 [Brian Douglass](http://bhdouglass.com/)
+Copyright (C) 2019 [Brian Douglass](http://bhdouglass.com/)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.

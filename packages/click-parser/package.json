@@ -1,10 +1,11 @@
 {
   "name": "click-parser",
-  "version": "3.2.8",
-  "description": "Extract data from Ubuntu's click & snap packages",
+  "version": "4.0.0",
+  "description": "Extract data from Ubuntu's click packages",
   "main": "src/index.js",
   "scripts": {
-    "test": "gulp"
+    "test": "mocha test/test.js",
+    "lint": "jshint src/*.js test/*.js"
   },
   "bin": {
     "click-parser": "bin/click-parser"
@@ -19,10 +20,10 @@
     "debian",
     "package",
     "deb",
-    "snap",
-    "snappy",
     "scope",
-    "snapcraft"
+    "clickable",
+    "ubports",
+    "ubuntu-touch"
   ],
   "author": "Brian Douglass",
   "license": "GPL-3.0",
@@ -32,11 +33,9 @@
   "homepage": "https://gitlab.com/theopenstore/click-parser",
   "dependencies": {
     "ar": "0.0.1",
-    "file-type": "^7.5.0",
-    "js-yaml": "^3.10.0",
+    "js-yaml": "^3.13.1",
     "minimist": "^1.1.1",
     "path": "^0.12.7",
-    "read-chunk": "^2.1.0",
     "rimraf": "^2.6.2",
     "squashfs-nodejs": "^1.0.6",
     "streamifier": "^0.1.1",
@@ -49,9 +48,6 @@
     "yargs": "^11.0.0"
   },
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-jshint": "^2.1.0",
-    "gulp-mocha": "^6.0.0",
     "jshint": "^2.9.7",
     "jshint-stylish": "^2.0.0"
   }

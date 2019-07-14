@@ -9,12 +9,12 @@ if (argv.version || argv.help) {
     console.log('Version: ' + pkg.version);
     console.log('Author: Brian Douglass');
     console.log('Website: https://github.com/bhdouglass/click-parser');
-    console.log('\nUsage: click-parser /path/to/click/or/snap');
+    console.log('\nUsage: click-parser /path/to/click');
 
     process.exit(0);
 }
 else if (argv._.length != 1) {
-    console.error('Usage: click-parser /path/to/click/or/snap');
+    console.error('Usage: click-parser /path/to/click');
     process.exit(1);
 }
 else {
