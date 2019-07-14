@@ -33,15 +33,10 @@
   "homepage": "https://gitlab.com/theopenstore/click-parser",
   "dependencies": {
     "ar": "0.0.1",
-    "js-yaml": "^3.13.1",
     "minimist": "^1.1.1",
-    "path": "^0.12.7",
-    "rimraf": "^2.6.2",
-    "squashfs-nodejs": "^1.0.6",
     "streamifier": "^0.1.1",
-    "tar": "^2.2.1",
+    "tar": "^4.4.10",
     "tar-stream": "^1.5.5",
-    "tmp": "0.0.33",
     "utf8": "^3.0.0",
     "uuid": "^3.2.1",
     "xml2js": "^0.4.19",
@@ -49,6 +44,7 @@
   },
   "devDependencies": {
     "jshint": "^2.9.7",
-    "jshint-stylish": "^2.0.0"
+    "jshint-stylish": "^2.0.0",
+    "mocha": "^6.1.4"
   }
 }
