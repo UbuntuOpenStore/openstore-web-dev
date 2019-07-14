@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha test/test.js",
-    "lint": "jshint src/*.js test/*.js"
+    "lint": "eslint src/*.js test/*.js"
   },
   "bin": {
     "click-parser": "bin/click-parser"
@@ -43,8 +43,9 @@
     "yargs": "^11.0.0"
   },
   "devDependencies": {
-    "jshint": "^2.9.7",
-    "jshint-stylish": "^2.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-bhdouglass": "0.0.1",
+    "eslint-plugin-import": "^2.18.0",
     "mocha": "^6.1.4"
   }
 }

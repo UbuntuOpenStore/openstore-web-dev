@@ -1,6 +1,6 @@
 module.exports = {
     isJson: function(string) {
-        var value = true;
+        let value = true;
         try {
             JSON.parse(string);
         }
@@ -9,5 +9,5 @@ module.exports = {
         }
 
         return value;
-    }
+    },
 };

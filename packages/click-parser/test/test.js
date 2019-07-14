@@ -1,10 +1,12 @@
-var parse = require('../src/index.js');
-var assert = require('assert');
+const assert = require('assert');
+const path = require('path');
 
-describe('click-parser', function(){
-    describe('parse qml click package', function(){
-        it('should parse without error', function(done) {
-            parse(__dirname + '/test-qml.bhdouglass_0.1_all.click', function(err, data) {
+const parse = require('../src/index.js');
+
+describe('click-parser', () => {
+    describe('parse qml click package', () => {
+        it('should parse without error', (done) => {
+            parse(path.join(__dirname, 'test-qml.bhdouglass_0.1_all.click'), (err, data) => {
                 if (err) {
                     throw err;
                 }
@@ -20,36 +22,36 @@ describe('click-parser', function(){
                             icon: 'test-qml.png',
                             terminal: 'false',
                             type: 'Application',
-                            'x-ubuntu-touch': 'true'
+                            'x-ubuntu-touch': 'true',
                         },
                         apparmor: {
                             policy_groups: ['networking', 'webview'],
-                            policy_version: 1.3
+                            policy_version: 1.3,
                         },
                         contentHub: {
-                            source: ['pictures']
+                            source: ['pictures'],
                         },
                         urlDispatcher: [{
                             protocol: 'http',
-                            'domain-suffix': 'example.com'
+                            'domain-suffix': 'example.com',
                         }],
                         pushHelper: {},
                         accountService: {
                             service: {
                                 name: 'test-qml',
                                 type: 'test-qml.bhdouglass',
-                                provider: 'facebook'
-                            }
+                                provider: 'facebook',
+                            },
                         },
                         accountApplication: {
                             application: {
                                 services: {
                                     service: {
                                         id: 'test-qml.bhdouglass',
-                                        description: 'Post your pictures to Facebook'
-                                    }
-                                }
-                            }
+                                        description: 'Post your pictures to Facebook',
+                                    },
+                                },
+                            },
                         },
                         webappProperties: {},
                         webappInject: false,
@@ -59,7 +61,7 @@ describe('click-parser', function(){
                             apparmor: 'apparmor.json',
                             'content-hub': 'content-hub.json',
                             desktop: 'test-qml.desktop',
-                            urls: 'url-dispatcher.json'
+                            urls: 'url-dispatcher.json',
                         },
                         scopeIni: {},
                     }, {
@@ -70,13 +72,13 @@ describe('click-parser', function(){
                         apparmor: {
                             policy_groups: ['push-notification-client'],
                             policy_version: 1.3,
-                            template: 'ubuntu-push-helper'
+                            template: 'ubuntu-push-helper',
                         },
                         contentHub: {},
                         urlDispatcher: [],
                         pushHelper: {
                             exec: 'pushHelper',
-                            app_id: 'test-qml.bhdouglass'
+                            app_id: 'test-qml.bhdouglass',
                         },
                         accountService: {},
                         accountApplication: {},
@@ -84,7 +86,7 @@ describe('click-parser', function(){
                         webappInject: false,
                         hooks: {
                             apparmor: 'push-helper-apparmor.json',
-                            'push-helper': 'push-helper.json'
+                            'push-helper': 'push-helper.json',
                         },
                         scopeIni: {},
                     }],
@@ -121,9 +123,9 @@ describe('click-parser', function(){
         });
     });
 
-    describe('parse html5 click package', function(){
-        it('should parse without error', function(done) {
-            parse(__dirname + '/test-html5.bhdouglass_0.1_all.click', function(err, data) {
+    describe('parse html5 click package', () => {
+        it('should parse without error', (done) => {
+            parse(path.join(__dirname, 'test-html5.bhdouglass_0.1_all.click'), (err, data) => {
                 if (err) {
                     throw err;
                 }
@@ -136,9 +138,9 @@ describe('click-parser', function(){
         });
     });
 
-    describe('parse scope click package', function(){
-        it('should parse without error', function(done) {
-            parse(__dirname + '/test-scope.bhdouglass_0.1_armhf.click', function(err, data) {
+    describe('parse scope click package', () => {
+        it('should parse without error', (done) => {
+            parse(path.join(__dirname, '/test-scope.bhdouglass_0.1_armhf.click'), (err, data) => {
                 if (err) {
                     throw err;
                 }
@@ -151,7 +153,7 @@ describe('click-parser', function(){
                     art: 'screenshot.png',
                     author: 'Firstname Lastname',
                     icon: 'icon.png',
-                    'pageheader.logo': 'logo.png'
+                    'pageheader.logo': 'logo.png',
                 });
 
                 done();
@@ -159,9 +161,9 @@ describe('click-parser', function(){
         });
     });
 
-    describe('parse webapp click package', function(){
-        it('should parse without error', function(done) {
-            parse(__dirname + '/test-webapp.bhdouglass_0.1_all.click', function(err, data) {
+    describe('parse webapp click package', () => {
+        it('should parse without error', (done) => {
+            parse(path.join(__dirname, '/test-webapp.bhdouglass_0.1_all.click'), (err, data) => {
                 if (err) {
                     throw err;
                 }
@@ -175,7 +177,7 @@ describe('click-parser', function(){
                     scripts: ['inject.js'],
                     domain: '',
                     homepage: '',
-                    'user-agent-override': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36'
+                    'user-agent-override': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36',
                 });
 
                 done();
@@ -183,9 +185,9 @@ describe('click-parser', function(){
         });
     });
 
-    describe('parse ogra webapp click package', function(){
-        it('should parse without error', function(done) {
-            parse(__dirname + '/test-ogra.bhdouglass_0.1_all.click', function(err, data) {
+    describe('parse ogra webapp click package', () => {
+        it('should parse without error', (done) => {
+            parse(path.join(__dirname, '/test-ogra.bhdouglass_0.1_all.click'), (err, data) => {
                 if (err) {
                     throw err;
                 }

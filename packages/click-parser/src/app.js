@@ -1,7 +1,7 @@
 function App(name, hooks) {
     this.name = name;
-    this.type = 'app'; //app, webapp, scope, push, webapp+
-    this.features = []; //content_hub, url_dispatcher, push_helper, account_service
+    this.type = 'app'; // app, webapp, scope, push, webapp+
+    this.features = []; // content_hub, url_dispatcher, push_helper, account_service
     this.desktop = {};
     this.scopeIni = {};
     this.apparmor = {};
