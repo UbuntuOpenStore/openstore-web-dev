@@ -19,7 +19,7 @@ function extractIcon(fileData, data, callback) {
         iconpath = `./${data.iconpath}`;
     }
 
-    let write = path.join('/tmp', uuid.v4(), path.extname(data.iconpath).toLowerCase());
+    let write = path.join('/tmp', `${uuid.v4()}${path.extname(data.iconpath).toLowerCase()}`);
     let f = fs.createWriteStream(write)
         .on('finish', () => {
             data.icon = write;
@@ -33,7 +33,7 @@ function extractIcon(fileData, data, callback) {
             callback(null, data);
         })
         .pipe(zlib.Unzip())
-        .pipe(tar.Parse())
+        .pipe(new tar.Parse())
         .on('entry', (entry) => {
             if (entry.path == iconpath) {
                 entry.pipe(f);
