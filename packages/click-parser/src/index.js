@@ -436,100 +436,114 @@ function parseControl(control, fileData, icon, callback) {
 }
 
 module.exports = function parseClickPackage(filepath, iconOrCallback, callback) {
-    let icon = iconOrCallback;
-    if (typeof icon == 'function' && !callback) {
-        callback = icon;
-        icon = false;
-    }
-
-    let dataFile = null;
-    let controlFile = null;
-
-    let archive = new ar.Archive(fs.readFileSync(filepath));
-    archive.getFiles().forEach((file) => {
-        if (file.name() == 'data.tar.gz') {
-            dataFile = file.fileData();
+    return new Promise((resolve, reject) => {
+        let icon = iconOrCallback;
+        if (typeof icon == 'function' && !callback) {
+            callback = icon;
+            icon = false;
         }
-        else if (file.name() == 'control.tar.gz') {
-            controlFile = file.fileData();
-        }
-    });
 
-    if (dataFile === null || controlFile === null) {
-        callback('Malformed click package');
-    }
-    else {
-        parseControl(controlFile, dataFile, icon, (err, data) => {
-            if (err) {
-                callback(err);
+        let dataFile = null;
+        let controlFile = null;
+
+        let archive = new ar.Archive(fs.readFileSync(filepath));
+        archive.getFiles().forEach((file) => {
+            if (file.name() == 'data.tar.gz') {
+                dataFile = file.fileData();
             }
-            else if (!data) {
-                callback('Control data is undefined');
-            }
-            else {
-                data.apps.forEach((app) => {
-                    if (data.types.indexOf(app.type) == -1) {
-                        data.types.push(app.type);
-                    }
-
-                    if (Object.keys(app.contentHub).length > 0) {
-                        app.features.push('content_hub');
-                    }
-
-                    if (Object.keys(app.urlDispatcher).length > 0) {
-                        app.features.push('url_dispatcher');
-                    }
-
-                    if (Object.keys(app.pushHelper).length > 0) {
-                        app.features.push('push_helper');
-                    }
-
-                    if (Object.keys(app.accountService).length > 0) {
-                        app.features.push('account_service');
-                    }
-
-                    if (app.type == 'webapp') {
-                        app.webappProperties = data.webappProperties;
-                        app.webappInject = data.webappInject;
-                    }
-
-                    if (app.apparmor && app.apparmor.policy_groups) {
-                        data.permissions = data.permissions.concat(
-                            /* eslint-disable-next-line arrow-body-style */
-                            app.apparmor.policy_groups.filter((permission) => {
-                                return data.permissions.indexOf(permission) < 0;
-                            }),
-                        );
-                    }
-
-                    if (app.apparmor && app.apparmor.template == 'unconfined') {
-                        data.permissions.push('unconfined');
-                    }
-
-                    if (app.urlDispatcher && Array.isArray(app.urlDispatcher)) {
-                        app.urlDispatcher.forEach((ud) => {
-                            let url = '';
-                            if (ud.protocol) {
-                                url = `${ud.protocol}://`;
-                                if (ud['domain-suffix']) {
-                                    url += ud['domain-suffix'];
-                                }
-
-                                if (data.urls.indexOf(url) == -1) {
-                                    data.urls.push(url);
-                                }
-                            }
-                        });
-                    }
-                });
-
-                delete data.iconpath;
-                delete data.manifest;
-                delete data.webappInject;
-                delete data.webappProperties;
-
-                callback(null, data);
+            else if (file.name() == 'control.tar.gz') {
+                controlFile = file.fileData();
             }
         });
-    }
+
+        if (dataFile === null || controlFile === null) {
+            reject(new Error('Malformed click package'));
+            if (callback) {
+                callback('Malformed click package');
+            }
+        }
+        else {
+            parseControl(controlFile, dataFile, icon, (err, data) => {
+                if (err) {
+                    reject(err);
+                    if (callback) {
+                        callback(err);
+                    }
+                }
+                else if (!data) {
+                    reject(new Error('Control data is undefined'));
+                    if (callback) {
+                        callback('Control data is undefined');
+                    }
+                }
+                else {
+                    data.apps.forEach((app) => {
+                        if (data.types.indexOf(app.type) == -1) {
+                            data.types.push(app.type);
+                        }
+
+                        if (Object.keys(app.contentHub).length > 0) {
+                            app.features.push('content_hub');
+                        }
+
+                        if (Object.keys(app.urlDispatcher).length > 0) {
+                            app.features.push('url_dispatcher');
+                        }
+
+                        if (Object.keys(app.pushHelper).length > 0) {
+                            app.features.push('push_helper');
+                        }
+
+                        if (Object.keys(app.accountService).length > 0) {
+                            app.features.push('account_service');
+                        }
+
+                        if (app.type == 'webapp') {
+                            app.webappProperties = data.webappProperties;
+                            app.webappInject = data.webappInject;
+                        }
+
+                        if (app.apparmor && app.apparmor.policy_groups) {
+                            data.permissions = data.permissions.concat(
+                                /* eslint-disable-next-line arrow-body-style */
+                                app.apparmor.policy_groups.filter((permission) => {
+                                    return data.permissions.indexOf(permission) < 0;
+                                }),
+                            );
+                        }
+
+                        if (app.apparmor && app.apparmor.template == 'unconfined') {
+                            data.permissions.push('unconfined');
+                        }
+
+                        if (app.urlDispatcher && Array.isArray(app.urlDispatcher)) {
+                            app.urlDispatcher.forEach((ud) => {
+                                let url = '';
+                                if (ud.protocol) {
+                                    url = `${ud.protocol}://`;
+                                    if (ud['domain-suffix']) {
+                                        url += ud['domain-suffix'];
+                                    }
+
+                                    if (data.urls.indexOf(url) == -1) {
+                                        data.urls.push(url);
+                                    }
+                                }
+                            });
+                        }
+                    });
+
+                    delete data.iconpath;
+                    delete data.manifest;
+                    delete data.webappInject;
+                    delete data.webappProperties;
+
+                    resolve(data);
+                    if (callback) {
+                        callback(null, data);
+                    }
+                }
+            });
+        }
+    });
 };
