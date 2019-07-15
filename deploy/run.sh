@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /srv/openstore-api/src/
+cd /srv/openstore-api/current/src/
 source /srv/openstore/env.sh
 source /srv/openstore/version.sh
-node /srv/openstore-api/src/index.js
+node /srv/openstore-api/current/src/index.js
