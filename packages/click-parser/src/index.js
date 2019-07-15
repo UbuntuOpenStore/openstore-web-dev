@@ -39,6 +39,9 @@ function extractIcon(fileData, data, callback) {
                 entry.pipe(f);
                 found = true;
             }
+            else {
+                entry.resume();
+            }
         })
         .on('end', () => {
             if (!found) {
