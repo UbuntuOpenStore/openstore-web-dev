@@ -22,8 +22,8 @@ project on the [UBports Weblate instance](https://translate.ubports.com/projects
 * Start the docker containers
     * Run: `docker-compose up -d`
 * Attach to the docker container:
-    * Attach to the api container: `./env/attach_api.sh`
-    * Attach to the web container: `./env/attach_web.sh`
+    * Attach to the api container: `./docker/attach_api.sh`
+    * Attach to the web container: `./docker/attach_web.sh`
 * Visit the site:
     * In your browser go to: [http://localhost:8080](http://localhost:8080/)
 * Login
@@ -38,7 +38,7 @@ For more info on configuration read the [openstore-api/README.md](https://gitlab
 
 ## License
 
-Copyright (C) 2018 [Brian Douglass](http://bhdouglass.com/)
+Copyright (C) 2019 [Brian Douglass](http://bhdouglass.com/)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.
