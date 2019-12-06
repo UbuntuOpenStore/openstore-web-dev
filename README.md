@@ -28,7 +28,7 @@ project on the [UBports Weblate instance](https://translate.ubports.com/projects
     * In your browser go to: [http://localhost:8080](http://localhost:8080/)
 * Login
     * Login to the OpenStore to setup your user
-    * Upgrade your user to an admin (From inside the vagrant VM): `docker exec -it openstorewebdev_api_1 node /srv/openstore/openstore-api/bin/setup-admin`
+    * Upgrade your user to an admin: `docker exec -it openstorewebdev_api_1 node /srv/openstore/openstore-api/bin/setup-admin`
 * Stop the docker containers (when you are done):
     * Run: `docker-compose stop`
 
