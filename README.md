@@ -26,6 +26,25 @@ project on the [UBports Weblate instance](https://translate.ubports.com/projects
     * Attach to the web container: `./docker/attach_web.sh`
 * Visit the site:
     * In your browser go to: [http://localhost:8080](http://localhost:8080/)
+    * For best results setup a local nginx to redirect `local.open-store.io` to `localhost:8080` and add `127.0.0.1 local.open-store.io` to your `/etc/hosts` file
+
+```
+server {
+    listen 80;
+    server_name local.open-store.io;
+    server_tokens off;
+    client_max_body_size 0;
+
+    location / {
+        proxy_pass http://localhost:8080;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_buffering off;
+    }
+}
+```
+
 * Login
     * Login to the OpenStore to setup your user
     * Upgrade your user to an admin: `docker exec -it openstorewebdev_api_1 node /srv/openstore/openstore-api/bin/setup-admin`
