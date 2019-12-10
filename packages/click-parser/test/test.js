@@ -116,6 +116,7 @@ describe('click-parser', () => {
                     urls: ['http://example.com'],
                     version: '0.1',
                     languages: [],
+                    installedSize: 39,
                 });
 
                 done();

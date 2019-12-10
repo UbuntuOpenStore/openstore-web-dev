@@ -339,6 +339,7 @@ function parseControl(control, fileData, icon, callback) {
         types: [],
         urls: [],
         version: null,
+        installedSize: null,
         webappInject: false,
         webappProperties: {},
         languages: [],
@@ -433,6 +434,10 @@ function parseControl(control, fileData, icon, callback) {
             data.name = data.manifest.name;
             data.title = data.manifest.title;
             data.version = data.manifest.version;
+
+            if (data.manifest['installed-size']) {
+                data.installedSize = parseInt(data.manifest['installed-size'], 10);
+            }
 
             parseData(fileData, data, icon, callback);
         });
