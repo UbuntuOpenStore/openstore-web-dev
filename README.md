@@ -19,6 +19,8 @@ project on the [UBports Weblate instance](https://translate.ubports.com/projects
 * Install NPM dependencies:
     * Install api dependencies: `cd openstore-api; npm install; cd ..`
     * Install web dependencies: `cd openstore-web; npm install; cd ..`
+* Initialize the translations:
+    * Run: `cd openstore-web; npm run translations; cd ..`
 * Start the docker containers
     * Run: `docker-compose up -d`
 * Attach to the docker container:
