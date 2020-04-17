@@ -17,3 +17,11 @@ apt-get install git nodejs nginx python-certbot-nginx build-essential liblzma-de
 # /etc/systemd/system/openstore-api.service
 systemctl enable openstore-api
 systemctl start openstore-api
+
+# Setup b2 tool for backups
+apt install python-pip
+pip install b2
+b2 authorize-account
+
+# Install mongo client for mongodump
+apt install mongodb-clients

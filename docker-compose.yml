@@ -6,6 +6,10 @@ services:
       - "8082:8080"
     volumes:
       - ./openstore-api:/srv/openstore
+      - ./.data:/data
+    environment:
+      - DATA_DIR=/data
+      - ICON_DIR=/data/icons
 
   web:
     image: node:10

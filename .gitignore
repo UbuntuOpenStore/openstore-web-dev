@@ -4,3 +4,5 @@ scripts
 archive
 env.sh
 backup
+.data
+tmp
