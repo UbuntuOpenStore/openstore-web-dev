@@ -5,6 +5,8 @@ source /srv/openstore/env.sh
 set -x
 set -e
 
+date
+
 b2 sync --noProgress --delete $DATA_DIR b2://openstore-backup/data
 b2 sync --noProgress --delete $IMAGE_DIR b2://openstore-backup/images
 b2 sync --noProgress --delete $ICON_DIR b2://openstore-backup/icons
