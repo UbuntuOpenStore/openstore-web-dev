@@ -14,21 +14,23 @@ project on the [UBports Weblate instance](https://translate.ubports.com/projects
 ## Development
 
 * Initialize submodules:
-    * Run: `git submodule update --init --recursive`
+  * Run: `git submodule update --init --recursive`
 * Install the [docker & docker-compose](https://docs.docker.com/install/linux/docker-ce/ubuntu/):
 * Install NPM dependencies:
-    * Install api dependencies: `cd openstore-api; npm install; cd ..`
-    * Install web dependencies: `cd openstore-web; npm install; cd ..`
+  * Install api dependencies: `cd openstore-api; npm install; cd ..`
+  * Install web dependencies: `cd openstore-web; npm install; cd ..`
 * Initialize the translations:
-    * Run: `cd openstore-web; npm run translations; cd ..`
+  * Run: `cd openstore-web; npm run translations; cd ..`
+* Generate the svg icons:
+  * Run: `cd openstore-web; npm run generate-icons; cd ..`
 * Start the docker containers
-    * Run: `docker-compose up -d`
+  * Run: `docker-compose up -d`
 * Attach to the docker container:
-    * Attach to the api container: `./docker/attach_api.sh`
-    * Attach to the web container: `./docker/attach_web.sh`
+  * Attach to the api container: `./docker/attach_api.sh`
+  * Attach to the web container: `./docker/attach_web.sh`
 * Visit the site:
-    * In your browser go to: [http://localhost:8080](http://localhost:8080/)
-    * For best results setup a local nginx to redirect `local.open-store.io` to `localhost:8080` and add `127.0.0.1 local.open-store.io` to your `/etc/hosts` file
+  * In your browser go to: [http://localhost:8080](http://localhost:8080/)
+  * For best results setup a local nginx to redirect `local.open-store.io` to `localhost:8080` and add `127.0.0.1 local.open-store.io` to your `/etc/hosts` file
 
 ```
 server {
@@ -48,10 +50,10 @@ server {
 ```
 
 * Login
-    * Login to the OpenStore to setup your user
-    * Upgrade your user to an admin: `docker exec -it openstorewebdev_api_1 node /srv/openstore/openstore-api/bin/setup-admin`
+  * Login to the OpenStore to setup your user
+  * Upgrade your user to an admin: `docker exec -it openstorewebdev_api_1 node /srv/openstore/openstore-api/bin/setup-admin`
 * Stop the docker containers (when you are done):
-    * Run: `docker-compose stop`
+  * Run: `docker-compose stop`
 
 ## Configuration
 
@@ -59,7 +61,7 @@ For more info on configuration read the [openstore-api/README.md](https://gitlab
 
 ## License
 
-Copyright (C) 2019 [Brian Douglass](http://bhdouglass.com/)
+Copyright (C) 2020 [Brian Douglass](http://bhdouglass.com/)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.
