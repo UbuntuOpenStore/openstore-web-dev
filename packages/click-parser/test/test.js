@@ -54,6 +54,7 @@ describe('click-parser', () => {
                             },
                         },
                         webappProperties: {},
+                        webappUrl: null,
                         webappInject: false,
                         hooks: {
                             'account-application': 'account-application.xml',
@@ -83,6 +84,7 @@ describe('click-parser', () => {
                         accountService: {},
                         accountApplication: {},
                         webappProperties: {},
+                        webappUrl: null,
                         webappInject: false,
                         hooks: {
                             apparmor: 'push-helper-apparmor.json',
@@ -172,6 +174,7 @@ describe('click-parser', () => {
                 assert.equal(data.apps.length, 1);
                 assert.equal(data.apps[0].type, 'webapp');
                 assert.equal(data.apps[0].webappInject, true);
+                assert.equal(data.apps[0].webappUrl, 'http://example.com');
                 assert.deepEqual(data.apps[0].webappProperties, {
                     includes: ['http://example.com:*/*'],
                     name: 'ExtendedWebappProperties',

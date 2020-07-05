@@ -1,6 +1,5 @@
 const ar = require('ar');
 const fs = require('fs');
-const minimist = require('minimist');
 const path = require('path');
 const streamifier = require('streamifier');
 const tar = require('tar');
@@ -138,29 +137,25 @@ function parseData(fileData, data, icon, callback) {
                                 an external url as the main url the assume it's a webapp.
                                 */
 
-                                let webapp = false;
+                                let url = null;
                                 let exec = app.desktop.exec.replace('  ', ' ').replace('webapp-container', '').trim();
 
                                 // Match spaces not encased in quotes: http://stackoverflow.com/a/16261693
                                 let execSplit = exec.match(/(?:[^\s"]+|"[^"]*")+/g);
-                                let args = minimist(execSplit, {default: {}});
+                                execSplit.forEach((value) => {
+                                    if (
+                                        value && (
+                                            value.substring(0, 7) == 'http://' ||
+                                            value.substring(0, 8) == 'https://'
+                                        )
+                                    ) {
+                                        url = value;
+                                    }
+                                });
 
-                                if (args && args._) {
-                                    args._.forEach((value) => {
-                                        if (
-                                            typeof value === 'string' &&
-                                            value && (
-                                                value.substring(0, 7) == 'http://' ||
-                                                value.substring(0, 8) == 'https://'
-                                            )
-                                        ) {
-                                            webapp = true;
-                                        }
-                                    });
-                                }
-
-                                if (webapp) {
+                                if (url) {
                                     app.type = 'webapp';
+                                    app.webappUrl = url;
                                 }
                             }
                         }

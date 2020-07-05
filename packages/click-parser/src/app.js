@@ -12,6 +12,7 @@ function App(name, hooks) {
     this.accountApplication = {};
     this.webappProperties = {};
     this.webappInject = false;
+    this.webappUrl = null;
     this.hooks = hooks;
 }
 

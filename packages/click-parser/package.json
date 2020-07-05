@@ -1,6 +1,6 @@
 {
   "name": "click-parser",
-  "version": "4.0.3",
+  "version": "4.1.0",
   "description": "Extract data from Ubuntu's click packages",
   "main": "src/index.js",
   "scripts": {
@@ -33,7 +33,6 @@
   "homepage": "https://gitlab.com/theopenstore/click-parser",
   "dependencies": {
     "ar": "0.0.1",
-    "minimist": "^1.1.1",
     "streamifier": "^0.1.1",
     "tar": "^4.4.10",
     "tar-stream": "^2.1.0",
