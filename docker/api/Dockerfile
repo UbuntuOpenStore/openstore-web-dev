@@ -3,7 +3,7 @@ LABEL maintainer="Brian Douglass"
 
 RUN apt-get update && \
     apt-get -y -f --no-install-recommends install gnupg ubuntu-keyring software-properties-common curl sudo && \
-    curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - && \
+    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && \
     add-apt-repository ppa:bhdouglass/clickable && \
     apt-get update && \
     apt-get install -y nodejs click-reviewers-tools && \

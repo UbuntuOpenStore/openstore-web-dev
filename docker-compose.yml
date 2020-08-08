@@ -12,7 +12,7 @@ services:
       - ICON_DIR=/data/icons
 
   web:
-    image: node:10
+    image: node:12
     command: npm run serve
     working_dir: /srv/openstore
     ports:
