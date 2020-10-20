@@ -14,6 +14,7 @@ function App(name, hooks) {
     this.webappInject = false;
     this.webappUrl = null;
     this.hooks = hooks;
+    this.qmlImports = [];
 }
 
 module.exports = App;

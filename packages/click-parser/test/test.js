@@ -36,6 +36,16 @@ describe('click-parser', () => {
                             'domain-suffix': 'example.com',
                         }],
                         pushHelper: {},
+                        qmlImports: [
+                            {
+                                module: 'QtQuick',
+                                version: '2.0',
+                            },
+                            {
+                                module: 'Ubuntu.Components',
+                                version: '1.1',
+                            },
+                        ],
                         accountService: {
                             service: {
                                 name: 'test-qml',
@@ -81,6 +91,16 @@ describe('click-parser', () => {
                             exec: 'pushHelper',
                             app_id: 'test-qml.bhdouglass',
                         },
+                        qmlImports: [
+                            {
+                                module: 'QtQuick',
+                                version: '2.0',
+                            },
+                            {
+                                module: 'Ubuntu.Components',
+                                version: '1.1',
+                            },
+                        ],
                         accountService: {},
                         accountApplication: {},
                         webappProperties: {},

@@ -12,6 +12,8 @@ const utf8 = require('utf8');
 const App = require('./app');
 const utils = require('./utils');
 
+// TODO detect indicators
+
 function extractIcon(fileData, data, callback) {
     let iconpath = data.iconpath;
     if (iconpath.indexOf('./') !== 0) {
@@ -106,6 +108,21 @@ function parseIniFile(stream, callback) {
         }
 
         callback(data);
+    });
+}
+
+function parseQmlImports(str) {
+    let split = str.split('\n');
+    return split.filter((line) => line.trim().startsWith('import')).map((line) => {
+        let tokens = line.split(' ');
+        let module = tokens[1].replace(/"/g, '');
+        let isJs = module.endsWith('.js');
+        let version = isJs ? null : tokens[2];
+
+        return {
+            module,
+            version,
+        };
     });
 }
 
@@ -254,7 +271,7 @@ function parseData(fileData, data, icon, callback) {
                     stream.on('data', (fdata) => {
                         let str = fdata.toString();
 
-                        if (str.indexOf('WebView') >= 0) {
+                        if (str.indexOf('WebView') >= 0 || str.indexOf('WebEngineView') >= 0) {
                             if (potentialOgraWebapp) {
                                 app.type = 'webapp+';
                             }
@@ -262,6 +279,16 @@ function parseData(fileData, data, icon, callback) {
                                 potentialOgraWebapp = true;
                             }
                         }
+
+                        app.qmlImports = app.qmlImports.concat(parseQmlImports(str));
+
+                        cb();
+                    });
+                }
+                else if (header.name.endsWith('.qml')) {
+                    stream.on('data', (fdata) => {
+                        let str = fdata.toString();
+                        app.qmlImports = app.qmlImports.concat(parseQmlImports(str));
 
                         cb();
                     });
@@ -534,6 +561,19 @@ module.exports = function parseClickPackage(filepath, iconOrCallback, callback) 
                                 }
                             });
                         }
+
+                        // Deduplicate imports
+                        let qmlImportMatch = [];
+                        let qmlImports = [];
+                        app.qmlImports.forEach((qmlImport) => {
+                            let key = qmlImport.module + qmlImport.version;
+                            if (!qmlImportMatch.includes(key)) {
+                                qmlImportMatch.push(key);
+                                qmlImports.push(qmlImport);
+                            }
+                        });
+
+                        app.qmlImports = qmlImports;
                     });
 
                     delete data.iconpath;
