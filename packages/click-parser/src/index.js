@@ -113,7 +113,7 @@ function parseIniFile(stream, callback) {
 
 function parseQmlImports(str) {
     let split = str.split('\n');
-    return split.filter((line) => line.trim().startsWith('import')).map((line) => {
+    return split.filter((line) => line.trim().startsWith('import ')).map((line) => {
         let tokens = line.split(' ');
         let module = tokens[1].replace(/"/g, '');
         let isJs = module.endsWith('.js');
