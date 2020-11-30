@@ -6,10 +6,13 @@ services:
       - "8082:8080"
     volumes:
       - ./openstore-api:/srv/openstore
-      - ./.data:/data
+      - ./.data/clicks:/srv/openstore-data
+      - ./.data/icons:/srv/openstore-icons
+      - ./.data/screenshots:/srv/openstore-screenshots
     environment:
-      - DATA_DIR=/data
-      - ICON_DIR=/data/icons
+      - DATA_DIR=/srv/openstore-data
+      - ICON_DIR=/srv/openstore-icons
+      - IMAGE_DIR=/srv/openstore-screenshots
 
   web:
     image: node:12
