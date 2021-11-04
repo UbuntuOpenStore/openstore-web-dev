@@ -12,6 +12,7 @@ module.exports = {
     'mocha': true
   },
   'rules': {
-    'no-console': ['error', { allow: ['error', 'log'] }]
+    'no-console': ['error', { allow: ['error', 'log'] }],
+    'no-param-reassign': 0,
   },
 }

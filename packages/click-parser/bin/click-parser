@@ -4,25 +4,25 @@ const yargs = require('yargs');
 
 const parse = require('../src/index');
 
-let argv = yargs.alias('v', 'version')
-    .alias('h', 'help')
-    .alias('i', 'icon')
-    .usage('$0 /path/to/click')
-    .argv;
+const argv = yargs.alias('v', 'version')
+  .alias('h', 'help')
+  .alias('i', 'icon')
+  .usage('$0 /path/to/click')
+  .argv;
 
 if (argv._.length != 1) {
-    console.error('Usage: click-parser /path/to/click');
-    process.exit(1);
+  console.error('Usage: click-parser /path/to/click');
+  process.exit(1);
 }
 else {
-    parse(process.argv[2], !!argv.icon, (err, data) => {
-        if (err) {
-            console.error('Failed to parse: ', err);
-            process.exit(1);
-        }
-        else {
-            console.log(JSON.stringify(data, null, 4));
-            process.exit(0);
-        }
-    });
+  parse(process.argv[2], !!argv.icon, (err, data) => {
+    if (err) {
+      console.error('Failed to parse: ', err);
+      process.exit(1);
+    }
+    else {
+      console.log(JSON.stringify(data, null, 4));
+      process.exit(0);
+    }
+  });
 }

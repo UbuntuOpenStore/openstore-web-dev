@@ -1,6 +1,6 @@
 {
   "name": "click-parser",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "Extract data from Ubuntu's click packages",
   "main": "src/index.js",
   "scripts": {
@@ -34,17 +34,18 @@
   "dependencies": {
     "ar": "0.0.1",
     "streamifier": "^0.1.1",
-    "tar": "^4.4.10",
-    "tar-stream": "^2.1.0",
+    "tar": "^6.1.11",
+    "tar-stream": "^2.2.0",
     "utf8": "^3.0.0",
-    "uuid": "^3.3.2",
-    "xml2js": "^0.4.19",
-    "yargs": "^13.2.4"
+    "uuid": "^8.3.2",
+    "xml2js": "^0.4.23",
+    "yargs": "^17.2.1"
   },
   "devDependencies": {
-    "eslint": "^6.0.1",
-    "eslint-config-bhdouglass": "0.0.1",
-    "eslint-plugin-import": "^2.18.0",
-    "mocha": "^6.1.4"
+    "eslint": "^8.1.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-bhdouglass": "^0.0.2",
+    "eslint-plugin-import": "^2.25.2",
+    "mocha": "^9.1.3"
   }
 }
