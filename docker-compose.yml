@@ -24,7 +24,7 @@ services:
       - ./openstore-web:/srv/openstore
 
   mongo:
-    image: mongo:3.4
+    image: mongo:4.4
     ports:
       - "27017:27017"
     volumes:
@@ -44,3 +44,5 @@ services:
         - "80:80"
     volumes:
       - ./docker/proxy.conf:/etc/nginx/conf.d/default.conf
+      - ./.data/icons:/srv/openstore-icons
+      - ./.data/screenshots:/srv/openstore-screenshots
