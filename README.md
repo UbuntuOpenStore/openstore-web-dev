@@ -25,9 +25,7 @@ project on the [UBports Weblate instance](https://translate.ubports.com/projects
   * Run: `cd openstore-web; npm run generate-icons; cd ..`
 * Start the docker containers
   * Run: `docker-compose up -d`
-* Visit the site:
-  * In your browser go to: [http://localhost:8080](http://localhost:8080/)
-  * For best results setup a local nginx to redirect `local.open-store.io` to `localhost:8080` and add `127.0.0.1 local.open-store.io` to your `/etc/hosts` file
+* Visit the site in your browser: [http://local.open-store.io](http://local.open-store.io)
 
 ```
 server {
