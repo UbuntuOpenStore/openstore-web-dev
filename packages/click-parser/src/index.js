@@ -94,7 +94,7 @@ function parseIniFile(stream, callback) {
         const pos = lline.indexOf('=');
         if (pos > -1) {
           const key = lline.substring(0, pos).trim();
-          const value = lline.substring(pos + 1).trim();
+          const value = line.trim().substring(pos + 1).trim();
           data[key] = value;
         }
         else {
