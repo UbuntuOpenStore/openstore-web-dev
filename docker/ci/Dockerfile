@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:18
 LABEL maintainer="Brian Douglass"
 
 RUN apt-get update && \

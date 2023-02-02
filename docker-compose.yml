@@ -1,7 +1,8 @@
 version: "3"
 services:
   api:
-    image: theopenstore/api
+    build:
+      context: ./docker/api
     ports:
       - "8082:8080"
     volumes:
@@ -15,7 +16,7 @@ services:
       - IMAGE_DIR=/srv/openstore-screenshots
 
   web:
-    image: node:16
+    image: node:18
     command: npm run serve
     working_dir: /srv/openstore
     ports:
