@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build . -t theopenstore/ci:latest
+docker build . -t bhdouglass/openstore-ci

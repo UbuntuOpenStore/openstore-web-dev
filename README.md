@@ -18,7 +18,7 @@ of supporting the Ubuntu Touch community. Your contribution can help us improve
 the quality of the OpenStore website & app, add new features, and make them more
 accessible to users around the world. We appreciate any donation, big or small,
 and thank you for your support in helping us to build a better future for mobile
-technology! Donate on [Liberapay]( https://liberapay.com/OpenStore/).
+technology! Donate on [Liberapay](https://liberapay.com/OpenStore/).
 
 ## Development
 
