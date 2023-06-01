@@ -25,11 +25,11 @@ services:
       - ./openstore-web:/srv/openstore
 
   mongo:
-    image: mongo:4.4
+    image: mongo:6
     ports:
       - "27017:27017"
     volumes:
-      - /data/db:/data/db
+      - ./.data/db:/data/db
       - ./openstore-api:/srv/openstore
 
   elasticsearch:
