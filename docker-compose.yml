@@ -16,7 +16,7 @@ services:
       - IMAGE_DIR=/srv/openstore-screenshots
 
   web:
-    image: node:18
+    image: node:20
     command: npm run serve
     working_dir: /srv/openstore
     ports:
