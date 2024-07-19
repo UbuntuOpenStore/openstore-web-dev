@@ -33,11 +33,13 @@ services:
       - ./openstore-api:/srv/openstore
 
   elasticsearch:
-    image: elasticsearch:2-alpine
+    image: elasticsearch:7.10.1
     ports:
       - "9200:9200"
     volumes:
-      - /usr/share/elasticsearch/data:/usr/share/elasticsearch/data
+      - ./.data/elasticsearch:/usr/share/elasticsearch/data
+    environment:
+      - discovery.type=single-node
 
   nginx:
     image: nginx
