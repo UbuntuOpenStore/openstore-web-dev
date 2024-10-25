@@ -1,0 +1,17 @@
+---
+import BadgeSelect from "@/components/BadgeSelect";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="OpenStore" pageTitle="Badges | OpenStore" description="The open source app store for Ubuntu Touch">
+  <section class="section h-full">
+    <h1 class="text-4xl mb-4">OpenStore Badges</h1>
+
+    <p class="mb-4">
+      Promote your app on the OpenStore! Add these badges to your website, code repository, social media, or anywhere on the internet. The
+      badges are available in several different languages and in both PNG and SVG formats.
+    </p>
+
+    <BadgeSelect client:load />
+  </section>
+</BaseLayout>

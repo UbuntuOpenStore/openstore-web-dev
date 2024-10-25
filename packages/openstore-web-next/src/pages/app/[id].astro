@@ -1,0 +1,324 @@
+---
+export const prerender = false;
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import IconList from "@/components/IconList.astro";
+import CircleIcon from "@/components/CircleIcon.astro";
+import { AppSchema, RatingType, ReviewsSchema } from "@/schema";
+
+import thumbsUp from "@/assets/icons/thumbs_up.svg?raw";
+import happy from "@/assets/icons/happy.svg?raw";
+import neutral from "@/assets/icons/neutral.svg?raw";
+import thumbsDown from "@/assets/icons/thumbs_down.svg?raw";
+import buggy from "@/assets/icons/buggy.svg?raw";
+import lock from "@/assets/icons/lock.svg?raw";
+import info from "@/assets/icons/info.svg?raw";
+import securityAlert from "@/assets/icons/security-alert.svg?raw";
+import save from "@/assets/icons/save.svg?raw";
+import device from "@/assets/icons/device.svg?raw";
+import globe from "@/assets/icons/globe.svg?raw";
+import date from "@/assets/icons/date.svg?raw";
+import source from "@/assets/icons/source.svg?raw";
+import user from "@/assets/icons/user.svg?raw";
+import community from "@/assets/icons/community.svg?raw";
+import heart from "@/assets/icons/heart.svg?raw";
+import externalLink from "@/assets/icons/external-link.svg?raw";
+import home from "@/assets/icons/home.svg?raw";
+
+const { id } = Astro.params;
+
+const [appResponse, reviewsResponse] = await Promise.all([
+  fetch(`https://open-store.io/api/v4/apps/${id}`),
+  fetch(`https://open-store.io/api/v4/apps/${id}/reviews`),
+]);
+
+const [{ data: appData }, { data: reviewsData }] = await Promise.all([appResponse.json(), reviewsResponse.json()]);
+
+const app = AppSchema.parse(appData);
+const { reviews } = ReviewsSchema.parse(reviewsData);
+
+const IconMap = {
+  [RatingType.THUMBS_UP]: thumbsUp,
+  [RatingType.HAPPY]: happy,
+  [RatingType.NEUTRAL]: neutral,
+  [RatingType.THUMBS_DOWN]: thumbsDown,
+  [RatingType.BUGGY]: buggy,
+};
+
+const restrictedPermissions = new Set([
+  "bluetooth",
+  "calendar",
+  "contacts",
+  "debug",
+  "history",
+  "music_files",
+  "music_files_read",
+  "picture_files",
+  "picture_files_read",
+  "video_files",
+  "video_files_read",
+  "unconfined",
+]);
+
+const dateFormatter = new Intl.DateTimeFormat(undefined, {
+  dateStyle: "medium",
+});
+const numberFormatter = new Intl.NumberFormat();
+function domainFormatter(url: string) {
+  return new URL(url).host;
+}
+
+const hasRestrictedPermissions = app.permissions.some((permission) => restrictedPermissions.has(permission));
+const isTrustedApp =
+  (app.id.startsWith("com.ubuntu.") && !app.id.startsWith("com.ubuntu.developer.")) ||
+  app.id.startsWith("com.canonical.") ||
+  app.id.startsWith("ubports.") ||
+  app.id.startsWith("openstore.");
+const isProprietary = app.license.toLowerCase() === "proprietary";
+---
+
+<BaseLayout title={app.name} pageTitle={`${app.name} | OpenStore`} description={app.tagline}>
+  <section class="section flex">
+    <a href="/">
+      <Fragment set:html={home} />
+    </a>
+    {app.category && (
+      <div class="ml-1">/ {app.category} {/* TODO link to category */}</div>
+    )}
+  </section>
+
+  <section class="flex flex-col md:flex-row justify-between section">
+    <div class="flex flex-row gap-4 max-w-xl mb-4 md:mb-0">
+      <div>
+        <img class="rounded-2xl" src={app.icon} alt={app.name} width="128" height="128" loading="eager" />
+      </div>
+      <div>
+        {/* TODO app type */}
+
+        <h1 class="text-4xl">{app.name}</h1>
+        {app.publisher && <p>by {app.publisher}</p>}
+        {/* TODO link to search */}
+
+        <p class="mt-4 text-xl">{app.tagline}</p>
+      </div>
+    </div>
+
+    <div class="flex gap-4 items-center">
+      <a href={`openstore://${app.id}`} title="Install via the OpenStore app" class="btn w-full bg-ubuntu-orange text-white font-bold"
+        >Install</a
+      >
+
+      {/* TODO popup download modal - https://ui.shadcn.com/docs/components/dialog */}
+      <button class="btn w-full bg-ubuntu-purple text-white font-bold">Download</button>
+    </div>
+  </section>
+
+  <section class="section flex justify-center">
+    <ul class="flex gap-4">
+      <li class="flex gap-2">
+        <Fragment set:html={thumbsUp} />
+        {app.ratings.THUMBS_UP}
+      </li>
+      <li class="flex gap-2">
+        <Fragment set:html={happy} />
+        {app.ratings.HAPPY}
+      </li>
+      <li class="flex gap-2">
+        <Fragment set:html={neutral} />
+        {app.ratings.NEUTRAL}
+      </li>
+      <li class="flex gap-2">
+        <Fragment set:html={thumbsDown} />
+        {app.ratings.THUMBS_DOWN}
+      </li>
+      <li class="flex gap-2">
+        <Fragment set:html={buggy} />
+        {app.ratings.BUGGY}
+      </li>
+    </ul>
+  </section>
+
+  <div class="mx-auto w-full max-w-6xl h-1 bg-ubuntu-gradient rounded-full"></div>
+
+  <section class="section">
+    {/* TODO image light box */}
+    <div class="flex gap-4 overflow-x-auto items-end">
+      {/* TODO video link */}
+      {
+        app.screenshots.map((screenshot) => (
+          <img
+            class="max-h-96 max-w-96 h-auto w-auto rounded-2xl block border border-primary"
+            src={screenshot}
+            alt={`Screenshot of ${app.name}`}
+            loading="lazy"
+          />
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="text-xl text-center mb-4">About {app.name}</h2>
+    <p>
+      {
+        app.description.split("\n").map((line) => (
+          <>
+            {line} <br />
+          </>
+        ))
+      }
+    </p>
+  </section>
+
+  <div class="mx-auto w-full max-w-6xl h-1 bg-ubuntu-gradient rounded-full"></div>
+
+  <section class="section">
+    <h2 class="text-xl text-center mb-4">Recent Changes</h2>
+    <p class="max-h-64 overflow-y-auto">
+      {
+        app.changelog.split("\n").map((line) => (
+          <>
+            {line} <br />
+          </>
+        ))
+      }
+    </p>
+  </section>
+
+  <section class="section flex flex-col md:flex-row gap-4 items-stretch">
+    <div class="card">
+      <h2 class="text-xl text-center mb-4">Permissions</h2>
+
+      {
+        hasRestrictedPermissions && !isTrustedApp ? (
+          <CircleIcon icon={securityAlert} outerClass="bg-yellow-500/70 mb-4" innerClass="bg-yellow-200" />
+        ) : (
+          <CircleIcon icon={lock} outerClass="bg-green-500/70 mb-4" innerClass="bg-green-200" />
+        )
+      }
+
+      {
+        app.permissions.length > 0 ? (
+          <ul>
+            {app.permissions.map((permission) => (
+              <li>{permission}</li>
+            ))}
+          </ul>
+        ) : (
+          <p class="text-center">No permissions needed</p>
+        )
+      }
+    </div>
+
+    <div class="card">
+      {
+        isProprietary ? (
+          <>
+            <h2 class="text-xl text-center mb-4">Proprietary</h2>
+
+            <CircleIcon icon={info} outerClass="bg-yellow-500/70 mb-4" innerClass="bg-yellow-200" />
+
+            <p>
+              This app's source code is not available and has not been reviewed by the community. There is no accountability for what this
+              app does or how it is developed. Please install at your own risk
+            </p>
+          </>
+        ) : (
+          <>
+            <h2 class="text-xl text-center mb-4">Community Built</h2>
+
+            <CircleIcon icon={community} outerClass="bg-green-500/70 mb-4" innerClass="bg-green-200" />
+
+            <p>
+              This app has been released under the {app.license} license.
+              {app.source && <>It is developed in the open and you can review the source code.</>}
+            </p>
+
+            <div class="text-center">
+              {app.source && (
+                <a href={app.source} class="underline">
+                  Get involved
+                </a>
+                <a href={app.source} set:html={externalLink} class="inline-block -mb-1"></a>
+              )}
+            </div>
+          </>
+        )
+      }
+    </div>
+  </section>
+
+  <section class="section flex flex-col md:flex-row gap-4 items-stretch">
+    <IconList
+      title="Info"
+      items={[
+        { label: "Published Date", value: dateFormatter.format(app.published_date), icon: date },
+        { label: "Updated Date", value: dateFormatter.format(app.updated_date), icon: date },
+        { label: "Total Downloads", value: numberFormatter.format(app.totalDownloads), icon: save },
+        { label: "Latest Version Downloads", value: numberFormatter.format(app.latestDownloads), icon: save },
+        { label: "Supported Architectures", value: app.architectures.join(", "), icon: device },
+        { label: "Translation Languages", value: app.languages.join(", "), icon: globe },
+      ]}
+    />
+
+    <IconList
+      title="Links"
+      items={[
+        {
+          label: "Source Code",
+          value: app.source ? `<a href="${app.source}" class="underline">${domainFormatter(app.source)}</a>` : undefined,
+          icon: source,
+        },
+        {
+          label: "Support",
+          value: app.support_url ? `<a href="${app.support_url}" class="underline">${domainFormatter(app.support_url)}</a>` : undefined,
+          icon: user,
+        },
+        {
+          label: "Donate",
+          value: app.donate_url ? `<a href="${app.donate_url}" class="underline">${domainFormatter(app.donate_url)}</a>` : undefined,
+          icon: heart,
+        },
+        {
+          label: "Translations",
+          value: app.translation_url
+            ? `<a href="${app.translation_url}" class="underline">${domainFormatter(app.translation_url)}</a>`
+            : undefined,
+          icon: globe,
+        },
+      ]}
+    />
+  </section>
+
+  <section class="section flex flex-col gap-4 items-stretch">
+    <h2 class="text-xl text-center mb-4">Reviews</h2>
+
+    {
+      reviews.length > 0 ? (
+        <>
+          {reviews.map((review, index) => (
+            <div>
+              <div class="flex flex-row">
+                <div class="mt-4 mr-4">
+                  <Fragment set:html={IconMap[review.rating]} />
+                </div>
+
+                <div>
+                  <p class="text-lg font-bold">{review.author}</p>
+                  <p class="text-sm text-gray-600">
+                    Reviewed {dateFormatter.format(review.date)} for version {review.version}
+                  </p>
+                  <p>{review.body}</p>
+                </div>
+              </div>
+
+              {index < reviews.length - 1 && <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full" />}
+            </div>
+          ))}
+        </>
+      ) : (
+        <p class="text-center">No reviews yet!</p>
+      )
+    }
+  </section>
+</BaseLayout>

@@ -1,47 +1,37 @@
-# Astro Starter Kit: Minimal
+# OpenStore Web
 
-```sh
-npm create astro@latest -- --template minimal
-```
+The website for the [OpenStore](https://open-store.io/).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Reporting Bugs
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Please report any bugs/features/requests in our [bug tracker](https://gitlab.com/theopenstore/openstore-meta/issues).
 
-## 🚀 Project Structure
+## Translations
 
-Inside of your Astro project, you'll see the following folders and files:
+If you would like to help out with translations head over to the OpenStore
+project on the [Weblate](https://hosted.weblate.org/projects/open-store-io/).
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Donations
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+We rely on donations from generous individuals like you to continue our mission
+of supporting the Ubuntu Touch community. Your contribution can help us improve
+the quality of the OpenStore website & app, add new features, and make them more
+accessible to users around the world. We appreciate any donation, big or small,
+and thank you for your support in helping us to build a better future for mobile
+technology! Donate on [Liberapay](https://liberapay.com/OpenStore/).
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Development
 
-Any static assets, like images, can be placed in the `public/` directory.
+To get setup with development, checkout the
+[openstore-web-dev repo](https://gitlab.com/theopenstore/openstore-web-dev).
 
-## 🧞 Commands
+## License
 
-All commands are run from the root of the project, from a terminal:
+Copyright (C) 2024 [Brian Douglass](http://bhdouglass.com/)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
+by the Free Software Foundation.
 
-## 👀 Want to learn more?
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranties of MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.

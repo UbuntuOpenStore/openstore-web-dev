@@ -1,0 +1,60 @@
+---
+import { SEO } from "astro-seo";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+
+export type Props = {
+  pageTitle: string;
+  title: string;
+  description: string;
+  image?: string;
+  imageAlt?: string;
+  noindex?: boolean;
+};
+
+const { pageTitle, title, description, image, imageAlt, noindex } = Astro.props;
+
+const ogImage = new URL(image ?? "/images/logo.webp", import.meta.env.SITE).href;
+const ogImageAlt = imageAlt || "OpenStore logo";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <SEO
+      title={pageTitle}
+      description={description}
+      noindex={noindex ?? false}
+      openGraph={{
+        basic: {
+          title,
+          type: "website",
+          image: ogImage,
+        },
+        optional: {
+          siteName: "OpenStore",
+          locale: "en_US",
+        },
+        image: {
+          alt: ogImageAlt,
+        },
+      }}
+    />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="icon" href="/images/logo.svg" type="image/svg+xml" />
+
+    <link rel="alternate" href="/rss/updates.xml" type="application/rss+xml" title="RSS feed" />
+
+    {/* TODO json schema */}
+  </head>
+
+  <body class="antialiased text-primary tracking-tight bg-white flex flex-col justify-between h-full">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
