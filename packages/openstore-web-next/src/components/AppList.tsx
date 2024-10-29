@@ -1,7 +1,7 @@
-import type { AppData } from "@/schema";
+import type { SlimAppData } from "@/schema";
 import TopRating from "./TopRating";
 
-const AppList = ({ apps }: { apps: AppData[] }) => {
+const AppList = ({ apps }: { apps: SlimAppData[] }) => {
   return (
     <div class="grid grid-cols-4">
       {

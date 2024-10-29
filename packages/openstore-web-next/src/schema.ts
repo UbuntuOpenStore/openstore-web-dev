@@ -76,3 +76,27 @@ export const DiscoverSchema = z.object({
 });
 
 export type DiscoverData = z.infer<typeof DiscoverSchema>;
+
+export const SlimAppSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  tagline: z.string(),
+  icon: z.string(),
+  nsfw: z.boolean(),
+  ratings: z.object({
+    [RatingType.THUMBS_UP]: z.number(),
+    [RatingType.THUMBS_DOWN]: z.number(),
+    [RatingType.HAPPY]: z.number(),
+    [RatingType.NEUTRAL]: z.number(),
+    [RatingType.BUGGY]: z.number(),
+  }),
+});
+
+export type SlimAppData = z.infer<typeof SlimAppSchema>;
+
+export const AppSearchSchema = z.object({
+  count: z.number(),
+  next: z.string().nullable(),
+  previous: z.string().nullable(),
+  packages: z.array(SlimAppSchema),
+});

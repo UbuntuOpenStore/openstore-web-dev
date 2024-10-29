@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import SearchApps from "@/components/SearchApps";
 ---
 
 <BaseLayout title="OpenStore" pageTitle="Apps | OpenStore" description="The open source app store for Ubuntu Touch">
-  <section class="section h-full">
-    {/* TODO search component */}
+  <section class="section flex-grow">
+    {/* TODO category list on left side (for desktop) */}
+    <SearchApps client:load />
   </section>
 </BaseLayout>

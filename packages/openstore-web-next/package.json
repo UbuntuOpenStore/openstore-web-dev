@@ -26,6 +26,7 @@
     "tailwindcss": "^3.4.14",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.6.3",
+    "use-debounce": "^10.0.4",
     "zod-to-json-schema": "^3.23.3"
   },
   "overrides": {
