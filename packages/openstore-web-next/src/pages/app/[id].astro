@@ -83,7 +83,7 @@ const isProprietary = app.license.toLowerCase() === "proprietary";
       <Fragment set:html={home} />
     </a>
     {app.category && (
-      <div class="ml-1">/ {app.category} {/* TODO link to category */}</div>
+      <div class="ml-1">/ <a href={`/apps/${app.category.toLowerCase().replace('& ', '').replace(/ /g, '-')}`} class="underline">{app.category}</a></div>
     )}
   </section>
 

@@ -1,0 +1,26 @@
+---
+import { CategoriesSchema } from "@/schema";
+
+const response = await fetch("https://open-store.io/api/v3/categories?all=true"); // TODO translations
+const { data } = await response.json();
+const categories = CategoriesSchema.parse(data);
+---
+
+<div class="mx-12 w-96 space-y-2 mb-2">
+  {
+    categories.map((category, index) => (
+      <div>
+        <div class="text-lg flex gap-2 mb-2">
+          <a href={`/apps/${category.slug}`}>
+            <img src={category.icon} alt="" class="h-6 w-6" />
+          </a>
+          <a href={`/apps/${category.slug}`} class="underline">
+            {category.translation}
+          </a>
+        </div>
+
+        <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full" />
+      </div>
+    ))
+  }
+</div>

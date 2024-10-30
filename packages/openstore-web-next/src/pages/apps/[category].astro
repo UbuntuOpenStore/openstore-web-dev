@@ -1,0 +1,39 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import SearchApps from "@/components/SearchApps";
+import CategoryList from "@/components/CategoryList.astro";
+import { CategoriesSchema, type CategoryData } from "@/schema";
+
+export type Props = {
+  category: CategoryData;
+};
+
+export async function getStaticPaths() {
+  const response = await fetch("https://open-store.io/api/v3/categories?all=true"); // TODO translations
+  const { data } = await response.json();
+  const categories = CategoriesSchema.parse(data);
+
+  return categories.map((category) => {
+    return {
+      params: {
+        category: category.slug,
+      },
+      props: {
+        category,
+      },
+    };
+  });
+}
+
+const { category } = Astro.props;
+---
+
+<BaseLayout title="OpenStore" pageTitle="Apps | OpenStore" description="The open source app store for Ubuntu Touch">
+  <section class="flex-grow flex flex-row">
+    <CategoryList />
+
+    <div class="w-full">
+      <SearchApps category={category.category} categoryName={category.translation} client:load />
+    </div>
+  </section>
+</BaseLayout>

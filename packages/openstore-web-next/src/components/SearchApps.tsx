@@ -4,13 +4,17 @@ import { AppSearchSchema, type SlimAppData } from "@/schema";
 import { useDebouncedCallback } from "use-debounce";
 import Pagination from "./Pagination";
 
-const PAGE_SIZE = 28;
+const PAGE_SIZE = 32;
 const DEFAULT_SORT = '-published_date';
 const DEFAULT_TYPE = '';
-const DEFAULT_CATEGORY = '';
-const DEFAULT_CHANNEL = '';
+const DEFAULT_CHANNEL = 'focal';
 
-const SearchApps = () => {
+type Props = {
+  category?: string;
+  categoryName?: string;
+};
+
+const SearchApps = ({ category, categoryName }: Props) => {
   const [page, setPage] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
   const [query, setQuery] = useState({
@@ -18,12 +22,10 @@ const SearchApps = () => {
     search: '',
     sort: DEFAULT_SORT,
     type: DEFAULT_TYPE,
-    category: DEFAULT_CATEGORY,
     channel: DEFAULT_CHANNEL,
   });
   const [apps, setApps] = useState<SlimAppData[]>([]);
   const [loading, setLoading] = useState(false);
-
 
   useMemo(async () => {
     setLoading(true);
@@ -31,7 +33,16 @@ const SearchApps = () => {
 
     // TODO error handling
     const skip = page * PAGE_SIZE;
-    const response = await fetch(`https://open-store.io/api/v4/apps?limit=${PAGE_SIZE}&skip=${skip}&search=${query.search}&sort=${query.sort}&type=${query.type}&category=${query.category}&channel=${query.channel}`);
+    const url = new URL('https://open-store.io/api/v4/apps');
+    url.searchParams.append('limit', PAGE_SIZE.toString());
+    url.searchParams.append('skip', skip.toString());
+    url.searchParams.append('search', query.search);
+    url.searchParams.append('sort', query.sort);
+    url.searchParams.append('type', query.type);
+    url.searchParams.append('category', category ?? '');
+    url.searchParams.append('channel', query.channel);
+
+    const response = await fetch(url);
     const { data } = await response.json();
     const search = AppSearchSchema.parse(data);
 
@@ -59,7 +70,7 @@ const SearchApps = () => {
 
   return (
     <div class="h-full space-y-4">
-      <h1 class="text-4xl">Search Apps</h1>
+      <h1 class="text-4xl">Search {categoryName ?? 'Apps'}</h1>
 
       <input value={query.search} onInput={(e) => debounceSetTerm(e.currentTarget.value)} placeholder="Search" class="block w-full px-6 py-3 text-black bg-white border border-gray-200 rounded-xl placeholder:text-gray-400 sm:text-sm max-w-xs" />
       {/* TODO filtering */}
