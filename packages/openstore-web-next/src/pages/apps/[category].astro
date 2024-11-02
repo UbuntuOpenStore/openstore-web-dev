@@ -2,14 +2,14 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import SearchApps from "@/components/SearchApps";
 import CategoryList from "@/components/CategoryList.astro";
-import { CategoriesSchema, type CategoryData } from "@/schema";
+import { CategoriesSchema, type CategoryData } from "@/lib/schema";
 
 export type Props = {
   category: CategoryData;
 };
 
 export async function getStaticPaths() {
-  const response = await fetch("https://open-store.io/api/v3/categories?all=true"); // TODO translations
+  const response = await fetch(`${import.meta.env.SITE}api/v3/categories?all=true`);
   const { data } = await response.json();
   const categories = CategoriesSchema.parse(data);
 

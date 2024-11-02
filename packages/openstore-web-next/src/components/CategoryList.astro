@@ -1,14 +1,14 @@
 ---
-import { CategoriesSchema } from "@/schema";
+import { CategoriesSchema } from "@/lib/schema";
 
-const response = await fetch("https://open-store.io/api/v3/categories?all=true"); // TODO translations
+const response = await fetch(`${import.meta.env.SITE}/api/v3/categories?all=true`);
 const { data } = await response.json();
 const categories = CategoriesSchema.parse(data);
 ---
 
 <div class="mx-12 w-96 space-y-2 mb-2">
   {
-    categories.map((category, index) => (
+    categories.map((category) => (
       <div>
         <div class="text-lg flex gap-2 mb-2">
           <a href={`/apps/${category.slug}`}>

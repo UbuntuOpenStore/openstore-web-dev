@@ -1,4 +1,4 @@
-import type { SlimAppData } from "@/schema";
+import type { SlimAppData } from "@/lib/schema";
 import TopRating from "./TopRating";
 
 const AppList = ({ apps }: { apps: SlimAppData[] }) => {

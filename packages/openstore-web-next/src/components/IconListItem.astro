@@ -1,0 +1,19 @@
+---
+export type Props = {
+  label: string;
+  value: string;
+};
+
+const { label, value } = Astro.props;
+---
+
+<li class={`flex flex-row pb-2`}>
+  <div class="mt-4 mr-4">
+    <slot />
+  </div>
+
+  <div>
+    <p class="text-lg">{label}</p>
+    <p class="text-gray-600" set:html={value} />
+  </div>
+</li>

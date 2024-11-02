@@ -1,5 +1,5 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import type { DiscoverData } from "@/schema";
+import type { DiscoverData } from "@/lib/schema";
 
 const HighlightedApps = ({ highlights }: { highlights: DiscoverData["highlights"] }) => {
   return (
@@ -8,12 +8,12 @@ const HighlightedApps = ({ highlights }: { highlights: DiscoverData["highlights"
         {
           highlights.map((highlight, index) => (
             <CarouselItem>
-              <div className="relative">
+              <div class="relative">
                 <a href={`/app/${highlight.id}`}>
-                  <img src={highlight.image} alt={highlight.app.name} className="rounded-2xl" loading={index === 0 ? "eager" : "lazy"} />
+                  <img src={highlight.image} alt={highlight.app.name} class="rounded-2xl" loading={index === 0 ? "eager" : "lazy"} />
                 </a>
-                <div className="absolute bottom-0 left-0 bg-black/50 text-white rounded-2xl p-4">
-                  <a href={`/app/${highlight.id}`} className="text-xl underline">
+                <div class="absolute bottom-0 left-0 bg-black/50 text-white rounded-2xl p-4">
+                  <a href={`/app/${highlight.id}`} class="text-xl underline">
                     {highlight.app.name}
                   </a>
                   <p>{highlight.description}</p>
@@ -23,6 +23,8 @@ const HighlightedApps = ({ highlights }: { highlights: DiscoverData["highlights"
           ))
         }
       </CarouselContent>
+
+      {/* TODO use suru icons */}
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>

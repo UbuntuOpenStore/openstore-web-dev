@@ -1,35 +1,40 @@
 ---
 export const prerender = false;
 
+import { AppSchema, ReviewsSchema } from "@/lib/schema";
+import { categorySlug } from "@/lib/utils";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import IconList from "@/components/IconList.astro";
 import CircleIcon from "@/components/CircleIcon.astro";
-import { AppSchema, RatingType, ReviewsSchema } from "@/schema";
+import DownloadDialog from "@/components/DownloadDialog";
+import IconList from "@/components/IconList.astro";
+import IconListItem from "@/components/IconListItem.astro";
+import Review from "@/components/Review.astro";
+import Screenshots from "@/components/Screenshots";
 
-import thumbsUp from "@/assets/icons/thumbs_up.svg?raw";
-import happy from "@/assets/icons/happy.svg?raw";
-import neutral from "@/assets/icons/neutral.svg?raw";
-import thumbsDown from "@/assets/icons/thumbs_down.svg?raw";
-import buggy from "@/assets/icons/buggy.svg?raw";
-import lock from "@/assets/icons/lock.svg?raw";
-import info from "@/assets/icons/info.svg?raw";
-import securityAlert from "@/assets/icons/security-alert.svg?raw";
-import save from "@/assets/icons/save.svg?raw";
-import device from "@/assets/icons/device.svg?raw";
-import globe from "@/assets/icons/globe.svg?raw";
-import date from "@/assets/icons/date.svg?raw";
-import source from "@/assets/icons/source.svg?raw";
-import user from "@/assets/icons/user.svg?raw";
-import community from "@/assets/icons/community.svg?raw";
-import heart from "@/assets/icons/heart.svg?raw";
-import externalLink from "@/assets/icons/external-link.svg?raw";
-import home from "@/assets/icons/home.svg?raw";
+import SvgBuggy from "@/components/icons/Buggy";
+import SvgCommunity from "@/components/icons/Community";
+import SvgDate from "@/components/icons/Date";
+import SvgDevice from "@/components/icons/Device";
+import SvgGlobe from "@/components/icons/Globe";
+import SvgHappy from "@/components/icons/Happy";
+import SvgHeart from "@/components/icons/Heart";
+import SvgInfo from "@/components/icons/Info";
+import SvgLock from "@/components/icons/Lock";
+import SvgNeutral from "@/components/icons/Neutral";
+import SvgSave from "@/components/icons/Save";
+import SvgSecurityAlert from "@/components/icons/SecurityAlert";
+import SvgSource from "@/components/icons/Source";
+import SvgThumbsDown from "@/components/icons/ThumbsDown";
+import SvgThumbsUp from "@/components/icons/ThumbsUp";
+import SvgUser from "@/components/icons/User";
+import SvgExternalLink from "@/components/icons/ExternalLink";
+import SvgHome from "@/components/icons/Home";
 
 const { id } = Astro.params;
 
 const [appResponse, reviewsResponse] = await Promise.all([
-  fetch(`https://open-store.io/api/v4/apps/${id}`),
-  fetch(`https://open-store.io/api/v4/apps/${id}/reviews`),
+  fetch(`${import.meta.env.SITE}api/v4/apps/${id}`),
+  fetch(`${import.meta.env.SITE}api/v4/apps/${id}/reviews`),
 ]);
 
 const [{ data: appData }, { data: reviewsData }] = await Promise.all([appResponse.json(), reviewsResponse.json()]);
@@ -37,15 +42,41 @@ const [{ data: appData }, { data: reviewsData }] = await Promise.all([appRespons
 const app = AppSchema.parse(appData);
 const { reviews } = ReviewsSchema.parse(reviewsData);
 
-const IconMap = {
-  [RatingType.THUMBS_UP]: thumbsUp,
-  [RatingType.HAPPY]: happy,
-  [RatingType.NEUTRAL]: neutral,
-  [RatingType.THUMBS_DOWN]: thumbsDown,
-  [RatingType.BUGGY]: buggy,
+const PERMISSION_LABELS = {
+  accounts: 'Accounts',
+  audio: 'Audio',
+  bluetooth: 'Bluetooth',
+  calendar: 'Calendar',
+  camera: 'Camera',
+  connectivity: 'Connectivity',
+  contacts: 'Contacts',
+  content_exchange_source: 'Content Exchange Source',
+  content_exchange: 'Content Exchange',
+  debug: 'Debug',
+  document_files_read: 'Read Document Files',
+  document_files: 'Document Files',
+  history: 'History',
+  'in-app-purchases': 'In App Purchases',
+  'keep-display-on': 'Keep Display On',
+  location: 'Location',
+  microphone: 'Microphone',
+  music_files_read: 'Read Music Files',
+  music_files: 'Music Files',
+  nfc: 'NFC',
+  networking: 'Networking',
+  picture_files_read: 'Read Picture Files',
+  picture_files: 'Picture Files',
+  'push-notification-client': 'Push Notifications',
+  sensors: 'Sensors',
+  usermetrics: 'User Metrics',
+  video_files_read: 'Read Video Files',
+  video_files: 'Video Files',
+  video: 'Video',
+  webview: 'Webview',
+  unconfined: 'Full System Access',
 };
 
-const restrictedPermissions = new Set([
+const RESTRICTED_PERMISSIONS = new Set([
   "bluetooth",
   "calendar",
   "contacts",
@@ -68,22 +99,25 @@ function domainFormatter(url: string) {
   return new URL(url).host;
 }
 
-const hasRestrictedPermissions = app.permissions.some((permission) => restrictedPermissions.has(permission));
+const hasRestrictedPermissions = app.permissions.some((permission) => RESTRICTED_PERMISSIONS.has(permission)) || app.read_paths.length > 0 || app.write_paths.length > 0;
 const isTrustedApp =
   (app.id.startsWith("com.ubuntu.") && !app.id.startsWith("com.ubuntu.developer.")) ||
   app.id.startsWith("com.canonical.") ||
   app.id.startsWith("ubports.") ||
   app.id.startsWith("openstore.");
 const isProprietary = app.license.toLowerCase() === "proprietary";
+
+const publisherUrl = new URL('/apps/', import.meta.env.SITE);
+publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
 ---
 
 <BaseLayout title={app.name} pageTitle={`${app.name} | OpenStore`} description={app.tagline}>
   <section class="section flex">
     <a href="/">
-      <Fragment set:html={home} />
+      <SvgHome />
     </a>
     {app.category && (
-      <div class="ml-1">/ <a href={`/apps/${app.category.toLowerCase().replace('& ', '').replace(/ /g, '-')}`} class="underline">{app.category}</a></div>
+      <div class="ml-1">/ <a href={`/apps/${categorySlug(app.category)}`} class="underline">{app.category}</a></div>
     )}
   </section>
 
@@ -93,11 +127,22 @@ const isProprietary = app.license.toLowerCase() === "proprietary";
         <img class="rounded-2xl" src={app.icon} alt={app.name} width="128" height="128" loading="eager" />
       </div>
       <div>
-        {/* TODO app type */}
-
         <h1 class="text-4xl">{app.name}</h1>
-        {app.publisher && <p>by {app.publisher}</p>}
-        {/* TODO link to search */}
+        {app.publisher && (
+          <p>
+            by <a href={publisherUrl.toString()} class="underline">{app.publisher}</a>
+          </p>
+        )}
+
+        <div class="mt-1 space-x-4">
+          {app.types.map((type) => (
+            <span class="rounded-lg bg-primary text-white px-2 py-1 text-sm">
+              {type === 'app' && (<>App</>)}
+              {type === 'webapp' && (<>Bookmark</>)}
+              {type === 'webapp+' && (<>Web App</>)}
+            </span>
+          ))}
+        </div>
 
         <p class="mt-4 text-xl">{app.tagline}</p>
       </div>
@@ -108,31 +153,30 @@ const isProprietary = app.license.toLowerCase() === "proprietary";
         >Install</a
       >
 
-      {/* TODO popup download modal - https://ui.shadcn.com/docs/components/dialog */}
-      <button class="btn w-full bg-ubuntu-purple text-white font-bold">Download</button>
+      <DownloadDialog app={app} client:load />
     </div>
   </section>
 
   <section class="section flex justify-center">
     <ul class="flex gap-4">
       <li class="flex gap-2">
-        <Fragment set:html={thumbsUp} />
+        <SvgThumbsUp />
         {app.ratings.THUMBS_UP}
       </li>
       <li class="flex gap-2">
-        <Fragment set:html={happy} />
+        <SvgHappy />
         {app.ratings.HAPPY}
       </li>
       <li class="flex gap-2">
-        <Fragment set:html={neutral} />
+        <SvgNeutral />
         {app.ratings.NEUTRAL}
       </li>
       <li class="flex gap-2">
-        <Fragment set:html={thumbsDown} />
+        <SvgThumbsDown />
         {app.ratings.THUMBS_DOWN}
       </li>
       <li class="flex gap-2">
-        <Fragment set:html={buggy} />
+        <SvgBuggy />
         {app.ratings.BUGGY}
       </li>
     </ul>
@@ -141,20 +185,7 @@ const isProprietary = app.license.toLowerCase() === "proprietary";
   <div class="mx-auto w-full max-w-6xl h-1 bg-ubuntu-gradient rounded-full"></div>
 
   <section class="section">
-    {/* TODO image light box */}
-    <div class="flex gap-4 overflow-x-auto items-end">
-      {/* TODO video link */}
-      {
-        app.screenshots.map((screenshot) => (
-          <img
-            class="max-h-96 max-w-96 h-auto w-auto rounded-2xl block border border-primary"
-            src={screenshot}
-            alt={`Screenshot of ${app.name}`}
-            loading="lazy"
-          />
-        ))
-      }
-    </div>
+    <Screenshots images={app.screenshots} videoUrl={app.video_url} client:idle />
   </section>
 
   <section class="section">
@@ -191,23 +222,39 @@ const isProprietary = app.license.toLowerCase() === "proprietary";
 
       {
         hasRestrictedPermissions && !isTrustedApp ? (
-          <CircleIcon icon={securityAlert} outerClass="bg-yellow-500/70 mb-4" innerClass="bg-yellow-200" />
+          <CircleIcon outerClass="bg-yellow-500/70 mb-4" innerClass="bg-yellow-200">
+            <SvgSecurityAlert />
+          </CircleIcon>
         ) : (
-          <CircleIcon icon={lock} outerClass="bg-green-500/70 mb-4" innerClass="bg-green-200" />
+          <CircleIcon outerClass="bg-green-500/70 mb-4" innerClass="bg-green-200">
+            <SvgLock />
+          </CircleIcon>
         )
       }
 
-      {
-        app.permissions.length > 0 ? (
-          <ul>
-            {app.permissions.map((permission) => (
-              <li>{permission}</li>
-            ))}
-          </ul>
-        ) : (
-          <p class="text-center">No permissions needed</p>
-        )
-      }
+      <ul>
+        {app.permissions.map((permission) => (
+          <li class={`${RESTRICTED_PERMISSIONS.has(permission) ? 'text-red-700' : ''}`}>
+            {PERMISSION_LABELS[permission as keyof typeof PERMISSION_LABELS]}
+          </li>
+        ))}
+
+        {app.write_paths.map((path) => (
+          <li class="text-red-700">
+            Unrestricted write access to: {path}
+          </li>
+        ))}
+
+        {app.read_paths.map((path) => (
+          <li class="text-red-700">
+            Unrestricted read access to: {path}
+          </li>
+        ))}
+      </ul>
+
+      {app.permissions.length === 0 && app.read_paths.length === 0 && app.write_paths.length && (
+        <p class="text-center">No permissions needed</p>
+      )}
     </div>
 
     <div class="card">
@@ -216,7 +263,9 @@ const isProprietary = app.license.toLowerCase() === "proprietary";
           <>
             <h2 class="text-xl text-center mb-4">Proprietary</h2>
 
-            <CircleIcon icon={info} outerClass="bg-yellow-500/70 mb-4" innerClass="bg-yellow-200" />
+            <CircleIcon outerClass="bg-yellow-500/70 mb-4" innerClass="bg-yellow-200">
+              <SvgInfo />
+            </CircleIcon>
 
             <p>
               This app's source code is not available and has not been reviewed by the community. There is no accountability for what this
@@ -227,7 +276,9 @@ const isProprietary = app.license.toLowerCase() === "proprietary";
           <>
             <h2 class="text-xl text-center mb-4">Community Built</h2>
 
-            <CircleIcon icon={community} outerClass="bg-green-500/70 mb-4" innerClass="bg-green-200" />
+            <CircleIcon outerClass="bg-green-500/70 mb-4" innerClass="bg-green-200">
+              <SvgCommunity />
+            </CircleIcon>
 
             <p>
               This app has been released under the {app.license} license.
@@ -236,10 +287,10 @@ const isProprietary = app.license.toLowerCase() === "proprietary";
 
             <div class="text-center">
               {app.source && (
-                <a href={app.source} class="underline">
-                  Get involved
+                <a href={app.source} class="underline">Get involved</a>
+                <a href={app.source} class="inline-block -mb-1">
+                  <SvgExternalLink />
                 </a>
-                <a href={app.source} set:html={externalLink} class="inline-block -mb-1"></a>
               )}
             </div>
           </>
@@ -251,43 +302,63 @@ const isProprietary = app.license.toLowerCase() === "proprietary";
   <section class="section flex flex-col md:flex-row gap-4 items-stretch">
     <IconList
       title="Info"
-      items={[
-        { label: "Published Date", value: dateFormatter.format(app.published_date), icon: date },
-        { label: "Updated Date", value: dateFormatter.format(app.updated_date), icon: date },
-        { label: "Total Downloads", value: numberFormatter.format(app.totalDownloads), icon: save },
-        { label: "Latest Version Downloads", value: numberFormatter.format(app.latestDownloads), icon: save },
-        { label: "Supported Architectures", value: app.architectures.join(", "), icon: device },
-        { label: "Translation Languages", value: app.languages.join(", "), icon: globe },
-      ]}
-    />
+    >
+        <IconListItem label="Published Date" value={dateFormatter.format(app.published_date)}>
+          <SvgDate />
+        </IconListItem>
+
+        <IconListItem label="Updated Date" value={dateFormatter.format(app.updated_date)}>
+          <SvgDate />
+        </IconListItem>
+
+        <IconListItem label="Total Downloads" value={numberFormatter.format(app.totalDownloads)}>
+          <SvgSave />
+        </IconListItem>
+
+        <IconListItem label="Latest Version Downloads" value={numberFormatter.format(app.latestDownloads)}>
+          <SvgSave />
+        </IconListItem>
+
+        <IconListItem label="Supported Architectures" value={app.architectures.join(", ")}>
+          <SvgDevice />
+        </IconListItem>
+
+        <IconListItem label="Translation Languages" value={app.languages.join(", ")}>
+          <SvgGlobe />
+        </IconListItem>
+    </IconList>
 
     <IconList
       title="Links"
-      items={[
-        {
-          label: "Source Code",
-          value: app.source ? `<a href="${app.source}" class="underline">${domainFormatter(app.source)}</a>` : undefined,
-          icon: source,
-        },
-        {
-          label: "Support",
-          value: app.support_url ? `<a href="${app.support_url}" class="underline">${domainFormatter(app.support_url)}</a>` : undefined,
-          icon: user,
-        },
-        {
-          label: "Donate",
-          value: app.donate_url ? `<a href="${app.donate_url}" class="underline">${domainFormatter(app.donate_url)}</a>` : undefined,
-          icon: heart,
-        },
-        {
-          label: "Translations",
-          value: app.translation_url
-            ? `<a href="${app.translation_url}" class="underline">${domainFormatter(app.translation_url)}</a>`
-            : undefined,
-          icon: globe,
-        },
-      ]}
-    />
+    >
+        {app.source && (
+          <IconListItem label="Source Code" value={`<a href="${app.source}" class="underline">${domainFormatter(app.source)}</a>`}>
+            <SvgSource />
+          </IconListItem>
+          )
+        }
+
+        {app.support_url && (
+          <IconListItem label="Support" value={`<a href="${app.support_url}" class="underline">${domainFormatter(app.support_url)}</a>`}>
+            <SvgUser />
+          </IconListItem>
+          )
+        }
+
+        {app.donate_url && (
+          <IconListItem label="Donate" value={`<a href="${app.donate_url}" class="underline">${domainFormatter(app.donate_url)}</a>`}>
+            <SvgHeart />
+          </IconListItem>
+          )
+        }
+
+        {app.translation_url && (
+          <IconListItem label="Translations" value={`<a href="${app.translation_url}" class="underline">${domainFormatter(app.translation_url)}</a>`}>
+            <SvgGlobe />
+          </IconListItem>
+          )
+        }
+    </IconList>
   </section>
 
   <section class="section flex flex-col gap-4 items-stretch">
@@ -298,19 +369,7 @@ const isProprietary = app.license.toLowerCase() === "proprietary";
         <>
           {reviews.map((review, index) => (
             <div>
-              <div class="flex flex-row">
-                <div class="mt-4 mr-4">
-                  <Fragment set:html={IconMap[review.rating]} />
-                </div>
-
-                <div>
-                  <p class="text-lg font-bold">{review.author}</p>
-                  <p class="text-sm text-gray-600">
-                    Reviewed {dateFormatter.format(review.date)} for version {review.version}
-                  </p>
-                  <p>{review.body}</p>
-                </div>
-              </div>
+              <Review review={review} />
 
               {index < reviews.length - 1 && <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full" />}
             </div>

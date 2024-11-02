@@ -1,16 +1,16 @@
-import { type AppData, RatingType } from "@/schema";
-import thumbsUp from "@/assets/icons/thumbs_up.svg?raw";
-import happy from "@/assets/icons/happy.svg?raw";
-import neutral from "@/assets/icons/neutral.svg?raw";
-import thumbsDown from "@/assets/icons/thumbs_down.svg?raw";
-import buggy from "@/assets/icons/buggy.svg?raw";
+import { type AppData, RatingType } from "@/lib/schema";
+import SvgThumbsUp from "@/components/icons/ThumbsUp";
+import SvgNeutral from "@/components/icons/Neutral";
+import SvgHappy from "@/components/icons/Happy";
+import SvgThumbsDown from "@/components/icons/ThumbsDown";
+import SvgBuggy from "@/components/icons/Buggy";
 
-const IconMap = {
-  [RatingType.THUMBS_UP]: thumbsUp,
-  [RatingType.HAPPY]: happy,
-  [RatingType.NEUTRAL]: neutral,
-  [RatingType.THUMBS_DOWN]: thumbsDown,
-  [RatingType.BUGGY]: buggy,
+const ICON_MAP = {
+  [RatingType.THUMBS_UP]: SvgThumbsUp,
+  [RatingType.HAPPY]: SvgHappy,
+  [RatingType.NEUTRAL]: SvgNeutral,
+  [RatingType.THUMBS_DOWN]: SvgThumbsDown,
+  [RatingType.BUGGY]: SvgBuggy,
 };
 
 const TopRating = ({ ratings }: { ratings: AppData["ratings"] }) => {
@@ -25,9 +25,10 @@ const TopRating = ({ ratings }: { ratings: AppData["ratings"] }) => {
   }
 
   if (topRating) {
+    const Icon = ICON_MAP[topRating];
     return (
       <div class="flex gap-2">
-        <div dangerouslySetInnerHTML={{ __html: IconMap[topRating]}} />
+        <Icon />
         {ratingCount}
       </div>
     );

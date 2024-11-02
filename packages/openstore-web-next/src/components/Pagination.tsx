@@ -1,5 +1,5 @@
-import goNext from "@/assets/icons/go-next.svg?raw";
-import goPrevious from "@/assets/icons/go-previous.svg?raw";
+import SvgGoNext from "./icons/GoNext";
+import SvgGoPrevious from "./icons/GoPrevious";
 
 function formatPage(page: number) {
   return page + 1;
@@ -15,7 +15,9 @@ const Pagination = ({ currentPage, totalPages, onPageChanged }: Props) => {
   return (
     <div class="flex gap-4 justify-center">
       {/* TODO styling */}
-      <button disabled={currentPage <= 0} onClick={() => onPageChanged(currentPage - 1)} dangerouslySetInnerHTML={{ __html: goPrevious }} title="Go back a page"></button>
+      <button disabled={currentPage <= 0} onClick={() => onPageChanged(currentPage - 1)} title="Go back a page">
+        <SvgGoPrevious />
+      </button>
 
       {currentPage >= 3 && (<>...</>)}
 
@@ -27,7 +29,9 @@ const Pagination = ({ currentPage, totalPages, onPageChanged }: Props) => {
 
       {currentPage >= 0 && (totalPages - currentPage) >= 3 && (<>...</>)}
 
-      <button disabled={currentPage >= totalPages} onClick={() => onPageChanged(currentPage + 1)} dangerouslySetInnerHTML={{ __html: goNext }} title="Go to the next page"></button>
+      <button disabled={currentPage >= totalPages} onClick={() => onPageChanged(currentPage + 1)} title="Go to the next page">
+        <SvgGoNext />
+      </button>
     </div>
   );
 };

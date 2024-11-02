@@ -3,10 +3,11 @@ export const prerender = false;
 
 import HighlightedApps from "@/components/HighlightedApps.tsx";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { DiscoverSchema } from "../schema";
+import { DEFAULT_CHANNEL, DiscoverSchema } from "../lib/schema";
 import AppList from "@/components/AppList";
+import { categorySlug } from "@/lib/utils";
 
-const discoverResponse = await fetch("https://open-store.io/api/v4/discover?channel=focal");
+const discoverResponse = await fetch(`${import.meta.env.SITE}api/v4/discover?channel=${DEFAULT_CHANNEL}`);
 const discoverData = await discoverResponse.json();
 const { highlights, categories } = DiscoverSchema.parse(discoverData.data);
 ---
@@ -26,16 +27,21 @@ const { highlights, categories } = DiscoverSchema.parse(discoverData.data);
       categories.map((category, index) => (
         <>
           <div class="text-center">
-            {/* TODO category link */}
-            <h2 class="text-2xl">{category.name}</h2>
+            <h2 class="text-2xl">
+              {category.referral ? (
+                <a href={`/apps/${categorySlug(category.referral)}`} class="underline">{category.name}</a>
+              ) : (
+                <>
+                  {category.name}
+                </>
+              )}
+            </h2>
             <p class="mb-4">{category.tagline}</p>
 
             <AppList apps={category.apps} />
           </div>
 
-          {index < categories.length - 1 && (
-            <div class="mx-auto w-full max-w-6xl h-1 bg-ubuntu-gradient rounded-full mb-4" />
-          )}
+          {index < categories.length - 1 && <div class="mx-auto w-full max-w-6xl h-1 bg-ubuntu-gradient rounded-full mb-4" />}
         </>
       ))
     }

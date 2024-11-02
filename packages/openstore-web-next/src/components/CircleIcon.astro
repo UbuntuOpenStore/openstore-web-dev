@@ -1,17 +1,16 @@
 ---
 export type Prop = {
-  icon: string;
   outerClass: string;
   innerClass: string;
 };
 
-const { icon, outerClass, innerClass } = Astro.props;
+const { outerClass, innerClass } = Astro.props;
 ---
 
 <div class="flex justify-center">
   <div class={`${outerClass} rounded-full w-12 h-12 flex justify-center items-center`}>
     <div class={`${innerClass} rounded-full w-8 h-8 flex justify-center items-center`}>
-      <Fragment set:html={icon} />
+      <slot />
     </div>
   </div>
 </div>

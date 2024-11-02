@@ -7,13 +7,16 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "astro check",
+    "convert-icons": "svgr --out-dir src/components/icons/ src/assets/icons/ && sed -i 's/#000/currentColor/g' src/components/icons/* && sed -i 's/gray/currentColor/g' src/components/icons/*"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/node": "^8.3.4",
     "@astrojs/preact": "^3.5.3",
     "@astrojs/tailwind": "^5.1.2",
+    "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.0",
     "astro": "^4.16.7",
     "astro-seo": "^0.8.4",
@@ -35,5 +38,8 @@
   },
   "volta": {
     "node": "22.10.0"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^8.1.0"
   }
 }

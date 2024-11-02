@@ -8,16 +8,35 @@ export enum RatingType {
   BUGGY = 'BUGGY',
 }
 
+export enum Architecture {
+  ALL = 'all',
+  ARMHF = 'armhf',
+  AMD64 = 'amd64',
+  ARM64 = 'arm64',
+}
+
+export enum Channel {
+  FOCAL = 'focal',
+}
+
+export const Channels = Object.values(Channel) as Channel[];
+export const DEFAULT_CHANNEL = Channel.FOCAL;
+
 export const AppSchema = z.object({
   id: z.string(),
   name: z.string(),
   tagline: z.string(),
-  architectures: z.array(z.string()),
+  architectures: z.array(z.nativeEnum(Architecture)),
   category: z.string().nullable(),
   changelog: z.string(),
   channels: z.array(z.string()),
   description: z.string(),
-  // TODO downloads
+  downloads: z.array(z.object({
+    version: z.string(),
+    download_url: z.string().nullable(),
+    channel: z.string(),
+    architecture: z.nativeEnum(Architecture).optional(),
+  })),
   icon: z.string(),
   keywords: z.array(z.string()),
   license: z.string(),
@@ -32,7 +51,12 @@ export const AppSchema = z.object({
   types: z.array(z.string()),
   updated_date: z.coerce.date(),
   languages: z.array(z.string()),
-  // TODO revisions
+  revisions: z.array(z.object({
+    version: z.string(),
+    download_url: z.string().nullable(),
+    channel: z.string(),
+    architecture: z.nativeEnum(Architecture).optional(),
+  })),
   totalDownloads: z.number(),
   latestDownloads: z.number(),
   version: z.string(),
@@ -45,37 +69,26 @@ export const AppSchema = z.object({
   }),
   publisher: z.string().optional(),
   permissions: z.array(z.string()),
+  read_paths: z.array(z.string()),
+  write_paths: z.array(z.string()),
 });
 
 export type AppData = z.infer<typeof AppSchema>;
 
+export const ReviewSchema = z.object({
+  author: z.string(),
+  body: z.string(),
+  version: z.string(),
+  rating: z.nativeEnum(RatingType),
+  date: z.coerce.date(),
+  comment: z.string().nullable(),
+});
+
+export type ReviewData = z.infer<typeof ReviewSchema>;
+
 export const ReviewsSchema = z.object({
-  reviews: z.array(z.object({
-    author: z.string(),
-    body: z.string(),
-    version: z.string(),
-    rating: z.nativeEnum(RatingType),
-    date: z.coerce.date(),
-    comment: z.string().nullable(),
-  })),
+  reviews: z.array(ReviewSchema),
 });
-
-export const DiscoverSchema = z.object({
-  highlights: z.array(z.object({
-    id: z.string(),
-    image: z.string(),
-    description: z.string(),
-    app: AppSchema,
-  })),
-  categories: z.array(z.object({
-    name: z.string(),
-    tagline: z.string(),
-    referral: z.string(),
-    apps: z.array(AppSchema),
-  }))
-});
-
-export type DiscoverData = z.infer<typeof DiscoverSchema>;
 
 export const SlimAppSchema = z.object({
   id: z.string(),
@@ -93,6 +106,23 @@ export const SlimAppSchema = z.object({
 });
 
 export type SlimAppData = z.infer<typeof SlimAppSchema>;
+
+export const DiscoverSchema = z.object({
+  highlights: z.array(z.object({
+    id: z.string(),
+    image: z.string(),
+    description: z.string(),
+    app: SlimAppSchema,
+  })),
+  categories: z.array(z.object({
+    name: z.string(),
+    tagline: z.string(),
+    referral: z.string(),
+    apps: z.array(SlimAppSchema),
+  }))
+});
+
+export type DiscoverData = z.infer<typeof DiscoverSchema>;
 
 export const AppSearchSchema = z.object({
   count: z.number(),

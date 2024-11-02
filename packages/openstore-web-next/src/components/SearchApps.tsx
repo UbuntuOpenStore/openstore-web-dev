@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from "preact/hooks";
 import AppList from "./AppList";
-import { AppSearchSchema, type SlimAppData } from "@/schema";
+import { AppSearchSchema, type SlimAppData } from "@/lib/schema";
 import { useDebouncedCallback } from "use-debounce";
 import Pagination from "./Pagination";
 
@@ -33,7 +33,7 @@ const SearchApps = ({ category, categoryName }: Props) => {
 
     // TODO error handling
     const skip = page * PAGE_SIZE;
-    const url = new URL('https://open-store.io/api/v4/apps');
+    const url = new URL(`${import.meta.env.SITE}api/v4/apps`);
     url.searchParams.append('limit', PAGE_SIZE.toString());
     url.searchParams.append('skip', skip.toString());
     url.searchParams.append('search', query.search);
@@ -82,7 +82,10 @@ const SearchApps = ({ category, categoryName }: Props) => {
           {apps.length > 0 ? (
             <>
               <AppList apps={apps} />
-              <Pagination currentPage={page} totalPages={totalPages} onPageChanged={(p) => setPageWrapper(p)} />
+
+              {totalPages > 1 && (
+                <Pagination currentPage={page} totalPages={totalPages} onPageChanged={(p) => setPageWrapper(p)} />
+              )}
             </>
           ) : (
             <div class="h-full">TODO no apps...</div>

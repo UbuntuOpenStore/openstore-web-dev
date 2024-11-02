@@ -1,35 +1,14 @@
 ---
-type Item = {
-  icon: string;
-  label: string;
-  value?: string;
-};
-
 export type Props = {
   title: string;
-  items: Item[];
 };
 
-const { title, items } = Astro.props;
-const filteredItems = items.filter((item) => item.value);
+const { title } = Astro.props;
 ---
 
 <div class="card">
   <h2 class="text-xl text-center mb-4">{title}</h2>
   <ul>
-    {
-      filteredItems.map(({ icon, label, value }, index) => (
-        <li class={`${index === filteredItems.length - 1 ? "" : "border-b-white border-b-[1px] pb-2"} flex flex-row`}>
-          <div class="mt-4 mr-4">
-            <Fragment set:html={icon} />
-          </div>
-
-          <div>
-            <p class="text-lg">{label}</p>
-            <p class="text-gray-600" set:html={value} />
-          </div>
-        </li>
-      ))
-    }
+    <slot />
   </ul>
 </div>
