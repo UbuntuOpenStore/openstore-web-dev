@@ -1,0 +1,23 @@
+{
+  "svgoConfig": {
+    "plugins": [
+      {
+        "name": "preset-default",
+        "params": {
+          "overrides": {
+            "removeViewBox": false
+          }
+        }
+      }
+    ]
+  },
+  "replaceAttrValues": {
+    "#808080": "currentColor",
+    "gray": "currentColor",
+    "#000000": "currentColor",
+    "#000": "currentColor"
+  },
+  "index": false,
+  "jsxRuntime": "automatic",
+  "typescript": true
+}
