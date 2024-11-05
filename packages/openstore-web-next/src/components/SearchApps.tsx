@@ -1,8 +1,10 @@
-import { useCallback, useMemo, useState } from "preact/hooks";
+import { useCallback, useEffect, useMemo, useState } from "preact/hooks";
 import AppList from "./AppList";
 import { AppSearchSchema, type SlimAppData } from "@/lib/schema";
-import { useDebouncedCallback } from "use-debounce";
 import Pagination from "./Pagination";
+import SvgSpinner from "./icons/Spinner";
+import { useStore } from "@nanostores/preact";
+import { searchTerm } from "@/stores";
 
 const PAGE_SIZE = 32;
 const DEFAULT_SORT = '-published_date';
@@ -15,50 +17,85 @@ type Props = {
 };
 
 const SearchApps = ({ category, categoryName }: Props) => {
-  const [page, setPage] = useState(0);
+  const hash = new URLSearchParams(document.location.hash.substring(1));
+  const hashPage = parseInt(hash.get('page') ?? '0');
+
+  const term = useStore(searchTerm);
+  const [page, setPage] = useState(isNaN(hashPage) ? 0 : hashPage);
   const [totalPages, setTotalPages] = useState(0);
   const [query, setQuery] = useState({
-    // TODO load state from url for default
     search: '',
-    sort: DEFAULT_SORT,
-    type: DEFAULT_TYPE,
-    channel: DEFAULT_CHANNEL,
+    sort: hash.get('sort') ?? DEFAULT_SORT,
+    type: hash.get('type') ?? DEFAULT_TYPE,
+    channel: hash.get('channel') ?? DEFAULT_CHANNEL,
   });
   const [apps, setApps] = useState<SlimAppData[]>([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    // Update the query when the term changes
+
+    if (term != query.search) {
+      setQuery((previous) => ({
+        ...previous,
+        sort: term === '' ? DEFAULT_SORT : 'relevance',
+        search: term,
+      }));
+      setPage(0);
+    }
+  }, [term, query]);
 
   useMemo(async () => {
     setLoading(true);
-    // TODO state in url
 
-    // TODO error handling
     const skip = page * PAGE_SIZE;
     const url = new URL(`${import.meta.env.SITE}api/v4/apps`);
     url.searchParams.append('limit', PAGE_SIZE.toString());
     url.searchParams.append('skip', skip.toString());
-    url.searchParams.append('search', query.search);
+    url.searchParams.append('search', term);
     url.searchParams.append('sort', query.sort);
     url.searchParams.append('type', query.type);
     url.searchParams.append('category', category ?? '');
     url.searchParams.append('channel', query.channel);
 
-    const response = await fetch(url);
-    const { data } = await response.json();
-    const search = AppSearchSchema.parse(data);
+    const updateHash = new URLSearchParams();
+    if (term) {
+      updateHash.append('search', term);
+    }
+    if (query.sort !== DEFAULT_SORT) {
+      updateHash.append('sort', query.sort);
+    }
+    if (query.type !== DEFAULT_TYPE) {
+      updateHash.append('type', query.type);
+    }
+    if (category) {
+      updateHash.append('category', category);
+    }
+    if (query.channel !== DEFAULT_CHANNEL) {
+      updateHash.append('channel', query.channel);
+    }
+    if (page > 0) {
+      updateHash.append('page', page.toString());
+    }
 
-    setApps(search.packages);
-    setTotalPages(Math.ceil(data.count / PAGE_SIZE) - 1);
+    document.location.hash = updateHash.size > 0 ? `#${updateHash.toString()}` : '';
+
+    try {
+      const response = await fetch(url);
+      const { data } = await response.json();
+      const search = AppSearchSchema.parse(data);
+
+      setApps(search.packages);
+      setTotalPages(Math.ceil(data.count / PAGE_SIZE) - 1);
+    }
+    catch (err) {
+      // TODO sentry
+      setError(true);
+    }
+
     setLoading(false);
   }, [query, page]);
-
-  const debounceSetTerm = useDebouncedCallback((search: string) => {
-    setQuery((previous) => ({
-      ...previous,
-      sort: 'relevance',
-      search,
-    }));
-    setPage(0);
-  }, 300);
 
   const setPageWrapper = useCallback((update: number) => {
     if (update < 0) {
@@ -72,26 +109,38 @@ const SearchApps = ({ category, categoryName }: Props) => {
     <div class="h-full space-y-4">
       <h1 class="text-4xl">Search {categoryName ?? 'Apps'}</h1>
 
-      <input value={query.search} onInput={(e) => debounceSetTerm(e.currentTarget.value)} placeholder="Search" class="block w-full px-6 py-3 text-black bg-white border border-gray-200 rounded-xl placeholder:text-gray-400 sm:text-sm max-w-xs" />
       {/* TODO filtering */}
 
-      {loading ? (
-        <div class="h-full">TODO loading...</div>
+      {error ? (
+        <div class="h-full text-2xl text-red">
+          There was an error loading the app list. Please try again later.
+        </div>
       ) : (
         <>
-          {apps.length > 0 ? (
+          {loading ? (
+            <div class="h-full">
+              <SvgSpinner class="animate-spin w-12 h-12 text-ubuntu-purple mx-auto" />
+            </div>
+          ) : (
             <>
-              <AppList apps={apps} />
+              {apps.length > 0 ? (
+                <>
+                  <AppList apps={apps} />
 
-              {totalPages > 1 && (
-                <Pagination currentPage={page} totalPages={totalPages} onPageChanged={(p) => setPageWrapper(p)} />
+                  {totalPages > 1 && (
+                    <Pagination currentPage={page} totalPages={totalPages} onPageChanged={(p) => setPageWrapper(p)} />
+                  )}
+                </>
+              ) : (
+                <div class="h-full text-2xl">
+                  No apps found
+                </div>
               )}
             </>
-          ) : (
-            <div class="h-full">TODO no apps...</div>
           )}
         </>
       )}
+
     </div>
   );
 };

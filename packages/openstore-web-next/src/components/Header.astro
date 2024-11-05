@@ -1,42 +1,47 @@
-<header
-  class="sticky top-0 z-40 flex-none mx-auto w-full bg-primary mb-6"
-  id="header"
->
+---
+import SvgNavigationMenu from "./icons/NavigationMenu";
+import SearchBar from "./SearchBar";
+---
+
+<header class="sticky top-0 z-40 flex-none mx-auto w-full bg-primary mb-6" id="header">
   <div class="py-3 px-3 mx-auto w-full md:flex md:justify-between max-w-6xl md:px-4 text-slate-200">
     <div class="flex justify-between">
       <a class="flex items-center" href="/">
         <img id="logo" src="/images/logo.svg" alt="OpenStore Logo" width="32" height="32" class="mr-1" />
         OpenStore
       </a>
+
+      <div class="flex items-center md:hidden">
+        <button
+          type="button"
+          class="ml-1.5 text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-2xl text-sm p-2.5 inline-flex items-center transition"
+          aria-label="Toggle Menu"
+          data-toggle-menu
+        >
+          <SvgNavigationMenu />
+        </button>
+      </div>
     </div>
 
-    {/* TODO search bar */}
-
-    {/* TODO mobile menu */}
     <nav
       class="items-center w-full md:w-auto hidden md:flex text-slate-200 h-[calc(100vh-100px)] md:h-auto overflow-y-auto md:overflow-visible"
       aria-label="Main navigation"
     >
-      <ul class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base">
+      <ul class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base h-full">
+        <li class="mr-4 text-black">
+          <SearchBar client:only />
+        </li>
+
         <li>
-          <a
-            class="font-medium hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href="/submit/"
-          >
+          <a class="font-medium hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/submit/">
             Submit
           </a>
         </li>
         <li>
-          <a
-            class="font-medium hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href="/apps/">Browse</a
-          >
+          <a class="font-medium hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/apps/">Browse</a>
         </li>
         <li>
-          <a
-            class="font-medium hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href="/about/">About</a
-          >
+          <a class="font-medium hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/about/">About</a>
         </li>
 
         {/* TODO login/out */}

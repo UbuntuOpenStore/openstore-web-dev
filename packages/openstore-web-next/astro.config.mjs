@@ -6,7 +6,7 @@ import preact from '@astrojs/preact';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://open-store.io/', // TODO local env & use this to query the api
+  site: 'https://open-store.io/', // TODO local env
   integrations: [tailwind({applyBaseStyles: false}), preact({ compat: true })],
   output: "hybrid",
   adapter: node({

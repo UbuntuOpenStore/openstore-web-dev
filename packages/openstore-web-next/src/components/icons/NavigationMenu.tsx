@@ -13,6 +13,20 @@ const SvgNavigationMenu = (props: SVGProps<SVGSVGElement>) => (
       }}
     >
       <path
+        d="M-438.002 345.362h96.038v96h-96.038z"
+        style={{
+          color: "currentColor",
+          display: "inline",
+          overflow: "visible",
+          visibility: "visible",
+          fill: "none",
+          stroke: "none",
+          strokeWidth: 4,
+          marker: "none",
+        }}
+        transform="matrix(0 .9996 -1 0 441.362 437.83)"
+      />
+      <path
         d="M416.994 429.362h-4.001v-72h4.001zM391.984 429.362h-4.001v-72h4.001zM366.974 429.362h-4.001v-72h4.001z"
         style={{
           color: "currentColor",

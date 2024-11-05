@@ -56,5 +56,18 @@ const ogImageAlt = imageAlt || "OpenStore logo";
     <Header />
     <slot />
     <Footer />
+
+    <script is:inline>
+      window.onload = function () {
+        const menu = document.querySelector("[data-toggle-menu]");
+
+        menu.addEventListener('click', () => {
+          menu.classList.toggle("expanded");
+          document.body.classList.toggle("overflow-hidden");
+          document.getElementById("header")?.classList.toggle("h-screen");
+          document.querySelector("#header nav")?.classList.toggle("hidden");
+        }, false);
+      };
+    </script>
   </body>
 </html>

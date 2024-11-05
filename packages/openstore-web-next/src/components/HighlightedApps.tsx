@@ -24,7 +24,6 @@ const HighlightedApps = ({ highlights }: { highlights: DiscoverData["highlights"
         }
       </CarouselContent>
 
-      {/* TODO use suru icons */}
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>

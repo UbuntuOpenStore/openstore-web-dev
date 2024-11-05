@@ -33,7 +33,7 @@ const { category } = Astro.props;
     <CategoryList />
 
     <div class="w-full">
-      <SearchApps category={category.category} categoryName={category.translation} client:load />
+      <SearchApps category={category.category} categoryName={category.translation} client:only />
     </div>
   </section>
 </BaseLayout>

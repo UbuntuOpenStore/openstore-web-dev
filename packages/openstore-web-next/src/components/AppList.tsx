@@ -3,7 +3,7 @@ import TopRating from "./TopRating";
 
 const AppList = ({ apps }: { apps: SlimAppData[] }) => {
   return (
-    <div class="grid grid-cols-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
       {
         apps.map((app) => (
           <div class="flex flex-row gap-4 max-w-xl mb-4 p-4">
