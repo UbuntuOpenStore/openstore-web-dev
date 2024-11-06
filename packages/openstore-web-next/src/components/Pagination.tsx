@@ -5,6 +5,10 @@ function formatPage(page: number) {
   return page + 1;
 }
 
+function buttonTitle(page: number) {
+  return `Go to page ${formatPage(page)}`;
+}
+
 type Props = {
   currentPage: number;
   totalPages: number;
@@ -14,22 +18,21 @@ type Props = {
 const Pagination = ({ currentPage, totalPages, onPageChanged }: Props) => {
   return (
     <div class="flex gap-4 justify-center">
-      {/* TODO styling */}
-      <button disabled={currentPage <= 0} onClick={() => onPageChanged(currentPage - 1)} title="Go back a page">
+      <button disabled={currentPage <= 0} class={`${currentPage <= 0 ? 'text-gray-400' : ''}`} onClick={() => onPageChanged(currentPage - 1)} title="Go back a page">
         <SvgGoPrevious />
       </button>
 
       {currentPage >= 3 && (<>...</>)}
 
-      {currentPage >= 2 && (<button onClick={() => onPageChanged(currentPage - 2)}>{formatPage(currentPage - 2)}</button>)}
-      {currentPage >= 1 && (<button onClick={() => onPageChanged(currentPage - 1)}>{formatPage(currentPage - 1)}</button>)}
-      <button onClick={() => onPageChanged(currentPage)}>{formatPage(currentPage)}</button>
-      {currentPage >= 0 && (totalPages - currentPage) >= 1 && (<button onClick={() => onPageChanged(currentPage + 1)}>{formatPage(currentPage + 1)}</button>)}
-      {currentPage >= 0 && (totalPages - currentPage) >= 2 && (<button onClick={() => onPageChanged(currentPage + 2)}>{formatPage(currentPage + 2)}</button>)}
+      {currentPage >= 2 && (<button class="underline" title={buttonTitle(currentPage - 2)} onClick={() => onPageChanged(currentPage - 2)}>{formatPage(currentPage - 2)}</button>)}
+      {currentPage >= 1 && (<button class="underline" title={buttonTitle(currentPage - 1)} onClick={() => onPageChanged(currentPage - 1)}>{formatPage(currentPage - 1)}</button>)}
+      <button class="underline" title={buttonTitle(currentPage)} onClick={() => onPageChanged(currentPage)}>{formatPage(currentPage)}</button>
+      {currentPage >= 0 && (totalPages - currentPage) >= 1 && (<button class="underline" title={buttonTitle(currentPage + 1)} onClick={() => onPageChanged(currentPage + 1)}>{formatPage(currentPage + 1)}</button>)}
+      {currentPage >= 0 && (totalPages - currentPage) >= 2 && (<button class="underline" title={buttonTitle(currentPage + 2)} onClick={() => onPageChanged(currentPage + 2)}>{formatPage(currentPage + 2)}</button>)}
 
-      {currentPage >= 0 && (totalPages - currentPage) >= 3 && (<>...</>)}
+      {currentPage >= 0 && (totalPages - currentPage) >= 3 && (<span class="text-gray-400">...</span>)}
 
-      <button disabled={currentPage >= totalPages} onClick={() => onPageChanged(currentPage + 1)} title="Go to the next page">
+      <button disabled={currentPage >= totalPages} class={`${currentPage >= totalPages ? 'text-gray-400' : ''}`} onClick={() => onPageChanged(currentPage + 1)} title="Go to the next page">
         <SvgGoNext />
       </button>
     </div>

@@ -1,5 +1,6 @@
 import type { SlimAppData } from "@/lib/schema";
 import TopRating from "./TopRating";
+import AppTypeBadges from "./AppTypeBadges";
 
 const AppList = ({ apps }: { apps: SlimAppData[] }) => {
   return (
@@ -20,6 +21,8 @@ const AppList = ({ apps }: { apps: SlimAppData[] }) => {
               </h1>
 
               <TopRating ratings={app.ratings} />
+
+              <AppTypeBadges types={app.types} />
             </div>
           </div>
         ))

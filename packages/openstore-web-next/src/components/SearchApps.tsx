@@ -1,15 +1,30 @@
 import { useCallback, useEffect, useMemo, useState } from "preact/hooks";
 import AppList from "./AppList";
-import { AppSearchSchema, type SlimAppData } from "@/lib/schema";
+import { AppSearchSchema, AppType, type SlimAppData } from "@/lib/schema";
 import Pagination from "./Pagination";
 import SvgSpinner from "./icons/Spinner";
 import { useStore } from "@nanostores/preact";
 import { searchTerm } from "@/stores";
+import FilterDialog from "./FilterDialog";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { Button } from "./ui/button";
 
 const PAGE_SIZE = 32;
 const DEFAULT_SORT = '-published_date';
 const DEFAULT_TYPE = '';
 const DEFAULT_CHANNEL = 'focal';
+
+const SORT_OPTIONS = [
+  { value: "relevance", label: "Relevance" },
+  { value: "-calculated_rating", label: "Most Popular" },
+  { value: "calculated_rating", label: "Least Popular" },
+  { value: "name", label: "Title (A-Z)" },
+  { value: "-name", label: "Title (Z-A)" },
+  { value: "-published_date", label: "Newest" },
+  { value: "published_date", label: "Oldest" },
+  { value: "-updated_date", label: "Latest Update" },
+  { value: "updated_date", label: "Oldest Update" },
+];
 
 type Props = {
   category?: string;
@@ -90,6 +105,7 @@ const SearchApps = ({ category, categoryName }: Props) => {
       setTotalPages(Math.ceil(data.count / PAGE_SIZE) - 1);
     }
     catch (err) {
+      console.error(err);
       // TODO sentry
       setError(true);
     }
@@ -105,11 +121,52 @@ const SearchApps = ({ category, categoryName }: Props) => {
     setPage(update);
   }, []);
 
-  return (
-    <div class="h-full space-y-4">
-      <h1 class="text-4xl">Search {categoryName ?? 'Apps'}</h1>
+  const setSort = useCallback((value: string) => {
+    setQuery((previous) => ({ ...previous, sort: value}));
+  }, []);
 
-      {/* TODO filtering */}
+  const setType = useCallback((value: AppType | '') => {
+    setQuery((previous) => ({ ...previous, type: value}));
+  }, []);
+
+  return (
+    <div class="h-full space-y-4 mb-4">
+      <div class="flex justify-between">
+        <div class="flex">
+          <h1 class="text-4xl">
+            Search{" "}
+
+            {query.type === AppType.APP && (<>Apps</>)}
+            {query.type === AppType.BOOKMARK && (<>Bookmarks</>)}
+            {query.type === AppType.WEBAPP && (<>Web Apps</>)}
+
+            {categoryName && (
+              <>{" "}in {categoryName}</>
+            )}
+          </h1>
+
+          <FilterDialog type={query.type as AppType | ''} onChange={setType} />
+        </div>
+
+        <div class="mr-4">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="w-full md:w-auto">
+                Sort by: {SORT_OPTIONS.find((option) => option.value === query.sort)!.label}
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56">
+              <DropdownMenuLabel>Sort Options</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              {SORT_OPTIONS.map((option) => (
+                <DropdownMenuItem key={option.value} onClick={() => setSort(option.value)}>
+                  {option.label}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+      </div>
 
       {error ? (
         <div class="h-full text-2xl text-red">

@@ -29,6 +29,7 @@ import SvgThumbsUp from "@/components/icons/ThumbsUp";
 import SvgUser from "@/components/icons/User";
 import SvgExternalLink from "@/components/icons/ExternalLink";
 import SvgHome from "@/components/icons/Home";
+import AppTypeBadges from "@/components/AppTypeBadges";
 
 const { id } = Astro.params;
 
@@ -134,15 +135,7 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
           </p>
         )}
 
-        <div class="mt-1 space-x-4">
-          {app.types.map((type) => (
-            <span class="rounded-lg bg-primary text-white px-2 py-1 text-sm">
-              {type === 'app' && (<>App</>)}
-              {type === 'webapp' && (<>Bookmark</>)}
-              {type === 'webapp+' && (<>Web App</>)}
-            </span>
-          ))}
-        </div>
+        <AppTypeBadges types={app.types} />
 
         <p class="mt-4 text-xl">{app.tagline}</p>
       </div>

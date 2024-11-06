@@ -19,6 +19,12 @@ export enum Channel {
   FOCAL = 'focal',
 }
 
+export enum AppType {
+  APP = 'app',
+  BOOKMARK = 'webapp',
+  WEBAPP = 'webapp+',
+};
+
 export const Channels = Object.values(Channel) as Channel[];
 export const DEFAULT_CHANNEL = Channel.FOCAL;
 
@@ -96,6 +102,7 @@ export const SlimAppSchema = z.object({
   tagline: z.string(),
   icon: z.string(),
   nsfw: z.boolean(),
+  types: z.array(z.string()),
   ratings: z.object({
     [RatingType.THUMBS_UP]: z.number(),
     [RatingType.THUMBS_DOWN]: z.number(),
