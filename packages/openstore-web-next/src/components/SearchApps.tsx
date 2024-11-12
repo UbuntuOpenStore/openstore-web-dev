@@ -133,7 +133,7 @@ const SearchApps = ({ category, categoryName }: Props) => {
     <div class="h-full space-y-4 mb-4">
       <div class="flex justify-between">
         <div class="flex">
-          <h1 class="text-4xl">
+          <h1 class="text-4xl ml-4">
             Search{" "}
 
             {query.type === AppType.APP && (<>Apps</>)}
@@ -155,7 +155,7 @@ const SearchApps = ({ category, categoryName }: Props) => {
                 Sort by: {SORT_OPTIONS.find((option) => option.value === query.sort)!.label}
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56">
+            <DropdownMenuContent className="w-56 mr-4">
               <DropdownMenuLabel>Sort Options</DropdownMenuLabel>
               <DropdownMenuSeparator />
               {SORT_OPTIONS.map((option) => (

@@ -1,12 +1,17 @@
 ---
 import { CategoriesSchema } from "@/lib/schema";
+import { cn } from "@/lib/utils";
+
+export type Props = {
+  class?: string;
+};
 
 const response = await fetch(`${import.meta.env.SITE}/api/v3/categories?all=true`);
 const { data } = await response.json();
 const categories = CategoriesSchema.parse(data);
 ---
 
-<div class="mx-12 w-96 space-y-2 mb-2">
+<div class={cn("space-y-2", Astro.props.class)}>
   {
     categories.map((category) => (
       <div>

@@ -22,7 +22,7 @@ const { highlights, categories } = DiscoverSchema.parse(discoverData.data);
     <HighlightedApps highlights={highlights} client:load />
   </section>
 
-  <section class="section space-x-4">
+  <section class="section">
     {
       categories.map((category, index) => (
         <>
