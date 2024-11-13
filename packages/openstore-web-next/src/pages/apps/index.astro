@@ -9,7 +9,7 @@ import CategoryList from "@/components/CategoryList.astro";
     <CategoryList class="mx-12 w-96 mb-2 hidden md:block" />
 
     <div class="w-full">
-      <SearchApps client:only />
+      <SearchApps client:only="preact" />
     </div>
   </section>
 </BaseLayout>

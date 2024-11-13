@@ -8,6 +8,7 @@ import { searchTerm } from "@/stores";
 import FilterDialog from "./FilterDialog";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
+import * as Sentry from "@sentry/astro";
 
 const PAGE_SIZE = 32;
 const DEFAULT_SORT = '-published_date';
@@ -106,7 +107,8 @@ const SearchApps = ({ category, categoryName }: Props) => {
     }
     catch (err) {
       console.error(err);
-      // TODO sentry
+      Sentry.captureException(err);
+
       setError(true);
     }
 

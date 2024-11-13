@@ -33,7 +33,7 @@ const { category } = Astro.props;
     <CategoryList class="mx-12 w-96 mb-2 hidden md:block" />
 
     <div class="w-full">
-      <SearchApps category={category.category} categoryName={category.translation} client:only />
+      <SearchApps category={category.category} categoryName={category.translation} client:only="preact" />
     </div>
   </section>
 </BaseLayout>
