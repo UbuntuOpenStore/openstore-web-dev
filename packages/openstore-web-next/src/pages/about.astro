@@ -1,4 +1,5 @@
 ---
+import CopyToClipboard from "@/components/CopyToClipboard";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
@@ -39,8 +40,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
       <li>Navigate to the downloads folder</li>
       <li>
         Run the command:
-        {/* TODO copy to clipboard */}
-        <code> pkcon install-local --allow-untrusted openstore.openstore-team_latest_armhf.click </code>
+
+        <CopyToClipboard client:idle code="pkcon install-local --allow-untrusted openstore.openstore-team_latest_armhf.click" />
       </li>
     </ol>
   </section>
@@ -139,7 +140,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
         <li>
           <a href="/telegram" class="underline" target="_blank">
             And many amazing developers, testers, and users from the OpenStore community!
-            </a>
+          </a>
         </li>
       </ul>
     </div>

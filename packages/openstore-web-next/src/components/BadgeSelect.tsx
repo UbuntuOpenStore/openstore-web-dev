@@ -1,4 +1,5 @@
 import { useState } from "preact/hooks";
+import CopyToClipboard from "./CopyToClipboard";
 
 const LANGUAGES = [
   { code: "en_US", label: "English" },
@@ -48,7 +49,7 @@ const BadgeSelect = ({ appId }: { appId?: string }) => {
       </div>
 
       <div class="flex flex-row text-center">
-        <div class="w-full space-y-4">
+        <div class="w-full space-y-4 mx-4">
           <h2 class="text-2xl">PNG</h2>
 
           {appId ? (
@@ -58,15 +59,15 @@ const BadgeSelect = ({ appId }: { appId?: string }) => {
               </a>
 
               <h3 class="text-xl">HTML</h3>
-              <code>{pngHtml}</code>
+              <CopyToClipboard code={pngHtml} />
 
               <h3 class="text-xl">Markdown</h3>
-              <code>{pngMarkdown}</code>
+              <CopyToClipboard code={pngMarkdown} />
             </>
           ) : (
             <>
               <img class="h-12 inline-block" src={pngUrl} alt="OpenStore" />
-              <code class="block">{pngUrl}</code>
+              <CopyToClipboard code={pngUrl} />
             </>
           )}
         </div>
@@ -81,15 +82,15 @@ const BadgeSelect = ({ appId }: { appId?: string }) => {
               </a>
 
               <h3 class="text-xl">HTML</h3>
-              <code>{svgHtml}</code>
+              <CopyToClipboard code={svgHtml} />
 
               <h3 class="text-xl">Markdown</h3>
-              <code>{svgMarkdown}</code>
+              <CopyToClipboard code={svgMarkdown} />
             </>
           ) : (
             <>
               <img class="h-12 inline-block" src={svgUrl} alt="OpenStore" />
-              <code class="block">{svgUrl}</code>
+              <CopyToClipboard code={svgUrl} />
             </>
           )}
         </div>
