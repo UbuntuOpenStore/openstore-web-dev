@@ -113,19 +113,20 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
 ---
 
 <BaseLayout title={app.name} pageTitle={`${app.name} | OpenStore`} description={app.tagline}>
-  <section class="section flex">
-    <a href="/">
-      <SvgHome />
-    </a>
-    {app.category && (
+  {app.category && (
+    <section class="section flex">
+      <a href="/">
+        <SvgHome />
+      </a>
+
       <div class="ml-1">/ <a href={`/apps/${categorySlug(app.category)}`} class="underline">{app.category}</a></div>
-    )}
-  </section>
+    </section>
+  )}
 
   <section class="flex flex-col md:flex-row justify-between section">
     <div class="flex flex-row gap-4 max-w-xl mb-4 md:mb-0">
       <div>
-        <img class="rounded-2xl" src={app.icon} alt={app.name} width="128" height="128" loading="eager" />
+        <img class="rounded-2xl" src={app.icon} alt={app.name} width="128" height="128" loading="eager" style={`view-transition-name: app-${app.id.replace(/\./g, '-')}`} />
       </div>
       <div>
         <h1 class="text-4xl">{app.name}</h1>

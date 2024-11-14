@@ -133,9 +133,9 @@ const SearchApps = ({ category, categoryName }: Props) => {
 
   return (
     <div class="h-full space-y-4 mb-4">
-      <div class="flex justify-between">
-        <div class="flex">
-          <h1 class="text-4xl ml-4">
+      <div class="flex justify-between flex-col md:flex-row">
+        <div class="flex mx-4">
+          <h1 class="text-4xl">
             Search{" "}
 
             {query.type === AppType.APP && (<>Apps</>)}
@@ -150,7 +150,7 @@ const SearchApps = ({ category, categoryName }: Props) => {
           <FilterDialog type={query.type as AppType | ''} onChange={setType} />
         </div>
 
-        <div class="mr-4">
+        <div class="mx-4">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" className="w-full md:w-auto">

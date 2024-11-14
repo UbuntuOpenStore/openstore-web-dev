@@ -10,7 +10,7 @@ const AppList = ({ apps }: { apps: SlimAppData[] }) => {
           <div class="flex flex-row gap-4 max-w-xl mb-4 p-4">
             <div>
               <a href={`/app/${app.id}`}>
-                <img class="rounded-2xl" src={app.icon} alt={app.name} width="64" height="64" loading="eager" />
+                <img class="rounded-2xl" src={app.icon} alt={app.name} width="64" height="64" loading="eager" style={`view-transition-name: app-${app.id.replace(/\./g, '-')}`} />
               </a>
             </div>
             <div>
