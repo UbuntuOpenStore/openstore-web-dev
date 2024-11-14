@@ -1,0 +1,96 @@
+---
+export const prerender = false;
+
+import { AppSchema, type AppRevisionData } from "@/lib/schema";
+import { categorySlug } from "@/lib/utils";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import SvgHome from "@/components/icons/Home";
+
+const { id } = Astro.params;
+
+const appResponse = await fetch(`${import.meta.env.SITE}api/v4/apps/${id}`);
+const { data: appData } = await appResponse.json();
+const app = AppSchema.parse(appData);
+
+const revisions = Array.from(app.revisions).reverse();
+const formattedRevisions = revisions
+  .filter((revisionData) => revisionData.download_url)
+  .reduce(
+    (acc, current) => {
+      const versionData = acc[current.version] ? acc[current.version] : {};
+      const key = `${current.channel}-${current.architecture}`;
+
+      return { ...acc, [current.version]: { ...versionData, [key]: current } };
+    },
+    {} as { [version: string]: { [key: string]: AppRevisionData } }
+  );
+
+function titleCase(value: string) {
+  return value.replace(/_/g, " ").replace(/\w\S*/g, (txt) => {
+    return txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase();
+  });
+}
+---
+
+<BaseLayout title={app.name} pageTitle={`${app.name} - Versions | OpenStore`} description={app.tagline}>
+  <section class="section flex">
+    <a href="/">
+      <SvgHome />
+    </a>
+
+    {
+      app.category && (
+        <div class="ml-1">
+          /{" "}
+          <a href={`/apps/${categorySlug(app.category)}`} class="underline">
+            {app.category}
+          </a>
+        </div>
+      )
+    }
+
+    <div class="ml-1">/ <a href={`/app/${app.id}`} class="underline">{app.name}</a></div>
+  </section>
+
+  <section class="flex flex-col md:flex-row justify-between section">
+    <div class="flex flex-row gap-4 max-w-xl mb-4 md:mb-0">
+      <div>
+        <img
+          class="rounded-2xl"
+          src={app.icon}
+          alt={app.name}
+          width="128"
+          height="128"
+          loading="eager"
+          style={`view-transition-name: app-${app.id.replace(/\./g, "-")}`}
+        />
+      </div>
+      <div>
+        <h1 class="text-4xl">{app.name}</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <ul class="space-y-4">
+      {
+        Object.entries(formattedRevisions).map(([version, versions]) => (
+          <li>
+            <span class="text-lg">v{version}</span>
+            <ul class="list-disc ml-4">
+              {Object.keys(versions)
+                .sort()
+                .map((key) => (
+                  <li>
+                    <a href={versions[key].download_url} class="underline">
+                      {titleCase(versions[key].channel)} - {versions[key].architecture ?? "armhf"}
+                    </a>
+                  </li>
+                ))}
+            </ul>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>

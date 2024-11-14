@@ -28,6 +28,15 @@ export enum AppType {
 export const Channels = Object.values(Channel) as Channel[];
 export const DEFAULT_CHANNEL = Channel.FOCAL;
 
+export const AppRevisionSchema = z.object({
+  version: z.string(),
+  download_url: z.string().nullable(),
+  channel: z.string(),
+  architecture: z.nativeEnum(Architecture).optional(),
+});
+
+export type AppRevisionData = z.infer<typeof AppRevisionSchema>;
+
 export const AppSchema = z.object({
   id: z.string(),
   name: z.string(),
@@ -57,12 +66,7 @@ export const AppSchema = z.object({
   types: z.array(z.string()),
   updated_date: z.coerce.date(),
   languages: z.array(z.string()),
-  revisions: z.array(z.object({
-    version: z.string(),
-    download_url: z.string().nullable(),
-    channel: z.string(),
-    architecture: z.nativeEnum(Architecture).optional(),
-  })),
+  revisions: z.array(AppRevisionSchema),
   totalDownloads: z.number(),
   latestDownloads: z.number(),
   version: z.string(),

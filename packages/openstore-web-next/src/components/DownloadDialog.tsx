@@ -34,7 +34,9 @@ const DownloadDialog = ({ app } : { app: AppData }) => {
               ))}
             </div>
 
-            {/* TODO older downloads */}
+            <div class="pt-4 text-center">
+              <a href={`/apps/${app.id}/versions`} class="underline">Older versions</a>
+            </div>
         </DialogHeader>
       </DialogContent>
     </Dialog>
