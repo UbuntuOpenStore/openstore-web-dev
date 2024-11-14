@@ -6,9 +6,10 @@ import SvgGoPrevious from "./icons/GoPrevious";
 import SvgGoNext from "./icons/GoNext";
 import SvgClose from "./icons/Close";
 
-const Screenshots = ({ images, videoUrl }: { images: string[], videoUrl?: string }) => {
-  const [isOpen, setIsOpen] = useState(false)
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+const Screenshots = ({ images, videoUrl, nsfw }: { images: string[], videoUrl?: string, nsfw?: boolean }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+   const [isRevealed, setIsRevealed] = useState(!nsfw);
 
   const openLightbox = (index: number) => {
     setCurrentImageIndex(index)
@@ -32,7 +33,22 @@ const Screenshots = ({ images, videoUrl }: { images: string[], videoUrl?: string
   }
 
   return (
-    <div>
+    <div class="relative">
+      <div
+        className={`absolute inset-0 backdrop-blur-md transition-opacity duration-300 ${
+          isRevealed ? 'opacity-0 pointer-events-none' : 'opacity-100'
+        }`}
+      >
+        <div className="flex h-full items-center justify-center">
+          <Button
+            onClick={() => setIsRevealed(true)}
+            className="text-lg font-semibold"
+          >
+            This app contains NSFW content, to click to reveal the screenshots.
+          </Button>
+        </div>
+      </div>
+
       <div class="flex gap-4 overflow-x-auto items-end">
         {videoUrl && <YouTubePreview videoUrl={videoUrl} />}
 
