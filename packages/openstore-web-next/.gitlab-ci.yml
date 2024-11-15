@@ -1,0 +1,36 @@
+image: bhdouglass/openstore-ci
+
+# Ref: https://docs.gitlab.com/ee/ci/caching/#cache-nodejs-dependencies
+cache:
+  key:
+    files:
+      - package-lock.json
+  paths:
+    - .npm/
+
+before_script:
+  - npm ci --cache .npm --prefer-offline
+
+stages:
+  - check
+  - deploy
+
+check:
+  stage: check
+  script:
+    - node --run check
+
+deploy:
+  stage: deploy
+  only:
+    - master
+  script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh/
+    - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+    - VERSION=$(date +"%Y-%m-%d_%H-%M-%S")
+    - echo $VERSION
+    - node --run build
+    - rsync -av --delete . brian@ssh.open-store.io:/srv/openstore-web-next/$VERSION
+    - ssh brian@ssh.open-store.io "/srv/openstore-web-next/$VERSION/post-deploy.sh $VERSION"
