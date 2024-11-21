@@ -35,7 +35,7 @@ const DownloadDialog = ({ app } : { app: AppData }) => {
             </div>
 
             <div class="pt-4 text-center">
-              <a href={`/apps/${app.id}/versions`} class="underline">Older versions</a>
+              <a href={`/app/${app.id}/versions`} class="underline">Older versions</a>
             </div>
         </DialogHeader>
       </DialogContent>
