@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../styles/global.css";
 import { ViewTransitions } from "astro:transitions";
+import { Head } from 'astro-capo';
 
 export type Props = {
   pageTitle: string;
@@ -21,7 +22,7 @@ const ogImageAlt = imageAlt || "OpenStore logo";
 ---
 
 <html lang="en">
-  <head>
+  <Head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -52,7 +53,7 @@ const ogImageAlt = imageAlt || "OpenStore logo";
 
     {/* TODO json schema */}
     <ViewTransitions />
-  </head>
+  </Head>
 
   <body class="antialiased text-primary tracking-tight bg-white flex flex-col justify-between h-full">
     <Header />
