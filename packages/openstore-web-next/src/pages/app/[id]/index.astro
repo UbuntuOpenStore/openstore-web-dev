@@ -38,6 +38,13 @@ const [appResponse, reviewsResponse] = await Promise.all([
   fetch(`${import.meta.env.SITE}api/v4/apps/${id}/reviews`),
 ]);
 
+if (appResponse.status === 404) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not found'
+  });
+}
+
 const [{ data: appData }, { data: reviewsData }] = await Promise.all([appResponse.json(), reviewsResponse.json()]);
 
 const app = AppSchema.parse(appData);
