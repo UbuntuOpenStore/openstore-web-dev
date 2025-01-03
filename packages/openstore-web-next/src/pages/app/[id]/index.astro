@@ -150,11 +150,11 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
     </div>
 
     <div class="flex gap-4 items-center">
+      <DownloadDialog app={app} client:load />
+
       <a href={`openstore://${app.id}`} title="Install via the OpenStore app" class="btn w-full bg-ubuntu-orange text-white font-bold"
         >Install</a
       >
-
-      <DownloadDialog app={app} client:load />
     </div>
   </section>
 
