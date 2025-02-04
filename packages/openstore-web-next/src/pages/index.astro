@@ -7,7 +7,7 @@ import { DEFAULT_CHANNEL, DiscoverSchema } from "../lib/schema";
 import AppList from "@/components/AppList";
 import { categorySlug } from "@/lib/utils";
 
-const discoverResponse = await fetch(`${import.meta.env.SITE}api/v4/discover?channel=${DEFAULT_CHANNEL}`);
+const discoverResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/discover?channel=${DEFAULT_CHANNEL}`);
 const discoverData = await discoverResponse.json();
 const { highlights, categories } = DiscoverSchema.parse(discoverData.data);
 ---

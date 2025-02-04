@@ -6,7 +6,7 @@ import preact from '@astrojs/preact';
 import sentry from '@sentry/astro';
 import { loadEnv } from "vite";
 
-// https://docs.astro.build/en/guides/configuring-astro/#environment-variables
+// https://docs.astro.build/en/guides/environment-variables/#in-the-astro-config-file
 const { SITE, SENTRY_DSN, SENTRY_PROJECT, SENTRY_AUTH_TOKEN } = loadEnv(process.env.NODE_ENV ?? 'production', process.cwd(), "");
 
 // https://astro.build/config

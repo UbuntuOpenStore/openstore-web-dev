@@ -34,8 +34,8 @@ import AppTypeBadges from "@/components/AppTypeBadges";
 const { id } = Astro.params;
 
 const [appResponse, reviewsResponse] = await Promise.all([
-  fetch(`${import.meta.env.SITE}api/v4/apps/${id}`),
-  fetch(`${import.meta.env.SITE}api/v4/apps/${id}/reviews`),
+  fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/apps/${id}`),
+  fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/apps/${id}/reviews`),
 ]);
 
 if (appResponse.status === 404) {

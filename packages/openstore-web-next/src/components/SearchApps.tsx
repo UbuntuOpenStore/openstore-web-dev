@@ -66,7 +66,7 @@ const SearchApps = ({ category, categoryName }: Props) => {
     setLoading(true);
 
     const skip = page * PAGE_SIZE;
-    const url = new URL(`${import.meta.env.SITE}api/v4/apps`);
+    const url = new URL(`${import.meta.env.PUBLIC_API_URL}api/v4/apps`);
     url.searchParams.append('limit', PAGE_SIZE.toString());
     url.searchParams.append('skip', skip.toString());
     url.searchParams.append('search', term);

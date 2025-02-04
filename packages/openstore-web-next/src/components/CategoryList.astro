@@ -6,7 +6,7 @@ export type Props = {
   class?: string;
 };
 
-const response = await fetch(`${import.meta.env.SITE}/api/v3/categories?all=true`);
+const response = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/categories?all=true`);
 const { data } = await response.json();
 const categories = CategoriesSchema.parse(data);
 ---
