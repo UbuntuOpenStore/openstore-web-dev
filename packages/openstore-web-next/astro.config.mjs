@@ -26,5 +26,15 @@ export default defineConfig({
   output: "static",
   adapter: node({
     mode: 'standalone'
-  })
+  }),
+  experimental: {
+    session: {
+      driver: "fs",
+    },
+  },
+  vite: {
+    server: {
+      allowedHosts: true,
+    },
+  }
 });

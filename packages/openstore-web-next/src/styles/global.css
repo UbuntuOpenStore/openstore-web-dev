@@ -34,6 +34,10 @@
       background: linear-gradient(44deg, #77216f 20%, #e95420);
     }
   }
+
+  .header-link {
+    @apply font-medium hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out;
+  }
 }
 
 html {

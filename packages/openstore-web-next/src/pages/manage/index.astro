@@ -1,0 +1,77 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { AppSearchSchema, UserSchema } from "@/lib/schema";
+
+export const prerender = false;
+
+const url = new URL(Astro.request.url);
+if (url.searchParams.has("key")) {
+  const expires = new Date();
+  expires.setDate(expires.getDate() + 14);
+
+  Astro.cookies.set("apikey", url.searchParams.get("key")!, { expires, path: '/' });
+  return Astro.redirect("/manage/");
+}
+
+const apikey = Astro.cookies.get("apikey")?.value;
+if (!apikey) {
+  return Astro.redirect("/login/");
+}
+
+const [userResponse, appResponse] = await Promise.all([
+  // TODO store this in a session when they are stable
+  fetch(`${import.meta.env.PUBLIC_API_URL}api/users/me?apikey=${apikey}`),
+
+  fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage?apikey=${apikey}&limit=32`),
+]);
+if (userResponse.status !== 200 || appResponse.status !== 200) {
+  Astro.cookies.delete("apikey");
+  return Astro.redirect("/login/");
+}
+
+const user = await userResponse.json().then(({ data }) => UserSchema.parse(data));
+const apps = await appResponse.json().then(({ data }) => AppSearchSchema.parse(data));
+---
+
+<BaseLayout title="OpenStore" pageTitle="Manage | OpenStore" description="The open source app store for Ubuntu Touch">
+  <section class="section space-y-4">
+    <h1 class="text-4xl">Welcome {user.name ?? user.username}</h1>
+
+    {/* TODO search */}
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+      {
+        apps.packages.map((app) => (
+          <div class="flex flex-row gap-4 max-w-xl mb-4 p-4">
+            <div>
+              {/* TODO app pages */}
+              <a href={`/app/${app.id}`}>
+                <img
+                  class="rounded-2xl"
+                  src={app.icon}
+                  alt={app.name}
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                  style={`view-transition-name: app-${app.id.replace(/\./g, "-")}`}
+                />
+              </a>
+            </div>
+            <div>
+              <h1 class="text-lg">
+                <a href={`/manage/${app.id}`} class="underline">
+                  {app.name}
+                </a>
+              </h1>
+
+              <p>{app.publisher}</p>
+              <p class={app.published ? 'text-green-400' : 'text-gray-400'}>{app.published ? "Published" : "Not Published"}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    {/* TODO pagination */}
+  </section>
+</BaseLayout>

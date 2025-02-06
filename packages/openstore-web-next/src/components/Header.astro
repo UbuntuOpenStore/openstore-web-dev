@@ -1,5 +1,6 @@
 ---
 import SvgNavigationMenu from "./icons/NavigationMenu";
+import LoginLogout from "./LoginLogout";
 import SearchBar from "./SearchBar";
 ---
 
@@ -33,21 +34,21 @@ import SearchBar from "./SearchBar";
         </li>
 
         <li>
-          <a class="font-medium hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/submit/">
+          <a class="header-link" href="/submit/">
             Submit
           </a>
         </li>
         <li>
-          <a class="font-medium hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/apps/">Browse</a>
+          <a class="header-link" href="/apps/">Browse</a>
         </li>
         <li>
-          <a class="font-medium hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/apps/categories/">Categories</a>
+          <a class="header-link" href="/apps/categories/">Categories</a>
         </li>
         <li>
-          <a class="font-medium hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/about/">About</a>
+          <a class="header-link" href="/about/">About</a>
         </li>
 
-        {/* TODO login/out */}
+        <LoginLogout client:only="preact" />
       </ul>
     </nav>
   </div>

@@ -114,6 +114,8 @@ export const SlimAppSchema = z.object({
     [RatingType.NEUTRAL]: z.number(),
     [RatingType.BUGGY]: z.number(),
   }),
+  published: z.boolean().optional(),
+  publisher: z.string(),
 });
 
 export type SlimAppData = z.infer<typeof SlimAppSchema>;
@@ -153,3 +155,13 @@ export const CategorySchema = z.object({
 export type CategoryData = z.infer<typeof CategorySchema>;
 
 export const CategoriesSchema = z.array(CategorySchema);
+
+export const UserSchema = z.object({
+  _id: z.string(),
+  name: z.string().optional(),
+  language: z.string().optional(),
+  username: z.string(),
+  role: z.string().optional(),
+});
+
+export type UserData = z.infer<typeof UserSchema>;

@@ -1,0 +1,41 @@
+---
+export const prerender = false;
+
+import SvgGithub from "@/components/icons/Github";
+import SvgGitlab from "@/components/icons/Gitlab";
+import SvgUbuntuone from "@/components/icons/Ubuntuone";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const apikey = Astro.cookies.get("apikey")?.value;
+console.log({ apikey });
+if (apikey) {
+  return Astro.redirect("/manage/");
+}
+
+const next = `${import.meta.env.SITE}manage/`;
+---
+
+<BaseLayout title="OpenStore" pageTitle="Login | OpenStore" description="The open source app store for Ubuntu Touch">
+  <section class="section space-y-4 text-center">
+    <h1 class="text-4xl">Login</h1>
+
+    <div class="mx-auto w-full max-w-sm space-y-4">
+      <a href={`${import.meta.env.PUBLIC_API_URL}auth/github?next=${next}`} class="btn w-full bg-ubuntu-orange text-white font-bold">
+        <SvgGithub class="pr-2" />
+        Login via GitHub
+      </a>
+
+      <a href={`${import.meta.env.PUBLIC_API_URL}auth/gitlab?next=${next}`} class="btn w-full bg-ubuntu-orange text-white font-bold">
+        <SvgGitlab class="pr-2" />
+        <span class="ml" v-translate>Login via GitLab</span>
+      </a>
+
+      <form action={`${import.meta.env.PUBLIC_API_URL}auth/ubuntu?next=${next}`} method="post">
+        <button class="btn w-full bg-ubuntu-orange text-white font-bold">
+          <SvgUbuntuone class="pr-2" />
+          Login via Ubuntu One
+        </button>
+      </form>
+    </div>
+  </section>
+</BaseLayout>
