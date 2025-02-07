@@ -1,15 +1,8 @@
 ---
 export const prerender = false;
 
-import HighlightedApps from "@/components/HighlightedApps.tsx";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { DEFAULT_CHANNEL, DiscoverSchema } from "../lib/schema";
-import AppList from "@/components/AppList";
-import { categorySlug } from "@/lib/utils";
-
-const discoverResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/discover?channel=${DEFAULT_CHANNEL}`);
-const discoverData = await discoverResponse.json();
-const { highlights, categories } = DiscoverSchema.parse(discoverData.data);
+import Discover from "@/components/Discover.astro";
 ---
 
 <BaseLayout title="OpenStore" pageTitle="OpenStore" description="The open source app store for Ubuntu Touch">
@@ -18,32 +11,5 @@ const { highlights, categories } = DiscoverSchema.parse(discoverData.data);
     <p>The open source app store for <a href="https://ubuntu-touch.io/" class="underline">Ubuntu Touch</a></p>
   </section>
 
-  <section class="py-3 px-3 mx-auto w-full max-w-2xl md:px-4">
-    <HighlightedApps highlights={highlights} client:load />
-  </section>
-
-  <section class="section">
-    {
-      categories.map((category, index) => (
-        <>
-          <div>
-            <h2 class="text-2xl text-center">
-              {category.referral ? (
-                <a href={`/apps/${categorySlug(category.referral)}`} class="underline">
-                  {category.name}
-                </a>
-              ) : (
-                <>{category.name}</>
-              )}
-            </h2>
-            <p class="mb-4 text-center">{category.tagline}</p>
-
-            <AppList apps={category.apps} />
-          </div>
-
-          {index < categories.length - 1 && <div class="mx-auto w-full max-w-6xl h-1 bg-ubuntu-gradient rounded-full mb-4" />}
-        </>
-      ))
-    }
-  </section>
+  <Discover />
 </BaseLayout>
