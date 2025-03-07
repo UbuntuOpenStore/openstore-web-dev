@@ -19,13 +19,13 @@ const CopyToClipboard = ({ code }: { code: string }) => {
   return (
     <div className="relative rounded-lg overflow-hidden border border-border">
       <div className="flex items-center">
-        <pre className="p-4 text-sm font-mono bg-muted text-foreground overflow-x-auto flex-grow">
+        <pre className="p-4 text-sm font-mono bg-muted text-foreground overflow-x-auto grow">
           {code}
         </pre>
         <Button
           variant="ghost"
           size="icon"
-          className="m-2 flex-shrink-0"
+          className="m-2 shrink-0"
           onClick={copyToClipboard}
           aria-label={isCopied ? "Copied to clipboard" : "Copy to clipboard"}
         >

@@ -66,7 +66,7 @@ const Screenshots = ({ images, videoUrl, nsfw }: { images: string[], videoUrl?: 
       </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="max-w-screen-lg w-full h-screen flex items-center justify-center bg-primary/90 p-0 h-5/6 border-primary">
+        <DialogContent className="max-w-(--breakpoint-lg) w-full h-screen flex items-center justify-center bg-primary/90 p-0 h-5/6 border-primary">
           <div className="relative w-full h-full flex items-center justify-center">
             <img
               src={images[currentImageIndex]}

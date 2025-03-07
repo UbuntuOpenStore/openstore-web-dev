@@ -22,7 +22,7 @@ const YouTubePreview = ({ videoUrl }: { videoUrl: string }) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <button className="relative group overflow-hidden rounded-2xl shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+        <button className="relative group overflow-hidden rounded-2xl shadow-lg focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-opacity-50">
           <img
             src={thumbnailUrl}
             alt="Video thumbnail"
