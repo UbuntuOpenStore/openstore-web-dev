@@ -11,9 +11,9 @@ const { SITE, SENTRY_DSN, SENTRY_PROJECT, SENTRY_AUTH_TOKEN } = loadEnv(process.
 
 // https://astro.build/config
 export default defineConfig({
-  site: SITE ?? 'https://open-store.io/',
+  site: SITE ?? "https://open-store.io/",
   integrations: [
-    tailwind({applyBaseStyles: false}),
+    tailwind({ applyBaseStyles: false }),
     preact({ compat: true }),
     sentry({
       dsn: SENTRY_DSN,
@@ -25,16 +25,14 @@ export default defineConfig({
   ],
   output: "static",
   adapter: node({
-    mode: 'standalone'
+    mode: "standalone",
   }),
   experimental: {
-    session: {
-      driver: "fs",
-    },
+    session: true,
   },
   vite: {
     server: {
-      allowedHosts: true,
+      allowedHosts: ["next.local.open-store.io", "next.open-store.io", "open-store.io"],
     },
-  }
+  },
 });
