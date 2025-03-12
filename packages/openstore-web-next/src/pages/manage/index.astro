@@ -44,8 +44,7 @@ const apps = await appResponse.json().then(({ data }) => AppSearchSchema.parse(d
         apps.packages.map((app) => (
           <div class="flex flex-row gap-4 max-w-xl mb-4 p-4">
             <div>
-              {/* TODO app pages */}
-              <a href={`/app/${app.id}`}>
+              <a href={`/manage/${app.id}`}>
                 <img
                   class="rounded-2xl"
                   src={app.icon}

@@ -1,0 +1,37 @@
+---
+import type { AppData } from "@/lib/schema";
+import SvgBuggy from "./icons/Buggy";
+import SvgHappy from "./icons/Happy";
+import SvgNeutral from "./icons/Neutral";
+import SvgThumbsDown from "./icons/ThumbsDown";
+import SvgThumbsUp from "./icons/ThumbsUp";
+
+export type Props = {
+  app: AppData
+};
+
+const { app } = Astro.props;
+---
+
+<ul class="flex gap-4">
+  <li class="flex gap-2">
+    <SvgThumbsUp />
+    {app.ratings.THUMBS_UP}
+  </li>
+  <li class="flex gap-2">
+    <SvgHappy />
+    {app.ratings.HAPPY}
+  </li>
+  <li class="flex gap-2">
+    <SvgNeutral />
+    {app.ratings.NEUTRAL}
+  </li>
+  <li class="flex gap-2">
+    <SvgThumbsDown />
+    {app.ratings.THUMBS_DOWN}
+  </li>
+  <li class="flex gap-2">
+    <SvgBuggy />
+    {app.ratings.BUGGY}
+  </li>
+</ul>

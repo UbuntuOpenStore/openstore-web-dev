@@ -1,0 +1,138 @@
+---
+import SvgExternalLink from "@/components/icons/ExternalLink";
+import SvgHome from "@/components/icons/Home";
+import Ratings from "@/components/Ratings.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { AppSchema, AppSearchSchema, UserSchema } from "@/lib/schema";
+
+export const prerender = false;
+
+const { id } = Astro.params;
+const apikey = Astro.cookies.get("apikey")?.value;
+if (!apikey) {
+  return Astro.redirect("/login/");
+}
+
+const appResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${id}?apikey=${apikey}&limit=32`);
+// TODO handle 404 & 403
+
+if (appResponse.status !== 200) {
+  Astro.cookies.delete("apikey");
+  return Astro.redirect("/login/");
+}
+
+const app = await appResponse.json().then(({ data }) => AppSchema.parse(data));
+---
+
+<BaseLayout title="OpenStore" pageTitle={`Manage ${app.name} | OpenStore`} description={app.tagline}>
+  <section class="section flex">
+    <a href="/">
+      <SvgHome />
+    </a>
+
+    <div class="ml-1">/ <a href="/manage/" class="underline">Manage Apps</a></div>
+  </section>
+
+  <section class="section space-y-4">
+    <h1 class="text-4xl">
+      Edit {app.name}
+
+      <a href={`/app/${app.id}`} target="_blank">
+        <SvgExternalLink class="inline text-sm text-ubuntu-orange" />
+      </a>
+    </h1>
+
+    <Ratings app={app} />
+  </section>
+
+  {/* TODO publish switch */}
+
+  <form class="space-y-4">
+    {/* TODO submit action */}
+
+    <section class="section space-y-4">
+      <h2 class="text-2xl">Presentation</h2>
+
+      <div class="form-group">
+        <label for="name" class="form-label">Title</label>
+        <input id="name" name="name" type="text" value={app.name} required class="form-input" />
+      </div>
+
+      {/* TODO license dropdown */}
+
+      <div class="form-group">
+        <label for="tagline" class="form-label">Tag Line</label>
+        <input id="tagline" name="tagline" type="text" value={app.tagline} required class="form-input" />
+      </div>
+
+      <div class="form-group">
+        <label for="description" class="form-label">Description</label>
+        <textarea id="description" name="description" required class="form-input" rows="4">{app.description}</textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="changelog" class="form-label">Changelog</label>
+        <textarea id="changelog" name="changelog" class="form-input" rows="4">{app.changelog}</textarea>
+      </div>
+
+      {/* TODO screenshots */}
+    </section>
+
+    <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
+
+    <section class="section space-y-2">
+      <h2 class="text-2xl">Discovery</h2>
+
+      {/* TODO category dropdown */}
+
+      <div class="form-group">
+        <label for="keywords" class="form-label">Keywords</label>
+        <input id="keywords" name="keywords" type="text" value={app.keywords.join(", ")} class="form-input" />
+      </div>
+
+      {/* TODO nsfw checkbox */}
+    </section>
+
+    <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
+
+    <section class="section space-y-2">
+      <h2 class="text-2xl">Links</h2>
+
+      <div class="form-group">
+        <label for="source" class="form-label">Source URL</label>
+        <input id="source" name="source" type="text" value={app.source} class="form-input" />
+      </div>
+
+      <div class="form-group">
+        <label for="support_url" class="form-label">Support URL</label>
+        <input id="support_url" name="support_url" type="text" value={app.support_url} class="form-input" />
+      </div>
+
+      <div class="form-group">
+        <label for="donate_url" class="form-label">Donate URL</label>
+        <input id="donate_url" name="donate_url" type="text" value={app.donate_url} class="form-input" />
+      </div>
+
+      <div class="form-group">
+        <label for="video_url" class="form-label">Video URL</label>
+        <input id="video_url" name="video_url" type="text" value={app.video_url} class="form-input" />
+
+        {/* TODO Only YouTube and Odysee videos are supported at this time. Make sure the url is for the embedded video! */}
+      </div>
+
+      <div class="form-group">
+        <label for="translation_url" class="form-label">Translation URL</label>
+        <input id="translation_url" name="translation_url" type="text" value={app.translation_url} class="form-input" />
+      </div>
+    </section>
+
+    <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
+
+    {/* TODO admin section (only show for admins) */}
+
+    {/* TODO save button */}
+  </form>
+
+  {/* TODO stats section */}
+  {/* TODO badge info */}
+</BaseLayout>

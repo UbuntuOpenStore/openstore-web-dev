@@ -72,6 +72,18 @@
   @apply font-medium hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out;
 }
 
+@utility form-group {
+  @apply flex items-center gap-4;
+}
+
+@utility form-label {
+  @apply w-24 flex-shrink-0 text-lg font-medium text-gray-700;
+}
+
+@utility form-input {
+  @apply flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+}
+
 @layer utilities {
   html {
     height: 100%;

@@ -7,7 +7,6 @@ import SvgUbuntuone from "@/components/icons/Ubuntuone";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 const apikey = Astro.cookies.get("apikey")?.value;
-console.log({ apikey });
 if (apikey) {
   return Astro.redirect("/manage/");
 }
