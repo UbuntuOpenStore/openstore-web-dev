@@ -85,6 +85,16 @@ export const AppSchema = z.object({
 
 export type AppData = z.infer<typeof AppSchema>;
 
+export const AppManageSchema = AppSchema.extend({
+  published: z.boolean(),
+  locked: z.boolean(),
+  type_override: z.string(),
+  review_exceptions: z.array(z.string()),
+  maintainer: z.string().optional(),
+});
+
+export type AppManageData = z.infer<typeof AppManageSchema>;
+
 export const ReviewSchema = z.object({
   author: z.string(),
   body: z.string(),
@@ -159,9 +169,12 @@ export const CategoriesSchema = z.array(CategorySchema);
 export const UserSchema = z.object({
   _id: z.string(),
   name: z.string().optional(),
+  email: z.string().optional(),
   language: z.string().optional(),
   username: z.string(),
   role: z.string().optional(),
 });
 
 export type UserData = z.infer<typeof UserSchema>;
+
+export const UserListSchema = z.array(UserSchema);

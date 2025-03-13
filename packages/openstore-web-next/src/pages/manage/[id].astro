@@ -2,8 +2,10 @@
 import SvgExternalLink from "@/components/icons/ExternalLink";
 import SvgHome from "@/components/icons/Home";
 import Ratings from "@/components/Ratings.astro";
+import { Switch } from "@/components/ui/switch";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { AppSchema, AppSearchSchema, UserSchema } from "@/lib/schema";
+import type { UserData } from "@/lib/schema";
+import { AppManageSchema, CategoriesSchema, UserListSchema, UserSchema } from "@/lib/schema";
 
 export const prerender = false;
 
@@ -13,15 +15,102 @@ if (!apikey) {
   return Astro.redirect("/login/");
 }
 
-const appResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${id}?apikey=${apikey}&limit=32`);
-// TODO handle 404 & 403
+const [userResponse, appResponse, categoriesResponse] = await Promise.all([
+  // TODO store this in a session when they are stable
+  fetch(`${import.meta.env.PUBLIC_API_URL}api/users/me?apikey=${apikey}`),
 
-if (appResponse.status !== 200) {
+  fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${id}?apikey=${apikey}&limit=32`),
+
+  fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/categories?all=true`), // TODO Cache these
+]);
+
+// TODO handle 404 & 403
+if (userResponse.status !== 200 || appResponse.status !== 200 || categoriesResponse.status !== 200) {
   Astro.cookies.delete("apikey");
   return Astro.redirect("/login/");
 }
 
-const app = await appResponse.json().then(({ data }) => AppSchema.parse(data));
+const user = await userResponse.json().then(({ data }) => UserSchema.parse(data));
+const app = await appResponse.json().then(({ data }) => AppManageSchema.parse(data));
+const categories = await categoriesResponse.json().then(({ data }) => CategoriesSchema.parse(data));
+
+let maintainers: (UserData & { display_name: string })[] = []; // TODO
+if (user.role === 'admin') {
+  const maintainersResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/users?apikey=${apikey}`);
+  const maintainerList = await maintainersResponse.json().then(({ data }) => UserListSchema.parse(data));
+  maintainers = maintainerList.map((maintainer) => {
+    let name = 'UNKNOWN';
+    if (maintainer.name && maintainer.email) {
+      name = `${maintainer.name} (${maintainer.email})`;
+    }
+    else if (maintainer.name && !maintainer.email) {
+      name = maintainer.name;
+    }
+    else if (!maintainer.name && maintainer.email) {
+      name = maintainer.email;
+    }
+
+    return {
+      ...maintainer,
+      display_name: `${name} - ${maintainer.role ?? 'community'}`,
+    };
+  });
+
+  maintainers.sort((a, b) => {
+    const aname = a.display_name ? a.display_name.toLowerCase() : '';
+    const bname = b.display_name ? b.display_name.toLowerCase() : '';
+
+    if (a.role === 'admin' && b.role !== 'admin') {
+      return -1;
+    }
+    if (a.role !== 'admin' && b.role === 'admin') {
+      return 1;
+    }
+    if (aname > bname) {
+      return 1;
+    }
+    if (aname < bname) {
+      return -1;
+    }
+
+    return 0;
+  });
+}
+
+const LICENSES = [
+  'Proprietary',
+  'Apache License',
+  'BSD License (Simplified)',
+  'Creative Commons - No Rights Reserved',
+  'GNU Affero GPL v3',
+  'GNU GPL v2',
+  'GNU GPL v3',
+  'GNU LGPL v2.1',
+  'GNU LGPL v3',
+  'MIT/X/Expat License',
+  'Academic Free License',
+  'Artistic License 1.0',
+  'Artistic License 2.0',
+  'Common Public License',
+  'Creative Commons - Attribution',
+  'Creative Commons - Attribution Share Alike',
+  'Eclipse Public License',
+  'Educational Community License',
+  'Mozilla Public License',
+  'Open Font License v1.1',
+  'Open Software License v3.0',
+  'PHP License',
+  'Public Domain',
+  'Python License',
+  'Zope Public License',
+  'Other Open Source',
+];
+
+const TYPES = [
+  { value: "app", label: "App" },
+  { value: "webapp", label: "Bookmark" },
+  { value: "webapp+", label: "Web App" },
+];
 ---
 
 <BaseLayout title="OpenStore" pageTitle={`Manage ${app.name} | OpenStore`} description={app.tagline}>
@@ -45,10 +134,17 @@ const app = await appResponse.json().then(({ data }) => AppSchema.parse(data));
     <Ratings app={app} />
   </section>
 
-  {/* TODO publish switch */}
-
   <form class="space-y-4">
     {/* TODO submit action */}
+
+    <section class="section space-y-4">
+      <div class="form-group">
+        <label for="published" class="form-label">Published</label>
+        <Switch id="published" name="published" defaultChecked={app.published} client:load />
+      </div>
+    </section>
+
+    <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
 
     <section class="section space-y-4">
       <h2 class="text-2xl">Presentation</h2>
@@ -58,7 +154,15 @@ const app = await appResponse.json().then(({ data }) => AppSchema.parse(data));
         <input id="name" name="name" type="text" value={app.name} required class="form-input" />
       </div>
 
-      {/* TODO license dropdown */}
+      <div class="form-group">
+        <label for="license" class="form-label">License</label>
+        <select id="license" name="license" class="form-input">
+          <option value="">License</option>
+          {LICENSES.map((license) => (
+            <option value={license} selected={app.license === license}>{license}</option>
+          ))}
+        </select>
+      </div>
 
       <div class="form-group">
         <label for="tagline" class="form-label">Tag Line</label>
@@ -83,14 +187,28 @@ const app = await appResponse.json().then(({ data }) => AppSchema.parse(data));
     <section class="section space-y-2">
       <h2 class="text-2xl">Discovery</h2>
 
-      {/* TODO category dropdown */}
+      <div class="form-group">
+        <label for="category" class="form-label">Category</label>
+        <select id="category" name="category" class="form-input">
+          <option value="">Category</option>
+          {categories.map(({category}) => (
+            <option value={category} selected={app.category === category}>{category}</option>
+          ))}
+        </select>
+      </div>
 
       <div class="form-group">
         <label for="keywords" class="form-label">Keywords</label>
         <input id="keywords" name="keywords" type="text" value={app.keywords.join(", ")} class="form-input" />
       </div>
 
-      {/* TODO nsfw checkbox */}
+      <div class="form-group">
+        <label for="nsfw" class="form-label">NSFW</label>
+        <input id="nsfw" name="nsfw" type="checkbox" checked={app.nsfw} class="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-2 focus:ring-blue-500" />
+        <p class="mt-1 text-xs text-gray-500">
+          This app contains NSFW (Not Safe For Work) material
+        </p>
+      </div>
     </section>
 
     <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
@@ -116,9 +234,11 @@ const app = await appResponse.json().then(({ data }) => AppSchema.parse(data));
       <div class="form-group">
         <label for="video_url" class="form-label">Video URL</label>
         <input id="video_url" name="video_url" type="text" value={app.video_url} class="form-input" />
-
-        {/* TODO Only YouTube and Odysee videos are supported at this time. Make sure the url is for the embedded video! */}
       </div>
+
+      <p class="mt-1 text-xs text-gray-500 text-right">
+        Only YouTube videos are supported at this time. Make sure the url is for the embedded video!
+      </p>
 
       <div class="form-group">
         <label for="translation_url" class="form-label">Translation URL</label>
@@ -128,7 +248,52 @@ const app = await appResponse.json().then(({ data }) => AppSchema.parse(data));
 
     <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
 
-    {/* TODO admin section (only show for admins) */}
+    {user.role === 'admin' && (
+      <section class="section space-y-2">
+        <h2 class="text-2xl">Admin</h2>
+
+        <div class="form-group">
+          <label for="locked" class="form-label">Locked</label>
+          <Switch id="locked" name="locked" defaultChecked={app.locked} client:load />
+        </div>
+
+        <div class="form-group">
+          <label for="maintainer" class="form-label">Maintainer</label>
+          <select id="maintainer" name="maintainer" class="form-input">
+            <option value="">Maintainer</option>
+            {maintainers.map((maintainer) => (
+              <option value={maintainer._id} selected={app.maintainer === maintainer._id}>{maintainer.display_name}</option>
+            ))}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="type_override" class="form-label">Type Override</label>
+          <select id="type_override" name="type_override" class="form-input">
+            <option value="">None</option>
+            {TYPES.map((type) => (
+              <option value={type.value} selected={app.type_override === type.value}>{type.label}</option>
+            ))}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Review Exceptions</label>
+
+          {app.review_exceptions.length > 0 ? (
+            <ul class="list-disc list-inside">
+              {app.review_exceptions.map((exception) => (
+                <li>{exception}</li>
+              ))}
+            </ul>
+          ) : (
+            <span>None</span>
+          )}
+        </div>
+      </section>
+
+      <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
+    )}
 
     {/* TODO save button */}
   </form>
