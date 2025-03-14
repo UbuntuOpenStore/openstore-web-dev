@@ -2,6 +2,7 @@
 import SvgExternalLink from "@/components/icons/ExternalLink";
 import SvgHome from "@/components/icons/Home";
 import Ratings from "@/components/Ratings.astro";
+import SortableScreenshots from "@/components/SortableScreenshots";
 import { Switch } from "@/components/ui/switch";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { UserData } from "@/lib/schema";
@@ -34,7 +35,7 @@ const user = await userResponse.json().then(({ data }) => UserSchema.parse(data)
 const app = await appResponse.json().then(({ data }) => AppManageSchema.parse(data));
 const categories = await categoriesResponse.json().then(({ data }) => CategoriesSchema.parse(data));
 
-let maintainers: (UserData & { display_name: string })[] = []; // TODO
+let maintainers: (UserData & { display_name: string })[] = [];
 if (user.role === 'admin') {
   const maintainersResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/users?apikey=${apikey}`);
   const maintainerList = await maintainersResponse.json().then(({ data }) => UserListSchema.parse(data));
@@ -179,7 +180,21 @@ const TYPES = [
         <textarea id="changelog" name="changelog" class="form-input" rows="4">{app.changelog}</textarea>
       </div>
 
-      {/* TODO screenshots */}
+      <div class="form-group">
+        <label for="screenshots" class="form-label">Screenshots (Limit 5)</label>
+        <div class="w-full">
+          <input
+            type="file"
+            id="screenshots"
+            accept="image/*"
+            multiple="multiple"
+            disabled={app.screenshots.length >= 5}
+            class="mb-4 w-full text-sm text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-gray-50 file:text-gray-700 hover:file:bg-gray-100 file:cursor-pointer border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          />
+
+          <SortableScreenshots screenshots={app.screenshots} client:only="preact" />
+        </div>
+      </div>
     </section>
 
     <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
