@@ -39,7 +39,11 @@ const SortableScreenshots = ({ screenshots }: { screenshots: string[] }) => {
     }
   }, []);
 
-  // TODO add the ability to remove screenshots
+  const removeScreenshot = useCallback((screenshot: string) => {
+    setSortedScreenshots((sortedScreenshots) => {
+      return sortedScreenshots.filter((ss) => ss !== screenshot);
+    });
+  }, []);
 
   return (
     <div class="flex flex-row gap-4">
@@ -52,7 +56,7 @@ const SortableScreenshots = ({ screenshots }: { screenshots: string[] }) => {
           items={sortedScreenshots}
           strategy={horizontalListSortingStrategy}
         >
-          {sortedScreenshots.map(screenshot => <SortableScreenshotItem key={screenshot} screenshot={screenshot} />)}
+          {sortedScreenshots.map(screenshot => <SortableScreenshotItem key={screenshot} screenshot={screenshot} onRemove={() => removeScreenshot(screenshot)} />)}
         </SortableContext>
       </DndContext>
     </div>
