@@ -49,13 +49,13 @@ const BadgeSelect = ({ appId }: { appId?: string }) => {
       </div>
 
       <div class="flex flex-row text-center">
-        <div class="w-full space-y-4 mx-4">
+        <div class="w-1/2 space-y-4 mx-4">
           <h2 class="text-2xl">PNG</h2>
 
           {appId ? (
             <>
               <a href={appUrl}>
-                <img class="h-12" src={pngUrl} alt="OpenStore" />
+                <img class="h-12 inline-block" src={pngUrl} alt="OpenStore" />
               </a>
 
               <h3 class="text-xl">HTML</h3>
@@ -72,13 +72,13 @@ const BadgeSelect = ({ appId }: { appId?: string }) => {
           )}
         </div>
 
-        <div class="w-full space-y-4">
+        <div class="w-1/2 space-y-4">
           <h2 class="text-2xl">SVG</h2>
 
           {appId ? (
             <>
               <a href={appUrl}>
-                <img class="h-12" src={svgUrl} alt="OpenStore" />
+                <img class="h-12 inline-block" src={svgUrl} alt="OpenStore" />
               </a>
 
               <h3 class="text-xl">HTML</h3>

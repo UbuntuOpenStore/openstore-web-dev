@@ -32,7 +32,9 @@ export const AppRevisionSchema = z.object({
   version: z.string(),
   download_url: z.string().nullable(),
   channel: z.string(),
-  architecture: z.nativeEnum(Architecture).optional(),
+  architecture: z.nativeEnum(Architecture),
+  revision: z.number(),
+  downloads: z.number(),
 });
 
 export type AppRevisionData = z.infer<typeof AppRevisionSchema>;
@@ -50,7 +52,8 @@ export const AppSchema = z.object({
     version: z.string(),
     download_url: z.string().nullable(),
     channel: z.string(),
-    architecture: z.nativeEnum(Architecture).optional(),
+    architecture: z.nativeEnum(Architecture),
+    revision: z.number(),
   })),
   icon: z.string(),
   keywords: z.array(z.string()),

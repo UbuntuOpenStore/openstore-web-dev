@@ -1,4 +1,5 @@
 ---
+import BadgeSelect from "@/components/BadgeSelect";
 import SvgExternalLink from "@/components/icons/ExternalLink";
 import SvgHome from "@/components/icons/Home";
 import Ratings from "@/components/Ratings.astro";
@@ -112,6 +113,10 @@ const TYPES = [
   { value: "webapp", label: "Bookmark" },
   { value: "webapp+", label: "Web App" },
 ];
+
+const revisions = app.revisions.toSorted((a, b) => {
+  return b.revision - a.revision;
+})
 ---
 
 <BaseLayout title="OpenStore" pageTitle={`Manage ${app.name} | OpenStore`} description={app.tagline}>
@@ -313,6 +318,90 @@ const TYPES = [
     {/* TODO save button */}
   </form>
 
-  {/* TODO stats section */}
-  {/* TODO badge info */}
+  <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
+
+  <section class="section space-y-2">
+    <h2 class="text-2xl">Package Details</h2>
+
+    <table>
+      <tr class="border-b-1 border-b-gray-300">
+        <td class="p-2 font-bold">ID</td>
+        <td>{app.id}</td>
+      </tr>
+
+      <tr class="border-b-1 border-b-gray-300">
+        <td class="p-2 font-bold">Publisher</td>
+        <td>{app.publisher ?? 'None'}</td>
+      </tr>
+
+      <tr class="border-b-1 border-b-gray-300">
+        <td class="p-2 font-bold">Published Date</td>
+        <td>{new Date(app.published_date).toLocaleString()}</td>
+      </tr>
+
+      <tr class="border-b-1 border-b-gray-300">
+        <td class="p-2 font-bold">Updated Date</td>
+        <td>{new Date(app.updated_date).toLocaleString()}</td>
+      </tr>
+
+      <tr class="border-b-1 border-b-gray-300">
+        <td class="p-2 font-bold">{app.architectures.length > 1 ? 'Architectures' : 'Architecture'}</td>
+        <td>{app.architectures.join(', ')}</td>
+      </tr>
+
+      <tr class="border-b-1 border-b-gray-300">
+        <td class="p-2 pr-4 font-bold whitespace-nowrap">Translation Languages</td>
+        <td>{app.languages.join(', ')}</td>
+      </tr>
+    </table>
+  </section>
+
+  <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
+
+  <section class="section space-y-2">
+    <h2 class="text-2xl">Download Stats</h2>
+
+    <table class="w-full md:w-1/2">
+      <thead>
+        <tr>
+          <th class="text-left">Revision</th>
+          <th>Channel</th>
+          <th>Arch</th>
+          <th>Version</th>
+          <th class="text-right">Downloads</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b-1 border-b-gray-300 font-extrabold">
+          <td colspan="4" class="p-1">
+            Total
+          </td>
+          <td class="text-right">{app.totalDownloads.toLocaleString()}</td>
+        </tr>
+
+        {revisions.map((revision) => {
+          const isCurrent = app.downloads.some((download) => download.revision === revision.revision);
+          return (
+            <tr class={`border-b-1 border-b-gray-300 text-center ${isCurrent ? 'font-extrabold' : ''}`}>
+              <td class="text-left p-1">{revision.revision} {isCurrent ? '*' : ''}</td>
+              <td>{revision.channel}</td>
+              <td>{revision.architecture}</td>
+              <td>{revision.version}</td>
+              <td class="text-right p-1">{revision.downloads.toLocaleString()}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </section>
+
+  <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
+
+  <section class="section mb-8">
+    <h2 class="text-2xl">Badge</h2>
+
+    <div class="w-full">
+      <BadgeSelect appId={app.id} client:load />
+    </div>
+  </section>
 </BaseLayout>
