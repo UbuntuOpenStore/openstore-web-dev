@@ -19,7 +19,7 @@ if (!apikey) {
 }
 
 const [userResponse, appResponse] = await Promise.all([
-  // TODO store this in a session when they are stable
+  // TODO cache this
   fetch(`${import.meta.env.PUBLIC_API_URL}api/users/me?apikey=${apikey}`),
 
   fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage?apikey=${apikey}&limit=32`),

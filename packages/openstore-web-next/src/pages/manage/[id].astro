@@ -2,12 +2,11 @@
 import BadgeSelect from "@/components/BadgeSelect";
 import SvgExternalLink from "@/components/icons/ExternalLink";
 import SvgHome from "@/components/icons/Home";
+import ManageAppForm from "@/components/ManageAppForm";
 import Ratings from "@/components/Ratings.astro";
-import SortableScreenshots from "@/components/SortableScreenshots";
-import { Switch } from "@/components/ui/switch";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { UserData } from "@/lib/schema";
-import { AppManageSchema, CategoriesSchema, UserListSchema, UserSchema } from "@/lib/schema";
+import { AppManageSchema, UserListSchema, UserSchema } from "@/lib/schema";
 
 export const prerender = false;
 
@@ -17,24 +16,31 @@ if (!apikey) {
   return Astro.redirect("/login/");
 }
 
-const [userResponse, appResponse, categoriesResponse] = await Promise.all([
-  // TODO store this in a session when they are stable
+const [userResponse, appResponse] = await Promise.all([
+  // TODO cache this
   fetch(`${import.meta.env.PUBLIC_API_URL}api/users/me?apikey=${apikey}`),
 
-  fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${id}?apikey=${apikey}&limit=32`),
-
-  fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/categories?all=true`), // TODO Cache these
+  fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${id}?apikey=${apikey}`),
 ]);
 
-// TODO handle 404 & 403
-if (userResponse.status !== 200 || appResponse.status !== 200 || categoriesResponse.status !== 200) {
+if (appResponse.status === 404) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not found'
+  });
+}
+
+if (appResponse.status === 403) {
+  return Astro.redirect("/manage/");
+}
+
+if (userResponse.status !== 200 || appResponse.status !== 200) {
   Astro.cookies.delete("apikey");
   return Astro.redirect("/login/");
 }
 
 const user = await userResponse.json().then(({ data }) => UserSchema.parse(data));
 const app = await appResponse.json().then(({ data }) => AppManageSchema.parse(data));
-const categories = await categoriesResponse.json().then(({ data }) => CategoriesSchema.parse(data));
 
 let maintainers: (UserData & { display_name: string })[] = [];
 if (user.role === 'admin') {
@@ -79,41 +85,6 @@ if (user.role === 'admin') {
   });
 }
 
-const LICENSES = [
-  'Proprietary',
-  'Apache License',
-  'BSD License (Simplified)',
-  'Creative Commons - No Rights Reserved',
-  'GNU Affero GPL v3',
-  'GNU GPL v2',
-  'GNU GPL v3',
-  'GNU LGPL v2.1',
-  'GNU LGPL v3',
-  'MIT/X/Expat License',
-  'Academic Free License',
-  'Artistic License 1.0',
-  'Artistic License 2.0',
-  'Common Public License',
-  'Creative Commons - Attribution',
-  'Creative Commons - Attribution Share Alike',
-  'Eclipse Public License',
-  'Educational Community License',
-  'Mozilla Public License',
-  'Open Font License v1.1',
-  'Open Software License v3.0',
-  'PHP License',
-  'Public Domain',
-  'Python License',
-  'Zope Public License',
-  'Other Open Source',
-];
-
-const TYPES = [
-  { value: "app", label: "App" },
-  { value: "webapp", label: "Bookmark" },
-  { value: "webapp+", label: "Web App" },
-];
-
 const revisions = app.revisions.toSorted((a, b) => {
   return b.revision - a.revision;
 })
@@ -140,185 +111,13 @@ const revisions = app.revisions.toSorted((a, b) => {
     <Ratings app={app} />
   </section>
 
-  <form class="space-y-4">
-    {/* TODO submit action */}
+  {/* TODO revision button */}
 
-    <section class="section space-y-4">
-      <div class="form-group">
-        <label for="published" class="form-label">Published</label>
-        <Switch id="published" name="published" defaultChecked={app.published} client:load />
-      </div>
-    </section>
-
-    <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
-
-    <section class="section space-y-4">
-      <h2 class="text-2xl">Presentation</h2>
-
-      <div class="form-group">
-        <label for="name" class="form-label">Title</label>
-        <input id="name" name="name" type="text" value={app.name} required class="form-input" />
-      </div>
-
-      <div class="form-group">
-        <label for="license" class="form-label">License</label>
-        <select id="license" name="license" class="form-input">
-          <option value="">License</option>
-          {LICENSES.map((license) => (
-            <option value={license} selected={app.license === license}>{license}</option>
-          ))}
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="tagline" class="form-label">Tag Line</label>
-        <input id="tagline" name="tagline" type="text" value={app.tagline} required class="form-input" />
-      </div>
-
-      <div class="form-group">
-        <label for="description" class="form-label">Description</label>
-        <textarea id="description" name="description" required class="form-input" rows="4">{app.description}</textarea>
-      </div>
-
-      <div class="form-group">
-        <label for="changelog" class="form-label">Changelog</label>
-        <textarea id="changelog" name="changelog" class="form-input" rows="4">{app.changelog}</textarea>
-      </div>
-
-      <div class="form-group">
-        <label for="screenshots" class="form-label">Screenshots (Limit 5)</label>
-        <div class="w-full">
-          <input
-            type="file"
-            id="screenshots"
-            accept="image/*"
-            multiple="multiple"
-            disabled={app.screenshots.length >= 5}
-            class="mb-4 w-full text-sm text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-gray-50 file:text-gray-700 hover:file:bg-gray-100 file:cursor-pointer border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-          />
-
-          <SortableScreenshots screenshots={app.screenshots} client:only="preact" />
-        </div>
-      </div>
-    </section>
-
-    <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
-
-    <section class="section space-y-2">
-      <h2 class="text-2xl">Discovery</h2>
-
-      <div class="form-group">
-        <label for="category" class="form-label">Category</label>
-        <select id="category" name="category" class="form-input">
-          <option value="">Category</option>
-          {categories.map(({category}) => (
-            <option value={category} selected={app.category === category}>{category}</option>
-          ))}
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="keywords" class="form-label">Keywords</label>
-        <input id="keywords" name="keywords" type="text" value={app.keywords.join(", ")} class="form-input" />
-      </div>
-
-      <div class="form-group">
-        <label for="nsfw" class="form-label">NSFW</label>
-        <input id="nsfw" name="nsfw" type="checkbox" checked={app.nsfw} class="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-2 focus:ring-blue-500" />
-        <p class="mt-1 text-xs text-gray-500">
-          This app contains NSFW (Not Safe For Work) material
-        </p>
-      </div>
-    </section>
-
-    <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
-
-    <section class="section space-y-2">
-      <h2 class="text-2xl">Links</h2>
-
-      <div class="form-group">
-        <label for="source" class="form-label">Source URL</label>
-        <input id="source" name="source" type="text" value={app.source} class="form-input" />
-      </div>
-
-      <div class="form-group">
-        <label for="support_url" class="form-label">Support URL</label>
-        <input id="support_url" name="support_url" type="text" value={app.support_url} class="form-input" />
-      </div>
-
-      <div class="form-group">
-        <label for="donate_url" class="form-label">Donate URL</label>
-        <input id="donate_url" name="donate_url" type="text" value={app.donate_url} class="form-input" />
-      </div>
-
-      <div class="form-group">
-        <label for="video_url" class="form-label">Video URL</label>
-        <input id="video_url" name="video_url" type="text" value={app.video_url} class="form-input" />
-      </div>
-
-      <p class="mt-1 text-xs text-gray-500 text-right">
-        Only YouTube videos are supported at this time. Make sure the url is for the embedded video!
-      </p>
-
-      <div class="form-group">
-        <label for="translation_url" class="form-label">Translation URL</label>
-        <input id="translation_url" name="translation_url" type="text" value={app.translation_url} class="form-input" />
-      </div>
-    </section>
-
-    <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
-
-    {user.role === 'admin' && (
-      <section class="section space-y-2">
-        <h2 class="text-2xl">Admin</h2>
-
-        <div class="form-group">
-          <label for="locked" class="form-label">Locked</label>
-          <Switch id="locked" name="locked" defaultChecked={app.locked} client:load />
-        </div>
-
-        <div class="form-group">
-          <label for="maintainer" class="form-label">Maintainer</label>
-          <select id="maintainer" name="maintainer" class="form-input">
-            <option value="">Maintainer</option>
-            {maintainers.map((maintainer) => (
-              <option value={maintainer._id} selected={app.maintainer === maintainer._id}>{maintainer.display_name}</option>
-            ))}
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="type_override" class="form-label">Type Override</label>
-          <select id="type_override" name="type_override" class="form-input">
-            <option value="">None</option>
-            {TYPES.map((type) => (
-              <option value={type.value} selected={app.type_override === type.value}>{type.label}</option>
-            ))}
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">Review Exceptions</label>
-
-          {app.review_exceptions.length > 0 ? (
-            <ul class="list-disc list-inside">
-              {app.review_exceptions.map((exception) => (
-                <li>{exception}</li>
-              ))}
-            </ul>
-          ) : (
-            <span>None</span>
-          )}
-        </div>
-      </section>
-
-      <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
-    )}
-
-    {/* TODO save button */}
-  </form>
+  <ManageAppForm user={user} app={app} maintainers={maintainers} client:only="preact" />
 
   <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
+
+  {/* TODO move details, stats, & badges to another page */}
 
   <section class="section space-y-2">
     <h2 class="text-2xl">Package Details</h2>
