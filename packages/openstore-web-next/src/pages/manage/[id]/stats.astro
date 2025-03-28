@@ -1,0 +1,79 @@
+---
+import ManageHeader from "@/components/manage/ManageHeader.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { AppManageSchema } from "@/lib/schema";
+
+export const prerender = false;
+
+const { id } = Astro.params;
+const apikey = Astro.cookies.get("apikey")?.value;
+if (!apikey) {
+  return Astro.redirect("/login/");
+}
+
+const appResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${id}?apikey=${apikey}`);
+
+if (appResponse.status === 404) {
+  return new Response(null, {
+    status: 404,
+    statusText: "Not found",
+  });
+}
+
+if (appResponse.status === 403) {
+  return Astro.redirect("/manage/");
+}
+
+if (appResponse.status !== 200) {
+  Astro.cookies.delete("apikey");
+  return Astro.redirect("/login/");
+}
+
+const app = await appResponse.json().then(({ data }) => AppManageSchema.parse(data));
+const revisions = app.revisions.toSorted((a, b) => {
+  return b.revision - a.revision;
+});
+---
+
+<BaseLayout title="OpenStore" pageTitle={`Manage ${app.name} | OpenStore`} description={app.tagline}>
+  <ManageHeader app={app} breadcrumb="Stats" />
+
+  <section class="section space-y-2">
+    <h2 class="text-2xl">Download Stats</h2>
+
+    <table class="w-full md:w-1/2">
+      <thead>
+        <tr>
+          <th class="text-left">Revision</th>
+          <th>Channel</th>
+          <th>Arch</th>
+          <th>Version</th>
+          <th class="text-right">Downloads</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b-1 border-b-gray-300 font-extrabold">
+          <td colspan="4" class="p-1"> Total </td>
+          <td class="text-right">{app.totalDownloads.toLocaleString()}</td>
+        </tr>
+
+        {
+          revisions.map((revision) => {
+            const isCurrent = app.downloads.some((download) => download.revision === revision.revision);
+            return (
+              <tr class={`border-b-1 border-b-gray-300 text-center ${isCurrent ? "font-extrabold" : ""}`}>
+                <td class="text-left p-1">
+                  {revision.revision} {isCurrent ? "*" : ""}
+                </td>
+                <td>{revision.channel}</td>
+                <td>{revision.architecture}</td>
+                <td>{revision.version}</td>
+                <td class="text-right p-1">{revision.downloads.toLocaleString()}</td>
+              </tr>
+            );
+          })
+        }
+      </tbody>
+    </table>
+  </section>
+</BaseLayout>

@@ -1,0 +1,34 @@
+---
+import type { AppManageData } from "@/lib/schema";
+import SvgHome from "../icons/Home";
+import Ratings from "../Ratings.astro";
+import ManageMenu from "./ManageMenu";
+
+export type Props = {
+  app: AppManageData;
+  breadcrumb: string;
+};
+
+const { app, breadcrumb } = Astro.props;
+---
+
+<section class="section flex">
+  <a href="/">
+    <SvgHome />
+  </a>
+
+  <div class="ml-1">/ <a href="/manage/" class="underline">Manage Apps</a></div>
+  <div class="ml-1">/ <a href={`/manage/${app.id}/`} class="underline">{app.name}</a></div>
+  <div class="ml-1">/ {breadcrumb}</div>
+</section>
+
+<section class="section space-y-4">
+  <h1 class="text-4xl">
+    Manage {app.name}
+
+    <ManageMenu id={app.id} client:only="preact" />
+  </h1>
+
+  <Ratings app={app} />
+</section>
+
