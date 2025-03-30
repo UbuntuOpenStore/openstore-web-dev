@@ -119,7 +119,7 @@ if (user.role === "admin") {
 
       <tr class="border-b-1 border-b-gray-300">
         <td class="p-2 pr-4 font-bold whitespace-nowrap">Translation Languages</td>
-        <td>{app.languages.join(", ")}</td>
+        <td>{app.languages.length > 0 ? app.languages.join(", ") : 'None'}</td>
       </tr>
     </table>
   </section>

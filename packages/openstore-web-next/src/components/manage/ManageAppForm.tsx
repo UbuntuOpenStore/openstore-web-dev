@@ -3,6 +3,10 @@ import { Switch } from "../ui/switch";
 import { APP_TYPE_OPTIONS, CATEGORIES, LICENSES } from "@/lib/constants";
 import SortableScreenshots from "../SortableScreenshots";
 import { useCallback, useState } from "preact/hooks";
+import SvgSpinner from "../icons/Spinner";
+import type { JSX } from "preact/jsx-runtime";
+import SvgCheck from "../icons/Check";
+import SvgClose from "../icons/Close";
 
 type ManageAppFormProps = {
   user: UserData,
@@ -12,10 +16,68 @@ type ManageAppFormProps = {
 
 const ManageAppForm = ({ user, app, maintainers }: ManageAppFormProps) => {
   const [saving, setSaving] = useState(false);
-  const save = useCallback(async () => {
-    setSaving(true);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState('');
 
-    // TODO implement
+  const save = useCallback(async (e: JSX.TargetedSubmitEvent<HTMLFormElement>) => {
+    setSaving(true);
+    setSuccess(false);
+    setError('');
+
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const entries = Array.from(formData.entries());
+
+    const newFormData = new FormData();
+    let screenshotFileCount = 0;
+    let addedScreenshots = false;
+    for (const [key, value] of entries) {
+      if (key === 'screenshots') {
+        // TODO update the backend to support either form data or json for the screenshots
+
+        if (!addedScreenshots) {
+          newFormData.append('screenshots', JSON.stringify(formData.getAll('screenshots')));
+          addedScreenshots = true;
+        }
+      }
+      else if (key === 'screenshot_files') {
+        if (screenshotFileCount < 5) {
+          screenshotFileCount++;
+          newFormData.append(key, value);
+        }
+      }
+      else {
+        newFormData.append(key, value);
+      }
+    }
+
+
+    const match = document.cookie.match(new RegExp('(^| )apikey=([^;]+)'));
+    const apikey = match ? decodeURIComponent(match[2]) : undefined;
+
+    document.cookie.includes('apikey=')
+    const response = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${app.id}?apikey=${apikey}`, {
+      method: "PUT",
+      body: newFormData,
+    });
+
+    if (response.ok) {
+      setSuccess(true);
+
+      // Refresh the page to update everything. Since some of the state is outside of this component, this is just simplest
+      location.reload();
+
+      // TODO make sure the let the user know that it was successful (maybe via a toast message?)
+    }
+    else {
+      const errorBody = await response.json()
+      let message = 'An unknown error has occurred';
+      if (errorBody && typeof errorBody.message === 'string') {
+        message = errorBody.message;
+      }
+
+      setError(message);
+    }
 
     setSaving(false);
   }, []);
@@ -65,11 +127,12 @@ const ManageAppForm = ({ user, app, maintainers }: ManageAppFormProps) => {
         </div>
 
         <div class="form-group">
-          <label for="screenshots" class="form-label">Screenshots (Limit 5)</label>
+          <label for="screenshot_files" class="form-label">Screenshots (Limit 5)</label>
           <div class="w-full">
             <input
               type="file"
-              id="screenshots"
+              id="screenshot_files"
+              name="screenshot_files"
               accept="image/*"
               multiple
               disabled={app.screenshots.length >= 5}
@@ -196,10 +259,28 @@ const ManageAppForm = ({ user, app, maintainers }: ManageAppFormProps) => {
         </>
       )}
 
-      <section class="section">
-        <button type="submit" class="btn bg-ubuntu-orange text-white font-bold">
+      <section class="section flex gap-4 items-center">
+        <button type="submit" class="btn bg-ubuntu-orange text-white font-bold cursor-pointer" disabled={saving}>
           Save
+
+          {saving && <SvgSpinner class="animate-spin ml-2" />}
         </button>
+
+        {success && <SvgCheck class="text-green-500" />}
+
+        {error && (
+          <>
+            <div class="bg-red-400 border-2 border-red-500 rounded flex px-6 py-4 gap-4">
+              <SvgClose class="text-red-600" />
+              <div>
+                Failed to update your app:
+                <p>
+                  {error}
+                </p>
+              </div>
+            </div>
+          </>
+        )}
       </section>
     </form>
   );

@@ -36,7 +36,7 @@ const SearchBar = () => {
         type="text"
         placeholder="Search..."
         aria-label="Search"
-        class="w-full h-full py-2 px-4 pr-10 rounded-full border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        class="w-full h-full py-2 px-4 pr-10 rounded-full border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
         value={term}
         onInput={(e) => debounceSetTerm(e.currentTarget.value)}
       />
