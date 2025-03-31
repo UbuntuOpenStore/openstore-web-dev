@@ -7,6 +7,7 @@ import SvgSpinner from "../icons/Spinner";
 import type { JSX } from "preact/jsx-runtime";
 import SvgCheck from "../icons/Check";
 import SvgClose from "../icons/Close";
+import { getClientApiKey } from "@/lib/utils";
 
 type ManageAppFormProps = {
   user: UserData,
@@ -43,11 +44,7 @@ const ManageAppForm = ({ user, app, maintainers }: ManageAppFormProps) => {
         }
       }
 
-      const match = document.cookie.match(new RegExp('(^| )apikey=([^;]+)'));
-      const apikey = match ? decodeURIComponent(match[2]) : undefined;
-
-      document.cookie.includes('apikey=')
-      const response = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${app.id}?apikey=${apikey}`, {
+      const response = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${app.id}?apikey=${getClientApiKey()}`, {
         method: "PUT",
         body: newFormData,
       });

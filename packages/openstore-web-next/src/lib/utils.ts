@@ -8,3 +8,8 @@ export function cn(...inputs: ClassValue[]) {
 export function categorySlug(category: string) {
   return category.toLowerCase().replace('& ', '').replace(/ /g, '-');
 }
+
+export function getClientApiKey() {
+  const match = document.cookie.match(new RegExp('(^| )apikey=([^;]+)'));
+  return match ? decodeURIComponent(match[2]) : undefined;
+}

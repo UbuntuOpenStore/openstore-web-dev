@@ -1,5 +1,6 @@
 ---
 import ManageHeader from "@/components/manage/ManageHeader.astro";
+import RevisionForm from "@/components/manage/RevisionForm";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { AppManageSchema } from "@/lib/schema";
 
@@ -35,5 +36,5 @@ const app = await appResponse.json().then(({ data }) => AppManageSchema.parse(da
 <BaseLayout title="OpenStore" pageTitle={`Manage ${app.name} | OpenStore`} description={app.tagline}>
   <ManageHeader app={app} breadcrumb="New Revision" />
 
-  {/* TODO */}
+  <RevisionForm app={app} client:only="preact" />
 </BaseLayout>
