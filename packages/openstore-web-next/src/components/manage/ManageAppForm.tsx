@@ -20,66 +20,58 @@ const ManageAppForm = ({ user, app, maintainers }: ManageAppFormProps) => {
   const [error, setError] = useState('');
 
   const save = useCallback(async (e: JSX.TargetedSubmitEvent<HTMLFormElement>) => {
-    setSaving(true);
-    setSuccess(false);
-    setError('');
-
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const entries = Array.from(formData.entries());
+    if (e.currentTarget.reportValidity()) {
+      setSaving(true);
+      setSuccess(false);
+      setError('');
 
-    const newFormData = new FormData();
-    let screenshotFileCount = 0;
-    let addedScreenshots = false;
-    for (const [key, value] of entries) {
-      if (key === 'screenshots') {
-        // TODO update the backend to support either form data or json for the screenshots
+      const formData = new FormData(e.currentTarget);
+      const entries = Array.from(formData.entries());
 
-        if (!addedScreenshots) {
-          newFormData.append('screenshots', JSON.stringify(formData.getAll('screenshots')));
-          addedScreenshots = true;
+      const newFormData = new FormData();
+      let screenshotFileCount = 0;
+      for (const [key, value] of entries) {
+        if (key === 'screenshot_files') {
+          if (screenshotFileCount < 5) {
+            screenshotFileCount++;
+            newFormData.append(key, value);
+          }
         }
-      }
-      else if (key === 'screenshot_files') {
-        if (screenshotFileCount < 5) {
-          screenshotFileCount++;
+        else {
           newFormData.append(key, value);
         }
       }
+
+      const match = document.cookie.match(new RegExp('(^| )apikey=([^;]+)'));
+      const apikey = match ? decodeURIComponent(match[2]) : undefined;
+
+      document.cookie.includes('apikey=')
+      const response = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${app.id}?apikey=${apikey}`, {
+        method: "PUT",
+        body: newFormData,
+      });
+
+      if (response.ok) {
+        setSuccess(true);
+
+        // Refresh the page to update everything. Since some of the state is outside of this component, this is just simplest
+        location.reload();
+
+        // TODO make sure the let the user know that it was successful (maybe via a toast message? use a query param for this)
+      }
       else {
-        newFormData.append(key, value);
-      }
-    }
+        const errorBody = await response.json()
+        let message = 'An unknown error has occurred';
+        if (errorBody && typeof errorBody.message === 'string') {
+          message = errorBody.message;
+        }
 
-
-    const match = document.cookie.match(new RegExp('(^| )apikey=([^;]+)'));
-    const apikey = match ? decodeURIComponent(match[2]) : undefined;
-
-    document.cookie.includes('apikey=')
-    const response = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${app.id}?apikey=${apikey}`, {
-      method: "PUT",
-      body: newFormData,
-    });
-
-    if (response.ok) {
-      setSuccess(true);
-
-      // Refresh the page to update everything. Since some of the state is outside of this component, this is just simplest
-      location.reload();
-
-      // TODO make sure the let the user know that it was successful (maybe via a toast message?)
-    }
-    else {
-      const errorBody = await response.json()
-      let message = 'An unknown error has occurred';
-      if (errorBody && typeof errorBody.message === 'string') {
-        message = errorBody.message;
+        setError(message);
       }
 
-      setError(message);
+      setSaving(false);
     }
-
-    setSaving(false);
   }, []);
 
   return (
