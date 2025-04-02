@@ -7,31 +7,33 @@ import SvgThumbsDown from "./icons/ThumbsDown";
 import SvgThumbsUp from "./icons/ThumbsUp";
 
 export type Props = {
-  app: AppData
+  app: {
+    ratings: AppData['ratings']
+  }
 };
 
-const { app } = Astro.props;
+const { app: { ratings } } = Astro.props;
 ---
 
 <ul class="flex gap-4">
   <li class="flex gap-2">
     <SvgThumbsUp />
-    {app.ratings.THUMBS_UP}
+    {ratings.THUMBS_UP}
   </li>
   <li class="flex gap-2">
     <SvgHappy />
-    {app.ratings.HAPPY}
+    {ratings.HAPPY}
   </li>
   <li class="flex gap-2">
     <SvgNeutral />
-    {app.ratings.NEUTRAL}
+    {ratings.NEUTRAL}
   </li>
   <li class="flex gap-2">
     <SvgThumbsDown />
-    {app.ratings.THUMBS_DOWN}
+    {ratings.THUMBS_DOWN}
   </li>
   <li class="flex gap-2">
     <SvgBuggy />
-    {app.ratings.BUGGY}
+    {ratings.BUGGY}
   </li>
 </ul>
