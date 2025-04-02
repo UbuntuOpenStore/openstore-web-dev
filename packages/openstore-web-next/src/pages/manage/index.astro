@@ -1,15 +1,20 @@
 ---
+import Pagination from "@/components/Pagination";
+import StaticPagination from "@/components/StaticPagination";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { AppSearchSchema, UserSchema } from "@/lib/schema";
 
 export const prerender = false;
 
 const url = new URL(Astro.request.url);
+const hashPage = parseInt(url.searchParams.get("page") ?? "0");
+const currentPage = isNaN(hashPage) ? 0 : hashPage;
+
 if (url.searchParams.has("key")) {
   const expires = new Date();
   expires.setDate(expires.getDate() + 14);
 
-  Astro.cookies.set("apikey", url.searchParams.get("key")!, { expires, path: '/' });
+  Astro.cookies.set("apikey", url.searchParams.get("key")!, { expires, path: "/" });
   return Astro.redirect("/manage/");
 }
 
@@ -18,11 +23,18 @@ if (!apikey) {
   return Astro.redirect("/login/");
 }
 
+const PAGE_SIZE = 32;
+const skip = currentPage * PAGE_SIZE;
+const appSearchUrl = new URL(`${import.meta.env.PUBLIC_API_URL}api/v3/manage`);
+appSearchUrl.searchParams.append("apikey", apikey);
+appSearchUrl.searchParams.append("limit", PAGE_SIZE.toString());
+appSearchUrl.searchParams.append("skip", skip.toString());
+
 const [userResponse, appResponse] = await Promise.all([
   // TODO cache this
   fetch(`${import.meta.env.PUBLIC_API_URL}api/users/me?apikey=${apikey}`),
 
-  fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage?apikey=${apikey}&limit=32`),
+  fetch(appSearchUrl),
 ]);
 if (userResponse.status !== 200 || appResponse.status !== 200) {
   Astro.cookies.delete("apikey");
@@ -31,6 +43,7 @@ if (userResponse.status !== 200 || appResponse.status !== 200) {
 
 const user = await userResponse.json().then(({ data }) => UserSchema.parse(data));
 const apps = await appResponse.json().then(({ data }) => AppSearchSchema.parse(data));
+const totalPages = Math.ceil(apps.count / PAGE_SIZE) - 1;
 ---
 
 <BaseLayout title="OpenStore" pageTitle="Manage | OpenStore" description="The open source app store for Ubuntu Touch">
@@ -64,13 +77,13 @@ const apps = await appResponse.json().then(({ data }) => AppSearchSchema.parse(d
               </h1>
 
               <p>{app.publisher}</p>
-              <p class={app.published ? 'text-green-400' : 'text-gray-400'}>{app.published ? "Published" : "Not Published"}</p>
+              <p class={app.published ? "text-green-400" : "text-gray-400"}>{app.published ? "Published" : "Not Published"}</p>
             </div>
           </div>
         ))
       }
     </div>
 
-    {/* TODO pagination */}
+    {totalPages > 1 && <StaticPagination currentPage={currentPage} totalPages={totalPages} baseUrl={`/manage/`} />}
   </section>
 </BaseLayout>
