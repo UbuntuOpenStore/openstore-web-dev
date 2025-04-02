@@ -1,4 +1,5 @@
 ---
+import SubmitAppForm from "@/components/manage/SubmitAppForm";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
@@ -97,6 +98,6 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
       </li>
     </ul>
 
-    {/* TODO upload form */}
+    <SubmitAppForm client:only="preact" />
   </section>
 </BaseLayout>

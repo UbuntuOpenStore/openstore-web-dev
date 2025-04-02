@@ -94,6 +94,8 @@ export const AppManageSchema = AppSchema.extend({
   type_override: z.string(),
   review_exceptions: z.array(z.string()),
   maintainer: z.string().optional(),
+  published_date: z.coerce.date().or(z.literal('')),
+  updated_date: z.coerce.date().or(z.literal('')),
 });
 
 export type AppManageData = z.infer<typeof AppManageSchema>;

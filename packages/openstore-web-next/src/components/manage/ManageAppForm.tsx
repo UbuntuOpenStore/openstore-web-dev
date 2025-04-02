@@ -54,8 +54,6 @@ const ManageAppForm = ({ user, app, maintainers }: ManageAppFormProps) => {
 
         // Refresh the page to update everything. Since some of the state is outside of this component, this is just simplest
         location.reload();
-
-        // TODO make sure the let the user know that it was successful (maybe via a toast message? use a query param for this)
       }
       else {
         const errorBody = await response.json()

@@ -99,27 +99,35 @@ if (user.role === "admin") {
 
       <tr class="border-b-1 border-b-gray-300">
         <td class="p-2 font-bold">Publisher</td>
-        <td>{app.publisher ?? "None"}</td>
+        <td>{app.publisher || "None"}</td>
       </tr>
 
-      <tr class="border-b-1 border-b-gray-300">
-        <td class="p-2 font-bold">Published Date</td>
-        <td>{new Date(app.published_date).toLocaleString()}</td>
-      </tr>
+      {
+        app.published_date && (
+          <tr class="border-b-1 border-b-gray-300">
+            <td class="p-2 font-bold">Published Date</td>
+            <td>{new Date(app.published_date).toLocaleString()}</td>
+          </tr>
+        )
+      }
 
-      <tr class="border-b-1 border-b-gray-300">
-        <td class="p-2 font-bold">Updated Date</td>
-        <td>{new Date(app.updated_date).toLocaleString()}</td>
-      </tr>
+      {
+        app.updated_date && (
+          <tr class="border-b-1 border-b-gray-300">
+            <td class="p-2 font-bold">Updated Date</td>
+            <td>{new Date(app.updated_date).toLocaleString()}</td>
+          </tr>
+        )
+      }
 
       <tr class="border-b-1 border-b-gray-300">
         <td class="p-2 font-bold">{app.architectures.length > 1 ? "Architectures" : "Architecture"}</td>
-        <td>{app.architectures.join(", ")}</td>
+        <td>{app.architectures.length > 0 ? app.architectures.join(", ") : "None"}</td>
       </tr>
 
       <tr class="border-b-1 border-b-gray-300">
         <td class="p-2 pr-4 font-bold whitespace-nowrap">Translation Languages</td>
-        <td>{app.languages.length > 0 ? app.languages.join(", ") : 'None'}</td>
+        <td>{app.languages.length > 0 ? app.languages.join(", ") : "None"}</td>
       </tr>
     </table>
   </section>
