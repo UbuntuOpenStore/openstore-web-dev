@@ -3,7 +3,8 @@ import ManageAppForm from "@/components/manage/ManageAppForm";
 import ManageHeader from "@/components/manage/ManageHeader.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { UserData } from "@/lib/schema";
-import { AppManageSchema, UserListSchema, UserSchema } from "@/lib/schema";
+import { AppManageSchema, UserListSchema } from "@/lib/schema";
+import { getUser } from "@/lib/user";
 
 export const prerender = false;
 
@@ -13,9 +14,8 @@ if (!apikey) {
   return Astro.redirect("/login/");
 }
 
-const [userResponse, appResponse] = await Promise.all([
-  // TODO cache this
-  fetch(`${import.meta.env.PUBLIC_API_URL}api/users/me?apikey=${apikey}`),
+const [user, appResponse] = await Promise.all([
+  getUser(apikey),
 
   fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${id}?apikey=${apikey}`),
 ]);
@@ -31,12 +31,11 @@ if (appResponse.status === 403) {
   return Astro.redirect("/manage/");
 }
 
-if (userResponse.status !== 200 || appResponse.status !== 200) {
+if (!user || appResponse.status !== 200) {
   Astro.cookies.delete("apikey");
   return Astro.redirect("/login/");
 }
 
-const user = await userResponse.json().then(({ data }) => UserSchema.parse(data));
 const app = await appResponse.json().then(({ data }) => AppManageSchema.parse(data));
 
 let maintainers: (UserData & { display_name: string })[] = [];

@@ -7,22 +7,21 @@ import { loadEnv } from "vite";
 
 import tailwindcss from "@tailwindcss/vite";
 
+import db from "@astrojs/db";
+
 // https://docs.astro.build/en/guides/environment-variables/#in-the-astro-config-file
 const { SITE, SENTRY_DSN, SENTRY_PROJECT, SENTRY_AUTH_TOKEN } = loadEnv(process.env.NODE_ENV ?? 'production', process.cwd(), "");
 
 // https://astro.build/config
 export default defineConfig({
   site: SITE ?? "https://open-store.io/",
-  integrations: [
-    preact({ compat: true }),
-    sentry({
-      dsn: SENTRY_DSN,
-      sourceMapsUploadOptions: {
-        project: SENTRY_PROJECT,
-        authToken: SENTRY_AUTH_TOKEN,
-      },
-    }),
-  ],
+  integrations: [preact({ compat: true }), sentry({
+    dsn: SENTRY_DSN,
+    sourceMapsUploadOptions: {
+      project: SENTRY_PROJECT,
+      authToken: SENTRY_AUTH_TOKEN,
+    },
+  }), db()],
   output: "static",
   adapter: node({
     mode: "standalone",

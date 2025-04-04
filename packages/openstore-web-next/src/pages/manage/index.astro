@@ -1,8 +1,8 @@
 ---
-import Pagination from "@/components/Pagination";
 import StaticPagination from "@/components/StaticPagination";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { AppSearchSchema, UserSchema } from "@/lib/schema";
+import { AppSearchSchema } from "@/lib/schema";
+import { getUser } from "@/lib/user";
 
 export const prerender = false;
 
@@ -30,18 +30,16 @@ appSearchUrl.searchParams.append("apikey", apikey);
 appSearchUrl.searchParams.append("limit", PAGE_SIZE.toString());
 appSearchUrl.searchParams.append("skip", skip.toString());
 
-const [userResponse, appResponse] = await Promise.all([
-  // TODO cache this
-  fetch(`${import.meta.env.PUBLIC_API_URL}api/users/me?apikey=${apikey}`),
+const [user, appResponse] = await Promise.all([
+  getUser(apikey),
 
   fetch(appSearchUrl),
 ]);
-if (userResponse.status !== 200 || appResponse.status !== 200) {
+if (!user || appResponse.status !== 200) {
   Astro.cookies.delete("apikey");
   return Astro.redirect("/login/");
 }
 
-const user = await userResponse.json().then(({ data }) => UserSchema.parse(data));
 const apps = await appResponse.json().then(({ data }) => AppSearchSchema.parse(data));
 const totalPages = Math.ceil(apps.count / PAGE_SIZE) - 1;
 ---
