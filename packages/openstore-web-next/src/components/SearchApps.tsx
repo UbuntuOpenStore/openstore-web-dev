@@ -36,7 +36,10 @@ const SearchApps = ({ category, categoryName }: Props) => {
   const hash = new URLSearchParams(document.location.hash.substring(1));
   const hashPage = parseInt(hash.get('page') ?? '0');
 
-  const term = useStore(searchTerm);
+  const storeTerm = useStore(searchTerm);
+  // Get from the hash as a backup so we don't overwrite the hash before it gets stored in SearchBar.tsx
+  const term = storeTerm || hash.get('search') || '';
+
   const [page, setPage] = useState(isNaN(hashPage) ? 0 : hashPage);
   const [totalPages, setTotalPages] = useState(0);
   const [query, setQuery] = useState({

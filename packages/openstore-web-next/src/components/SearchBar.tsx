@@ -11,9 +11,7 @@ const SearchBar = () => {
   useEffect(() => {
     if (!initialized) {
       const hash = new URLSearchParams(document.location.hash.substring(1));
-      if (hash.get('search')) {
-        searchTerm.set(hash.get('search')!);
-      }
+      searchTerm.set(hash.get('search') ?? '');
 
       setInitialized(true);
     }
