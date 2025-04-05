@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "preact/hooks";
-import AppList from "./AppList";
+import AppList from "./apps/AppList";
 import { AppSearchSchema, AppType, type SlimAppData } from "@/lib/schema";
 import Pagination from "./Pagination";
 import SvgSpinner from "./icons/Spinner";

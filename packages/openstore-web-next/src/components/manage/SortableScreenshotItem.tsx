@@ -1,6 +1,6 @@
 import {useSortable} from '@dnd-kit/sortable';
 import {CSS} from '@dnd-kit/utilities';
-import SvgClose from './icons/Close';
+import SvgClose from '../icons/Close';
 
 type SortableScreenshotItemProps = {
   screenshot: string;

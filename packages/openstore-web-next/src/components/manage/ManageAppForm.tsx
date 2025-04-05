@@ -1,7 +1,7 @@
 import type { AppManageData, UserData } from "@/lib/schema";
 import { Switch } from "../ui/switch";
 import { APP_TYPE_OPTIONS, CATEGORIES, LICENSES } from "@/lib/constants";
-import SortableScreenshots from "../SortableScreenshots";
+import SortableScreenshots from "./SortableScreenshots";
 import { useCallback, useState } from "preact/hooks";
 import SvgSpinner from "../icons/Spinner";
 import type { JSX } from "preact/jsx-runtime";

@@ -5,11 +5,13 @@ import { AppSchema, ReviewsSchema } from "@/lib/schema";
 import { categorySlug } from "@/lib/utils";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import CircleIcon from "@/components/CircleIcon.astro";
-import DownloadDialog from "@/components/DownloadDialog";
-import IconList from "@/components/IconList.astro";
-import IconListItem from "@/components/IconListItem.astro";
-import Review from "@/components/Review.astro";
-import Screenshots from "@/components/Screenshots";
+import DownloadDialog from "@/components/apps/DownloadDialog";
+import IconList from "@/components/apps/IconList.astro";
+import IconListItem from "@/components/apps/IconListItem.astro";
+import Review from "@/components/apps/Review.astro";
+import Screenshots from "@/components/apps/Screenshots";
+import AppTypeBadges from "@/components/apps/AppTypeBadges";
+import Ratings from "@/components/apps/Ratings.astro";
 
 import SvgCommunity from "@/components/icons/Community";
 import SvgDate from "@/components/icons/Date";
@@ -24,8 +26,6 @@ import SvgSource from "@/components/icons/Source";
 import SvgUser from "@/components/icons/User";
 import SvgExternalLink from "@/components/icons/ExternalLink";
 import SvgHome from "@/components/icons/Home";
-import AppTypeBadges from "@/components/AppTypeBadges";
-import Ratings from "@/components/Ratings.astro";
 
 const { id } = Astro.params;
 
@@ -139,7 +139,7 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
           </p>
         )}
 
-        <AppTypeBadges types={app.types} publishedDate={app.published_date} />
+        <AppTypeBadges types={app.types} />
 
         <p class="mt-4 text-xl">{app.tagline}</p>
       </div>

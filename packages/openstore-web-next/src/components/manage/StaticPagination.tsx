@@ -1,5 +1,5 @@
-import SvgGoNext from "./icons/GoNext";
-import SvgGoPrevious from "./icons/GoPrevious";
+import SvgGoNext from "../icons/GoNext";
+import SvgGoPrevious from "../icons/GoPrevious";
 
 function formatPage(page: number) {
   return page + 1;

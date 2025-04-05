@@ -1,7 +1,7 @@
 ---
-import HighlightedApps from "@/components/HighlightedApps.tsx";
+import HighlightedApps from "@/components/apps/HighlightedApps";
 import { DEFAULT_CHANNEL, DiscoverSchema } from "../lib/schema";
-import AppList from "@/components/AppList";
+import AppList from "@/components/apps/AppList";
 import { categorySlug } from "@/lib/utils";
 
 const discoverResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/discover?channel=${DEFAULT_CHANNEL}`);

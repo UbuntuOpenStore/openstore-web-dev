@@ -12,7 +12,6 @@ import {
   sortableKeyboardCoordinates,
   horizontalListSortingStrategy,
 } from '@dnd-kit/sortable';
-
 import SortableScreenshotItem from './SortableScreenshotItem';
 import { useCallback, useState } from 'preact/hooks';
 

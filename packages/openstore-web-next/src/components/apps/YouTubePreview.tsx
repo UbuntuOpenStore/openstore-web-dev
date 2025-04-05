@@ -1,6 +1,6 @@
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { useState } from "preact/hooks";
-import SvgPlay from "./icons/Play";
+import SvgPlay from "../icons/Play";
 
 const getVideoId = (url: string): string => {
   const embedMatch = url.match(/\/embed\/([^/?]+)/)

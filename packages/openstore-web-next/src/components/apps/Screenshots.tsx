@@ -2,9 +2,9 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useState } from "preact/hooks";
 import YouTubePreview from "./YouTubePreview";
-import SvgGoPrevious from "./icons/GoPrevious";
-import SvgGoNext from "./icons/GoNext";
-import SvgClose from "./icons/Close";
+import SvgGoPrevious from "../icons/GoPrevious";
+import SvgGoNext from "../icons/GoNext";
+import SvgClose from "../icons/Close";
 
 const Screenshots = ({ images, videoUrl, nsfw }: { images: string[], videoUrl?: string, nsfw?: boolean }) => {
   const [isOpen, setIsOpen] = useState(false);
