@@ -22,13 +22,13 @@ export default defineConfig({
       authToken: SENTRY_AUTH_TOKEN,
     },
   }), db()],
+  prefetch: {
+    prefetchAll: false
+  },
   output: "static",
   adapter: node({
     mode: "standalone",
   }),
-  experimental: {
-    session: true,
-  },
   vite: {
     server: {
       allowedHosts: ["next.local.open-store.io", "next.open-store.io", "open-store.io"],
