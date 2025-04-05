@@ -131,6 +131,7 @@ export const SlimAppSchema = z.object({
   }),
   published: z.boolean().optional(),
   publisher: z.string(),
+  published_date: z.string().optional(),
 });
 
 export type SlimAppData = z.infer<typeof SlimAppSchema>;

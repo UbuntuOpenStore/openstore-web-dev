@@ -22,7 +22,7 @@ const AppList = ({ apps }: { apps: SlimAppData[] }) => {
 
               <TopRating ratings={app.ratings} />
 
-              <AppTypeBadges types={app.types} />
+              <AppTypeBadges types={app.types} publishedDate={app.published_date} />
             </div>
           </div>
         ))

@@ -139,7 +139,7 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
           </p>
         )}
 
-        <AppTypeBadges types={app.types} />
+        <AppTypeBadges types={app.types} publishedDate={app.published_date} />
 
         <p class="mt-4 text-xl">{app.tagline}</p>
       </div>
