@@ -1,0 +1,1383 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2025-01-24 16:01+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/open-store-io/"
+"openstore-web/ta/>\n"
+"Language: ta\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
+"Generated-By: easygettext\n"
+
+#: ./src/views/Package.vue:120
+msgid ""
+"*This app contains NSFW content, to view the description and\n"
+"screenshots, click the above button."
+msgstr ""
+"*இந்த பயன்பாட்டில் NSFW உள்ளடக்கம் உள்ளது, விளக்கத்தைக் காண மற்றும்\n"
+" திரை சாட்கள், மேலே உள்ள பொத்தானைக் சொடுக்கு செய்க."
+
+#: ./src/views/ManagePackage.vue:231
+msgid "%{name} was successfully deleted"
+msgstr "%{name} வெற்றிகரமாக நீக்கப்பட்டது"
+
+#: ./src/views/ManagePackage.vue:125
+msgid "A comma separated list of keywords"
+msgstr "கமா பிரிக்கப்பட்ட முக்கிய வார்த்தைகளின் பட்டியல்"
+
+#: ./src/App.vue:29
+#: ./src/views/About.vue:3
+#: ./src/views/About.vue:12
+#: ./src/views/About.vue:16
+msgid "About"
+msgstr "பற்றி"
+
+#: ./src/App.vue:63
+msgid "About Us"
+msgstr "எங்களைப் பற்றி"
+
+#: ./src/views/Package.vue:64
+msgid "Accounts"
+msgstr "கணக்குகள்"
+
+#: ./src/views/ManageRevisions.vue:54
+msgid "Add Another Architecture"
+msgstr "மற்றொரு கட்டிடக்கலை சேர்க்கவும்"
+
+#: ./src/views/ManagePackage.vue:56
+msgid "Admin"
+msgstr "நிர்வாகி"
+
+#: ./src/views/Browse.vue:16
+msgid "All Categories"
+msgstr "அனைத்து பிரிவுகளும்"
+
+#: ./src/views/Browse.vue:50
+msgid "All Channels"
+msgstr "அனைத்து சேனல்களும்"
+
+#: ./src/views/Browse.vue:25
+msgid "All Types"
+msgstr "அனைத்து வகைகளும்"
+
+#: ./src/views/Login.vue:26
+msgid "An account is not needed to download or install apps."
+msgstr "பயன்பாடுகளை பதிவிறக்கம் செய்ய அல்லது நிறுவ ஒரு கணக்கு தேவையில்லை."
+
+#: ./src/views/ManagePackage.vue:87
+#: ./src/views/ManagePackage.vue:100
+#: ./src/views/ManageRevisions.vue:78
+msgid "An error occured loading your app data"
+msgstr "உங்கள் பயன்பாட்டு தரவை ஏற்றுவதில் பிழை ஏற்பட்டது"
+
+#: ./src/views/ManageRevisions.vue:140
+#: ./src/views/Submit.vue:47
+msgid "An unknown error has occurred"
+msgstr "தெரியாத பிழை ஏற்பட்டது"
+
+#: ./src/views/About.vue:151
+msgid "And many amazing developers, testers, and users from the OpenStore community!"
+msgstr ""
+"மற்றும் ஓபன்ச்டோர் சமூகத்தைச் சேர்ந்த பல அற்புதமான உருவாக்குபவர்கள், சோதனையாளர்கள் மற்றும் "
+"பயனர்கள்!"
+
+#: ./src/views/About.vue:113
+msgid ""
+"Any personal data you decide to give us (e.g. your email address when registering for an account to upload your apps)\n"
+"goes no further than us,\n"
+"and will not be used for anything other than allowing you to maintain your apps and, in rare cases,\n"
+"contact you in the event there is an issue with your app.\n"
+"Additionally, this site uses cookies to keep you logged in to your account."
+msgstr ""
+"எங்களுக்கு வழங்க நீங்கள் முடிவு செய்யும் எந்தவொரு தனிப்பட்ட தரவுகளும் (எ.கா. உங்கள் "
+"பயன்பாடுகளை பதிவேற்ற ஒரு கணக்கிற்கு பதிவு செய்யும் போது உங்கள் மின்னஞ்சல் முகவரி)\n"
+" எங்களை விட அதிகமாக இல்லை,\n"
+" உங்கள் பயன்பாடுகளை பராமரிக்க உங்களை அனுமதிப்பதைத் தவிர வேறு எதற்கும் பயன்படுத்தப்படாது, "
+"அரிதான சந்தர்ப்பங்களில்,\n"
+" உங்கள் பயன்பாட்டில் சிக்கல் இருந்தால் உங்களை தொடர்பு கொள்ளுங்கள்.\n"
+" கூடுதலாக, இந்த தளம் உங்கள் கணக்கில் உள்நுழைய குக்கீகளைப் பயன்படுத்துகிறது."
+
+#: ./src/views/Manage.vue:13
+msgid "API Key"
+msgstr "பநிஇ விசை"
+
+#: ./src/components/Types.vue:3
+#: ./src/views/Manage.vue:43
+#: ./src/views/ManagePackage.vue:221
+#: ./src/views/Stats.vue:27
+msgid "App"
+msgstr "பயன்பாடு"
+
+#: ./src/views/Submit.vue:85
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr ""
+"மேலே உள்ள ஏதேனும் ஒன்றைக் கொண்ட அல்லது ஊக்குவிக்கும் பயன்பாடு கண்டிப்பாக "
+"தடைசெய்யப்பட்டுள்ளது."
+
+#: ./src/views/Submit.vue:117
+msgid "App Name"
+msgstr "பயன்பாட்டு பெயர்"
+
+#: ./src/App.vue:69
+msgid "App Stats"
+msgstr "பயன்பாட்டு புள்ளிவிவரங்கள்"
+
+#: ./src/views/About.vue:131
+msgid "App Submission Tutorial"
+msgstr "பயன்பாட்டு சமர்ப்பிப்பு பயிற்சி"
+
+#: ./src/views/Submit.vue:128
+msgid "App Title"
+msgstr "பயன்பாட்டு தலைப்பு"
+
+#: ./src/views/Stats.vue:17
+msgid "App Type"
+msgstr "பயன்பாட்டு வகை"
+
+#: ./src/views/Stats.vue:13
+msgid "App Types"
+msgstr "பயன்பாட்டு வகைகள்"
+
+#: ./src/views/Browse.vue:26
+msgid "Apps"
+msgstr "பயன்பாடுகள்"
+
+#: ./src/views/Submit.vue:89
+msgid ""
+"Apps containing gambling involving real world money transactions are not allowed.\n"
+"  This includes, but is not limited to, online casinos, betting, and lotteries."
+msgstr ""
+"உண்மையான உலக பண பரிவர்த்தனைகளை உள்ளடக்கிய சூதாட்டங்களைக் கொண்ட பயன்பாடுகள் "
+"அனுமதிக்கப்படவில்லை.\n"
+" இது நிகழ்நிலை கேசினோக்கள், பந்தயம் மற்றும் லாட்டரிகளை உள்ளடக்கியது, ஆனால் அவை மட்டுமல்ல."
+
+#: ./src/views/Submit.vue:74
+msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
+msgstr ""
+"சிறுவர் தீய பயன்பாடு அல்லது சிறுவர் பாலியல் தீய பயன்பாடு ஆகியவற்றைக் கொண்ட அல்லது "
+"ஊக்குவிக்கும் பயன்பாடுகள் கண்டிப்பாக தடைசெய்யப்பட்டுள்ளன."
+
+#: ./src/views/Submit.vue:78
+msgid ""
+"Apps containing or promoting gratuitous violence are not allowed.\n"
+"  This includes, but is not limited to, violence, terrorism, bomb/weapon making, self harm, and grotesque imagery."
+msgstr ""
+"நன்றியற்ற வன்முறைகளைக் கொண்ட அல்லது ஊக்குவிக்கும் பயன்பாடுகள் அனுமதிக்கப்படவில்லை.\n"
+" இது வன்முறை, பயங்கரவாதம், வெடிகுண்டு/ஆயுதம் தயாரித்தல், தன்வய தீங்கு மற்றும் கோரமான "
+"படங்களை உள்ளடக்கியது, ஆனால் அவை மட்டுமல்ல."
+
+#: ./src/views/Submit.vue:67
+msgid ""
+"Apps containing or promoting sexually explicit content are not allowed.\n"
+"  This includes, but is not limited to, pornography and services promoting sexually explicit content."
+msgstr ""
+"பாலியல் வெளிப்படையான உள்ளடக்கத்தைக் கொண்ட அல்லது ஊக்குவிக்கும் பயன்பாடுகள் அனுமதிக்கப்படாது."
+"\n"
+" பாலியல் வெளிப்படையான உள்ளடக்கத்தை ஊக்குவிக்கும் ஆபாச மற்றும் சேவைகள் இதில் அடங்கும், ஆனால் "
+"அவை மட்டுமல்ல."
+
+#: ./src/views/Submit.vue:7
+msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
+msgstr ""
+"கையேடு மதிப்பாய்வு தேவையில்லாத பயன்பாடுகளை மேலே உள்ள \"உள்நுழைவு\" இணைப்புடன் "
+"உள்நுழைவதன் மூலம் சமர்ப்பிக்க முடியும்."
+
+#: ./src/views/Submit.vue:96
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr ""
+"சட்டவிரோத நடவடிக்கைகளை ஊக்குவிக்கும் பயன்பாடுகள் (அமெரிக்கா சட்டத்தின் அடிப்படையில்) "
+"அனுமதிக்கப்படவில்லை."
+
+#: ./src/views/Submit.vue:15
+msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
+msgstr ""
+"கையேடு மதிப்பாய்வு தேவைப்படும் பயன்பாடுகள் எங்கள் டெலிகிராம் குழுவில் ஒரு நிர்வாகியைத் "
+"தொடர்புகொள்வதன் மூலம் சமர்ப்பிக்கப்பட வேண்டும்."
+
+#: ./src/views/Submit.vue:100
+msgid ""
+"Apps that are found to be stealing the users data, trying to escalate their privileges without user consent,\n"
+"  or executing malicious process are strictly prohibited."
+msgstr ""
+"பயனர்களின் தரவைத் திருடுவதாகக் கண்டறியப்பட்ட பயன்பாடுகள், பயனர் அனுமதியின்றி தங்கள் "
+"சலுகைகளை அதிகரிக்க முயற்சிக்கிறது,\n"
+" அல்லது தீங்கிழைக்கும் செயல்முறையை செயல்படுத்துவது கண்டிப்பாக தடைசெய்யப்பட்டுள்ளது."
+
+#: ./src/views/About.vue:121
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission rules and content policy.\n"
+"You can review the rules and policies before uploading your app."
+msgstr ""
+"ஓபன்ச்டோரில் பதிவேற்றப்பட்ட பயன்பாடுகள் எங்கள் சமர்ப்பிக்கும் விதிகள் மற்றும் உள்ளடக்கக் கொள்கைக்கு"
+" உட்பட்டவை.\n"
+" உங்கள் பயன்பாட்டைப் பதிவேற்றுவதற்கு முன் விதிகள் மற்றும் கொள்கைகளை மதிப்பாய்வு செய்யலாம்."
+
+#: ./src/views/ManagePackage.vue:297
+msgid "Arch"
+msgstr "மான்"
+
+#: ./src/views/ManagePackage.vue:255
+#: ./src/views/Package.vue:168
+msgid "Architecture"
+msgstr "கட்டிடக்கலை"
+
+#: ./src/views/Package.vue:65
+msgid "Audio"
+msgstr "ஆடியோ"
+
+#: ./src/views/Package.vue:6
+#: ./src/views/PackageVersions.vue:8
+msgid "Back"
+msgstr "பின்"
+
+#: ./src/views/Badge.vue:10
+#: ./src/views/Badge.vue:14
+#: ./src/views/ManagePackage.vue:62
+msgid "Badge"
+msgstr "ஒட்டு"
+
+#: ./src/views/About.vue:18
+msgid "Badges"
+msgstr "பேட்ச்கள்"
+
+#: ./src/views/Package.vue:66
+msgid "Bluetooth"
+msgstr "ஊடலை"
+
+#: ./src/components/Types.vue:4
+#: ./src/views/ManagePackage.vue:222
+#: ./src/views/Stats.vue:28
+msgid "Bookmark"
+msgstr "புத்தககுறி"
+
+#: ./src/views/Browse.vue:27
+msgid "Bookmarks"
+msgstr "புக்மார்க்குகள்"
+
+#: ./src/App.vue:26
+msgid "Browse"
+msgstr "உலாவு"
+
+#: ./src/views/Browse.vue:27
+msgid "Browse Apps"
+msgstr "பயன்பாடுகளை உலாவுக"
+
+#: ./src/views/About.vue:65
+msgid "Bug Tracker"
+msgstr "பிழை டிராக்கர்"
+
+#: ./src/views/Package.vue:67
+msgid "Calendar"
+msgstr "நாட்காட்டி"
+
+#: ./src/views/Package.vue:68
+msgid "Camera"
+msgstr "கேமரா"
+
+#: ./src/views/ManagePackage.vue:345
+#: ./src/views/ManageRevisions.vue:71
+#: ./src/views/Submit.vue:137
+msgid "Cancel"
+msgstr "ரத்துசெய்"
+
+#: ./src/views/Browse.vue:14
+#: ./src/views/ManagePackage.vue:114
+#: ./src/views/Package.vue:153
+msgid "Category"
+msgstr "வகை"
+
+#: ./src/views/ManagePackage.vue:85
+#: ./src/views/ManageRevisions.vue:61
+#: ./src/views/Package.vue:183
+msgid "Changelog"
+msgstr "மாற்றபதிவு"
+
+#: ./src/views/Browse.vue:48
+#: ./src/views/ManagePackage.vue:296
+#: ./src/views/ManageRevisions.vue:21
+msgid "Channel"
+msgstr "வாய்க்கால்"
+
+#: ./src/views/ManagePackage.vue:263
+msgid "Channels"
+msgstr "சேனல்கள்"
+
+#: ./src/views/Submit.vue:73
+msgid "Child Endangerment"
+msgstr "குழந்தை இடர்"
+
+#: ./src/views/ManagePackage.vue:116
+msgid "Choose a category"
+msgstr "ஒரு வகையைத் தேர்வுசெய்க"
+
+#: ./src/views/ManagePackage.vue:141
+msgid "Choose a license"
+msgstr "உரிமத்தைத் தேர்வுசெய்க"
+
+#: ./src/views/ManagePackage.vue:212
+msgid "Choose a maintainer"
+msgstr "ஒரு பராமரிப்பாளரைத் தேர்வுசெய்க"
+
+#: ./src/views/ManageRevisions.vue:52
+msgid "Completed"
+msgstr "முடிந்தது"
+
+#: ./src/views/Package.vue:69
+msgid "Connectivity"
+msgstr "இணைப்பு"
+
+#: ./src/views/About.vue:50
+msgid "Contact"
+msgstr "தொடர்பு"
+
+#: ./src/views/Package.vue:70
+msgid "Contacts"
+msgstr "தொடர்புகள்"
+
+#: ./src/views/Package.vue:72
+msgid "Content Exchange"
+msgstr "உள்ளடக்க பரிமாற்றம்"
+
+#: ./src/views/Package.vue:71
+msgid "Content Exchange Source"
+msgstr "உள்ளடக்க பரிமாற்ற மூல"
+
+#: ./src/views/About.vue:135
+msgid "Contributors"
+msgstr "பங்களிப்பாளர்கள்"
+
+#: ./src/components/CopyLine.vue:3
+msgid "Copy to clipboard"
+msgstr "இடைநிலைப்பலகைக்கு நகலெடுக்கவும்"
+
+#: ./src/views/Stats.vue:18
+msgid "Count"
+msgstr "எண்ணுங்கள்"
+
+#: ./src/views/ManageRevisions.vue:67
+msgid "Create"
+msgstr "உருவாக்கு"
+
+#: ./src/views/Package.vue:73
+msgid "Debug"
+msgstr "பிழைத்திருத்தம்"
+
+#: ./src/views/ManagePackage.vue:341
+msgid "Delete"
+msgstr "நீக்கு"
+
+#: ./src/views/ManagePackage.vue:80
+msgid "Description"
+msgstr "விவரம்"
+
+#: ./src/views/ManagePackage.vue:50
+msgid "Discovery"
+msgstr "கண்டுபிடிப்பு"
+
+#: ./src/views/Package.vue:75
+msgid "Document Files"
+msgstr "ஆவணக் கோப்புகள்"
+
+#: ./src/App.vue:84
+#: ./src/views/Package.vue:95
+msgid "Donate"
+msgstr "நன்கொடை"
+
+#: ./src/views/ManagePackage.vue:182
+msgid "Donate URL"
+msgstr "முகவரி ஐ தானம் செய்யுங்கள்"
+
+#: ./src/views/Package.vue:42
+#: ./src/views/Package.vue:50
+msgid "Download"
+msgstr "பதிவிறக்கம்"
+
+#: ./src/views/ManagePackage.vue:289
+msgid "Download Stats"
+msgstr "புள்ளிவிவரங்களைப் பதிவிறக்கவும்"
+
+#: ./src/views/About.vue:39
+msgid "Download the OpenStore App"
+msgstr "ஓபன்ச்டோர் பயன்பாட்டைப் பதிவிறக்கவும்"
+
+#: ./src/views/Manage.vue:47
+#: ./src/views/Manage.vue:63
+#: ./src/views/ManagePackage.vue:299
+msgid "Downloads"
+msgstr "பதிவிறக்கங்கள்"
+
+#: ./src/views/Package.vue:214
+msgid "Downloads of the latest version"
+msgstr "அண்மைக் கால பதிப்பின் பதிவிறக்கங்கள்"
+
+#: ./src/views/ManagePackage.vue:95
+msgid "Drag and drop to sort screenshots."
+msgstr "திரை சாட்களை வரிசைப்படுத்த இழுத்து விடுங்கள்."
+
+#: ./src/views/ManagePackage.vue:14
+msgid "Edit"
+msgstr "தொகு"
+
+#: ./src/views/ManagePackage.vue:87
+#: ./src/views/ManagePackage.vue:100
+#: ./src/views/ManagePackage.vue:218
+#: ./src/views/ManagePackage.vue:249
+#: ./src/views/ManageRevisions.vue:78
+#: ./src/views/ManageRevisions.vue:161
+#: ./src/views/Submit.vue:58
+msgid "Error"
+msgstr "பிழை"
+
+#: ./src/views/Feeds.vue:7
+#: ./src/views/Feeds.vue:11
+msgid "Feeds"
+msgstr "ஊட்டங்கள்"
+
+#: ./src/views/ManageRevisions.vue:15
+msgid "File"
+msgstr "கோப்பு"
+
+#: ./src/views/ManageRevisions.vue:204
+msgid "File Upload"
+msgstr "கோப்பு பதிவேற்றம்"
+
+#: ./src/views/Browse.vue:52
+#: ./src/views/ManageRevisions.vue:24
+#: ./src/views/ManageRevisions.vue:172
+msgid "Focal"
+msgstr "குவிய"
+
+#: ./src/views/About.vue:52
+msgid ""
+"For any questions you may have or help you may need just chat with us in our telegram group.\n"
+"You can also submit issues, bugs, and feature requests to our GitLab bug tracker."
+msgstr ""
+"உங்களிடம் ஏதேனும் கேள்விகளுக்கு அல்லது உங்களுக்கு உதவக்கூடிய ஏதேனும் கேள்விகளுக்கு எங்கள் "
+"டெலிகிராம் குழுவில் எங்களுடன் அரட்டை அடிக்க வேண்டும்.\n"
+" எங்கள் அறிவிலிஆய்வு பிழை டிராக்கருக்கு சிக்கல்கள், பிழைகள் மற்றும் அம்ச கோரிக்கைகளையும் "
+"நீங்கள் சமர்ப்பிக்கலாம்."
+
+#: ./src/views/Package.vue:94
+msgid "Full System Access"
+msgstr "முழு கணினி அணுகல்"
+
+#: ./src/views/Submit.vue:88
+msgid "Gambling"
+msgstr "சூதாட்டம்"
+
+#: ./src/views/About.vue:23
+msgid "Get your badge"
+msgstr "உங்கள் பேட்சைப் பெறுங்கள்"
+
+#: ./src/views/Submit.vue:30
+msgid ""
+"Give a short explanation why you can’t publish the app without extra privileges.\n"
+"No need to go into details, a one liner like \"needs to run a daemon in the background\" will do.\n"
+"List all the special features you have, if there are more."
+msgstr ""
+"கூடுதல் சலுகைகள் இல்லாமல் பயன்பாட்டை ஏன் வெளியிட முடியாது என்பதை ஒரு குறுகிய விளக்கத்தை"
+" கொடுங்கள்.\n"
+" விவரங்களுக்குச் செல்லத் தேவையில்லை, \"பின்னணியில் ஒரு டீமனை இயக்க வேண்டும்\" போன்ற ஒரு "
+"லைனர் செய்யும்.\n"
+" உங்களிடம் உள்ள அனைத்து சிறப்பு அம்சங்களையும் பட்டியலிடுங்கள்."
+
+#: ./src/components/Pagination.vue:7
+msgid "Go back a page"
+msgstr "ஒரு பக்கத்திற்கு திரும்பிச் செல்லுங்கள்"
+
+#: ./src/components/Pagination.vue:8
+msgid "Go to the next page"
+msgstr "அடுத்த பக்கத்திற்குச் செல்லவும்"
+
+#: ./src/views/About.vue:77
+msgid "GPL v3 License"
+msgstr "சிபிஎல் வி 3 உரிமம்"
+
+#: ./src/views/Submit.vue:84
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr "துன்புறுத்தல், கொடுமைப்படுத்துதல் அல்லது வெறுக்கத்தக்க பேச்சு"
+
+#: ./src/views/Package.vue:76
+msgid "History"
+msgstr "வரலாறு"
+
+#: ./src/views/Manage.vue:41
+msgid "Icon"
+msgstr "படவுரு"
+
+#: ./src/views/ManagePackage.vue:247
+msgid "ID"
+msgstr "ஐடி"
+
+#: ./src/views/Submit.vue:35
+msgid ""
+"If an application could be published without manual review if it wouldn’t be for that one cool feature,\n"
+"publish a stripped down version!\n"
+"Not everyone will want to install apps with less confinement."
+msgstr ""
+"அந்த ஒரு சிறந்த அம்சத்திற்காக இல்லாவிட்டால், கையேடு மதிப்பாய்வு இல்லாமல் ஒரு பயன்பாடு "
+"வெளியிடப்படலாம் என்றால்,\n"
+" அகற்றப்பட்ட பதிப்பை வெளியிடுங்கள்!\n"
+" எல்லோரும் குறைந்த சிறைவாசத்துடன் பயன்பாடுகளை நிறுவ விரும்ப மாட்டார்கள்."
+
+#: ./src/views/Submit.vue:95
+msgid "Illegal Activities"
+msgstr "சட்டவிரோத நடவடிக்கைகள்"
+
+#: ./src/views/Package.vue:77
+msgid "In App Purchases"
+msgstr "பயன்பாட்டு வாங்குதல்களில்"
+
+#: ./src/views/ManagePackage.vue:53
+#: ./src/views/Package.vue:128
+msgid "Info"
+msgstr "தகவல்"
+
+#: ./src/views/About.vue:27
+#: ./src/views/Package.vue:38
+msgid "Install"
+msgstr "நிறுவவும்"
+
+#: ./src/views/Package.vue:61
+msgid "Install via the OpenStore app"
+msgstr "ஓபன்ச்டோர் பயன்பாடு வழியாக நிறுவவும்"
+
+#: ./src/components/Pagination.vue:6
+msgid "Jump to the first page"
+msgstr "முதல் பக்கத்திற்கு செல்லவும்"
+
+#: ./src/components/Pagination.vue:9
+msgid "Jump to the last page"
+msgstr "கடைசி பக்கத்திற்கு செல்லவும்"
+
+#: ./src/views/Package.vue:78
+msgid "Keep Display On"
+msgstr "காட்சியைத் தொடருங்கள்"
+
+#: ./src/views/Manage.vue:17
+msgid "Keep your api key private!"
+msgstr "உங்கள் பநிஇ விசையை தனிப்பட்ட முறையில் வைத்திருங்கள்!"
+
+#: ./src/views/ManagePackage.vue:123
+msgid "Keywords"
+msgstr "முக்கிய வார்த்தைகள்"
+
+#: ./src/App.vue:55
+#: ./src/components/BadgeSelect.vue:4
+msgid "Language"
+msgstr "மொழி"
+
+#: ./src/views/Browse.vue:42
+msgid "Latest Update"
+msgstr "அண்மைக் கால புதுப்பிப்பு"
+
+#: ./src/views/Browse.vue:37
+msgid "Least Popular"
+msgstr "குறைந்தது பிரபலமானது"
+
+#: ./src/views/About.vue:69
+#: ./src/views/ManagePackage.vue:139
+#: ./src/views/Package.vue:148
+msgid "License"
+msgstr "உரிமம்"
+
+#: ./src/views/Package.vue:79
+msgid "Location"
+msgstr "இடம்"
+
+#: ./src/views/ManagePackage.vue:201
+msgid "Locked"
+msgstr "பூட்டப்பட்டுள்ளது"
+
+#: ./src/App.vue:32
+msgid "Log In"
+msgstr "புகுபதிகை"
+
+#: ./src/views/Login.vue:24
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr "உங்கள் பயன்பாடுகளை நிர்வகிக்க ஓபன்ச்டோரில் உள்நுழைக."
+
+#: ./src/App.vue:38
+msgid "Log Out"
+msgstr "விடுபதிகை"
+
+#: ./src/views/Login.vue:7
+#: ./src/views/Login.vue:11
+msgid "Login"
+msgstr "புகுபதிவு"
+
+#: ./src/views/Submit.vue:111
+msgid "Login to submit your app"
+msgstr "உங்கள் பயன்பாட்டை சமர்ப்பிக்க உள்நுழைக"
+
+#: ./src/views/Login.vue:7
+msgid "Login via GitHub"
+msgstr "அறிவிலிமையம் வழியாக உள்நுழைக"
+
+#: ./src/views/Login.vue:12
+msgid "Login via GitLab"
+msgstr "அறிவிலிஆய்வு வழியாக உள்நுழைக"
+
+#: ./src/views/Login.vue:18
+msgid "Login via Ubuntu One"
+msgstr "உபுண்டு ஒன்று வழியாக உள்நுழைக"
+
+#: ./src/views/ManagePackage.vue:210
+msgid "Maintainer"
+msgstr "பராமரிப்பாளர்"
+
+#: ./src/views/Submit.vue:99
+msgid "Malware"
+msgstr "தீம்பொருள்"
+
+#: ./src/App.vue:35
+#: ./src/views/Manage.vue:20
+#: ./src/views/ManagePackage.vue:16
+#: ./src/views/ManagePackage.vue:18
+msgid "Manage"
+msgstr "நிர்வகிக்கவும்"
+
+#: ./src/views/Manage.vue:16
+msgid "Manage Apps"
+msgstr "பயன்பாடுகளை நிர்வகிக்கவும்"
+
+#: ./src/views/Package.vue:80
+msgid "Microphone"
+msgstr "ஒலிவாங்கி"
+
+#: ./src/views/Browse.vue:36
+msgid "Most Popular"
+msgstr "மிகவும் பிரபலமானது"
+
+#: ./src/views/Package.vue:82
+msgid "Music Files"
+msgstr "இசை கோப்புகள்"
+
+#: ./src/views/Manage.vue:42
+msgid "Name"
+msgstr "பெயர்"
+
+#: ./src/views/About.vue:42
+msgid "Navigate to the downloads folder"
+msgstr "Navigate பெறுநர் the downloads folder"
+
+#: ./src/views/Package.vue:84
+msgid "Networking"
+msgstr "நெட்வொர்க்கிங்"
+
+#: ./src/views/Feeds.vue:6
+msgid "New Apps"
+msgstr "புதிய பயன்பாடுகள்"
+
+#: ./src/views/ManagePackage.vue:41
+#: ./src/views/ManageRevisions.vue:23
+#: ./src/views/ManageRevisions.vue:25
+msgid "New Revision"
+msgstr "புதிய திருத்தம்"
+
+#: ./src/views/ManageRevisions.vue:175
+msgid "New revision for %{channel} was created!"
+msgstr "%{சேனல் க்கு க்கான புதிய திருத்தம் உருவாக்கப்பட்டது!"
+
+#: ./src/views/ManageRevisions.vue:8
+msgid "New Revision for %{name}"
+msgstr "%{பெயர் க்கு க்கான புதிய திருத்தம்"
+
+#: ./src/views/ManageRevisions.vue:179
+msgid "New revisions for %{channel} were created!"
+msgstr "%{சேனல் க்கு க்கான புதிய திருத்தங்கள் உருவாக்கப்பட்டன!"
+
+#: ./src/views/Browse.vue:40
+msgid "Newest"
+msgstr "புதியது"
+
+#: ./src/views/Package.vue:83
+msgid "NFC"
+msgstr "NFC"
+
+#: ./src/views/ManagePackage.vue:36
+#: ./src/views/ManagePackage.vue:204
+msgid "No"
+msgstr "இல்லை"
+
+#: ./src/views/Browse.vue:96
+#: ./src/views/Manage.vue:88
+msgid "No apps found."
+msgstr "பயன்பாடுகள் எதுவும் கிடைக்கவில்லை."
+
+#: ./src/views/Package.vue:36
+msgid "No longer available"
+msgstr "இனி கிடைக்காது"
+
+#: ./src/views/Manage.vue:75
+#: ./src/views/Manage.vue:80
+#: ./src/views/ManagePackage.vue:220
+#: ./src/views/Package.vue:204
+msgid "None"
+msgstr "எதுவுமில்லை"
+
+#: ./src/views/Manage.vue:69
+msgid "Not published"
+msgstr "வெளியிடப்படவில்லை"
+
+#: ./src/views/ManagePackage.vue:129
+msgid "NSFW"
+msgstr "NSFW"
+
+#: ./src/views/Browse.vue:89
+msgid "NSFW content"
+msgstr "NSFW உள்ளடக்கம்"
+
+#: ./src/views/Package.vue:56
+msgid "Older Versions"
+msgstr "பழைய பதிப்புகள்"
+
+#: ./src/views/Browse.vue:41
+msgid "Oldest"
+msgstr "பழமையானது"
+
+#: ./src/views/Browse.vue:43
+msgid "Oldest Update"
+msgstr "பழமையான புதுப்பிப்பு"
+
+#: ./src/views/Submit.vue:52
+msgid ""
+"One of the main goals of the OpenStore is to provide a safe app store for people of all ages.\n"
+"  To accomplish this goal we do not allow certain types of app to be published.\n"
+"  Failure to follow the guidelines will result in your app being removed.\n"
+"  Any account with serious infractions may be subject to termination.\n"
+"  The OpenStore team thanks you for helping us promote a better enviroment for everyone."
+msgstr ""
+"ஓபன்ச்டோரின் முக்கிய குறிக்கோள்களில் ஒன்று, எல்லா வயதினருக்கும் பாதுகாப்பான பயன்பாட்டுக் "
+"கடையை வழங்குவதாகும்.\n"
+" இந்த இலக்கை அடைய நாங்கள் சில வகையான பயன்பாடுகளை வெளியிட அனுமதிக்க மாட்டோம்.\n"
+" வழிகாட்டுதல்களைப் பின்பற்றுவதில் தோல்வி உங்கள் பயன்பாடு அகற்றப்படும்.\n"
+" கடுமையான மீறல்களைக் கொண்ட எந்தவொரு கணக்கும் பணிநீக்கம் செய்யப்படக்கூடும்.\n"
+" அனைவருக்கும் சிறந்த சூழலை ஊக்குவிக்க எங்களுக்கு உதவிய ஓபன்ச்டோர் குழு நன்றி."
+
+#: ./src/views/Submit.vue:40
+msgid ""
+"Only open source applications allowed for manual review:\n"
+"As the applications might have arbitrary access to the device, every manually reviewed app will get a source code review."
+msgstr ""
+"கையேடு மதிப்பாய்வுக்கு அனுமதிக்கப்பட்ட திறந்த மூல பயன்பாடுகள் மட்டுமே:\n"
+" பயன்பாடுகள் சாதனத்திற்கு தன்னிச்சையான அணுகலைக் கொண்டிருக்கக்கூடும் என்பதால், கைமுறையாக "
+"மதிப்பாய்வு செய்யப்பட்ட ஒவ்வொரு பயன்பாடும் மூலக் குறியீடு மதிப்பாய்வைப் பெறும்."
+
+#: ./src/views/ManagePackage.vue:189
+msgid "Only YouTube and Odysee videos are supported at this time. Make sure the url is for the embedded video!"
+msgstr ""
+"இந்த நேரத்தில் யூடியூப் மற்றும் ஓடீசி வீடியோக்கள் மட்டுமே ஆதரிக்கப்படுகின்றன. முகவரி "
+"உட்பொதிக்கப்பட்ட வீடியோவுக்கு என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள்!"
+
+#: ./src/views/About.vue:41
+msgid "Open the terminal app"
+msgstr "முனைய பயன்பாட்டைத் திறக்கவும்"
+
+#: ./src/views/About.vue:142
+msgid "OpenStore API/Server Contributors"
+msgstr "ஓபன்ச்டோர் ஏபிஐ/சர்வர் பங்களிப்பாளர்கள்"
+
+#: ./src/views/Submit.vue:50
+msgid "OpenStore App Content Policy"
+msgstr "ஓபன்ச்டோர் பயன்பாட்டு உள்ளடக்கக் கொள்கை"
+
+#: ./src/views/About.vue:148
+msgid "OpenStore App Contributors"
+msgstr "ஓபன்ச்டோர் பயன்பாட்டு பங்களிப்பாளர்கள்"
+
+#: ./src/views/Badge.vue:3
+msgid "OpenStore Badges"
+msgstr "ஓபன்ச்டோர் பேட்ச்கள்"
+
+#: ./src/views/About.vue:58
+msgid "OpenStore group on Telegram"
+msgstr "டெலிகிராமில் ஓபன்ச்டோர் குழு"
+
+#: ./src/views/About.vue:84
+msgid "OpenStore source on GitLab"
+msgstr "கிட்லாப்பில் ஓபன்ச்டோர் சான்று"
+
+#: ./src/views/About.vue:145
+msgid "OpenStore Website Contributors"
+msgstr "ஓபன்ச்டோர் வலைத்தள பங்களிப்பாளர்கள்"
+
+#: ./src/views/ManagePackage.vue:218
+msgid "Override Type"
+msgstr "வகை"
+
+#: ./src/views/ManagePackage.vue:242
+msgid "Package Info"
+msgstr "தொகுப்பு செய்தி"
+
+#: ./src/views/NotFound.vue:3
+msgid "Page Not Found"
+msgstr "பக்கம் கிடைக்கவில்லை"
+
+#: ./src/views/Package.vue:86
+#: ./src/views/Package.vue:190
+msgid "Permissions"
+msgstr "அனுமதிகள்"
+
+#: ./src/views/Package.vue:86
+msgid "Picture Files"
+msgstr "படக் கோப்புகள்"
+
+#: ./src/views/ManagePackage.vue:47
+msgid "Presentation"
+msgstr "விளக்கக்காட்சி"
+
+#: ./src/views/ManageRevisions.vue:53
+msgid "Processing"
+msgstr "செயலாக்கம்"
+
+#: ./src/views/Submit.vue:61
+msgid "Prohibited Apps"
+msgstr "தடைசெய்யப்பட்ட பயன்பாடுகள்"
+
+#: ./src/views/About.vue:20
+msgid "Promote your app on the OpenStore!"
+msgstr "உங்கள் பயன்பாட்டை ஓபன்ச்டோரில் விளம்பரப்படுத்தவும்!"
+
+#: ./src/views/Badge.vue:5
+msgid ""
+"Promote your app on the OpenStore! Add these badges to your website,\n"
+"code repository, social media, or anywhere on the internet. The badges\n"
+"are available in several different languages and in both PNG and SVG\n"
+"formats."
+msgstr ""
+"உங்கள் பயன்பாட்டை ஓபன்ச்டோரில் விளம்பரப்படுத்தவும்! இந்த பேட்ச்களை உங்கள் வலைத்தளத்தில் "
+"சேர்க்கவும்,\n"
+" குறியீடு களஞ்சியம், சமூக ஊடகங்கள் அல்லது இணையத்தில் எங்கும். பேட்ச்கள்\n"
+" பல்வேறு மொழிகளில் மற்றும் பி.என்.சி மற்றும் எச்.வி.சி இரண்டிலும் கிடைக்கின்றன\n"
+" வடிவங்கள்."
+
+#: ./src/views/ManagePackage.vue:26
+msgid "Public Link"
+msgstr "பொது இணைப்பு"
+
+#: ./src/views/ManagePackage.vue:33
+msgid "Publish"
+msgstr "வெளியிடுங்கள்"
+
+#: ./src/views/Manage.vue:68
+#: ./src/views/Package.vue:163
+msgid "Published"
+msgstr "வெளியிடப்பட்டது"
+
+#: ./src/views/ManagePackage.vue:277
+msgid "Published Date"
+msgstr "வெளியிடப்பட்ட தேதி"
+
+#: ./src/views/Manage.vue:44
+#: ./src/views/ManagePackage.vue:251
+#: ./src/views/Package.vue:131
+msgid "Publisher"
+msgstr "வெளியீட்டாளர்"
+
+#: ./src/views/Package.vue:87
+msgid "Push Notifications"
+msgstr "அறிவிப்புகளை அழுத்தவும்"
+
+#: ./src/views/Package.vue:74
+msgid "Read Document Files"
+msgstr "ஆவணக் கோப்புகளைப் படியுங்கள்"
+
+#: ./src/views/Package.vue:81
+msgid "Read Music Files"
+msgstr "இசை கோப்புகளைப் படியுங்கள்"
+
+#: ./src/views/Package.vue:85
+msgid "Read Picture Files"
+msgstr "படக் கோப்புகளைப் படியுங்கள்"
+
+#: ./src/views/Package.vue:90
+msgid "Read Video Files"
+msgstr "வீடியோ கோப்புகளைப் படியுங்கள்"
+
+#: ./src/views/Browse.vue:35
+msgid "Relevance"
+msgstr "பொருத்தமானது"
+
+#: ./src/App.vue:78
+msgid "Report an Issue"
+msgstr "ஒரு சிக்கலைப் புகாரளிக்கவும்"
+
+#: ./src/views/Package.vue:205
+msgid "Restricted permission"
+msgstr "தடைசெய்யப்பட்ட இசைவு"
+
+#: ./src/views/ManagePackage.vue:228
+msgid "Review Exceptions"
+msgstr "விதிவிலக்குகளை மதிப்பாய்வு செய்யவும்"
+
+#: ./src/components/Reviews.vue:3
+msgid "Reviews"
+msgstr "மதிப்புரைகள்"
+
+#: ./src/views/ManagePackage.vue:295
+msgid "Revision"
+msgstr "திருத்தம்"
+
+#: ./src/App.vue:81
+#: ./src/views/Feeds.vue:3
+msgid "RSS Feeds"
+msgstr "RSS ஊட்டங்கள்"
+
+#: ./src/views/Submit.vue:4
+msgid "Rules for Submission"
+msgstr "சமர்ப்பிப்பதற்கான விதிகள்"
+
+#: ./src/views/Submit.vue:24
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr "கையேடு மறுஆய்வு தேவைப்படும் சமர்ப்பிப்புகளுக்கான விதிகள்"
+
+#: ./src/views/About.vue:44
+msgid "Run the command:"
+msgstr "கட்டளையை இயக்கவும்:"
+
+#: ./src/views/ManagePackage.vue:337
+msgid "Save"
+msgstr "சேமி"
+
+#: ./src/views/Package.vue:109
+msgid "Screenshots"
+msgstr "திரைக்காட்சிகள்"
+
+#: ./src/views/ManagePackage.vue:90
+msgid "Screenshots (Limit 5)"
+msgstr "திரை சாட்கள் (வரம்பு 5)"
+
+#: ./src/views/Browse.vue:9
+#: ./src/views/Manage.vue:25
+msgid "Search"
+msgstr "தேடல்"
+
+#: ./src/views/Submit.vue:28
+msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
+msgstr ""
+"உங்கள் பயன்பாட்டிற்கான ஒரு களஞ்சியத்திற்கு ஒரு இணைப்பை எங்கள் தந்தி குழுவிற்கு அனுப்பவும், "
+"அதை எவ்வாறு உருவாக்குவது என்பது குறித்த சில வழிமுறைகளுடன்."
+
+#: ./src/views/Package.vue:88
+msgid "Sensors"
+msgstr "சென்சார்கள்"
+
+#: ./src/views/Submit.vue:66
+msgid "Sexually Explicit Content"
+msgstr "பாலியல் வெளிப்படையான உள்ளடக்கம்"
+
+#: ./src/views/ManagePackage.vue:323
+msgid "Show All Revisions"
+msgstr "அனைத்து திருத்தங்களையும் காட்டு"
+
+#: ./src/views/Package.vue:119
+msgid "Show NSFW Content"
+msgstr "NSFW உள்ளடக்கத்தைக் காட்டு"
+
+#: ./src/App.vue:75
+msgid "Site Status"
+msgstr "தள நிலை"
+
+#: ./src/views/Browse.vue:33
+msgid "Sort By"
+msgstr "வரிசைப்படுத்தவும்"
+
+#: ./src/views/Package.vue:140
+msgid "Source"
+msgstr "மூலம்"
+
+#: ./src/App.vue:72
+msgid "Source Code"
+msgstr "மூலக் குறியீடு"
+
+#: ./src/views/ManagePackage.vue:172
+msgid "Source URL"
+msgstr "மூல முகவரி"
+
+#: ./src/views/ManagePackage.vue:59
+#: ./src/views/Package.vue:210
+#: ./src/views/Stats.vue:3
+#: ./src/views/Stats.vue:9
+#: ./src/views/Stats.vue:13
+msgid "Stats"
+msgstr "புள்ளிவிவரங்கள்"
+
+#: ./src/views/Manage.vue:45
+msgid "Status"
+msgstr "நிலை"
+
+#: ./src/App.vue:23
+#: ./src/views/Submit.vue:133
+msgid "Submit"
+msgstr "சமர்ப்பிக்கவும்"
+
+#: ./src/views/Manage.vue:9
+#: ./src/views/Submit.vue:113
+#: ./src/views/Submit.vue:12
+#: ./src/views/Submit.vue:16
+msgid "Submit App"
+msgstr "பயன்பாட்டை சமர்ப்பிக்கவும்"
+
+#: ./src/views/About.vue:126
+msgid "Submit your app"
+msgstr "உங்கள் பயன்பாட்டை சமர்ப்பிக்கவும்"
+
+#: ./src/views/ManagePackage.vue:204
+#: ./src/views/ManagePackage.vue:232
+#: ./src/views/ManageRevisions.vue:184
+msgid "Success"
+msgstr "செய்"
+
+#: ./src/views/Package.vue:136
+msgid "Support"
+msgstr "உதவி"
+
+#: ./src/views/ManagePackage.vue:177
+msgid "Support URL"
+msgstr "முகவரி ஐ ஆதரிக்கவும்"
+
+#: ./src/views/ManagePackage.vue:75
+msgid "Tag Line"
+msgstr "நாள் வரி"
+
+#: ./src/App.vue:66
+msgid "Telegram"
+msgstr "தந்தி"
+
+#: ./src/views/About.vue:93
+msgid "Terms"
+msgstr "விதிமுறைகள்"
+
+#: ./src/views/Package.vue:10
+#: ./src/views/PackageVersions.vue:12
+msgid "The app you are looking for has been removed or does not exist"
+msgstr "நீங்கள் தேடும் பயன்பாடு அகற்றப்பட்டது அல்லது இல்லை"
+
+#: ./src/views/About.vue:88
+msgid ""
+"The apps available for download from the OpenStore have their own licencing and terms.\n"
+"Consult each individual app's page for more information."
+msgstr ""
+"திறந்த கடையிலிருந்து பதிவிறக்கம் செய்யக் கிடைக்கும் பயன்பாடுகள் அவற்றின் சொந்த உரிமம் மற்றும்"
+" விதிமுறைகளைக் கொண்டுள்ளன.\n"
+" மேலும் தகவலுக்கு ஒவ்வொரு தனிப்பட்ட பயன்பாட்டின் பக்கத்தையும் அணுகவும்."
+
+#: ./src/views/ManagePackage.vue:203
+msgid "The changes to %{name} were saved!"
+msgstr "%{பெயர் at இல் மாற்றங்கள் சேமிக்கப்பட்டன!"
+
+#: ./src/views/About.vue:95
+msgid ""
+"The OpenStore a non-profit volunteer project.\n"
+"Although every effort is made to ensure that everything in the repository is safe to install, you use it AT YOUR OWN RISK.\n"
+"Apps uploaded to the OpenStore will be subject to an automated review process or\n"
+"a manual review process to check for potential security or privacy issues.\n"
+"This checking is far from exhaustive though, and there are no guarantees."
+msgstr ""
+"ஓபன்ச்டோர் ஒரு இலாப நோக்கற்ற தன்னார்வ திட்டம்.\n"
+" களஞ்சியத்தில் உள்ள அனைத்தும் நிறுவ பாதுகாப்பானது என்பதை உறுதிப்படுத்த ஒவ்வொரு முயற்சியும்"
+" மேற்கொள்ளப்பட்டாலும், நீங்கள் அதை உங்கள் சொந்த ஆபத்தில் பயன்படுத்துகிறீர்கள்.\n"
+" ஓபன்ச்டோரில் பதிவேற்றப்பட்ட பயன்பாடுகள் தானியங்கி மறுஆய்வு செயல்முறைக்கு உட்பட்டதாக "
+"இருக்கும் அல்லது\n"
+" சாத்தியமான பாதுகாப்பு அல்லது தனியுரிமை சிக்கல்களைச் சரிபார்க்க ஒரு கையேடு மறுஆய்வு "
+"செயல்முறை.\n"
+" இந்த சோதனை முழுமையானதாக இல்லை, எந்த உத்தரவாதமும் இல்லை."
+
+#: ./src/views/About.vue:29
+msgid ""
+"The OpenStore app is installed by default on the UBports builds of Ubuntu Touch.\n"
+"But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+"ஓபன்ச்டோர் பயன்பாடு உபுண்டு டச்சின் உப்போர்ட்ச் கட்டமைப்புகளில் இயல்புநிலையாக "
+"நிறுவப்பட்டுள்ளது.\n"
+" ஆனால் நீங்கள் ஓபன்ச்டோரை கைமுறையாக நிறுவ வேண்டும் என்றால், இந்த படிகளைப் பின்பற்றவும்:"
+
+#: ./src/views/About.vue:138
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr "ஓபன்ச்டோர் பல அற்புதமான பங்களிப்பாளர்களால் சாத்தியமானது:"
+
+#: ./src/views/About.vue:5
+msgid ""
+"The OpenStore is the official app store for Ubuntu Touch.\n"
+"It is an open source project run by a team of volunteers with help from the community.\n"
+"You can discover and install new apps on your Ubuntu Touch device.\n"
+"You can also upload and manage your own apps for publication.\n"
+"The OpenStore encourages the apps published within to be open source, but also accepts proprietary apps."
+msgstr ""
+"ஓபன்ச்டோர் உபுண்டு தொடுதலுக்கான அதிகாரப்பூர்வ ஆப் கடை ஆகும்.\n"
+" இது சமூகத்தின் உதவியுடன் தன்னார்வலர்களின் குழுவால் நடத்தப்படும் ஒரு திறந்த மூல "
+"திட்டமாகும்.\n"
+" உங்கள் உபுண்டு டச் சாதனத்தில் புதிய பயன்பாடுகளைக் கண்டுபிடித்து நிறுவலாம்.\n"
+" வெளியீட்டிற்காக உங்கள் சொந்த பயன்பாடுகளையும் பதிவேற்றலாம் மற்றும் நிர்வகிக்கலாம்.\n"
+" ஓபன்ச்டோர் திறந்த மூலமாக வெளியிடப்பட்ட பயன்பாடுகளை ஊக்குவிக்கிறது, ஆனால் தனியுரிம "
+"பயன்பாடுகளையும் ஏற்றுக்கொள்கிறது."
+
+#: ./src/views/About.vue:103
+msgid ""
+"The OpenStore respects your privacy.\n"
+"We don't track you or your device.\n"
+"You do not need an account to download and install apps and we do not track your downloads.\n"
+"For developer information we count the number of downloads per app revision.\n"
+"Information about your device (the cpu architecture, framework versions, OS version, and OS language)\n"
+"are sent to the server to allow it to filter apps to only what you can install and present your native language where possible.\n"
+"This information is not logged or stored and cannot be used to uniquely identify you."
+msgstr ""
+"ஓபன்ச்டோர் உங்கள் தனியுரிமையை மதிக்கிறது.\n"
+" நாங்கள் உங்களையோ அல்லது உங்கள் சாதனத்தையோ கண்காணிக்க மாட்டோம்.\n"
+" பயன்பாடுகளைப் பதிவிறக்கி நிறுவ உங்களுக்கு கணக்கு தேவையில்லை, உங்கள் பதிவிறக்கங்களை "
+"நாங்கள் கண்காணிக்க மாட்டோம்.\n"
+" உருவாக்குபவர் தகவலுக்கு, பயன்பாட்டு திருத்தத்திற்கு பதிவிறக்கங்களின் எண்ணிக்கையை "
+"எண்ணுகிறோம்.\n"
+" உங்கள் சாதனம் பற்றிய தகவல்கள் (CPU கட்டமைப்பு, கட்டமைப்பின் பதிப்புகள், OS பதிப்பு மற்றும் "
+"OS மொழி)\n"
+" பயன்பாடுகளை வடிகட்ட அனுமதிக்க சேவையகத்திற்கு அனுப்பப்படுகிறது, நீங்கள் உங்கள் சொந்த "
+"மொழியை நிறுவி வழங்க முடியும்.\n"
+" இந்த செய்தி உள்நுழைந்திருக்கவில்லை அல்லது சேமிக்கப்படவில்லை, உங்களை தனித்துவமாக அடையாளம் "
+"காண பயன்படுத்த முடியாது."
+
+#: ./src/views/NotFound.vue:5
+msgid "The page you are looking for has been removed or does not exist"
+msgstr "நீங்கள் தேடும் பக்கம் அகற்றப்பட்டது அல்லது இல்லை"
+
+#: ./src/views/About.vue:71
+msgid ""
+"The source code for OpenStore related projects is available under the GPL v3.\n"
+"You can find the code on the OpenStore GitLab page."
+msgstr ""
+"ஓபன்ச்டோர் தொடர்பான திட்டங்களுக்கான மூலக் குறியீடு சிபிஎல் வி 3 இன் கீழ் கிடைக்கிறது.\n"
+" ஓபன்ச்டோர் அறிவிலிஆய்வு பக்கத்தில் குறியீட்டைக் காணலாம்."
+
+#: ./src/views/ManagePackage.vue:6
+#: ./src/views/Package.vue:12
+#: ./src/views/PackageVersions.vue:14
+msgid "There was an error trying to find this app, please refresh and try again."
+msgstr ""
+"இந்த பயன்பாட்டைக் கண்டுபிடிக்க முயற்சிக்கும் பிழை ஏற்பட்டது, தயவுசெய்து புதுப்பித்து மீண்டும் "
+"முயற்சிக்கவும்."
+
+#: ./src/views/Browse.vue:70
+#: ./src/views/Manage.vue:30
+msgid "There was an error trying to load the app list, please refresh and try again."
+msgstr ""
+"பயன்பாட்டு பட்டியலை ஏற்ற முயற்சிக்கும் பிழை இருந்தது, தயவுசெய்து புதுப்பித்து மீண்டும் "
+"முயற்சிக்கவும்."
+
+#: ./src/views/Stats.vue:5
+msgid "There was an error trying to load the stats, please refresh and try again."
+msgstr ""
+"புள்ளிவிவரங்களை ஏற்ற முயற்சிக்கும் பிழை ஏற்பட்டது, தயவுசெய்து புதுப்பித்து மீண்டும் "
+"முயற்சிக்கவும்."
+
+#: ./src/views/ManagePackage.vue:131
+msgid "This app contains NSFW material"
+msgstr "இந்த பயன்பாட்டில் NSFW பொருள் உள்ளது"
+
+#: ./src/views/Package.vue:219
+msgid "This app does not have access to restricted system data, see permissions for more details"
+msgstr ""
+"இந்த பயன்பாட்டில் தடைசெய்யப்பட்ட கணினி தரவுகளுக்கான அணுகல் இல்லை, மேலும் விவரங்களுக்கு "
+"அனுமதிகளைப் பார்க்கவும்"
+
+#: ./src/views/Package.vue:223
+msgid "This app has access to restricted system data, see permissions for more details"
+msgstr ""
+"இந்த பயன்பாட்டில் தடைசெய்யப்பட்ட கணினி தரவுகளுக்கான அணுகல் உள்ளது, மேலும் விவரங்களுக்கு "
+"அனுமதிகளைப் பார்க்கவும்"
+
+#: ./src/views/Submit.vue:119
+msgid ""
+"This is the unique identifier for your app.\n"
+"It must match exactly the \"name\" field in your click's manifest.json and must be all lowercase letters.\n"
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app and \"openstore-team\"\n"
+"is the group or individual authoring the app."
+msgstr ""
+"இது உங்கள் பயன்பாட்டிற்கான தனித்துவமான அடையாளங்காட்டி.\n"
+" இது உங்கள் கிளிக்கின் மேனிஃபெச்டில் உள்ள \"பெயர்\" புலத்தை சரியாக பொருத்த வேண்டும், "
+"மேலும் அனைத்து சிறிய எழுத்துக்களாக இருக்க வேண்டும்.\n"
+" எடுத்துக்காட்டாக: \"OpenStore.OpenStore-team\", அங்கு \"ஓபன்ச்டோர்\" என்பது பயன்பாடு "
+"மற்றும் \"ஓபன்ச்டோர்-டீம்\"\n"
+" குழு அல்லது தனிநபர் பயன்பாட்டை எழுதுவது."
+
+#: ./src/views/ManagePackage.vue:56
+msgid "This revision is still available"
+msgstr "இந்த திருத்தம் இன்னும் கிடைக்கிறது"
+
+#: ./src/views/ManageRevisions.vue:63
+msgid "This will be added to the beginning of your current changelog"
+msgstr "இது உங்கள் தற்போதைய சேஞ்ச்லாக் தொடக்கத்தில் சேர்க்கப்படும்"
+
+#: ./src/views/ManagePackage.vue:70
+msgid "Title"
+msgstr "தலைப்பு"
+
+#: ./src/views/Browse.vue:38
+msgid "Title (A-Z)"
+msgstr "தலைப்பு (A-Z)"
+
+#: ./src/views/Browse.vue:39
+msgid "Title (Z-A)"
+msgstr "தலைப்பு (Z-A)"
+
+#: ./src/views/ManagePackage.vue:316
+msgid "Total"
+msgstr "மொத்தம்"
+
+#: ./src/views/Package.vue:219
+msgid "Total downloads"
+msgstr "மொத்த பதிவிறக்கங்கள்"
+
+#: ./src/views/Manage.vue:73
+msgid "Total:"
+msgstr "மொத்தம்:"
+
+#: ./src/views/ManagePackage.vue:268
+#: ./src/views/Package.vue:173
+msgid "Translation Languages"
+msgstr "மொழிபெயர்ப்பு மொழிகள்"
+
+#: ./src/views/ManagePackage.vue:193
+msgid "Translation URL"
+msgstr "மொழிபெயர்ப்பு முகவரி"
+
+#: ./src/views/Package.vue:144
+msgid "Translations"
+msgstr "மொழிபெயர்ப்புகள்"
+
+#: ./src/views/Browse.vue:97
+#: ./src/views/Manage.vue:89
+msgid "Try searching for something else"
+msgstr "வேறு ஏதாவது தேட முயற்சிக்கவும்"
+
+#: ./src/views/Browse.vue:23
+#: ./src/views/ManagePackage.vue:259
+msgid "Type"
+msgstr "வகை"
+
+#: ./src/views/About.vue:14
+msgid "Ubuntu Touch"
+msgstr "உபுண்டு தொடுதல்"
+
+#: ./src/views/Browse.vue:3
+msgid "Ubuntu Touch Apps"
+msgstr "உபுண்டு டச் பயன்பாடுகள்"
+
+#: ./src/views/Stats.vue:25
+msgid "Uncategorized"
+msgstr "வகைப்படுத்தப்படாதது"
+
+#: ./src/views/Package.vue:199
+msgid "Unrestricted read access to:"
+msgstr "கட்டுப்பாடற்ற அணுகல் அணுகல்:"
+
+#: ./src/views/Package.vue:195
+msgid "Unrestricted write access to:"
+msgstr "கட்டுப்பாடற்ற எழுத அணுகல்:"
+
+#: ./src/views/Package.vue:158
+msgid "Updated"
+msgstr "புதுப்பிக்கப்பட்டது"
+
+#: ./src/views/Feeds.vue:10
+msgid "Updated Apps"
+msgstr "புதுப்பிக்கப்பட்ட பயன்பாடுகள்"
+
+#: ./src/views/ManagePackage.vue:283
+msgid "Updated Date"
+msgstr "புதுப்பிக்கப்பட்ட தேதி"
+
+#: ./src/views/ManageRevisions.vue:13
+msgid "Upload Revision via:"
+msgstr "திருத்தம் மூலம் பதிவேற்றவும்:"
+
+#: ./src/views/ManageRevisions.vue:16
+#: ./src/views/ManageRevisions.vue:204
+msgid "URL"
+msgstr "முகவரி"
+
+#: ./src/views/ManageRevisions.vue:49
+msgid "URL of App from the Web"
+msgstr "இணையத்திலிருந்து பயன்பாட்டின் முகவரி"
+
+#: ./src/views/Package.vue:89
+msgid "User Metrics"
+msgstr "பயனர் அளவீடுகள்"
+
+#: ./src/views/Manage.vue:46
+#: ./src/views/ManagePackage.vue:298
+msgid "Version"
+msgstr "பதிப்பு"
+
+#: ./src/views/Package.vue:92
+msgid "Video"
+msgstr "ஒளிதோற்றம்"
+
+#: ./src/views/Package.vue:91
+msgid "Video Files"
+msgstr "வீடியோ கோப்புகள்"
+
+#: ./src/views/ManagePackage.vue:187
+msgid "Video URL"
+msgstr "வீடியோ முகவரி"
+
+#: ./src/views/About.vue:35
+msgid "View Install Instructions"
+msgstr "வழிமுறைகளை நிறுவவும்"
+
+#: ./src/views/Submit.vue:77
+msgid "Violence"
+msgstr "வன்முறை"
+
+#: ./src/components/Types.vue:5
+#: ./src/views/ManagePackage.vue:223
+#: ./src/views/Stats.vue:29
+msgid "Web App"
+msgstr "வலை பயன்பாடு"
+
+#: ./src/views/Browse.vue:28
+msgid "Web Apps"
+msgstr "வலை பயன்பாடுகள்"
+
+#: ./src/views/Package.vue:93
+msgid "Webview"
+msgstr "வெப்வியூ"
+
+#: ./src/views/Manage.vue:4
+msgid "Welcome %{name}!"
+msgstr "வரவேற்கிறோம் %{name}!"
+
+#: ./src/views/Browse.vue:51
+#: ./src/views/ManageRevisions.vue:23
+#: ./src/views/ManageRevisions.vue:170
+msgid "Xenial"
+msgstr "Xenial"
+
+#: ./src/views/ManagePackage.vue:35
+#: ./src/views/ManagePackage.vue:203
+msgid "Yes"
+msgstr "ஆம்"
+
+#: ./src/views/Submit.vue:9
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+"வேறொருவரை அல்லது வேறு பயன்பாட்டை ஆள்மாறாட்டம் செய்ய உங்களுக்கு இசைவு இல்லை."
+
+#: ./src/views/Submit.vue:8
+msgid "You are only allowed to publish apps that you have permission to distribute."
+msgstr ""
+"விநியோகிக்க உங்களுக்கு இசைவு உள்ள பயன்பாடுகளை வெளியிட மட்டுமே உங்களுக்கு இசைவு உண்டு."
+
+#: ./src/views/Submit.vue:17
+msgid "You must read over the content policy detailed below."
+msgstr "கீழே விவரிக்கப்பட்டுள்ள உள்ளடக்கக் கொள்கையை நீங்கள் படிக்க வேண்டும்."
+
+#: ./src/views/Submit.vue:10
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins.\n"
+"Where possible, we will contact you regarding any such actions."
+msgstr ""
+"எங்கள் நிர்வாகிகளின் விருப்பப்படி எச்சரிக்கையின்றி உங்கள் பயன்பாட்டை இழுக்க முடியும்.\n"
+" சாத்தியமான இடங்களில், இதுபோன்ற ஏதேனும் செயல்கள் குறித்து நாங்கள் உங்களைத் தொடர்புகொள்வோம்."
