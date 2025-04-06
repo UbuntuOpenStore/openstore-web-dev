@@ -1,0 +1,1254 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openstore-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openstore-web 1.0.0 "
+"Report-Msgid-Bugs-To:  "
+"POT-Creation-Date: 2020-08-28 00:36-0400 "
+"PO-Revision-Date: 2020-12-08 08:06+0000 "
+"Last-Translator: Zmicer <nashtlumach@gmail.com> "
+"Language-Team: Belarusian <https://translate.ubports.com/projects/openstore/"
+"open-storeio/be/> "
+"Language: be "
+"MIME-Version: 1.0 "
+"Content-Type: text/plain; charset=UTF-8 "
+"Content-Transfer-Encoding: 8bit "
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2; "
+"X-Generator: Weblate 3.11.3 "
+
+#, fuzzy
+#| msgid ""
+#| "*This app contains NSFW content, to view the description and "
+#| "screenshots, click the above button."
+msgid ""
+"*This app contains NSFW content, to view the description and "
+"screenshots, click the above button."
+msgstr ""
+"*Гэтая праграма мае змесціва для дарослых. Каб праглядзець апісанне і  "
+"здымкі, пстрыкніце на кнопку ніжэй."
+
+msgid "%{name} was successfully deleted"
+msgstr "%{name} паспяхова выдалена"
+
+msgid "A comma separated list of keywords"
+msgstr "Спіс ключавых слоў, падзеленых коскамі"
+
+msgid "About"
+msgstr "Пра OpenStore"
+
+msgid "About Us"
+msgstr "Пра нас"
+
+msgid "Accounts"
+msgstr "Акаўнты"
+
+msgid "Add Another Architecture"
+msgstr "Дадаць іншую архітэктуру"
+
+msgid "Admin"
+msgstr "Адміністратар"
+
+msgid "All Categories"
+msgstr "Усе катэгорыі"
+
+#, fuzzy
+#| msgid "Channels"
+msgid "All Channels"
+msgstr "Каналы"
+
+msgid "All Types"
+msgstr "Усе тыпы"
+
+msgid "An account is not needed to download or install apps."
+msgstr "Каб спампоўваць альбо ўсталёўваць праграмы, няма патрэбы мець акаўнт."
+
+msgid "An error occured loading your app data"
+msgstr "Падчас загрузкі даных праграмы адбылася памылка"
+
+msgid "An unknown error has occurred"
+msgstr "Адбылася невядомая памылка"
+
+msgid ""
+"And many amazing developers, testers, and users from the OpenStore community!"
+msgstr ""
+"І шмат цудоўных распрацоўнікаў, тэставальнікаў і карыстальнікаў з "
+"супольнасці OpenStore!"
+
+#, fuzzy
+#| msgid ""
+#| "Any personal data you decide to give us (e.g. your email address when "
+#| "registering for an account to upload your apps) "
+#| "goes no further than us, "
+#| "and will not be used for anything other than allowing you to maintain "
+#| "your apps and, in rare cases, "
+#| "contact you in the event there is an issue with your app. "
+#| "Additionally, this site uses cookies to keep you logged in to your "
+#| "account."
+msgid ""
+"Any personal data you decide to give us (e.g. your email address when "
+"registering for an account to upload your apps) "
+"goes no further than us, "
+"and will not be used for anything other than allowing you to maintain your "
+"apps and, in rare cases, "
+"contact you in the event there is an issue with your app. "
+"Additionally, this site uses cookies to keep you logged in to your account."
+msgstr ""
+"Любыя асабістыя даныя, якія вы вырашыце нам даць (напрыклад, ваш адрас "
+"электроннай пошты пры рэгістрацыі акаўнта) "
+"будзе толькі ў нас, "
+"і будзе выкарыстоўвацца толькі па пытаннях падтрымкі вашай праграмы. "
+"Звяжыцеся з намі, калі ў вас узніклі праблемы. "
+"Акрамя таго, гэты сайт выкарыстоўвае файлы cookie."
+
+msgid "API Key"
+msgstr "Ключ API"
+
+msgid "App"
+msgstr "Праграма"
+
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr ""
+"Праграмы, якія змяшчаюць ці рэкламуюць што-небудзь з вышэй згаданага, "
+"забароненыя."
+
+msgid "App Name"
+msgstr "Назва праграмы"
+
+msgid "App Stats"
+msgstr "Статыстыка праграмы"
+
+msgid "App Submission Tutorial"
+msgstr ""
+
+msgid "App Title"
+msgstr "Назва праграмы"
+
+msgid "App Type"
+msgstr "Тып праграмы"
+
+msgid "App Types"
+msgstr "Тыпы праграм"
+
+msgid "Apps"
+msgstr "Праграмы"
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing gambling involving real world money transactions are not "
+#| "allowed. "
+#| "This includes, but is not limited to, online casinos, betting, and "
+#| "lotteries."
+msgid ""
+"Apps containing gambling involving real world money transactions are not "
+"allowed. "
+"This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
+msgstr ""
+"Праграмы, якія змяшчаюць азартныя гульні, звязаныя з рэальнымі грашовымі "
+"аперацыямі, забароненыя. "
+" Сюды таксама ўваходзяць інтэрнэт-казіно, стаўкі і латарэі."
+
+msgid ""
+"Apps containing or promoting child abuse or child sexual abuse are strictly "
+"prohibited."
+msgstr ""
+"Праграмы, якія змяшчаюць альбо прапагандуюць жорсткае абыходжанне з дзецьмі "
+"альбо сэксуальны гвалт над дзецьмі, катэгарычна забароненыя."
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting gratuitous violence are not allowed. "
+#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
+#| "making, self harm, and grotesque imagery."
+msgid ""
+"Apps containing or promoting gratuitous violence are not allowed. "
+"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"making, self harm, and grotesque imagery."
+msgstr ""
+"Праграмы, якія змяшчаюць альбо прапагандуюць гвалт, забароненыя. "
+"Сюды ўваходзяць гвалт, тэрарызм, выраб бомбаў / зброі, нанясенне сабе шкоды "
+"і гратэскныя выявы."
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting sexually explicit content are not allowed. "
+#| "This includes, but is not limited to, pornography and services promoting "
+#| "sexually explicit content."
+msgid ""
+"Apps containing or promoting sexually explicit content are not allowed. "
+"This includes, but is not limited to, pornography and services promoting "
+"sexually explicit content."
+msgstr ""
+"Праграмы, якія змяшчаюць альбо прасоўваюць змесціва сэксуальнага плану, "
+"забароненыя. "
+"Сюды ўваходзяць парнаграфія і сэксуальныя паслугі."
+
+msgid ""
+"Apps not requiring manual review can be submitted by logging in with the "
+"\"Log In\" link above."
+msgstr ""
+"Праграмы, якія няма патрэбы правяраць, можна размясціць, калі перайсці па "
+"спасылцы \"Увайсці\"."
+
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr ""
+"Праграмы, якія рэкламуюць незаконную дзейнасць (паводле заканадаўства ЗША), "
+"забароненыя."
+
+msgid ""
+"Apps requiring manual review must be submitted by contacting an admin in our "
+"telegram group."
+msgstr ""
+"Праграмы, якім патрэбная праверка, можна размясціць, калі звярнуцца да "
+"адміністратараў у нашай суполцы ў Тэлеграме."
+
+#, fuzzy
+#| msgid ""
+#| "Apps that are found to be stealing the users data, trying to escalate "
+#| "their privileges without user consent, "
+#| "or executing malicious process are strictly prohibited."
+msgid ""
+"Apps that are found to be stealing the users data, trying to escalate their "
+"privileges without user consent, "
+"or executing malicious process are strictly prohibited."
+msgstr ""
+"Праграмы, за якімі былі заўважаныя спробы крадзяжу карыстальніцкіх даных, "
+"павышэння сваіх правоў доступу без згоды карыстальніка, "
+"альбо запуску шкоднасных працэсаў, будуць выдаленыя."
+
+#, fuzzy
+#| msgid ""
+#| "Apps uploaded to the OpenStore are subject to our submission rules and "
+#| "content policy. "
+#| "You can review the rules and policies before uploading your app."
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission rules and "
+"content policy. "
+"You can review the rules and policies before uploading your app."
+msgstr ""
+"На праграмы, размешчаныя на OpenStore, распаўсюджваюцца нашыя правілы і "
+"палітыка. "
+"Вы можаце азнаёміцца з імі перад запампоўваннем праграмы."
+
+msgid "Arch"
+msgstr "Архітэктура"
+
+msgid "Architecture"
+msgstr "Архітэктура"
+
+msgid "Audio"
+msgstr "Аўдыё"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Badge"
+msgstr "Банер"
+
+msgid "Badges"
+msgstr "Банеры"
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "Bookmark"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Browse"
+msgstr "Агляд"
+
+msgid "Browse Apps"
+msgstr "Агляд праграм"
+
+msgid "Bug Tracker"
+msgstr "Трэкер хібаў"
+
+msgid "Calendar"
+msgstr "Каляндар"
+
+msgid "Camera"
+msgstr "Камера"
+
+msgid "Cancel"
+msgstr "Скасаваць"
+
+msgid "Category"
+msgstr "Катэгорыя"
+
+msgid "Changelog"
+msgstr "Спіс змен"
+
+msgid "Channel"
+msgstr "Канал"
+
+msgid "Channels"
+msgstr "Каналы"
+
+msgid "Child Endangerment"
+msgstr "Абмежаванне для дзяцей"
+
+msgid "Choose a category"
+msgstr "Абярыце катэгорыю"
+
+msgid "Choose a license"
+msgstr "Абярыце ліцэнзію"
+
+msgid "Choose a maintainer"
+msgstr "Абярыце суправаджальніка"
+
+msgid "Completed"
+msgstr ""
+
+msgid "Connectivity"
+msgstr "Сувязь"
+
+msgid "Contact"
+msgstr "Кантакт"
+
+msgid "Contacts"
+msgstr "Кантакты"
+
+msgid "Content Exchange"
+msgstr "Абмен змесцівам"
+
+msgid "Content Exchange Source"
+msgstr "Крыніца абмену змесцівам"
+
+msgid "Contributors"
+msgstr "Удзельнікі"
+
+msgid "Copy to clipboard"
+msgstr "Скапіяваць у буфер абмену"
+
+msgid "Count"
+msgstr "Колькасць"
+
+msgid "Create"
+msgstr "Стварыць"
+
+msgid "Debug"
+msgstr "Адладка"
+
+msgid "Delete"
+msgstr "Выдаліць"
+
+msgid "Description"
+msgstr "Апісанне"
+
+msgid "Discovery"
+msgstr "Агляд"
+
+#, fuzzy
+#| msgid "Picture Files"
+msgid "Document Files"
+msgstr "Файлы выяў"
+
+msgid "Donate"
+msgstr "Ахвяраванне"
+
+msgid "Donate URL"
+msgstr "URL ахвяравання"
+
+msgid "Download"
+msgstr "Спампаваць"
+
+msgid "Download Stats"
+msgstr "Колькасць спампоўванняў"
+
+msgid "Download the OpenStore App"
+msgstr "Спампаваць праграму OpenStore"
+
+msgid "Downloads"
+msgstr "Спампоўкі"
+
+msgid "Downloads of the latest version"
+msgstr "Спампоўванне апошняй версіі"
+
+msgid "Drag and drop to sort screenshots."
+msgstr "Каб адсартаваць здымкі экрана, націсніце і перацягніце адно з іх."
+
+msgid "Edit"
+msgstr "Рэдагаваць"
+
+msgid "Error"
+msgstr "Памылка"
+
+msgid "Feeds"
+msgstr "Стужкі"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "File Upload"
+msgstr "Запампоўванне файла"
+
+msgid "Focal"
+msgstr ""
+
+#, fuzzy
+#| msgid ""
+#| "For any questions you may have or help you may need just chat with us in "
+#| "our telegram group. "
+#| "You can also submit issues, bugs, and feature requests to our GitLab "
+#| "bug tracker."
+msgid ""
+"For any questions you may have or help you may need just chat with us in our "
+"telegram group. "
+"You can also submit issues, bugs, and feature requests to our GitLab bug "
+"tracker."
+msgstr ""
+"Па любых пытаннях вы можаце звязацца з намі ў нашай суполцы ў тэлеграме. "
+"Вы таксама можаце адпраўляць прапановы і справаздачы пра хібы ў нашым "
+"трэкеры хібаў на GitLab."
+
+msgid "Full System Access"
+msgstr "Поўны доступ да сістэмы"
+
+msgid "Gambling"
+msgstr "Азартныя гульні"
+
+msgid "Get your badge"
+msgstr "Атрымайце свой банер"
+
+#, fuzzy
+#| msgid ""
+#| "Give a short explanation why you can’t publish the app without extra "
+#| "privileges. "
+#| "No need to go into details, a one liner like \"needs to run a daemon in "
+#| "the background\" will do. "
+#| "List all the special features you have, if there are more."
+msgid ""
+"Give a short explanation why you can’t publish the app without extra "
+"privileges. "
+"No need to go into details, a one liner like \"needs to run a daemon in the "
+"background\" will do. "
+"List all the special features you have, if there are more."
+msgstr ""
+"Дайце кароткае тлумачэнне, чаму вы не можаце апублікаваць праграму без "
+"дадатковых правоў доступу. "
+"Няма патрэбы апісваць вельмі падрабязна, дастаткова кароткага апісання "
+"кшталту \"патрэбна запускаць у фонавым рэжыме\". "
+"Пералічыце ўсе адмысловыя функцыі, калі іх больш за адну."
+
+msgid "Go back a page"
+msgstr "Вярнуцца да папярэдняй старонкі"
+
+msgid "Go to the next page"
+msgstr "Перайсці да наступнай старонкі"
+
+msgid "GPL v3 License"
+msgstr "Ліцэнзія GPL v3"
+
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr "Пагрозы, цкаванне ці лаянка"
+
+msgid "History"
+msgstr "Гісторыя"
+
+msgid "Icon"
+msgstr "Значок"
+
+msgid "ID"
+msgstr "ID"
+
+#, fuzzy
+#| msgid ""
+#| "If an application could be published without manual review if it wouldn’t "
+#| "be for that one cool feature, "
+#| "publish a stripped down version! "
+#| "Not everyone will want to install apps with less confinement."
+msgid ""
+"If an application could be published without manual review if it wouldn’t be "
+"for that one cool feature, "
+"publish a stripped down version! "
+"Not everyone will want to install apps with less confinement."
+msgstr ""
+"Калі б праграмы можна было б публікаваць без праверкі, то не было б "
+"магчымасці дадаваць праграмы з дадатковымі правамі доступу, і "
+"давялося бы публікаваць абрэзаныя версіі! "
+"Ні ўсім даспадобы праграмы з абмежаванымі магчымасцямі."
+
+msgid "Illegal Activities"
+msgstr "Нелегальная дзейнасць"
+
+msgid "In App Purchases"
+msgstr "Пакупкі ў праграме"
+
+msgid "Info"
+msgstr "Звесткі"
+
+msgid "Install"
+msgstr "Усталяваць"
+
+msgid "Install via the OpenStore app"
+msgstr "Усталяваць праз праграму OpenStore"
+
+msgid "Jump to the first page"
+msgstr "Перайсці да першай старонкі"
+
+msgid "Jump to the last page"
+msgstr "Перайсці да апошняй старонкі"
+
+msgid "Keep Display On"
+msgstr "Забарона выключэння дысплея"
+
+msgid "Keep your api key private!"
+msgstr "Нікому не паказвайце свой ключ api!"
+
+msgid "Keywords"
+msgstr "Ключавыя словы"
+
+msgid "Language"
+msgstr "Мова"
+
+msgid "Latest Update"
+msgstr "Нядаўна абноўленыя"
+
+msgid "Least Popular"
+msgstr ""
+
+msgid "License"
+msgstr "Ліцэнзія"
+
+msgid "Location"
+msgstr "Месцазнаходжанне"
+
+msgid "Locked"
+msgstr "Заблакавана"
+
+msgid "Log In"
+msgstr "Увайсці"
+
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr "Каб кіраваць сваімі праграмамі, увайдзіце ў OpenStore."
+
+msgid "Log Out"
+msgstr "Выйсці"
+
+msgid "Login"
+msgstr "Увайсці"
+
+msgid "Login to submit your app"
+msgstr "Увайдзіце, каб апублікаваць сваю праграму"
+
+msgid "Login via GitHub"
+msgstr "Увайсці праз GitHub"
+
+msgid "Login via GitLab"
+msgstr "Увайсці праз GitLab"
+
+msgid "Login via Ubuntu One"
+msgstr "Увайсці праз Ubuntu One"
+
+msgid "Maintainer"
+msgstr "Суправаджальнік"
+
+msgid "Malware"
+msgstr "Шкоднасная праграма"
+
+msgid "Manage"
+msgstr "Кіраванне"
+
+msgid "Manage Apps"
+msgstr "Кіраванне праграмамі"
+
+msgid "Microphone"
+msgstr "Мікрафон"
+
+msgid "Most Popular"
+msgstr ""
+
+msgid "Music Files"
+msgstr "Аўдыяфайлы"
+
+msgid "Name"
+msgstr "Назва"
+
+msgid "Navigate to the downloads folder"
+msgstr "Перайсці ў каталог спамповак"
+
+msgid "Networking"
+msgstr "Сетка"
+
+msgid "New Apps"
+msgstr "Новыя праграмы"
+
+msgid "New Revision"
+msgstr "Новая рэвізія"
+
+msgid "New revision for %{channel} was created!"
+msgstr "Новая рэвізія для %{channel} створаная!"
+
+msgid "New Revision for %{name}"
+msgstr "Новая рэвізія для %{name}"
+
+msgid "New revisions for %{channel} were created!"
+msgstr "Новая рэвізія для %{channel} створаная!"
+
+msgid "Newest"
+msgstr "Ад навейшых да старэйшых"
+
+msgid "NFC"
+msgstr ""
+
+msgid "No"
+msgstr "Не"
+
+msgid "No apps found."
+msgstr "Праграм не знойдзена."
+
+msgid "No longer available"
+msgstr "Недаступна"
+
+msgid "None"
+msgstr "Няма"
+
+msgid "Not published"
+msgstr "Не апублікавана"
+
+msgid "NSFW"
+msgstr "Змесціва 18+"
+
+msgid "NSFW content"
+msgstr "Змесціва 18+"
+
+#, fuzzy
+#| msgid "Version"
+msgid "Older Versions"
+msgstr "Версія"
+
+msgid "Oldest"
+msgstr "Ад старэйшых да навейшых"
+
+msgid "Oldest Update"
+msgstr "Даўно абноўленыя"
+
+#, fuzzy
+#| msgid ""
+#| "One of the main goals of the OpenStore is to provide a safe app store for "
+#| "people of all ages. "
+#| "To accomplish this goal we do not allow certain types of app to be "
+#| "published. "
+#| "Failure to follow the guidelines will result in your app being removed. "
+#| "Any account with serious infractions may be subject to termination. "
+#| "The OpenStore team thanks you for helping us promote a better environment "
+#| "for everyone."
+msgid ""
+"One of the main goals of the OpenStore is to provide a safe app store for "
+"people of all ages. "
+"To accomplish this goal we do not allow certain types of app to be "
+"published. "
+"Failure to follow the guidelines will result in your app being removed. "
+"Any account with serious infractions may be subject to termination. "
+"The OpenStore team thanks you for helping us promote a better environment "
+"for everyone."
+msgstr ""
+"Асноўная мэта OpenStore - стварэнне бяспечнай крамы праграм для ўсіх "
+"катэгорый карыстальнікаў. "
+"Таму мы не даем дазволу на размяшчэнне некаторых праграм. "
+"Калі не выконваць гэтыя правілы, то ваша праграма будзе выдаленая. "
+"Любы акаўнт з сур'ёзнымі парушэннямі можа быць знішчаны. "
+"Каманда OpenStore дзякуе вам за дапамогу па стварэнні цудоўнага мабільнага "
+"асяроддзя."
+
+#, fuzzy
+#| msgid ""
+#| "Only open source applications allowed for manual review: "
+#| "As the applications might have arbitrary access to the device, every "
+#| "manually reviewed app will get a source code review."
+msgid ""
+"Only open source applications allowed for manual review: "
+"As the applications might have arbitrary access to the device, every "
+"manually reviewed app will get a source code review."
+msgstr ""
+"Можна правяраць толькі праграмы з адкрытым зыходным кодам: "
+"Праграмы могуць мець доступ да закрытых даных прылады, таму ў кожнай "
+"праграмы, якая пераглядаецца, будзе правярацца зыходны код."
+
+#, fuzzy
+#| msgid ""
+#| "Only YouTube videos are supported at this time. Make sure the url is for "
+#| "the embedded video!"
+msgid ""
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
+msgstr ""
+"На дадзены момант падтрымліваюцца толькі відэа з YouTube. Пераканайцеся, што "
+"па спасылцы відэа з YouTube!"
+
+msgid "Open the terminal app"
+msgstr "Адкрыць тэрмінал"
+
+msgid "OpenStore API/Server Contributors"
+msgstr "Распрацоўнікі API/Server Contributors"
+
+msgid "OpenStore App Content Policy"
+msgstr "Правілы і палітыка OpenStore"
+
+msgid "OpenStore App Contributors"
+msgstr "Распрацоўнікі праграмы OpenStore"
+
+msgid "OpenStore Badges"
+msgstr "Банеры OpenStore"
+
+msgid "OpenStore group on Telegram"
+msgstr "Суполка OpenStore у Telegram"
+
+msgid "OpenStore source on GitLab"
+msgstr "Зыходны код OpenStore на GitLab"
+
+msgid "OpenStore Website Contributors"
+msgstr "У стварэнні сайта OpenStore бралі ўдзел"
+
+msgid "Override Type"
+msgstr "Тып перавызначэння"
+
+msgid "Package Info"
+msgstr "Звесткі пра пакунак"
+
+msgid "Page Not Found"
+msgstr "Старонка не знойдзеная"
+
+msgid "Permissions"
+msgstr "Правы доступу"
+
+msgid "Picture Files"
+msgstr "Файлы выяў"
+
+msgid "Presentation"
+msgstr "Прэзентацыя"
+
+msgid "Processing"
+msgstr ""
+
+msgid "Prohibited Apps"
+msgstr "Забароненыя праграмы"
+
+msgid "Promote your app on the OpenStore!"
+msgstr "Публікуйце і развівайце свае праграмы на OpenStore!"
+
+#, fuzzy
+#| msgid ""
+#| "Promote your app on the OpenStore! Add these badges to your website, "
+#| "code repository, social media, or anywhere on the internet. The badges "
+#| "are available in several different languages and in both PNG and SVG "
+#| "formats."
+msgid ""
+"Promote your app on the OpenStore! Add these badges to your website, "
+"code repository, social media, or anywhere on the internet. The badges "
+"are available in several different languages and in both PNG and SVG "
+"formats."
+msgstr ""
+"Рэкламуйце сваю праграму на OpenStore!Дадайце гэтыя значкі на свой сайт, "
+"у рэпазіторый, у сацыяльныя сеткі і інш.Значкі "
+"даступныя на некалькіх розных мовах ў фарматах  "
+"PNG і SVG."
+
+msgid "Public Link"
+msgstr "Публічная спасылка"
+
+msgid "Publish"
+msgstr "Апублікаваць"
+
+msgid "Published"
+msgstr "Апублікавана"
+
+msgid "Published Date"
+msgstr "Дата публікацыі"
+
+#, fuzzy
+#| msgid "Published"
+msgid "Publisher"
+msgstr "Апублікавана"
+
+msgid "Push Notifications"
+msgstr "Push-апавяшчэнні"
+
+#, fuzzy
+#| msgid "Read Picture Files"
+msgid "Read Document Files"
+msgstr "Чытанне выяў"
+
+msgid "Read Music Files"
+msgstr "Чытанне аўдыяфайлаў"
+
+msgid "Read Picture Files"
+msgstr "Чытанне выяў"
+
+msgid "Read Video Files"
+msgstr "Чытанне відэафайлаў"
+
+msgid "Relevance"
+msgstr "Актуальнасць"
+
+msgid "Report an Issue"
+msgstr "Паведаміць пра праблему"
+
+msgid "Restricted permission"
+msgstr "Абмежаваныя правы"
+
+msgid "Review Exceptions"
+msgstr ""
+
+#, fuzzy
+#| msgid "Webview"
+msgid "Reviews"
+msgstr "Webview"
+
+msgid "Revision"
+msgstr "Рэвізія"
+
+msgid "RSS Feeds"
+msgstr "Стужкі RSS"
+
+msgid "Rules for Submission"
+msgstr "Правілы публікацыі праграм"
+
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr "Правілы для праграма, якія мусяць правярацца ўласнаручна"
+
+msgid "Run the command:"
+msgstr "Запусціць загад:"
+
+msgid "Save"
+msgstr "Захаваць"
+
+msgid "Screenshots"
+msgstr "Здымкі экрана"
+
+msgid "Screenshots (Limit 5)"
+msgstr "Здымкі экрана (не больш за 5)"
+
+msgid "Search"
+msgstr "Пошук"
+
+msgid ""
+"Send us a link to a repository for your app to our telegram group along with "
+"some instructions on how to build it."
+msgstr ""
+"Адпраўце спасылку на рэпазіторый разам з інструкцыямі па зборцы вашай "
+"праграмы ў нашу суполку ў тэлеграме."
+
+msgid "Sensors"
+msgstr "Датчыкі"
+
+msgid "Sexually Explicit Content"
+msgstr "Змесціва 18+"
+
+msgid "Show All Revisions"
+msgstr "Паказваць усе рэвізіі"
+
+msgid "Show NSFW Content"
+msgstr "Паказваць змесціва 18+"
+
+msgid "Site Status"
+msgstr "Статус сайта"
+
+msgid "Sort By"
+msgstr "Сартаванне"
+
+msgid "Source"
+msgstr "Зыходныя даныя"
+
+msgid "Source Code"
+msgstr "Зыходны код"
+
+msgid "Source URL"
+msgstr "Зыходны URL"
+
+msgid "Stats"
+msgstr "Статыстыка"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Submit"
+msgstr "Пацвердзіць"
+
+msgid "Submit App"
+msgstr "Апублікваць праграму"
+
+msgid "Submit your app"
+msgstr "Апублікаваць сваю праграму"
+
+msgid "Success"
+msgstr "Выканана"
+
+msgid "Support"
+msgstr "Падтрымка"
+
+msgid "Support URL"
+msgstr "URL падтрымкі"
+
+msgid "Tag Line"
+msgstr "Радок апісання"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Terms"
+msgstr "Умовы выкарыстання"
+
+msgid "The app you are looking for has been removed or does not exist"
+msgstr "Праграма, якую вы шукаеце, не існуе альбо была выдаленая"
+
+#, fuzzy
+#| msgid ""
+#| "The apps available for download from the OpenStore have their own "
+#| "licencing and terms. "
+#| "Consult each individual app's page for more information."
+msgid ""
+"The apps available for download from the OpenStore have their own licencing "
+"and terms. "
+"Consult each individual app's page for more information."
+msgstr ""
+"У праграм на OpenStore ўласныя ліцэнзіі і ўмовы выкарыстання. "
+"Іх можна пабачыць на старонцы праграмы."
+
+msgid "The changes to %{name} were saved!"
+msgstr "Змены ў %{name} захаваныя!"
+
+#, fuzzy
+#| msgid ""
+#| "The OpenStore a non-profit volunteer project. "
+#| "Although every effort is made to ensure that everything in the "
+#| "repository is safe to install, you use it AT YOUR OWN RISK. "
+#| "Apps uploaded to the OpenStore will be subject to an automated review "
+#| "process or "
+#| "a manual review process to check for potential security or privacy "
+#| "issues. "
+#| "This checking is far from exhaustive though, and there are no "
+#| "guarantees."
+msgid ""
+"The OpenStore a non-profit volunteer project. "
+"Although every effort is made to ensure that everything in the repository is "
+"safe to install, you use it AT YOUR OWN RISK. "
+"Apps uploaded to the OpenStore will be subject to an automated review "
+"process or "
+"a manual review process to check for potential security or privacy issues. "
+"This checking is far from exhaustive though, and there are no guarantees."
+msgstr ""
+"OpenStore - некамерцыйны праект. "
+"Робяцца ўсе намаганні для таго, каб усе праграмы ў рэпазіторыі былі "
+"бяспечнымі, але не даецца АНІЯКІХ ГАРАНТЫЙ. "
+"Праграмы, запампаваныя ў OpenStore, праходзяць аўтаматычную альбо "
+"асабістую праверку на наяўнасць праблем з бяспекаю. "
+"Гэтыя працэсы не бездакорныя, таму гарантый няма."
+
+#, fuzzy
+#| msgid ""
+#| "The OpenStore app is installed by default on the UBports builds of Ubuntu "
+#| "Touch. "
+#| "But if you need to install the OpenStore manually, follow these steps:"
+msgid ""
+"The OpenStore app is installed by default on the UBports builds of Ubuntu "
+"Touch. "
+"But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+"Праграма OpenStore папярэдне ўсталяваная ў зборках Ubuntu Touch ад UBports. "
+"Калі ж вам патрэбна ўласнаручна ўсталяваць OpenStore, выканайце наступныя "
+"дзеянні:"
+
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr "Ствараць OpenStore дапамагалі шмат цудоўных людзей:"
+
+#, fuzzy
+#| msgid ""
+#| "The OpenStore is the official app store for Ubuntu Touch. "
+#| "It is an open source project run by a team of volunteers with help from "
+#| "the community. "
+#| "You can discover and install new apps on your Ubuntu Touch device. "
+#| "You can also upload and manage your own apps for publication. "
+#| "The OpenStore encourages the apps published within to be open source, "
+#| "but also accepts proprietary apps."
+msgid ""
+"The OpenStore is the official app store for Ubuntu Touch. "
+"It is an open source project run by a team of volunteers with help from the "
+"community. "
+"You can discover and install new apps on your Ubuntu Touch device. "
+"You can also upload and manage your own apps for publication. "
+"The OpenStore encourages the apps published within to be open source, but "
+"also accepts proprietary apps."
+msgstr ""
+"OpenStore - афіцыйная крама праграм для Ubuntu Touch. "
+"Гэта адкрыты праект, які падтрымліваецца групай валанцёраў пры дапамозе "
+"супольнасці. "
+"Вы можаце шукаць і ўсталёўваць праграмы на прылады з Ubuntu Touch. "
+"Таксама вы можаце запампоўваць свае ўласныя праграмы і кіраваць імі. "
+"У OpenStore аддаецца перавага праграмам з адкрытым зыходным кодам, але "
+"дапускаюцца і праграмы з закрытым кодам."
+
+#, fuzzy
+#| msgid ""
+#| "The OpenStore respects your privacy. "
+#| "We don't track you or your device. "
+#| "You do not need an account to download and install apps and we do not "
+#| "track your downloads. "
+#| "For developer information we count the number of downloads per app "
+#| "revision. "
+#| "Information about your device (the cpu architecture, framework "
+#| "versions, OS version, and OS language) "
+#| "are sent to the server to allow it to filter apps to only what you can "
+#| "install and present your native language where possible. "
+#| "This information is not logged or stored and cannot be used to uniquely "
+#| "identify you."
+msgid ""
+"The OpenStore respects your privacy. "
+"We don't track you or your device. "
+"You do not need an account to download and install apps and we do not track "
+"your downloads. "
+"For developer information we count the number of downloads per app "
+"revision. "
+"Information about your device (the cpu architecture, framework versions, OS "
+"version, and OS language) "
+"are sent to the server to allow it to filter apps to only what you can "
+"install and present your native language where possible. "
+"This information is not logged or stored and cannot be used to uniquely "
+"identify you."
+msgstr ""
+"OpenStore паважае вашу прыватнасць. "
+"Мы не адсочваем вас і вашу прыладу. "
+"Для спампоўвання і ўсталёўкі праграм няма патрэбы ствараць акаўнт, мы не "
+"адсочваем вашыя спампоўванні. "
+"Для распрацоўнікаў мы лічым колькасць спампоўванняў кожнай версіі "
+"праграмы. "
+"Звесткі пра вашу прыладу (архітэктура працэсара, версія framework, версія "
+"АС і мова АС) "
+"адпраўляюцца на сервер, каб мець магчымасць адфільтраваць праграмы па "
+"версіях, якія вы можаце ўсталяваць, і наяўнасці моў, якімі вы карыстаецеся. "
+"Гэтая інфармацыя не захоўваецца і не можа быць ужытая для вашай "
+"ідэнтыфікацыі."
+
+msgid "The page you are looking for has been removed or does not exist"
+msgstr "Старонка, якую вы шукаеце, не існуе альбо была выдаленая"
+
+#, fuzzy
+#| msgid ""
+#| "The source code for OpenStore related projects is available under the GPL "
+#| "v3. "
+#| "You can find the code on the OpenStore GitLab page."
+msgid ""
+"The source code for OpenStore related projects is available under the GPL "
+"v3. "
+"You can find the code on the OpenStore GitLab page."
+msgstr ""
+"Зыходны код праектаў, звязаных з OpenStore, даступны на ўмовах ліцэнзіі GPL "
+"v3. "
+"Вы можаце знайсці яго на старонцы OpenStore на GitLab."
+
+msgid ""
+"There was an error trying to find this app, please refresh and try again."
+msgstr ""
+"Падчас пошуку праграмы адбылася памылка. Калі ласка, абнавіце старонку і "
+"паспрабуйце зноў."
+
+msgid ""
+"There was an error trying to load the app list, please refresh and try again."
+msgstr ""
+"Падчас загрузкі спіса праграм адбылася памылка. Калі ласка, абнавіце "
+"старонку і паспрабуйце зноў."
+
+msgid ""
+"There was an error trying to load the stats, please refresh and try again."
+msgstr ""
+"Падчас загрузкі статыстыкі адбылася памылка. Калі ласка, абнавіце старонку і "
+"паспрабуйце зноў."
+
+msgid "This app contains NSFW material"
+msgstr "Праграма змяшчае матэрыялы катэгорыі \"18+\""
+
+msgid ""
+"This app does not have access to restricted system data, see permissions for "
+"more details"
+msgstr ""
+"У гэтай праграмы няма доступу да закрытых сістэмных даных, падрабязныя "
+"звесткі можна праглядзець у правах доступу"
+
+msgid ""
+"This app has access to restricted system data, see permissions for more "
+"details"
+msgstr ""
+"У гэтай праграмы ёсць доступ да закрытых сістэмных даных, падрабязныя "
+"звесткі можна праглядзець у правах доступу"
+
+#, fuzzy
+#| msgid ""
+#| "This is the unique identifier for your app. "
+#| "It must match exactly the \"name\" field in your click's manifest.json "
+#| "and must be all lowercase letters. "
+#| "For example: \"openstore.openstore-team\", where \"openstore\" is the "
+#| "app and \"openstore-team\" "
+#| "is the group or individual authoring the app."
+msgid ""
+"This is the unique identifier for your app. "
+"It must match exactly the \"name\" field in your click's manifest.json and "
+"must be all lowercase letters. "
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app "
+"and \"openstore-team\" "
+"is the group or individual authoring the app."
+msgstr ""
+"Гэта ўнікальны ідэнтыфікатар вашай праграмы. "
+"Ён мусіць дакладна супадаць з полем \"назва\" у manifest.json і складацца "
+"з маленькіх літар. "
+"Напрыклад: \"openstore.openstore-team\", дзе \"openstore\" - гэта "
+"праграма, а \"openstore-team\" "
+"гэта каманда распрацоўнікаў альбо асобны распрацоўнік праграмы."
+
+msgid "This revision is still available"
+msgstr "Гэтая рэвізія яшчэ даступная"
+
+msgid "This will be added to the beginning of your current changelog"
+msgstr "Гэтыя звесткі дададуцца ў пачатак бягучага спіса змен"
+
+msgid "Title"
+msgstr "Назва"
+
+msgid "Title (A-Z)"
+msgstr "Назва (А-Я)"
+
+msgid "Title (Z-A)"
+msgstr "Назва (Я-А)"
+
+msgid "Total"
+msgstr "Агулам"
+
+msgid "Total downloads"
+msgstr "Усе спампоўванні"
+
+msgid "Total:"
+msgstr "Агулам:"
+
+msgid "Translation Languages"
+msgstr "Мовы перакладу"
+
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translation URL"
+msgstr "Мовы перакладу"
+
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translations"
+msgstr "Мовы перакладу"
+
+msgid "Try searching for something else"
+msgstr "Паспрабуйце іншыя варыянты пошуку"
+
+msgid "Type"
+msgstr "Тып"
+
+msgid "Ubuntu Touch"
+msgstr "Ubuntu Touch"
+
+msgid "Ubuntu Touch Apps"
+msgstr "Праграмы для Ubuntu Touch"
+
+msgid "Uncategorized"
+msgstr "Без катэгорыі"
+
+msgid "Unrestricted read access to:"
+msgstr "Неабмежаваны доступ на чытанне:"
+
+msgid "Unrestricted write access to:"
+msgstr "Неабмежаваны доступ на запіс:"
+
+msgid "Updated"
+msgstr "Абноўлена"
+
+msgid "Updated Apps"
+msgstr "Абноўленыя праграмы"
+
+msgid "Updated Date"
+msgstr "Дата абнаўлення"
+
+msgid "Upload Revision via:"
+msgstr "Запампаваць рэвізію праз:"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "URL of App from the Web"
+msgstr "URL-адрас праграмы з сеціва"
+
+msgid "User Metrics"
+msgstr "Метрыка карыстальніка"
+
+msgid "Version"
+msgstr "Версія"
+
+msgid "Video"
+msgstr "Відэа"
+
+msgid "Video Files"
+msgstr "Відэафайлы"
+
+msgid "Video URL"
+msgstr "URL-адрас відэа"
+
+msgid "View Install Instructions"
+msgstr "Праглядзець інструкцыю па ўсталёўцы"
+
+msgid "Violence"
+msgstr "Гвалт"
+
+msgid "Web App"
+msgstr "Сеціўная праграма"
+
+msgid "Web Apps"
+msgstr "Сеціўныя праграмы"
+
+msgid "Webview"
+msgstr "Webview"
+
+msgid "Welcome %{name}!"
+msgstr "Вітаем у %{name}!"
+
+msgid "Xenial"
+msgstr "Xenial"
+
+msgid "Yes"
+msgstr "Так"
+
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+
+msgid ""
+"You are only allowed to publish apps that you have permission to distribute."
+msgstr ""
+"Вы можаце публікаваць толькі тыя праграмы, на распаўсюджванне якіх ёсць "
+"дазвол."
+
+msgid "You must read over the content policy detailed below."
+msgstr ""
+"Вам патрэбна азнаёміцца з палітыкай размяшчэння змесціва, якая нададзеная "
+"ніжэй."
+
+#, fuzzy
+#| msgid ""
+#| "Your app can be pulled without warning at the discretion of our admins. "
+#| "Where possible, we will contact you regarding any such actions."
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins. "
+"Where possible, we will contact you regarding any such actions."
+msgstr ""
+"Ваша праграма можа быць выдаленая адміністратарам без папярэджання. "
+"Па магчымасці, мы паведамляем пра такія дзеянні."
+
+#~ msgid "Author"
+#~ msgstr "Аўтар"
+
+#~ msgid "Framework"
+#~ msgstr "Framework"
+
+#~ msgid "Packager/Publisher"
+#~ msgstr "Аўтар / Выдавец"
+
+#~ msgid "Web App+"
+#~ msgstr "Сеціўная праграма +"

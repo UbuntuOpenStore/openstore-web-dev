@@ -1,0 +1,1114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openstore-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openstore-web 1.0.0 "
+"Report-Msgid-Bugs-To:  "
+"POT-Creation-Date: 2019-11-30 00:38-0500 "
+"PO-Revision-Date: 2022-04-19 12:50+0000 "
+"Last-Translator: Animoe <w42023@outlook.com> "
+"Language-Team: Chinese (Mandarin) <https://translate.ubports.com/projects/"
+"openstore/open-storeio/cmn/> "
+"Language: cmn "
+"MIME-Version: 1.0 "
+"Content-Type: text/plain; charset=UTF-8 "
+"Content-Transfer-Encoding: 8bit "
+"Plural-Forms: nplurals=1; plural=0; "
+"X-Generator: Weblate 3.11.3 "
+
+msgid ""
+"*This app contains NSFW content, to view the description and "
+"screenshots, click the above button."
+msgstr ""
+"* 此应用程式包含敏感内容，以查看描述内容和 "
+"屏幕截图，按一下上面的按钮。"
+
+msgid "%{name} was successfully deleted"
+msgstr "%{name} 已成功刪除"
+
+msgid "A comma separated list of keywords"
+msgstr "以逗号分开的关键字列表"
+
+msgid "About"
+msgstr "关于"
+
+msgid "About Us"
+msgstr "关于我们"
+
+msgid "Accounts"
+msgstr "账户"
+
+msgid "Add Another Architecture"
+msgstr "添加架构"
+
+msgid "Admin"
+msgstr ""
+
+msgid "All Categories"
+msgstr "所有目录"
+
+#, fuzzy
+#| msgid "Channels"
+msgid "All Channels"
+msgstr "通道"
+
+msgid "All Types"
+msgstr "所有类别"
+
+msgid "An account is not needed to download or install apps."
+msgstr "下载及安装软件不需要账户。"
+
+msgid "An error occured loading your app data"
+msgstr "载入你应用数据时出错"
+
+msgid "An unknown error has occurred"
+msgstr "未知错误"
+
+msgid ""
+"And many amazing developers, testers, and users from the OpenStore community!"
+msgstr "和许多来自 OpenStore 社区中出色的开发人员、测试人员和使用者！"
+
+msgid ""
+"Any personal data you decide to give us (e.g. your email address when "
+"registering for an account to upload your apps) "
+"goes no further than us, "
+"and will not be used for anything other than allowing you to maintain your "
+"apps and, in rare cases, "
+"contact you in the event there is an issue with your app. "
+"Additionally, this site uses cookies to keep you logged in to your account."
+msgstr ""
+"您向我们提供的任何个人资料(例如:您注册帐户上传应用程式时的电子邮件地址)，我"
+"们不会泄露给其他人 "
+"除了维护你的应用程式，并不会用于任何其他，在极少数情况下， "
+"如果你的应用出现问题，与你联系。 "
+"此外，本网页使用 Cookie 来确保您登入到您的帐户。"
+
+msgid "API Key"
+msgstr "API匙"
+
+msgid "App"
+msgstr "应用"
+
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr "包含或推广上述任何内容的应用程式都是严格禁止的。"
+
+msgid "App Name"
+msgstr "应用软件名称"
+
+msgid "App Stats"
+msgstr "应用软件统计"
+
+msgid "App Submission Tutorial"
+msgstr ""
+
+msgid "App Title"
+msgstr "App名称"
+
+msgid "App Type"
+msgstr "应用软件类型"
+
+msgid "App Types"
+msgstr "应用软件类型"
+
+msgid "Apps"
+msgstr "应用软件"
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing gambling involving real world money transactions are not "
+#| "allowed. "
+#| "This includes, but is not limited to, online casinos, betting, and "
+#| "lotteries."
+msgid ""
+"Apps containing gambling involving real world money transactions are not "
+"allowed. "
+"This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
+msgstr ""
+"严禁包含或宣传涉及真实世界货币交易的赌博的应用软件。 "
+"这包括但不仅限于线上赌场、投注和彩票。"
+
+msgid ""
+"Apps containing or promoting child abuse or child sexual abuse are strictly "
+"prohibited."
+msgstr "严禁包含或宣传虐待儿童或儿童性虐待的应用软件。"
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting gratuitous violence are not allowed. "
+#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
+#| "making, self harm, and grotesque imagery."
+msgid ""
+"Apps containing or promoting gratuitous violence are not allowed. "
+"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"making, self harm, and grotesque imagery."
+msgstr ""
+"严禁包含或宣传无端暴力的应用软件。 "
+"这包括但不仅限于暴力、恐怖主义、製造炸弹/武器、自残和怪诞形象。"
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting sexually explicit content are not allowed. "
+#| "This includes, but is not limited to, pornography and services promoting "
+#| "sexually explicit content."
+msgid ""
+"Apps containing or promoting sexually explicit content are not allowed. "
+"This includes, but is not limited to, pornography and services promoting "
+"sexually explicit content."
+msgstr ""
+"严禁包含或宣传色情内容的应用软件。 "
+"这包括但不仅限于色情内容和宣传色情内容服务。"
+
+msgid ""
+"Apps not requiring manual review can be submitted by logging in with the "
+"\"Log In\" link above."
+msgstr "通过上面的“登陆”来连结登陆，可以提交不需要手动审核的应用软件。"
+
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr "严禁包含或宣传非法活动的应用软件 (基于美国法律)。"
+
+msgid ""
+"Apps requiring manual review must be submitted by contacting an admin in our "
+"telegram group."
+msgstr "需要手动审核的应用软件，必须通过联系我们的 Telegram 群组的管理员提交。"
+
+#, fuzzy
+#| msgid ""
+#| "Apps that are found to be stealing the users data, trying to escalate "
+#| "their privileges without user consent, "
+#| "or executing malicious process are strictly prohibited."
+msgid ""
+"Apps that are found to be stealing the users data, trying to escalate their "
+"privileges without user consent, "
+"or executing malicious process are strictly prohibited."
+msgstr ""
+"严禁窃取使用者资料，试图在未经使用者同意的情况下提升其许可权或者执行恶意程式"
+"的软件。"
+
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission rules and "
+"content policy. "
+"You can review the rules and policies before uploading your app."
+msgstr ""
+"上传到 OpenStore 的应用软件要接受我们的提交规则和内容政策的约束。 "
+"您可以在上传应用程式之前查看规则以及政策。"
+
+msgid "Arch"
+msgstr ""
+
+msgid "Architecture"
+msgstr "构建"
+
+msgid "Audio"
+msgstr "语音"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Badge"
+msgstr "标记"
+
+msgid "Badges"
+msgstr "标记"
+
+msgid "Bluetooth"
+msgstr "蓝牙"
+
+msgid "Bookmark"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Browse"
+msgstr "浏览"
+
+msgid "Browse Apps"
+msgstr "浏览应用软件"
+
+msgid "Bug Tracker"
+msgstr "错误追踪"
+
+msgid "Calendar"
+msgstr "日历"
+
+msgid "Camera"
+msgstr "相机"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Category"
+msgstr "目录"
+
+msgid "Changelog"
+msgstr "更改日志"
+
+msgid "Channel"
+msgstr "通道"
+
+msgid "Channels"
+msgstr "通道"
+
+msgid "Child Endangerment"
+msgstr "危害儿童"
+
+msgid "Choose a category"
+msgstr "选择一个类别"
+
+msgid "Choose a license"
+msgstr "选择许可证"
+
+msgid "Choose a maintainer"
+msgstr "选择维护者"
+
+msgid "Completed"
+msgstr ""
+
+msgid "Connectivity"
+msgstr "连接"
+
+msgid "Contact"
+msgstr "联系"
+
+msgid "Contacts"
+msgstr "联系"
+
+msgid "Content Exchange"
+msgstr "文本替换"
+
+msgid "Content Exchange Source"
+msgstr "文本替换源码"
+
+msgid "Contributors"
+msgstr "投稿者"
+
+msgid "Copy to clipboard"
+msgstr "复制到剪贴板"
+
+msgid "Count"
+msgstr "计算"
+
+msgid "Create"
+msgstr "新建"
+
+msgid "Debug"
+msgstr "除错"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Description"
+msgstr "介绍"
+
+msgid "Discovery"
+msgstr "描述"
+
+#, fuzzy
+#| msgid "Picture Files"
+msgid "Document Files"
+msgstr "图片文件"
+
+msgid "Donate"
+msgstr "捐助"
+
+msgid "Donate URL"
+msgstr "捐助链接"
+
+msgid "Download"
+msgstr "下载"
+
+msgid "Download Stats"
+msgstr "下载统计"
+
+msgid "Download the OpenStore App"
+msgstr "下载OpenStore软件"
+
+msgid "Downloads"
+msgstr "下载"
+
+msgid "Downloads of the latest version"
+msgstr "下载最新版本"
+
+msgid "Drag and drop to sort screenshots."
+msgstr "拖动可对屏幕截图进行排序。"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Feeds"
+msgstr "提交"
+
+msgid "File"
+msgstr "文件"
+
+msgid "File Upload"
+msgstr "上传文件"
+
+msgid "Focal"
+msgstr ""
+
+msgid ""
+"For any questions you may have or help you may need just chat with us in our "
+"telegram group. "
+"You can also submit issues, bugs, and feature requests to our GitLab bug "
+"tracker."
+msgstr ""
+"如果有的任何问题或説明，您只需在我们的 Telegram 群组与我们交谈。 "
+"您还可以向我们的 GitLab 错误追踪组提交问题、错误和功能请求。"
+
+msgid "Full System Access"
+msgstr "全系统访问"
+
+msgid "Gambling"
+msgstr "赌博"
+
+msgid "Get your badge"
+msgstr "获取你的徽章"
+
+msgid ""
+"Give a short explanation why you can’t publish the app without extra "
+"privileges. "
+"No need to go into details, a one liner like \"needs to run a daemon in the "
+"background\" will do. "
+"List all the special features you have, if there are more."
+msgstr ""
+"简单说明为什么在没有额外权限的情况下无法发布应用程式。 "
+"没有必要详细说明，像 “需要在后台运行守护进程” 这样的一句话就行了。 "
+"列出您拥有的所有特别的功能（如果有更多）。"
+
+msgid "Go back a page"
+msgstr "返回首页"
+
+msgid "Go to the next page"
+msgstr "下一页"
+
+msgid "GPL v3 License"
+msgstr "GPL v3 许可证"
+
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr "骚扰，霸凌或仇恨言论"
+
+msgid "History"
+msgstr "历史"
+
+msgid "Icon"
+msgstr "图标"
+
+msgid "ID"
+msgstr "身份证件"
+
+msgid ""
+"If an application could be published without manual review if it wouldn’t be "
+"for that one cool feature, "
+"publish a stripped down version! "
+"Not everyone will want to install apps with less confinement."
+msgstr ""
+"如果某个应用软件可以在没有人工审核的情况下发布，如果它不适用于那个很酷的功"
+"能， "
+"就请发布一个精简版本！ "
+"并不是每个人都希望安装较少限制的应用软件。"
+
+msgid "Illegal Activities"
+msgstr "非法活动"
+
+msgid "In App Purchases"
+msgstr "在应用软件购买"
+
+msgid "Info"
+msgstr "资讯"
+
+msgid "Install"
+msgstr "安装"
+
+msgid "Install via the OpenStore app"
+msgstr "通过OpenStore应用软件安装"
+
+msgid "Jump to the first page"
+msgstr "跳转到首页"
+
+msgid "Jump to the last page"
+msgstr "跳转到尾页"
+
+msgid "Keep Display On"
+msgstr "继续显示"
+
+msgid "Keep your api key private!"
+msgstr "请对你的开发密匙保密！"
+
+msgid "Keywords"
+msgstr "关键词"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "Latest Update"
+msgstr "最新更新"
+
+msgid "Least Popular"
+msgstr ""
+
+msgid "License"
+msgstr "许可证"
+
+msgid "Location"
+msgstr "位置"
+
+msgid "Locked"
+msgstr ""
+
+msgid "Log In"
+msgstr "登录"
+
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr "登陆到OpenStore以便管理你的应用软件。"
+
+msgid "Log Out"
+msgstr "注销"
+
+msgid "Login"
+msgstr "登录"
+
+msgid "Login to submit your app"
+msgstr "登录并递交你的应用软件"
+
+msgid "Login via GitHub"
+msgstr "通过GitHub登录"
+
+msgid "Login via GitLab"
+msgstr "通过GitLab登录"
+
+#, fuzzy
+#| msgid "Login via Ubuntu"
+msgid "Login via Ubuntu One"
+msgstr "通过Ubuntu登录"
+
+msgid "Maintainer"
+msgstr "维护者"
+
+msgid "Malware"
+msgstr "恶性程序"
+
+msgid "Manage"
+msgstr "管理"
+
+msgid "Manage Apps"
+msgstr "管理应用软件"
+
+msgid "Microphone"
+msgstr "麦克风"
+
+msgid "Most Popular"
+msgstr ""
+
+msgid "Music Files"
+msgstr "音乐文件"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Navigate to the downloads folder"
+msgstr "引导到下载文件夹"
+
+msgid "Networking"
+msgstr "网络"
+
+msgid "New Apps"
+msgstr "新应用软件"
+
+msgid "New Revision"
+msgstr "新版本"
+
+msgid "New revision for %{channel} was created!"
+msgstr "为 %{channel} 建立了新的修订版本!"
+
+msgid "New Revision for %{name}"
+msgstr "%{channel} 新的修订版本"
+
+msgid "New revisions for %{channel} were created!"
+msgstr "为 %{channel} 建立了新的修订版本!"
+
+msgid "Newest"
+msgstr "最新"
+
+msgid "NFC"
+msgstr ""
+
+msgid "No"
+msgstr "否"
+
+msgid "No apps found."
+msgstr "找不到应用软件。"
+
+msgid "No longer available"
+msgstr "不再有效"
+
+msgid "None"
+msgstr "没有"
+
+msgid "Not published"
+msgstr "尚未发布"
+
+msgid "NSFW"
+msgstr "敏感"
+
+msgid "NSFW content"
+msgstr "敏感内容"
+
+#, fuzzy
+#| msgid "Version"
+msgid "Older Versions"
+msgstr "版本"
+
+msgid "Oldest"
+msgstr "最早"
+
+msgid "Oldest Update"
+msgstr "最早的更新"
+
+#, fuzzy
+#| msgid ""
+#| "One of the main goals of the OpenStore is to provide a safe app store for "
+#| "people of all ages. "
+#| "To accomplish this goal we do not allow certain types of app to be "
+#| "published. "
+#| "Failure to follow the guidelines will result in your app being removed. "
+#| "Any account with serious infractions may be subject to termination. "
+#| "The OpenStore team thanks you for helping us promote a better environment "
+#| "for everyone."
+msgid ""
+"One of the main goals of the OpenStore is to provide a safe app store for "
+"people of all ages. "
+"To accomplish this goal we do not allow certain types of app to be "
+"published. "
+"Failure to follow the guidelines will result in your app being removed. "
+"Any account with serious infractions may be subject to termination. "
+"The OpenStore team thanks you for helping us promote a better environment "
+"for everyone."
+msgstr ""
+"OpenStore 的主要目标之一是为所有年龄的人提供安全的应用商店。 "
+"为了实现这一目标，我们不允许发布某些类型的应用。 "
+"如果不遵守这些规定，你的应用软件将被删除。 "
+"任何严重违规的话连帐户都有可能被终止。 "
+"OpenStore 团队感谢您帮助我们为每个人推广更好的环境。"
+
+msgid ""
+"Only open source applications allowed for manual review: "
+"As the applications might have arbitrary access to the device, every "
+"manually reviewed app will get a source code review."
+msgstr ""
+"只允许开源软件程式进行人工审核： "
+"由于应用软件可能具有对装置的任意存取权限，因此每个手动审核的应用软件都将获得"
+"源代码审查。"
+
+#, fuzzy
+#| msgid ""
+#| "Only YouTube videos are supported at this time. Make sure the url is for "
+#| "the embedded video!"
+msgid ""
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
+msgstr "目前只支持 YouTube 影片。确保网址是用于嵌入影片的!"
+
+msgid "Open the terminal app"
+msgstr "打开终端机应用程序"
+
+msgid "OpenStore API/Server Contributors"
+msgstr "OpenStore应用软件接口/服务器贡献者"
+
+msgid "OpenStore App Content Policy"
+msgstr "OpenStore应用软件内容政策"
+
+msgid "OpenStore App Contributors"
+msgstr "OpenStore应用软件贡献者"
+
+msgid "OpenStore Badges"
+msgstr "OpenStore标记"
+
+msgid "OpenStore group on Telegram"
+msgstr "Telegram 上的 OpenStore 群組"
+
+msgid "OpenStore source on GitLab"
+msgstr "GitLab 上的 OpenStore 源码"
+
+msgid "OpenStore Website Contributors"
+msgstr "OpenStore网站贡献者"
+
+msgid "Override Type"
+msgstr ""
+
+msgid "Package Info"
+msgstr "安装包信息"
+
+msgid "Page Not Found"
+msgstr "找不到页面"
+
+msgid "Permissions"
+msgstr "权限"
+
+msgid "Picture Files"
+msgstr "图片文件"
+
+msgid "Presentation"
+msgstr "介绍"
+
+msgid "Processing"
+msgstr ""
+
+msgid "Prohibited Apps"
+msgstr "已禁止的应用软件"
+
+msgid "Promote your app on the OpenStore!"
+msgstr "在OpenStore上推广你的应用！"
+
+msgid ""
+"Promote your app on the OpenStore! Add these badges to your website, "
+"code repository, social media, or anywhere on the internet. The badges "
+"are available in several different languages and in both PNG and SVG "
+"formats."
+msgstr ""
+"在OpenStore上推广您的应用程式！ 将这些标记添加到您的网站上， "
+" 代码存储库，社交媒体或网路上的任何地方。 标记 "
+" 提供几种不同的语言以及 PNG 和 SVG  "
+" 格式。"
+
+msgid "Public Link"
+msgstr "公开连接"
+
+msgid "Publish"
+msgstr "发布"
+
+msgid "Published"
+msgstr "发布"
+
+msgid "Published Date"
+msgstr "发布时间"
+
+#, fuzzy
+#| msgid "Published"
+msgid "Publisher"
+msgstr "发布"
+
+msgid "Push Notifications"
+msgstr "推送通知"
+
+#, fuzzy
+#| msgid "Read Picture Files"
+msgid "Read Document Files"
+msgstr "读取图片文件"
+
+msgid "Read Music Files"
+msgstr "读取音乐文件"
+
+msgid "Read Picture Files"
+msgstr "读取图片文件"
+
+msgid "Read Video Files"
+msgstr "读取视频文件"
+
+msgid "Relevance"
+msgstr "关联"
+
+msgid "Report an Issue"
+msgstr "报告问题"
+
+msgid "Restricted permission"
+msgstr "限制许可"
+
+msgid "Review Exceptions"
+msgstr ""
+
+#, fuzzy
+#| msgid "Webview"
+msgid "Reviews"
+msgstr "网络视图"
+
+msgid "Revision"
+msgstr "修订"
+
+msgid "RSS Feeds"
+msgstr "RSS订阅"
+
+msgid "Rules for Submission"
+msgstr "提交规范"
+
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr "人工审核提交规范"
+
+msgid "Run the command:"
+msgstr "执行指令："
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Screenshots"
+msgstr "截屏"
+
+msgid "Screenshots (Limit 5)"
+msgstr "截屏（限5张）"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid ""
+"Send us a link to a repository for your app to our telegram group along with "
+"some instructions on how to build it."
+msgstr ""
+"将您的应用程式存储库的链接以及有关怎样建构它的说明发送给我们的 Telegram 群"
+"组。"
+
+msgid "Sensors"
+msgstr "传感器"
+
+msgid "Sexually Explicit Content"
+msgstr "性暗示內容"
+
+#, fuzzy
+#| msgid "New Revision"
+msgid "Show All Revisions"
+msgstr "新版本"
+
+msgid "Show NSFW Content"
+msgstr "显示敏感内容"
+
+msgid "Site Status"
+msgstr "位置状态"
+
+msgid "Sort By"
+msgstr "排序方式"
+
+msgid "Source"
+msgstr "来源"
+
+#, fuzzy
+#| msgid "Source"
+msgid "Source Code"
+msgstr "来源"
+
+msgid "Source URL"
+msgstr "来源网址"
+
+msgid "Stats"
+msgstr "统计"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Submit App"
+msgstr "提交应用"
+
+msgid "Submit your app"
+msgstr "提交你的应用"
+
+msgid "Success"
+msgstr "成功"
+
+msgid "Support"
+msgstr "技术支持"
+
+msgid "Support URL"
+msgstr "艺术支持网址"
+
+msgid "Tag Line"
+msgstr "口号"
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Terms"
+msgstr "条款"
+
+msgid "The app you are looking for has been removed or does not exist"
+msgstr "你查找的应用已经被移除或不存在"
+
+msgid ""
+"The apps available for download from the OpenStore have their own licencing "
+"and terms. "
+"Consult each individual app's page for more information."
+msgstr ""
+"可从 OpenStore 下载的应用软件中拥有自己的许可证和条款。 "
+"有关详细讯息，请参阅每个应用软件的页面。"
+
+msgid "The changes to %{name} were saved!"
+msgstr "对%{name} 所做的更改已保存！"
+
+msgid ""
+"The OpenStore a non-profit volunteer project. "
+"Although every effort is made to ensure that everything in the repository is "
+"safe to install, you use it AT YOUR OWN RISK. "
+"Apps uploaded to the OpenStore will be subject to an automated review "
+"process or "
+"a manual review process to check for potential security or privacy issues. "
+"This checking is far from exhaustive though, and there are no guarantees."
+msgstr ""
+"OpenStore 是一个非盈利的志愿者项目。 "
+"尽管已尽最大努力确保存储库中的所有内容都可以安全地安装，但您仍然要自行承担风"
+"险。 "
+"上传到 OpenStore 的应用软件将受到自动审核流程或 "
+"手动审核流程，以检查潜在的安全或隐私问题。 "
+"这种检查远非详尽无遗，并且没有任何保证。"
+
+msgid ""
+"The OpenStore app is installed by default on the UBports builds of Ubuntu "
+"Touch. "
+"But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+"在预设的情况下，OpenStore 应用程式安装在 Ubuntu Touch 的 UBports 版本上。 "
+"但是，如果您需要手动安装 OpenStore，请按照下列的步骤来操作："
+
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr "OpenStore 是由许多令人敬佩的投稿者所促成的:"
+
+msgid ""
+"The OpenStore is the official app store for Ubuntu Touch. "
+"It is an open source project run by a team of volunteers with help from the "
+"community. "
+"You can discover and install new apps on your Ubuntu Touch device. "
+"You can also upload and manage your own apps for publication. "
+"The OpenStore encourages the apps published within to be open source, but "
+"also accepts proprietary apps."
+msgstr ""
+"OpenStore 是 Ubuntu Touch 的官方应用软件商店。 "
+"这是一个由社区帮助的志愿者团队运行的开源项目。 "
+"您可以在 Ubuntu Touch 装置上发现并安装新的应用软件。 "
+"您还可以上传和管理自己的应用软件以供发布。 "
+"OpenStore 鼓励在其中发布开源的应用软件，但也接受专有应用软件。"
+
+msgid ""
+"The OpenStore respects your privacy. "
+"We don't track you or your device. "
+"You do not need an account to download and install apps and we do not track "
+"your downloads. "
+"For developer information we count the number of downloads per app "
+"revision. "
+"Information about your device (the cpu architecture, framework versions, OS "
+"version, and OS language) "
+"are sent to the server to allow it to filter apps to only what you can "
+"install and present your native language where possible. "
+"This information is not logged or stored and cannot be used to uniquely "
+"identify you."
+msgstr ""
+"OpenStore 尊重您的隐私。 "
+"我们不会跟踪您或您的装置。 "
+"您不需要帐户即可下载和安装应用软件，也不会跟踪您的下载。 "
+"对于开发者信息，我们会计算每个应用程式修订版的下载次数。 "
+"有关您的装置的信息（cpu体系结构，框架版本，操作系统版本和操作系统语言） "
+"被发送到服务器以允许它仅将应用程式过滤到您可以安装的内容并尽可能地呈现您的母"
+"语。 "
+"此信息不会被记录或存储，也不能用于唯一识别您的身份。"
+
+msgid "The page you are looking for has been removed or does not exist"
+msgstr "你寻找的页面已移除或不存在"
+
+msgid ""
+"The source code for OpenStore related projects is available under the GPL "
+"v3. "
+"You can find the code on the OpenStore GitLab page."
+msgstr ""
+"OpenStore相关专案的原始程式码可在 GPL v3 下使用。 "
+"您可以在 OpenStore GitLab 页面上找到代码。"
+
+msgid ""
+"There was an error trying to find this app, please refresh and try again."
+msgstr "尝试寻找应用时页面出错，请稍后重试。"
+
+msgid ""
+"There was an error trying to load the app list, please refresh and try again."
+msgstr "加载应用清单出错，请稍后重试。"
+
+msgid ""
+"There was an error trying to load the stats, please refresh and try again."
+msgstr "加载统计信息出错，请稍后重试。"
+
+msgid "This app contains NSFW material"
+msgstr "此应用包含敏感信息"
+
+msgid ""
+"This app does not have access to restricted system data, see permissions for "
+"more details"
+msgstr "此应用软件无法访问受限制的系统数据，有关更多的详细讯息请参阅权限"
+
+msgid ""
+"This app has access to restricted system data, see permissions for more "
+"details"
+msgstr "此应用可访问受限制的系统数据，有关更多的详细讯息请参阅权限"
+
+msgid ""
+"This is the unique identifier for your app. "
+"It must match exactly the \"name\" field in your click's manifest.json and "
+"must be all lowercase letters. "
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app "
+"and \"openstore-team\" "
+"is the group or individual authoring the app."
+msgstr ""
+"这是你的应用软件的唯一识别码。 "
+"它必须与您的按一下的清单中的 \"名称\" 栏位完全符合，并且必须全部是小写字"
+"母。 "
+"例如: \"openstore.openstore-team\" ，其中 \"openstore\" 是应用软件和"
+"\"openstore-team\" "
+"是建立应用软件的群组或个人。"
+
+msgid "This revision is still available"
+msgstr ""
+
+msgid "This will be added to the beginning of your current changelog"
+msgstr "这将会被添加到目前变更日志的开头"
+
+msgid "Title"
+msgstr "名称"
+
+msgid "Title (A-Z)"
+msgstr "名称（A-Z）"
+
+msgid "Title (Z-A)"
+msgstr "名称（Z-A）"
+
+msgid "Total"
+msgstr "总计"
+
+msgid "Total downloads"
+msgstr "下载总数"
+
+msgid "Total:"
+msgstr "总计："
+
+msgid "Translation Languages"
+msgstr "翻译语言"
+
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translation URL"
+msgstr "翻译语言"
+
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translations"
+msgstr "翻译语言"
+
+msgid "Try searching for something else"
+msgstr "尝试搜索其他内容"
+
+msgid "Type"
+msgstr "类别"
+
+msgid "Ubuntu Touch"
+msgstr "Ubuntu Touch"
+
+msgid "Ubuntu Touch Apps"
+msgstr "Ubuntu Touch应用"
+
+msgid "Uncategorized"
+msgstr "未分类"
+
+msgid "Unrestricted read access to:"
+msgstr "不受限制的读取："
+
+msgid "Unrestricted write access to:"
+msgstr "不受限制的写入:"
+
+msgid "Updated"
+msgstr "更新"
+
+msgid "Updated Apps"
+msgstr "更新应用软件"
+
+msgid "Updated Date"
+msgstr "更新日期"
+
+msgid "Upload Revision via:"
+msgstr "上传修正版通过："
+
+msgid "URL"
+msgstr "网址"
+
+msgid "URL of App from the Web"
+msgstr "来自网页的应用网址"
+
+msgid "User Metrics"
+msgstr "使用指南"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "Video"
+msgstr "视频"
+
+msgid "Video Files"
+msgstr "视频文件"
+
+msgid "Video URL"
+msgstr "视频网址"
+
+msgid "View Install Instructions"
+msgstr "查看安装说明"
+
+msgid "Violence"
+msgstr "暴力"
+
+msgid "Web App"
+msgstr "网页应用"
+
+msgid "Web Apps"
+msgstr "网页应用"
+
+msgid "Webview"
+msgstr "网络视图"
+
+msgid "Welcome %{name}!"
+msgstr "欢迎 %{name}!"
+
+msgid "Xenial"
+msgstr "款待"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+
+msgid ""
+"You are only allowed to publish apps that you have permission to distribute."
+msgstr "您只能发布您有权分发的应用程式。"
+
+msgid "You must read over the content policy detailed below."
+msgstr "您必须阅读以下所叙述的政策内容。"
+
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins. "
+"Where possible, we will contact you regarding any such actions."
+msgstr ""
+"我们的管理员可以自行决定是否在没有警告的情况下提取您的应用。 "
+"，我们可能会就任何此类行为与您联系。"
+
+#~ msgid "Author"
+#~ msgstr "作者"
+
+#~ msgid "Chat with us on Telegram"
+#~ msgstr "在Telegram上与我们聊天"
+
+#~ msgid "Fork us on GitLab"
+#~ msgstr "在GitLab上关注我们"
+
+#~ msgid "Framework"
+#~ msgstr "架构"
+
+#~ msgid "Packager/Publisher"
+#~ msgstr "对象包装程序/发布人"
+
+#~ msgid "Scope"
+#~ msgstr "范围"
+
+#~ msgid "Scopes"
+#~ msgstr "范围"
+
+#~ msgid "Web App+"
+#~ msgstr "网页应用++"

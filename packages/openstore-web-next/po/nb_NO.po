@@ -1,0 +1,1156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openstore-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openstore-web 1.0.0 "
+"Report-Msgid-Bugs-To:  "
+"POT-Creation-Date: 2019-09-08 23:33-0400 "
+"PO-Revision-Date: 2024-03-28 12:02+0000 "
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no> "
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
+"open-store-io/openstore-web/nb_NO/> "
+"Language: nb_NO "
+"MIME-Version: 1.0 "
+"Content-Type: text/plain; charset=UTF-8 "
+"Content-Transfer-Encoding: 8bit "
+"Plural-Forms: nplurals=2; plural=n != 1; "
+"X-Generator: Weblate 5.5-dev "
+
+msgid ""
+"*This app contains NSFW content, to view the description and "
+"screenshots, click the above button."
+msgstr ""
+"*Denne appen har innhold som er uegnet på arbeidsplassen,  "
+"klikk på knappen over for beskrivelse og skjermbilder."
+
+msgid "%{name} was successfully deleted"
+msgstr "Sletting av %{name} var vellykket"
+
+msgid "A comma separated list of keywords"
+msgstr "En kommaseparert lite over nøkkelord"
+
+msgid "About"
+msgstr "Om"
+
+msgid "About Us"
+msgstr "Om oss"
+
+msgid "Accounts"
+msgstr "Kontoer"
+
+#, fuzzy
+#| msgid "Architecture"
+msgid "Add Another Architecture"
+msgstr "Arkitektur"
+
+msgid "Admin"
+msgstr ""
+
+msgid "All Categories"
+msgstr "Alle kategorier"
+
+#, fuzzy
+#| msgid "Channels"
+msgid "All Channels"
+msgstr "Kanaler"
+
+msgid "All Types"
+msgstr "Alle typer"
+
+msgid "An account is not needed to download or install apps."
+msgstr "Konto trengs ikke for nedlasting og installering av apper."
+
+msgid "An error occured loading your app data"
+msgstr "En feil oppsto under lasting av dine app data"
+
+msgid "An unknown error has occurred"
+msgstr "En ukjent feil oppsto"
+
+msgid ""
+"And many amazing developers, testers, and users from the OpenStore community!"
+msgstr ""
+"Og mange fremragende utviklere, testere og brukere fra OpenStore miljøet!"
+
+msgid ""
+"Any personal data you decide to give us (e.g. your email address when "
+"registering for an account to upload your apps) "
+"goes no further than us, "
+"and will not be used for anything other than allowing you to maintain your "
+"apps and, in rare cases, "
+"contact you in the event there is an issue with your app. "
+"Additionally, this site uses cookies to keep you logged in to your account."
+msgstr ""
+"Personlige data som du måtte oppgi til oss (f.eks. din e-postadresse når du "
+"registrerer en konto for å laste opp dine apper) oppbevarer vi konfidensielt,"
+" "
+"og disse blir ikke brukt til annet enn å la deg holde orden på dine "
+"programmer og, i enkelte tilfeller, til å kontakte deg hvis det skulle "
+"inntreffe noe med ditt program. "
+"I tillegg bruker dette nettstedet informasjonskapsler for å beholde deg "
+"innlogget på din konto."
+
+msgid "API Key"
+msgstr "API nøkkel"
+
+msgid "App"
+msgstr "Program"
+
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr "Apper som inneholder eller promoterer noe av ovenstående er forbudt."
+
+msgid "App Name"
+msgstr "App navn"
+
+msgid "App Stats"
+msgstr "App statistikk"
+
+msgid "App Submission Tutorial"
+msgstr ""
+
+msgid "App Title"
+msgstr "App tittel"
+
+msgid "App Type"
+msgstr "App type"
+
+msgid "App Types"
+msgstr "App typer"
+
+msgid "Apps"
+msgstr "Apper"
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing gambling involving real world money transactions are not "
+#| "allowed. "
+#| "This includes, but is not limited to, online casinos, betting, and "
+#| "lotteries."
+msgid ""
+"Apps containing gambling involving real world money transactions are not "
+"allowed. "
+"This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
+msgstr ""
+"Spillapper som involverer spill med virkelige pengemidler er forbudt. "
+"Dette inkluderer, men begrenser seg ikke til, online kasinoer, betting og "
+"lotterier."
+
+msgid ""
+"Apps containing or promoting child abuse or child sexual abuse are strictly "
+"prohibited."
+msgstr ""
+"Apper som inneholder eller promoterer barnemishandling eller seksuelle "
+"overgrep mot barn er strengt forbudt."
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting gratuitous violence are not allowed. "
+#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
+#| "making, self harm, and grotesque imagery."
+msgid ""
+"Apps containing or promoting gratuitous violence are not allowed. "
+"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"making, self harm, and grotesque imagery."
+msgstr ""
+"Apper som inneholder eller promoterer umotivert vold er forbudt. "
+"Dette inkluderer, men begrenser seg ikke til, vold, terrorisme, produksjon "
+"av bomber/våpen, selvskading og bilder "
+"som vekker avsky."
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting sexually explicit content are not allowed. "
+#| "This includes, but is not limited to, pornography and services promoting "
+#| "sexually explicit content."
+msgid ""
+"Apps containing or promoting sexually explicit content are not allowed. "
+"This includes, but is not limited to, pornography and services promoting "
+"sexually explicit content."
+msgstr ""
+"Apper som inneholder eller promoterer eksplisitt seksuelt innhold er "
+"forbudt. "
+"Dette inkluderer, men begrenser seg ikke til, pornografi og tjenester som "
+"promoterer eksplisitt seksuelt innhold."
+
+msgid ""
+"Apps not requiring manual review can be submitted by logging in with the "
+"\"Log In\" link above."
+msgstr ""
+"Apper som ikke krever manuell kontroll kan sendes inn ved å logge inn med "
+"\"Logg inn\" lenken over."
+
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr ""
+"Apper som promoterer aktiviteter som er forbudt ved amerikansk lov (USA) er "
+"forbudt."
+
+msgid ""
+"Apps requiring manual review must be submitted by contacting an admin in our "
+"telegram group."
+msgstr ""
+"Apper som krever manuell kontroll må først sendes til en administrator i vår "
+"Telegram gruppe for kontroll."
+
+#, fuzzy
+#| msgid ""
+#| "Apps that are found to be stealing the users data, trying to escalate "
+#| "their privileges without user consent, "
+#| "or executing malicious process are strictly prohibited."
+msgid ""
+"Apps that are found to be stealing the users data, trying to escalate their "
+"privileges without user consent, "
+"or executing malicious process are strictly prohibited."
+msgstr ""
+"Apper som viser seg å stjele brukerens data, forsøker å øke sine tillatelser "
+"uten brukergodkjenning, "
+"eller utfører ondsinnede handlinger er strengt forbudt."
+
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission rules and "
+"content policy. "
+"You can review the rules and policies before uploading your app."
+msgstr ""
+"Alle apper som lastes opp i OpenStore er bundet av våre godkjennings- og "
+"innholdsregler. "
+"Du kan gjennomgå reglene før du laster opp din app."
+
+msgid "Arch"
+msgstr ""
+
+msgid "Architecture"
+msgstr "Arkitektur"
+
+msgid "Audio"
+msgstr "Lyd"
+
+msgid "Back"
+msgstr "Tilbake"
+
+msgid "Badge"
+msgstr "Skilt"
+
+msgid "Badges"
+msgstr "Skilt"
+
+msgid "Bluetooth"
+msgstr "Blåtann"
+
+msgid "Bookmark"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Browse"
+msgstr "Bla igjennom"
+
+msgid "Browse Apps"
+msgstr "Bla igjennom apper"
+
+msgid "Bug Tracker"
+msgstr "Feilsporer"
+
+msgid "Calendar"
+msgstr "Kalender"
+
+msgid "Camera"
+msgstr "Kamera"
+
+msgid "Cancel"
+msgstr "Avbryt"
+
+msgid "Category"
+msgstr "Kategori"
+
+msgid "Changelog"
+msgstr "Endringslogg"
+
+msgid "Channel"
+msgstr "Kanal"
+
+msgid "Channels"
+msgstr "Kanaler"
+
+msgid "Child Endangerment"
+msgstr "Barnefare"
+
+msgid "Choose a category"
+msgstr "Velg en kategori"
+
+msgid "Choose a license"
+msgstr "Velg lisens"
+
+msgid "Choose a maintainer"
+msgstr "Velg vedlikeholder"
+
+msgid "Completed"
+msgstr ""
+
+msgid "Connectivity"
+msgstr "Tilknytning"
+
+msgid "Contact"
+msgstr "Kontakt"
+
+msgid "Contacts"
+msgstr "Kontakter"
+
+msgid "Content Exchange"
+msgstr "Innholdsutveksling"
+
+msgid "Content Exchange Source"
+msgstr "Innholdsutvekslingskilde"
+
+msgid "Contributors"
+msgstr "Bidragsytere"
+
+msgid "Copy to clipboard"
+msgstr "Kopiér til utklippstavle"
+
+msgid "Count"
+msgstr "Antall"
+
+msgid "Create"
+msgstr "Opprett"
+
+msgid "Debug"
+msgstr "Avlus"
+
+msgid "Delete"
+msgstr "Slett"
+
+msgid "Description"
+msgstr "Beskrivelse"
+
+msgid "Discovery"
+msgstr "Oppdag"
+
+#, fuzzy
+#| msgid "Picture Files"
+msgid "Document Files"
+msgstr "Bildefiler"
+
+msgid "Donate"
+msgstr "Støtte"
+
+msgid "Donate URL"
+msgstr "URL for å gi støtte"
+
+msgid "Download"
+msgstr "Last ned"
+
+msgid "Download Stats"
+msgstr "Nedlastingsstatistikk"
+
+msgid "Download the OpenStore App"
+msgstr "Last ned OpenStore appen"
+
+msgid "Downloads"
+msgstr "Nedlastinger"
+
+msgid "Downloads of the latest version"
+msgstr "Nedlastninger av nyeste versjon"
+
+msgid "Drag and drop to sort screenshots."
+msgstr "Dra og slipp for å sortere skjermbilder."
+
+msgid "Edit"
+msgstr "Redigér"
+
+msgid "Error"
+msgstr "Feil"
+
+msgid "Feeds"
+msgstr "Feeder"
+
+#, fuzzy
+#| msgid "File Size"
+msgid "File"
+msgstr "Filstørrelse"
+
+msgid "File Upload"
+msgstr "Filopplasting"
+
+msgid "Focal"
+msgstr ""
+
+msgid ""
+"For any questions you may have or help you may need just chat with us in our "
+"telegram group. "
+"You can also submit issues, bugs, and feature requests to our GitLab bug "
+"tracker."
+msgstr ""
+"Ved spørsmål, kontakt oss i vår Telegram gruppe. "
+"Du kan også melde feil eller endringsønsker på vår GitLab feilmeldingsliste."
+
+msgid "Full System Access"
+msgstr "Full systemtilgang"
+
+msgid "Gambling"
+msgstr "Pengespill"
+
+msgid "Get your badge"
+msgstr "Få ditt merke"
+
+msgid ""
+"Give a short explanation why you can’t publish the app without extra "
+"privileges. "
+"No need to go into details, a one liner like \"needs to run a daemon in the "
+"background\" will do. "
+"List all the special features you have, if there are more."
+msgstr ""
+"Beskriv kort hvorfor du ikke kan publisere appen uten ekstra tillatelser. "
+"Detaljer trengs ikke. En kort setning som \"må kunne kjøre en prosess i "
+"bakgrunnen\" holder. "
+"Nevn alle spesielle egenskaper som gjelder, hvis det er flere."
+
+msgid "Go back a page"
+msgstr "Gå til forrige side"
+
+msgid "Go to the next page"
+msgstr "Gå til neste side"
+
+msgid "GPL v3 License"
+msgstr "GPL v3 lisens"
+
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr "Plaging, mobbing eller hatefull tale"
+
+msgid "History"
+msgstr "Historikk"
+
+msgid "Icon"
+msgstr "Ikon"
+
+msgid "ID"
+msgstr "ID"
+
+msgid ""
+"If an application could be published without manual review if it wouldn’t be "
+"for that one cool feature, "
+"publish a stripped down version! "
+"Not everyone will want to install apps with less confinement."
+msgstr ""
+"Hvis appen ville kunne publiseres uten manuell kontroll hvis det ikke var "
+"for den éne kule egenskapen, "
+"publisér den enklere versjonen. Ikke alle vil ønske å benytte en app som har "
+"utvidede tilganger."
+
+msgid "Illegal Activities"
+msgstr "Ulovlige aktiviteter"
+
+msgid "In App Purchases"
+msgstr "Kjøpsmuligheter i programmer"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Install"
+msgstr "Installer"
+
+msgid "Install via the OpenStore app"
+msgstr "Installer via OpenStore-programmet"
+
+msgid "Jump to the first page"
+msgstr "Gå til første side"
+
+msgid "Jump to the last page"
+msgstr "Gå til siste side"
+
+msgid "Keep Display On"
+msgstr "Behold skjermen påslått"
+
+msgid "Keep your api key private!"
+msgstr "Beskytt din API nøkkel!"
+
+msgid "Keywords"
+msgstr "Nøkkelord"
+
+msgid "Language"
+msgstr "Språk"
+
+msgid "Latest Update"
+msgstr "Nyeste utgivelse"
+
+msgid "Least Popular"
+msgstr ""
+
+msgid "License"
+msgstr "Lisens"
+
+msgid "Location"
+msgstr "Posisjon"
+
+msgid "Locked"
+msgstr ""
+
+msgid "Log In"
+msgstr "Logg inn"
+
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr "Logg inn i OpenStore for å behandle dine apper."
+
+msgid "Log Out"
+msgstr "Logg ut"
+
+msgid "Login"
+msgstr "Innlogging"
+
+msgid "Login to submit your app"
+msgstr "Logg inn for å sende inn din app"
+
+msgid "Login via GitHub"
+msgstr "Logg inn via GitHub"
+
+msgid "Login via GitLab"
+msgstr "Logg inn via GitLab"
+
+#, fuzzy
+#| msgid "Login via Ubuntu"
+msgid "Login via Ubuntu One"
+msgstr "Logg inn via Ubuntu"
+
+msgid "Maintainer"
+msgstr "Vedlikeholder"
+
+msgid "Malware"
+msgstr "Skadeprogram"
+
+msgid "Manage"
+msgstr "Vedlikehold"
+
+msgid "Manage Apps"
+msgstr "Vedlikehold apper"
+
+msgid "Microphone"
+msgstr "Mikrofon"
+
+msgid "Most Popular"
+msgstr ""
+
+msgid "Music Files"
+msgstr "Musikkfiler"
+
+msgid "Name"
+msgstr "Navn"
+
+msgid "Navigate to the downloads folder"
+msgstr "Gå til nedlastingsmappa"
+
+msgid "Networking"
+msgstr "Nettverk"
+
+msgid "New Apps"
+msgstr "Nye apper"
+
+msgid "New Revision"
+msgstr "Ny utgave"
+
+msgid "New revision for %{channel} was created!"
+msgstr "Ny utgave av %{channel} ble opprettet!"
+
+msgid "New Revision for %{name}"
+msgstr "Ny utgave av %{name}"
+
+#, fuzzy
+#| msgid "New revision for %{channel} was created!"
+msgid "New revisions for %{channel} were created!"
+msgstr "Ny utgave av %{channel} ble opprettet!"
+
+msgid "Newest"
+msgstr "Nyeste"
+
+msgid "NFC"
+msgstr ""
+
+msgid "No"
+msgstr "Nei"
+
+msgid "No apps found."
+msgstr "Ingen apper funnet."
+
+msgid "No longer available"
+msgstr ""
+
+msgid "None"
+msgstr "Ingen"
+
+msgid "Not published"
+msgstr "Ikke publisert"
+
+msgid "NSFW"
+msgstr "Uegnet for arbeidsplassen"
+
+msgid "NSFW content"
+msgstr "Innhold som er uegnet for arbeidsplassen"
+
+#, fuzzy
+#| msgid "Version"
+msgid "Older Versions"
+msgstr "Versjon"
+
+msgid "Oldest"
+msgstr "Eldst"
+
+msgid "Oldest Update"
+msgstr "Eldste utgave"
+
+#, fuzzy
+#| msgid ""
+#| "One of the main goals of the OpenStore is to provide a safe app store for "
+#| "people of all ages. "
+#| "To accomplish this goal we do not allow certain types of app to be "
+#| "published. "
+#| "Failure to follow the guidelines will result in your app being removed. "
+#| "Any account with serious infractions may be subject to termination. "
+#| "The OpenStore team thanks you for helping us promote a better environment "
+#| "for everyone."
+msgid ""
+"One of the main goals of the OpenStore is to provide a safe app store for "
+"people of all ages. "
+"To accomplish this goal we do not allow certain types of app to be "
+"published. "
+"Failure to follow the guidelines will result in your app being removed. "
+"Any account with serious infractions may be subject to termination. "
+"The OpenStore team thanks you for helping us promote a better environment "
+"for everyone."
+msgstr ""
+"Et hovedmål for OpenStore er å være en sikker app kilde for folk i alle "
+"aldere. "
+"For å oppnå dette tillater vi ikke publisering av visse typer innhold. "
+"Dersom retningslinjene ikke blir overholdt vil din app bli fjernet. "
+"Ved alvorlige brudd på retningslinjene vil kontoen bli slettet. "
+"OpenStore teamet takker for at du hjelper oss å sikre et godt miljø for alle."
+
+msgid ""
+"Only open source applications allowed for manual review: "
+"As the applications might have arbitrary access to the device, every "
+"manually reviewed app will get a source code review."
+msgstr ""
+"Kun åpen kildekode apper godtas for manuell kontroll. "
+"Siden apper kan ha forskjellige typer tilgang til enheten vil manuell "
+"kontroll innebære gjennomgang av kildekoden."
+
+#, fuzzy
+#| msgid ""
+#| "Only YouTube videos are supported at this time. Make sure the url is for "
+#| "the embedded video!"
+msgid ""
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
+msgstr ""
+"For tiden støttes kun YouTube videoer. Sørg for at URLen er til den "
+"innebygde videoen!"
+
+msgid "Open the terminal app"
+msgstr "Åpne terminal appen"
+
+msgid "OpenStore API/Server Contributors"
+msgstr "Bidragsytere til OpenStore API/tjener"
+
+msgid "OpenStore App Content Policy"
+msgstr "Retningslinjer for OpenStore innhold"
+
+msgid "OpenStore App Contributors"
+msgstr "Bidragsytere til OpenStore appen"
+
+msgid "OpenStore Badges"
+msgstr "OpenStore merker"
+
+msgid "OpenStore group on Telegram"
+msgstr "OpenStore gruppe på Telegram"
+
+msgid "OpenStore source on GitLab"
+msgstr "OpenStore kildekode på GitLab"
+
+msgid "OpenStore Website Contributors"
+msgstr "Bidragsytere til OpenStore nettsiden"
+
+msgid "Override Type"
+msgstr ""
+
+msgid "Package Info"
+msgstr "Pakkeinformasjon"
+
+msgid "Page Not Found"
+msgstr "Side ikke funnet"
+
+msgid "Permissions"
+msgstr "Tillatelser"
+
+msgid "Picture Files"
+msgstr "Bildefiler"
+
+msgid "Presentation"
+msgstr "Presentasjon"
+
+msgid "Processing"
+msgstr ""
+
+msgid "Prohibited Apps"
+msgstr "Forbudte apper"
+
+msgid "Promote your app on the OpenStore!"
+msgstr "Promotér din app på OpenStore!"
+
+msgid ""
+"Promote your app on the OpenStore! Add these badges to your website, "
+"code repository, social media, or anywhere on the internet. The badges "
+"are available in several different languages and in both PNG and SVG "
+"formats."
+msgstr ""
+"Promotér din app på OpenStore! Legg til disse merkene på din nettside, "
+"kildekode side, sosiale medier, eller hvor som helst på internet. Merkene "
+"er tilgjengelige på forskjellige språk og både i PNG og SVG format."
+
+msgid "Public Link"
+msgstr "Offentlig lenke"
+
+msgid "Publish"
+msgstr "Publisér"
+
+msgid "Published"
+msgstr "Publisert"
+
+msgid "Published Date"
+msgstr "Utgivelsesdato"
+
+#, fuzzy
+#| msgid "Published"
+msgid "Publisher"
+msgstr "Publisert"
+
+msgid "Push Notifications"
+msgstr "Dyttingsmerknader"
+
+#, fuzzy
+#| msgid "Read Picture Files"
+msgid "Read Document Files"
+msgstr "Leste bildefiler"
+
+msgid "Read Music Files"
+msgstr "Leste musikkfiler"
+
+msgid "Read Picture Files"
+msgstr "Leste bildefiler"
+
+msgid "Read Video Files"
+msgstr "Leste videofiler"
+
+msgid "Relevance"
+msgstr "Relevans"
+
+msgid "Report an Issue"
+msgstr "Rapporter et problem"
+
+msgid "Restricted permission"
+msgstr "Begrenset tilgang"
+
+msgid "Review Exceptions"
+msgstr ""
+
+#, fuzzy
+#| msgid "Webview"
+msgid "Reviews"
+msgstr "Vev-visning"
+
+msgid "Revision"
+msgstr "Revisjon"
+
+msgid "RSS Feeds"
+msgstr "RSS kilder"
+
+msgid "Rules for Submission"
+msgstr "Regler for innlevering"
+
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr "Utgivelsesregler ved utgivelser som krever manuell kontroll"
+
+msgid "Run the command:"
+msgstr "Kjør kommandoen:"
+
+msgid "Save"
+msgstr "Lagre"
+
+msgid "Screenshots"
+msgstr "Skjermbilde"
+
+msgid "Screenshots (Limit 5)"
+msgstr "Skjermbilder (maks 5)"
+
+msgid "Search"
+msgstr "Søk"
+
+msgid ""
+"Send us a link to a repository for your app to our telegram group along with "
+"some instructions on how to build it."
+msgstr ""
+"Send en lenke til kildekoden til appen din, samt byggeinstruksjoner, til vår "
+"Telegram gruppe."
+
+msgid "Sensors"
+msgstr "Sensorer"
+
+msgid "Sexually Explicit Content"
+msgstr "Eksplisitt seksuelt innhold"
+
+#, fuzzy
+#| msgid "New Revision"
+msgid "Show All Revisions"
+msgstr "Ny utgave"
+
+msgid "Show NSFW Content"
+msgstr "Vis 'uegnet for arbeidsplassen' innhold"
+
+msgid "Site Status"
+msgstr "Nettstedsstatus"
+
+msgid "Sort By"
+msgstr "Sortér etter"
+
+msgid "Source"
+msgstr "Kilde"
+
+#, fuzzy
+#| msgid "Source"
+msgid "Source Code"
+msgstr "Kilde"
+
+msgid "Source URL"
+msgstr "Kilde URL"
+
+msgid "Stats"
+msgstr "Statistikk"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Submit"
+msgstr "Send inn"
+
+msgid "Submit App"
+msgstr "Send inn app"
+
+msgid "Submit your app"
+msgstr "Send inn din app"
+
+msgid "Success"
+msgstr "Vellykket"
+
+msgid "Support"
+msgstr "Brukerstøtte"
+
+msgid "Support URL"
+msgstr "Brukerstøtte URL"
+
+msgid "Tag Line"
+msgstr "Nøkkelord"
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Terms"
+msgstr "Betingelser"
+
+msgid "The app you are looking for has been removed or does not exist"
+msgstr "Appen du søker etter har blitt fjernet eller eksisterer ikke"
+
+msgid ""
+"The apps available for download from the OpenStore have their own licencing "
+"and terms. "
+"Consult each individual app's page for more information."
+msgstr ""
+"Apper som tilbys gjennom OpenStore har egne lisenser og betingelser. "
+"Sjekk hver enkelt apps side for mer informasjon."
+
+msgid "The changes to %{name} were saved!"
+msgstr "Endringene på %{name} ble lagret!"
+
+msgid ""
+"The OpenStore a non-profit volunteer project. "
+"Although every effort is made to ensure that everything in the repository is "
+"safe to install, you use it AT YOUR OWN RISK. "
+"Apps uploaded to the OpenStore will be subject to an automated review "
+"process or "
+"a manual review process to check for potential security or privacy issues. "
+"This checking is far from exhaustive though, and there are no guarantees."
+msgstr ""
+"OpenStore er et dugnadsprosjekt. "
+"Selv om vi gjør vårt beste for å sikre at alt i OpenStore er trygt å "
+"installere benytter du det PÅ EGET ANSVAR. "
+"Apper som lastes opp i OpenStore gjennomgår automatisert kontroll eller "
+"manuell kontroll "
+"for å forebygge sikkerhets- eller personvernproblemer. Disse kontrollene er "
+"imidlertid langt fra "
+"fullverdige og utgjør derfor ikke en garanti mot slike problemer."
+
+msgid ""
+"The OpenStore app is installed by default on the UBports builds of Ubuntu "
+"Touch. "
+"But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+"OpenStore appen installeres som forvalg på UBports utgaver av Ubuntu Touch. "
+"Dersom du trenger å installere OpenStore manuelt, følg disse trinnene:"
+
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr "OpenStore er muliggjort av mange fremragende bidragsytere:"
+
+msgid ""
+"The OpenStore is the official app store for Ubuntu Touch. "
+"It is an open source project run by a team of volunteers with help from the "
+"community. "
+"You can discover and install new apps on your Ubuntu Touch device. "
+"You can also upload and manage your own apps for publication. "
+"The OpenStore encourages the apps published within to be open source, but "
+"also accepts proprietary apps."
+msgstr ""
+"OpenStore er den offisielle app kilden for Ubuntu Touch. "
+"Dette er et åpen kildekode prosjekt drevet av et team av frivillige med "
+"hjelp fra nettsamfunnet. "
+"Du kan oppdage og installere nye apper på din Ubuntu Touch enhet. "
+"Du kan også sende inn og behandle dine egne apper for utgivelse der. "
+"OpenStore oppmuntrer til publisering av åpen kildekode apper, men aksepterer "
+"også produsenteide apper."
+
+msgid ""
+"The OpenStore respects your privacy. "
+"We don't track you or your device. "
+"You do not need an account to download and install apps and we do not track "
+"your downloads. "
+"For developer information we count the number of downloads per app "
+"revision. "
+"Information about your device (the cpu architecture, framework versions, OS "
+"version, and OS language) "
+"are sent to the server to allow it to filter apps to only what you can "
+"install and present your native language where possible. "
+"This information is not logged or stored and cannot be used to uniquely "
+"identify you."
+msgstr ""
+"OpenStore respekterer ditt personvern. "
+"Vi sporer deg ikke på din enhet. "
+"Du trenger ingen konto for å laste ned og installere apper og vi sporer ikke "
+"dine nedlastinger. "
+"For utviklerne teller vi antall nedlastinger per utgivelse av appen. "
+"Informasjon om din enhet (prosessorarkitektur, rammeverk for revisjoner, OS "
+"versjon og OS språk) "
+"sendes til en server for å filtrere ut de apper du kan installere og "
+"presentere dem på ditt språk når dette er mulig. "
+"Denne informasjonen lagres ikke og kan ikke nyttes til å identifisere deg."
+
+msgid "The page you are looking for has been removed or does not exist"
+msgstr "Siden du søker har blitt fjernet eller eksisterer ikke"
+
+msgid ""
+"The source code for OpenStore related projects is available under the GPL "
+"v3. "
+"You can find the code on the OpenStore GitLab page."
+msgstr ""
+"Kildekoden til OpenStore og beslektede prosjekter er tilgjengelige under GPL "
+"v3 lisens. "
+"Du finner kildekoden på OpenStore GitLab siden."
+
+msgid ""
+"There was an error trying to find this app, please refresh and try again."
+msgstr "Fant ikke programmet. Gjenoppfrisk og prøv igjen."
+
+msgid ""
+"There was an error trying to load the app list, please refresh and try again."
+msgstr "Kunne ikke laste inn programlisten. Gjenoppfrisk og prøv igjen."
+
+msgid ""
+"There was an error trying to load the stats, please refresh and try again."
+msgstr "Kunne ikke laste inn statistikken. Gjenoppfrisk og prøv igjen."
+
+msgid "This app contains NSFW material"
+msgstr "Denne appen har innhold som er uegnet for arbeidsplassen"
+
+msgid ""
+"This app does not have access to restricted system data, see permissions for "
+"more details"
+msgstr ""
+"Denne appen har ikke tilgang til tilgangsbegrensede systemdata. Se "
+"tillatelser for detaljer"
+
+msgid ""
+"This app has access to restricted system data, see permissions for more "
+"details"
+msgstr ""
+"Denne appen har tilgang til tilgangsbegrensede systemdata. Se tillatelser "
+"for detaljer"
+
+msgid ""
+"This is the unique identifier for your app. "
+"It must match exactly the \"name\" field in your click's manifest.json and "
+"must be all lowercase letters. "
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app "
+"and \"openstore-team\" "
+"is the group or individual authoring the app."
+msgstr ""
+"Dette er den entydige benevningen for din app. "
+"Den må være nøyaktig lik \"navn\" feltet i din clickpakkes manifest.json og "
+"må være i små bokstaver. "
+"Eksempel: \"openstore.openstore-team\", der \"openstore\" er appen og "
+"\"openstore-team\" "
+"er gruppen eller personen som utgir appen."
+
+msgid "This revision is still available"
+msgstr ""
+
+msgid "This will be added to the beginning of your current changelog"
+msgstr "Dette legges til i starten på din nåværende endringslogg"
+
+msgid "Title"
+msgstr "Tittel"
+
+msgid "Title (A-Z)"
+msgstr "Tittel (A-Z)"
+
+msgid "Title (Z-A)"
+msgstr "Tittel (Z-A)"
+
+msgid "Total"
+msgstr "Totalt"
+
+msgid "Total downloads"
+msgstr "Totalt antall nedlastninger"
+
+msgid "Total:"
+msgstr "Totalt:"
+
+msgid "Translation Languages"
+msgstr "Oversettelsesspråk"
+
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translation URL"
+msgstr "Oversettelsesspråk"
+
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translations"
+msgstr "Oversettelsesspråk"
+
+msgid "Try searching for something else"
+msgstr "Prøv å søke etter noe annet"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Ubuntu Touch"
+msgstr "Ubuntu Touch"
+
+msgid "Ubuntu Touch Apps"
+msgstr "Ubuntu Touch apper"
+
+msgid "Uncategorized"
+msgstr "Ikke kategorisert"
+
+msgid "Unrestricted read access to:"
+msgstr "Ubegrenset lesetilgang til:"
+
+msgid "Unrestricted write access to:"
+msgstr "Ubegrenset skrivetilgang til:"
+
+msgid "Updated"
+msgstr "Oppdatert"
+
+msgid "Updated Apps"
+msgstr "Oppdaterte apper"
+
+msgid "Updated Date"
+msgstr "Oppdatert dato"
+
+msgid "Upload Revision via:"
+msgstr ""
+
+msgid "URL"
+msgstr "URL"
+
+msgid "URL of App from the Web"
+msgstr "URL til appen på nettet"
+
+msgid "User Metrics"
+msgstr "Bruksdata"
+
+msgid "Version"
+msgstr "Versjon"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Video Files"
+msgstr "Videofiler"
+
+msgid "Video URL"
+msgstr "Video URL"
+
+msgid "View Install Instructions"
+msgstr "Se installasjonsinstruksjoner"
+
+msgid "Violence"
+msgstr "Vold"
+
+msgid "Web App"
+msgstr "Nett-program"
+
+msgid "Web Apps"
+msgstr "Web apper"
+
+msgid "Webview"
+msgstr "Vev-visning"
+
+msgid "Welcome %{name}!"
+msgstr "Velkommen %{name}!"
+
+msgid "Xenial"
+msgstr "Xenial"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+
+msgid ""
+"You are only allowed to publish apps that you have permission to distribute."
+msgstr "Du kan bare publisere apper som du har tillatelse til å distribuere."
+
+msgid "You must read over the content policy detailed below."
+msgstr "Du må lese gjennom retningslinjene nedenfor."
+
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins. "
+"Where possible, we will contact you regarding any such actions."
+msgstr ""
+"Administrator kan fjerne din app uten advarsel. "
+"Når mulig kontakter vi deg vedrørende slike handlinger."
+
+#~ msgid "Author"
+#~ msgstr "Forfatter"
+
+#~ msgid "Chat with us on Telegram"
+#~ msgstr "Chat med oss på Telegram"
+
+#~ msgid "Fork us on GitLab"
+#~ msgstr "Lag en forgrening på GitLab"
+
+#~ msgid "Framework"
+#~ msgstr "Rammeverk"
+
+#~ msgid "OR"
+#~ msgstr "OR"
+
+#~ msgid "Packager/Publisher"
+#~ msgstr "Sammenpakker/utgiver"
+
+#~ msgid "Scope"
+#~ msgstr "Søkefelt"
+
+#~ msgid "Scopes"
+#~ msgstr "Scoper"
+
+#~ msgid "Web App+"
+#~ msgstr "Nett-program+"

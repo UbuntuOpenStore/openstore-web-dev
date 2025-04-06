@@ -1,14 +1,18 @@
 ---
 export const prerender = false;
 
+import { initializeI18N } from "@/lib/i18n";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Discover from "@/components/Discover.astro";
+import { t } from "i18next";
+
+await initializeI18N("en_US"); // TODO get this from the URL
 ---
 
-<BaseLayout title="OpenStore" pageTitle="OpenStore" description="The open source app store for Ubuntu Touch">
+<BaseLayout title="OpenStore" pageTitle="OpenStore" description={t("The open source app store for Ubuntu Touch")}>
   <section class="section text-center">
     <h1 class="text-4xl">OpenStore</h1>
-    <p>The open source app store for <a href="https://ubuntu-touch.io/" class="underline">Ubuntu Touch</a></p>
+    <p><a href="https://ubuntu-touch.io/" class="underline">{t("The open source app store for Ubuntu Touch")}</a></p>
   </section>
 
   <Discover />

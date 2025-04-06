@@ -1,0 +1,1135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openstore-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openstore-web 1.0.0 "
+"Report-Msgid-Bugs-To:  "
+"POT-Creation-Date: 2019-07-21 22:39-0400 "
+"PO-Revision-Date: 2024-04-20 10:07+0000 "
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com> "
+"Language-Team: Dutch <https://hosted.weblate.org/projects/open-store-io/"
+"openstore-web/nl/> "
+"Language: nl "
+"MIME-Version: 1.0 "
+"Content-Type: text/plain; charset=UTF-8 "
+"Content-Transfer-Encoding: 8bit "
+"Plural-Forms: nplurals=2; plural=n != 1; "
+"X-Generator: Weblate 5.5-dev "
+
+msgid ""
+"*This app contains NSFW content, to view the description and "
+"screenshots, click the above button."
+msgstr ""
+"* Deze app bevat inhoud voor volwassenen. Klik op bovenstaande "
+"knop om de omschrijving en schermfoto's te tonen."
+
+msgid "%{name} was successfully deleted"
+msgstr "%{name} is verwijderd"
+
+msgid "A comma separated list of keywords"
+msgstr "Een kommagescheiden lijst met trefwoorden"
+
+msgid "About"
+msgstr "Over"
+
+msgid "About Us"
+msgstr "Over ons"
+
+msgid "Accounts"
+msgstr "Accounts"
+
+msgid "Add Another Architecture"
+msgstr "Architectuur toevoegen"
+
+msgid "Admin"
+msgstr "Beheerder"
+
+msgid "All Categories"
+msgstr "Alle categorieën"
+
+msgid "All Channels"
+msgstr "Alle kanalen"
+
+msgid "All Types"
+msgstr "Alle soorten"
+
+msgid "An account is not needed to download or install apps."
+msgstr "Je hebt geen account nodig om apps te downloaden of installeren."
+
+msgid "An error occured loading your app data"
+msgstr "Er is een fout opgetreden tijdens het laden van je appgegevens"
+
+msgid "An unknown error has occurred"
+msgstr "Er is een onbekende fout opgetreden"
+
+msgid ""
+"And many amazing developers, testers, and users from the OpenStore community!"
+msgstr ""
+"En de vele fantastische ontwikkelaars, testers en gebruikers binnen de "
+"OpenStore-gemeenschap!"
+
+msgid ""
+"Any personal data you decide to give us (e.g. your email address when "
+"registering for an account to upload your apps) "
+"goes no further than us, "
+"and will not be used for anything other than allowing you to maintain your "
+"apps and, in rare cases, "
+"contact you in the event there is an issue with your app. "
+"Additionally, this site uses cookies to keep you logged in to your account."
+msgstr ""
+"Alle persoonlijke gegevens die je met ons deelt (zoals je e-mailadres bij "
+"het registreren van een account), "
+"gaan niet verder dan ons. Ze worden niet gebruikt voor iets anders dan om je "
+"apps te onderhouden en "
+"contact met je op te nemen als er een probleem is met je app. "
+"Daarnaast gebruikt deze site cookies zodat je ingelogd blijft op je account."
+
+msgid "API Key"
+msgstr "Api-sleutel"
+
+msgid "App"
+msgstr "App"
+
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr "Apps die bovenstaande inhoud bevatten of promoten zijn streng verboden."
+
+msgid "App Name"
+msgstr "Appnaam"
+
+msgid "App Stats"
+msgstr "Appstatistieken"
+
+msgid "App Submission Tutorial"
+msgstr "App indienen - Uitleg"
+
+msgid "App Title"
+msgstr "Apptitel"
+
+msgid "App Type"
+msgstr "Soort app"
+
+msgid "App Types"
+msgstr "Soorten apps"
+
+msgid "Apps"
+msgstr "Apps"
+
+msgid ""
+"Apps containing gambling involving real world money transactions are not "
+"allowed. "
+"This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
+msgstr ""
+"Apps met gokspellen waarbij fysieke geldtransacties zijn betrokken, zijn "
+"niet toegestaan. "
+"Dit omvat, maar is niet beperkt tot, online-casino's, weddenschappen en "
+"loterijen."
+
+msgid ""
+"Apps containing or promoting child abuse or child sexual abuse are strictly "
+"prohibited."
+msgstr ""
+"Apps met kindermishandeling of seksueel misbruik van kinderen zijn ten "
+"strengste verboden."
+
+msgid ""
+"Apps containing or promoting gratuitous violence are not allowed. "
+"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"making, self harm, and grotesque imagery."
+msgstr ""
+"Apps die zinloos geweld bevatten of promoten, zijn niet toegestaan. "
+"Dit omvat, maar is niet beperkt tot, geweld, terrorisme, het maken van "
+"bommen/wapens, zelfbeschadiging en buitensporige beelden."
+
+msgid ""
+"Apps containing or promoting sexually explicit content are not allowed. "
+"This includes, but is not limited to, pornography and services promoting "
+"sexually explicit content."
+msgstr ""
+"Apps die seksueel expliciete inhoud bevatten of promoten, zijn niet "
+"toegestaan. "
+"Dit omvat, maar is niet beperkt tot, pornografie en diensten die seksueel "
+"expliciete inhoud promoten."
+
+msgid ""
+"Apps not requiring manual review can be submitted by logging in with the "
+"\"Log In\" link above."
+msgstr ""
+"Apps waarvoor geen handmatige beoordeling nodig is, kunnen worden ingediend "
+"door in te loggen met de link ‘Inloggen’."
+
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr ""
+"Apps die illegale activiteiten promoten (op basis van Amerikaanse wetgeving) "
+"zijn niet toegestaan."
+
+msgid ""
+"Apps requiring manual review must be submitted by contacting an admin in our "
+"telegram group."
+msgstr ""
+"Apps die een handmatige beoordeling vereisen, moeten worden ingediend door "
+"contact op te nemen met een beheerder in onze telegramgroep."
+
+msgid ""
+"Apps that are found to be stealing the users data, trying to escalate their "
+"privileges without user consent, "
+"or executing malicious process are strictly prohibited."
+msgstr ""
+"Apps waarvan wordt vastgesteld dat ze gebruikersgegevens stelen, hun "
+"bevoegdheden proberen uit te breiden zonder toestemming van de gebruiker, "
+"of kwaadwillende processen uitvoeren zijn ten strengste verboden."
+
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission rules and "
+"content policy. "
+"You can review the rules and policies before uploading your app."
+msgstr ""
+"Apps die worden geüpload naar OpenStore voldoen aan onze indieningsregels en "
+"inhoudsbeleid. "
+"Je kunt de regels en het beleid nalopen voordat je je app uploadt."
+
+msgid "Arch"
+msgstr "Arch."
+
+msgid "Architecture"
+msgstr "Architectuur"
+
+msgid "Audio"
+msgstr "Audio"
+
+msgid "Back"
+msgstr "Terug"
+
+msgid "Badge"
+msgstr "Embleem"
+
+msgid "Badges"
+msgstr "Emblemen"
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "Bookmark"
+msgstr "Bladwijzer"
+
+msgid "Bookmarks"
+msgstr "Bladwijzers"
+
+msgid "Browse"
+msgstr "Ontdekken"
+
+msgid "Browse Apps"
+msgstr "Apps ontdekken"
+
+msgid "Bug Tracker"
+msgstr "Bugtracker"
+
+msgid "Calendar"
+msgstr "Agenda"
+
+msgid "Camera"
+msgstr "Camera"
+
+msgid "Cancel"
+msgstr "Annuleren"
+
+msgid "Category"
+msgstr "Categorie"
+
+msgid "Changelog"
+msgstr "Wijzigingslog"
+
+msgid "Channel"
+msgstr "Kanaal"
+
+msgid "Channels"
+msgstr "Kanalen"
+
+msgid "Child Endangerment"
+msgstr "Bedreigend voor kinderen"
+
+msgid "Choose a category"
+msgstr "Kies een categorie"
+
+msgid "Choose a license"
+msgstr "Kies een licentie"
+
+msgid "Choose a maintainer"
+msgstr "Kies een beheerder"
+
+msgid "Completed"
+msgstr "Voltooid"
+
+msgid "Connectivity"
+msgstr "Internetverbinding"
+
+msgid "Contact"
+msgstr "Contactpersoon"
+
+msgid "Contacts"
+msgstr "Contactpersonen"
+
+msgid "Content Exchange"
+msgstr "Inhoudsuitwisseling"
+
+msgid "Content Exchange Source"
+msgstr "Inhoudsuitwisselingsbron"
+
+msgid "Contributors"
+msgstr "Bijdragers"
+
+msgid "Copy to clipboard"
+msgstr "Kopiëren naar klembord"
+
+msgid "Count"
+msgstr "Aantal"
+
+msgid "Create"
+msgstr "Maken"
+
+msgid "Debug"
+msgstr "Foutopsporing"
+
+msgid "Delete"
+msgstr "Verwijderen"
+
+msgid "Description"
+msgstr "Omschrijving"
+
+msgid "Discovery"
+msgstr "Ontdekken"
+
+msgid "Document Files"
+msgstr "Documentbestanden"
+
+msgid "Donate"
+msgstr "Doneren"
+
+msgid "Donate URL"
+msgstr "Doneerlink"
+
+msgid "Download"
+msgstr "Downloaden"
+
+msgid "Download Stats"
+msgstr "Statistieken downloaden"
+
+msgid "Download the OpenStore App"
+msgstr "Download de OpenStore-app"
+
+msgid "Downloads"
+msgstr "Aantal downloads"
+
+msgid "Downloads of the latest version"
+msgstr "Aantal downloads van nieuwste versie"
+
+msgid "Drag and drop to sort screenshots."
+msgstr "Rangschik schermfoto's door ze te verslepen."
+
+msgid "Edit"
+msgstr "Bewerken"
+
+msgid "Error"
+msgstr "Foutmelding"
+
+msgid "Feeds"
+msgstr "Feeds"
+
+msgid "File"
+msgstr "Bestand"
+
+msgid "File Upload"
+msgstr "Bestandsupload"
+
+msgid "Focal"
+msgstr "Focal"
+
+msgid ""
+"For any questions you may have or help you may need just chat with us in our "
+"telegram group. "
+"You can also submit issues, bugs, and feature requests to our GitLab bug "
+"tracker."
+msgstr ""
+"Als je vragen hebt, kun je gewoon met ons chatten in onze telegramgroep. "
+"Problemen, bugs en ideeën kun je indienen op onze GitLab-bugtracker."
+
+msgid "Full System Access"
+msgstr "Onbeperkte systeemtoegang"
+
+msgid "Gambling"
+msgstr "Gokken"
+
+msgid "Get your badge"
+msgstr "Embleem verkrijgen"
+
+msgid ""
+"Give a short explanation why you can’t publish the app without extra "
+"privileges. "
+"No need to go into details, a one liner like \"needs to run a daemon in the "
+"background\" will do. "
+"List all the special features you have, if there are more."
+msgstr ""
+"Geef in het kort aan waarom de app niet zonder extra bevoegdheden kan worden "
+"gepubliceerd. "
+"Je hoeft niet in details te treden; een uitleg als “er moet een "
+"achtergronddienst worden uitgevoerd” is voldoende. "
+"Stel, zonodig, een lijst op met alle speciale functies die de app nodig "
+"heeft."
+
+msgid "Go back a page"
+msgstr "Ga naar de vorige pagina"
+
+msgid "Go to the next page"
+msgstr "Ga naar de volgende pagina"
+
+msgid "GPL v3 License"
+msgstr "GPLv3-licentie"
+
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr "Intimidatie, pesten of haatzaaien"
+
+msgid "History"
+msgstr "Geschiedenis"
+
+msgid "Icon"
+msgstr "Pictogram"
+
+msgid "ID"
+msgstr "ID"
+
+msgid ""
+"If an application could be published without manual review if it wouldn’t be "
+"for that one cool feature, "
+"publish a stripped down version! "
+"Not everyone will want to install apps with less confinement."
+msgstr ""
+"Als een app kan worden gepubliceerd zonder handmatige beoordeling, als het "
+"niet voor die ene coole functie zou zijn, "
+"publiceer dan een uitgeklede versie! "
+"Niet iedereen zal apps willen installeren met minder systeembeperkingen."
+
+msgid "Illegal Activities"
+msgstr "Illegale activiteiten"
+
+msgid "In App Purchases"
+msgstr "In-appaankopen"
+
+msgid "Info"
+msgstr "Informatie"
+
+msgid "Install"
+msgstr "Installeren"
+
+msgid "Install via the OpenStore app"
+msgstr "Installeren via de OpenStore-app"
+
+msgid "Jump to the first page"
+msgstr "Ga naar de eerste pagina"
+
+msgid "Jump to the last page"
+msgstr "Ga naar de laatste pagina"
+
+msgid "Keep Display On"
+msgstr "Scherm ingeschakeld houden"
+
+msgid "Keep your api key private!"
+msgstr "Deel je api-sleutel niet!"
+
+msgid "Keywords"
+msgstr "Trefwoorden"
+
+msgid "Language"
+msgstr "Taal"
+
+msgid "Latest Update"
+msgstr "Recentste update"
+
+msgid "Least Popular"
+msgstr "Minst populair"
+
+msgid "License"
+msgstr "Licentie"
+
+msgid "Location"
+msgstr "Locatie"
+
+msgid "Locked"
+msgstr "Vergrendeld"
+
+msgid "Log In"
+msgstr "Inloggen"
+
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr "Log in om je apps te beheren."
+
+msgid "Log Out"
+msgstr "Uitloggen"
+
+msgid "Login"
+msgstr "Inloggen"
+
+msgid "Login to submit your app"
+msgstr "Log in om je app in te dienen"
+
+msgid "Login via GitHub"
+msgstr "Inloggen met GitHub"
+
+msgid "Login via GitLab"
+msgstr "Inloggen met GitLab"
+
+msgid "Login via Ubuntu One"
+msgstr "Inloggen met Ubuntu One"
+
+msgid "Maintainer"
+msgstr "Beheerder"
+
+msgid "Malware"
+msgstr "Malware"
+
+msgid "Manage"
+msgstr "Beheren"
+
+msgid "Manage Apps"
+msgstr "Apps beheren"
+
+msgid "Microphone"
+msgstr "Microfoon"
+
+msgid "Most Popular"
+msgstr "Populairst"
+
+msgid "Music Files"
+msgstr "Muziekbestanden"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "Navigate to the downloads folder"
+msgstr "Ga naar de downloadsmap"
+
+msgid "Networking"
+msgstr "Netwerk en internet"
+
+msgid "New Apps"
+msgstr "Nieuwe apps"
+
+msgid "New Revision"
+msgstr "Nieuwe revisie"
+
+msgid "New revision for %{channel} was created!"
+msgstr "De nieuwe revisie op %{channel} is aangemaakt!"
+
+msgid "New Revision for %{name}"
+msgstr "Nieuwe revisie van %{name}"
+
+msgid "New revisions for %{channel} were created!"
+msgstr "De nieuwe revisies op %{channel} zijn aangemaakt!"
+
+msgid "Newest"
+msgstr "Nieuwste"
+
+msgid "NFC"
+msgstr "Nfc"
+
+msgid "No"
+msgstr "Nee"
+
+msgid "No apps found."
+msgstr "Er zijn geen apps gevonden."
+
+msgid "No longer available"
+msgstr "Niet meer beschikbaar"
+
+msgid "None"
+msgstr "Geen"
+
+msgid "Not published"
+msgstr "Niet gepubliceerd"
+
+msgid "NSFW"
+msgstr "Inhoud voor volwassenen"
+
+msgid "NSFW content"
+msgstr "Inhoud voor volwassenen"
+
+msgid "Older Versions"
+msgstr "Oudere versies"
+
+msgid "Oldest"
+msgstr "Oudste"
+
+msgid "Oldest Update"
+msgstr "Oudste update"
+
+msgid ""
+"One of the main goals of the OpenStore is to provide a safe app store for "
+"people of all ages. "
+"To accomplish this goal we do not allow certain types of app to be "
+"published. "
+"Failure to follow the guidelines will result in your app being removed. "
+"Any account with serious infractions may be subject to termination. "
+"The OpenStore team thanks you for helping us promote a better environment "
+"for everyone."
+msgstr ""
+"Een van de hoofddoelen van OpenStore is zorgen voor een veilige appwinkel "
+"voor mensen van alle leeftijden. "
+"Om dit doel te bereiken, staan we niet toe dat bepaalde soorten apps "
+"worden gepubliceerd. "
+"Als je je niet aan de richtlijnen houdt, wordt je app verwijderd. "
+"Een account met ernstige overtredingen kan worden geschorst. "
+"Het OpenStore-team bedankt je omdat je ons hebt geholpen een betere "
+"omgeving voor iedereen te promoten."
+
+msgid ""
+"Only open source applications allowed for manual review: "
+"As the applications might have arbitrary access to the device, every "
+"manually reviewed app will get a source code review."
+msgstr ""
+"Alleen opensource-apps kunnen handmatig worden beoordeeld, "
+"omdat apps mogelijk eigenmachtige toegang tot het apparaat hebben. Daarom "
+"krijgt elke handmatig beoordeelde app een broncodebeoordeling."
+
+msgid ""
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
+msgstr ""
+"Momenteel worden alleen YouTube- en Odysee-video's ondersteund. Zorg dat de "
+"url die van de ingesloten video is!"
+
+msgid "Open the terminal app"
+msgstr "Terminalapp openen"
+
+msgid "OpenStore API/Server Contributors"
+msgstr "OpenStore-api/Serverbijdragers"
+
+msgid "OpenStore App Content Policy"
+msgstr "OpenStore-inhoudsbeleid"
+
+msgid "OpenStore App Contributors"
+msgstr "OpenStore-appbijdragers"
+
+msgid "OpenStore Badges"
+msgstr "OpenStore-emblemen"
+
+msgid "OpenStore group on Telegram"
+msgstr "OpenStore-groep op Telegram"
+
+msgid "OpenStore source on GitLab"
+msgstr "OpenStore-broncode op GitLab"
+
+msgid "OpenStore Website Contributors"
+msgstr "OpenStore-websitebijdragers"
+
+msgid "Override Type"
+msgstr "Ander type kiezen"
+
+msgid "Package Info"
+msgstr "Pakketinformatie"
+
+msgid "Page Not Found"
+msgstr "Pagina niet gevonden"
+
+msgid "Permissions"
+msgstr "Bevoegdheden"
+
+msgid "Picture Files"
+msgstr "Afbeeldingen"
+
+msgid "Presentation"
+msgstr "Presentatie"
+
+msgid "Processing"
+msgstr "Bezig met verwerken"
+
+msgid "Prohibited Apps"
+msgstr "Verboden apps"
+
+msgid "Promote your app on the OpenStore!"
+msgstr "Promoot je OpenStore-app!"
+
+msgid ""
+"Promote your app on the OpenStore! Add these badges to your website, "
+"code repository, social media, or anywhere on the internet. The badges "
+"are available in several different languages and in both PNG and SVG "
+"formats."
+msgstr ""
+"Promoot je OpenStore-app! Voeg deze emblemen toe aan je website, "
+"broncode, socialemediapagina of waar dan ook op internet. De emblemen "
+"zijn beschikbaar in verschillende talen, in zowel png- als svg- "
+"formaat."
+
+msgid "Public Link"
+msgstr "Openbare link"
+
+msgid "Publish"
+msgstr "Publiceren"
+
+msgid "Published"
+msgstr "Gepubliceerd"
+
+msgid "Published Date"
+msgstr "Publicatiedatum"
+
+msgid "Publisher"
+msgstr "Gepubliceerd door"
+
+msgid "Push Notifications"
+msgstr "Pushmeldingen"
+
+msgid "Read Document Files"
+msgstr "Documentbestand uitlezen"
+
+msgid "Read Music Files"
+msgstr "Muziekbestanden uitlezen"
+
+msgid "Read Picture Files"
+msgstr "Afbeeldingen uitlezen"
+
+msgid "Read Video Files"
+msgstr "Videobestanden uitlezen"
+
+msgid "Relevance"
+msgstr "Relevantie"
+
+msgid "Report an Issue"
+msgstr "Probleem melden"
+
+msgid "Restricted permission"
+msgstr "Beperkte bevoegdheden"
+
+msgid "Review Exceptions"
+msgstr "Uitzonderingen beoordelen"
+
+msgid "Reviews"
+msgstr "Recensies"
+
+msgid "Revision"
+msgstr "Revisie"
+
+msgid "RSS Feeds"
+msgstr "Rss-feeds"
+
+msgid "Rules for Submission"
+msgstr "Regels omtrent publicatie"
+
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr "Regels omtrent ingediende apps die handmatige beoordeling vereisen"
+
+msgid "Run the command:"
+msgstr "Voer de opdracht uit:"
+
+msgid "Save"
+msgstr "Opslaan"
+
+msgid "Screenshots"
+msgstr "Schermfoto's"
+
+msgid "Screenshots (Limit 5)"
+msgstr "Schermfoto's (maximaal 5)"
+
+msgid "Search"
+msgstr "Zoeken"
+
+msgid ""
+"Send us a link to a repository for your app to our telegram group along with "
+"some instructions on how to build it."
+msgstr ""
+"Deel een link van de repo van je app in onze telegramgroep, tezamen met "
+"instructies hoe de app gecompileerd kan worden."
+
+msgid "Sensors"
+msgstr "Sensoren"
+
+msgid "Sexually Explicit Content"
+msgstr "Seksueel expliciete inhoud"
+
+msgid "Show All Revisions"
+msgstr "Alle revisies bekijken"
+
+msgid "Show NSFW Content"
+msgstr "Inhoud voor volwassenen tonen"
+
+msgid "Site Status"
+msgstr "Sitestatus"
+
+msgid "Sort By"
+msgstr "Sorteren op"
+
+msgid "Source"
+msgstr "Bron"
+
+msgid "Source Code"
+msgstr "Broncode"
+
+msgid "Source URL"
+msgstr "Bron-url"
+
+msgid "Stats"
+msgstr "Statistieken"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Submit"
+msgstr "Publiceren"
+
+msgid "Submit App"
+msgstr "App publiceren"
+
+msgid "Submit your app"
+msgstr "Dien je app in"
+
+msgid "Success"
+msgstr "Geslaagd"
+
+msgid "Support"
+msgstr "Ondersteuning"
+
+msgid "Support URL"
+msgstr "Ondersteuningsurl"
+
+msgid "Tag Line"
+msgstr "Slagzin"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Terms"
+msgstr "Voorwaarden"
+
+msgid "The app you are looking for has been removed or does not exist"
+msgstr "De app die je zoekt is verwijderd of bestaat niet"
+
+msgid ""
+"The apps available for download from the OpenStore have their own licencing "
+"and terms. "
+"Consult each individual app's page for more information."
+msgstr ""
+"De apps die je kunt downloaden in OpenStore hebben hun eigen licenties en "
+"voorwaarden. "
+"Raadpleeg voor meer informatie de pagina van elke afzonderlijke app."
+
+msgid "The changes to %{name} were saved!"
+msgstr "De wijzigingen aan %{name} zijn opgeslagen!"
+
+msgid ""
+"The OpenStore a non-profit volunteer project. "
+"Although every effort is made to ensure that everything in the repository is "
+"safe to install, you use it AT YOUR OWN RISK. "
+"Apps uploaded to the OpenStore will be subject to an automated review "
+"process or "
+"a manual review process to check for potential security or privacy issues. "
+"This checking is far from exhaustive though, and there are no guarantees."
+msgstr ""
+"OpenStore is een vrijwilligersproject zonder winstoogmerk. "
+"Hoewel er alles aan gedaan wordt om er voor te zorgen dat alles in de "
+"pakketbron veilig kan worden geïnstalleerd, gebruik je de app OP EIGEN "
+"RISICO. "
+"Apps die naar OpenStore worden geüpload, worden onderworpen aan een "
+"geautomatiseerd beoordelingsproces, danwel een handmatig beoordelingsproces "
+"om te "
+"controleren op mogelijke beveiligings- of privacyproblemen. "
+"Deze controle is echter verre van volledig en er zijn geen garanties."
+
+msgid ""
+"The OpenStore app is installed by default on the UBports builds of Ubuntu "
+"Touch. "
+"But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+"De OpenStore-app is een standaardonderdeel van de UBports-installaties van "
+"Ubuntu Touch. "
+"Als je OpenStore handmatig moet installeren, volg dan deze stappen:"
+
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr "OpenStore wordt mogelijk gemaakt door vele geweldige bijdragers:"
+
+msgid ""
+"The OpenStore is the official app store for Ubuntu Touch. "
+"It is an open source project run by a team of volunteers with help from the "
+"community. "
+"You can discover and install new apps on your Ubuntu Touch device. "
+"You can also upload and manage your own apps for publication. "
+"The OpenStore encourages the apps published within to be open source, but "
+"also accepts proprietary apps."
+msgstr ""
+"OpenStore is dé officiële appwinkel van Ubuntu Touch. "
+"Het is een opensourceproject dat wordt gerund door een team van "
+"vrijwilligers, met hulp van de gemeenschap. "
+"Je kunt nieuwe apps ontdekken en installeren op je Ubuntu Touch-apparaat. "
+"Daarnaast kun je je eigen apps publiceren en beheren. "
+"OpenStore moedigt aan dat gepubliceerde apps open source zijn, maar "
+"accepteert ook apps zonder broncode."
+
+msgid ""
+"The OpenStore respects your privacy. "
+"We don't track you or your device. "
+"You do not need an account to download and install apps and we do not track "
+"your downloads. "
+"For developer information we count the number of downloads per app "
+"revision. "
+"Information about your device (the cpu architecture, framework versions, OS "
+"version, and OS language) "
+"are sent to the server to allow it to filter apps to only what you can "
+"install and present your native language where possible. "
+"This information is not logged or stored and cannot be used to uniquely "
+"identify you."
+msgstr ""
+"OpenStore respecteert je privacy. "
+"We volgen jou en je apparaat niet. "
+"Je hebt geen account nodig om apps te downloaden en te installeren, en we "
+"houden niet bij wat je zoal downloadt. "
+"Voor ontwikkelingsdoeleinden tellen we het aantal downloads per apprevisie. "
+"Informatie over je apparaat (de cpu-architectuur, frameworkversies, "
+"besturingssysteemversie en -taal) "
+"worden geüpload naar de server zodat apps kunnen worden gefilterd op "
+"installatiemogelijkheid en je moedertaal (waar mogelijk). "
+"Deze informatie wordt niet vastgelegd of opgeslagen en kan niet worden "
+"gebruikt om je op unieke wijze te identificeren."
+
+msgid "The page you are looking for has been removed or does not exist"
+msgstr "De pagina die je zoekt is verwijderd of bestaat niet"
+
+msgid ""
+"The source code for OpenStore related projects is available under the GPL "
+"v3. "
+"You can find the code on the OpenStore GitLab page."
+msgstr ""
+"De broncode voor OpenStore-gerelateerde projecten is beschikbaar onder de "
+"GPLv3-licentie. "
+"De code is te vinden op de OpenStore GitLab-pagina."
+
+msgid ""
+"There was an error trying to find this app, please refresh and try again."
+msgstr ""
+"Er is een fout opgetreden bij het zoeken naar deze app. Herlaad de pagina en "
+"probeer het opnieuw."
+
+msgid ""
+"There was an error trying to load the app list, please refresh and try again."
+msgstr ""
+"Er is een fout opgetreden bij het laden van de applijst. Herlaad de pagina "
+"en probeer het opnieuw."
+
+msgid ""
+"There was an error trying to load the stats, please refresh and try again."
+msgstr ""
+"Er is een fout opgetreden bij het laden van de statistieken. Herlaad de "
+"pagina en probeer het opnieuw."
+
+msgid "This app contains NSFW material"
+msgstr "Deze app bevat inhoud voor volwassenen"
+
+msgid ""
+"This app does not have access to restricted system data, see permissions for "
+"more details"
+msgstr ""
+"Deze app heeft geen toegang tot beveiligde systeemgegevens - bekijk voor "
+"meer informatie de bevoegdheden"
+
+msgid ""
+"This app has access to restricted system data, see permissions for more "
+"details"
+msgstr ""
+"Deze app heeft toegang tot beveiligde systeemgegevens - bekijk voor meer "
+"informatie de bevoegdheden"
+
+msgid ""
+"This is the unique identifier for your app. "
+"It must match exactly the \"name\" field in your click's manifest.json and "
+"must be all lowercase letters. "
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app "
+"and \"openstore-team\" "
+"is the group or individual authoring the app."
+msgstr ""
+"Dit is de unieke id van je app. "
+"Deze id moet exact overeenkomen met het veld ‘name’ in manifest.json in je "
+"click-bestand en dient uit kleine letters te bestaan. "
+"Voorbeeld: ‘openstore.openstore-team’, waarbij ‘openstore’ de app is en "
+"‘openstore-team’ de groep of persoon die de app heeft ontwikkeld."
+
+msgid "This revision is still available"
+msgstr "Deze revisie is nog beschikbaar"
+
+msgid "This will be added to the beginning of your current changelog"
+msgstr "Dit wordt aan het begin van je huidige wijzigingslog toegevoegd"
+
+msgid "Title"
+msgstr "Naam"
+
+msgid "Title (A-Z)"
+msgstr "Titel (A-Z)"
+
+msgid "Title (Z-A)"
+msgstr "Titel (Z-A)"
+
+msgid "Total"
+msgstr "Totaal"
+
+msgid "Total downloads"
+msgstr "Totaalaantal downloads"
+
+msgid "Total:"
+msgstr "Totaal:"
+
+msgid "Translation Languages"
+msgstr "Vertaald naar"
+
+msgid "Translation URL"
+msgstr "Vertaal-url"
+
+msgid "Translations"
+msgstr "Vertalingen"
+
+msgid "Try searching for something else"
+msgstr "Probeer een andere zoekopdracht"
+
+msgid "Type"
+msgstr "Soort app"
+
+msgid "Ubuntu Touch"
+msgstr "Ubuntu Touch"
+
+msgid "Ubuntu Touch Apps"
+msgstr "Ubuntu Touch-apps"
+
+msgid "Uncategorized"
+msgstr "Ongecategoriseerd"
+
+msgid "Unrestricted read access to:"
+msgstr "Onbeperkte leestoegang tot:"
+
+msgid "Unrestricted write access to:"
+msgstr "Onbeperkte schrijftoegang tot:"
+
+msgid "Updated"
+msgstr "Bijgewerkt"
+
+msgid "Updated Apps"
+msgstr "Bijgewerkte apps"
+
+msgid "Updated Date"
+msgstr "Bijgewerkt op"
+
+msgid "Upload Revision via:"
+msgstr "Revisie uploaden via:"
+
+msgid "URL"
+msgstr "Url"
+
+msgid "URL of App from the Web"
+msgstr "Web-url van de app"
+
+msgid "User Metrics"
+msgstr "Gebruikersstatistieken"
+
+msgid "Version"
+msgstr "Versie"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Video Files"
+msgstr "Videobestanden"
+
+msgid "Video URL"
+msgstr "Video-url"
+
+msgid "View Install Instructions"
+msgstr "Installatie-instructies bekijken"
+
+msgid "Violence"
+msgstr "Geweld"
+
+msgid "Web App"
+msgstr "Webapp"
+
+msgid "Web Apps"
+msgstr "Webapps"
+
+msgid "Webview"
+msgstr "Webweergave"
+
+msgid "Welcome %{name}!"
+msgstr "Welkom, %{name}!"
+
+msgid "Xenial"
+msgstr "Xenial"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+"Je bent niet bevoegd om je voor te doen als iemand anders of als een andere "
+"app."
+
+msgid ""
+"You are only allowed to publish apps that you have permission to distribute."
+msgstr ""
+"Je mag alleen apps publiceren waarvan je toestemming hebt om ze te "
+"verspreiden."
+
+msgid "You must read over the content policy detailed below."
+msgstr "Het is verplicht om onderstaand inhoudsbeleid door te nemen."
+
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins. "
+"Where possible, we will contact you regarding any such actions."
+msgstr ""
+"Je app kan zonder waarschuwing worden verwijderd naar goeddunken van onze "
+"beheerders. "
+"Waar mogelijk zullen we contact met je opnemen over dergelijke acties."
+
+#~ msgid "Author"
+#~ msgstr "Maker"
+
+#~ msgid "Chat with us on Telegram"
+#~ msgstr "Chat met ons op Telegram"
+
+#~ msgid "Fork us on GitLab"
+#~ msgstr "Fork ons op GitLab"
+
+#~ msgid "Framework"
+#~ msgstr "Framework"
+
+#~ msgid "OR"
+#~ msgstr "OF"
+
+#~ msgid "Packager/Publisher"
+#~ msgstr "Pakketbeheerder/Uitgever"
+
+#~ msgid "Scope"
+#~ msgstr "Scope"
+
+#~ msgid "Scopes"
+#~ msgstr "Scopes"
+
+#~ msgid "Web App+"
+#~ msgstr "Webapp+"
+
+#~ msgid "Download Vivid"
+#~ msgstr "Download Vivid"
+
+#~ msgid "Download Xenial"
+#~ msgstr "Download Xenial"
+
+#~ msgid "Filters"
+#~ msgstr "Filters"
+
+#~ msgid ""
+#~ "Only choose \"Vivid and Xenial\" if your app is qml only or a webapp."
+#~ msgstr ""
+#~ "Kies alleen \"Vivid en Xenial\" als uw app alleen uit qml bestaat of een "
+#~ "webapp is."
+
+#~ msgid "Vivid"
+#~ msgstr "Vivid"
+
+#~ msgid "Vivid & Xenial"
+#~ msgstr "Vivid & Xenial"
+
+#~ msgid "Vivid and Xenial"
+#~ msgstr "Vivid en Xenial"

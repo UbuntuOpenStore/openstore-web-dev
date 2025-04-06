@@ -1,0 +1,1096 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openstore-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openstore-web 1.0.0 "
+"Report-Msgid-Bugs-To:  "
+"POT-Creation-Date: 2019-11-30 00:38-0500 "
+"PO-Revision-Date: 2024-06-02 07:09+0000 "
+"Last-Translator: Ali Beyaz <alipolatbeyaz@gmail.com> "
+"Language-Team: Turkish <https://hosted.weblate.org/projects/open-store-io/"
+"openstore-web/tr/> "
+"Language: tr "
+"MIME-Version: 1.0 "
+"Content-Type: text/plain; charset=UTF-8 "
+"Content-Transfer-Encoding: 8bit "
+"Plural-Forms: nplurals=2; plural=n != 1; "
+"X-Generator: Weblate 5.6-dev "
+
+msgid ""
+"*This app contains NSFW content, to view the description and "
+"screenshots, click the above button."
+msgstr ""
+"*Bu uygulama uygunsuz içerik içermektedir, açıklamayı ve "
+"ekran görüntülerini görüntülemek için üstteki butonu tıklayın."
+
+msgid "%{name} was successfully deleted"
+msgstr "%{name} başarıyla silindi"
+
+msgid "A comma separated list of keywords"
+msgstr "Virgül ile ayrılmış anahtar sözcük listesi"
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "About Us"
+msgstr "Hakkımızda"
+
+msgid "Accounts"
+msgstr "Hesaplar"
+
+msgid "Add Another Architecture"
+msgstr "Mimari Ekle"
+
+msgid "Admin"
+msgstr "Yönetici"
+
+msgid "All Categories"
+msgstr "Tüm Kategoriler"
+
+msgid "All Channels"
+msgstr "Tüm kanallar"
+
+msgid "All Types"
+msgstr "Tüm Türler"
+
+msgid "An account is not needed to download or install apps."
+msgstr "Uygulamaları indirmek veya kurmak için bir hesaba ihtiyacınız yoktur."
+
+msgid "An error occured loading your app data"
+msgstr "Uygulama verilerinizi yüklerken bir hata meydana geldi"
+
+msgid "An unknown error has occurred"
+msgstr "Bilinmeyen bir hata meydana geldi"
+
+msgid ""
+"And many amazing developers, testers, and users from the OpenStore community!"
+msgstr ""
+"Ve OpenStore topluluğundan birçok harika geliştiriciler, sınayıcılar, ve "
+"kullanıcılar!"
+
+msgid ""
+"Any personal data you decide to give us (e.g. your email address when "
+"registering for an account to upload your apps) "
+"goes no further than us, "
+"and will not be used for anything other than allowing you to maintain your "
+"apps and, in rare cases, "
+"contact you in the event there is an issue with your app. "
+"Additionally, this site uses cookies to keep you logged in to your account."
+msgstr ""
+"Bize vermeye karar verdiğiniz herhangi kişisel verileriniz (örn. "
+"uygulamanızı yüklemek için kullandığınız e-posta adresiniz) hiçbir yere "
+"devredilmemekte, "
+"ve uygulamalarınızın korunumu ve bakımına imkan sağlamakta, ve nadiren, "
+"uygulamalarınızda olası bir sorun durumunda sizinle iletişime geçebilmemiz "
+"için kullanılmaktadır. "
+"Ayrıca bu websitesi sizin oturumunuzu açık tutmak için çerezlerden "
+"yararlanır."
+
+msgid "API Key"
+msgstr "API Anahtarı"
+
+msgid "App"
+msgstr "Uygulama"
+
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr ""
+"Yukarıdaki içerikleri destekleyen veya o içeriklere sahip olan uygulamalar "
+"kesinlikle yasaktır."
+
+msgid "App Name"
+msgstr "Uygulama İsmi"
+
+msgid "App Stats"
+msgstr "Uygulama İstatistikleri"
+
+msgid "App Submission Tutorial"
+msgstr "Uygulama Gönderme Eğiticisi"
+
+msgid "App Title"
+msgstr "Uygulama Başlığı"
+
+msgid "App Type"
+msgstr "Uygulama Türü"
+
+msgid "App Types"
+msgstr "UygulamaTürleri"
+
+msgid "Apps"
+msgstr "Uygulamalar"
+
+msgid ""
+"Apps containing gambling involving real world money transactions are not "
+"allowed. "
+"This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
+msgstr ""
+"Gerçek dünyada para işlemlerini içeren kumar içeren uygulamalara izin "
+"verilmez. "
+" Buna çevrimiçi kumarhaneler, bahisler ve piyangolar dahildir ancak bunlarla "
+"sınırlı değildir."
+
+msgid ""
+"Apps containing or promoting child abuse or child sexual abuse are strictly "
+"prohibited."
+msgstr "Çocukların istismarını içeren uygulamalar kesinlikle yasaktır."
+
+msgid ""
+"Apps containing or promoting gratuitous violence are not allowed. "
+"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"making, self harm, and grotesque imagery."
+msgstr ""
+"Gereksiz şiddet içeren veya teşvik eden uygulamalara izin verilmez. "
+" Buna şiddet, terörizm, bomba/silah yapımı, kendine zarar verme ve grotesk "
+"görüntüler dahildir ancak bunlarla sınırlı değildir."
+
+msgid ""
+"Apps containing or promoting sexually explicit content are not allowed. "
+"This includes, but is not limited to, pornography and services promoting "
+"sexually explicit content."
+msgstr ""
+"Müstehcen içerik barındıran veya teşvik eden uygulamalara izin verilmez. "
+" Bu, pornografiyi ve müstehcen içeriği teşvik eden hizmetleri içerir, ancak "
+"bunlarla sınırlı değildir."
+
+msgid ""
+"Apps not requiring manual review can be submitted by logging in with the "
+"\"Log In\" link above."
+msgstr ""
+"Elle inceleme gerektirmeyen uygulamalar yukarıdaki \"Oturum Aç\" linki ile "
+"oturum açılıp yüklenebilir."
+
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr ""
+"Yasadışı (ABD yasalarına dayalı) aktiviteleri yücelten uygulamalar yasaktır."
+
+msgid ""
+"Apps requiring manual review must be submitted by contacting an admin in our "
+"telegram group."
+msgstr ""
+"Elle inceleme gerektiren uygulamaları yüklemek için Telegram grubumuzdan bir "
+"yönetici ile görüşmelisiniz."
+
+msgid ""
+"Apps that are found to be stealing the users data, trying to escalate their "
+"privileges without user consent, "
+"or executing malicious process are strictly prohibited."
+msgstr ""
+"Kullanıcının verilerini çaldığı tespit edilen, kullanıcının izni olmadan "
+"ayrıcalıklarını yükseltmeye çalışan uygulamalar, "
+" veya kötü niyetli işlem yürütmek kesinlikle yasaktır."
+
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission rules and "
+"content policy. "
+"You can review the rules and policies before uploading your app."
+msgstr ""
+"OpenStore' a yüklenen uygulamalar bizim kurallarımız ve içerik politikamıza "
+"tabidir. "
+"Uygulamanızı yüklemeden önce kuralları ve içerik politikamızı "
+"inceleyebilirsiniz."
+
+msgid "Arch"
+msgstr "Arch"
+
+msgid "Architecture"
+msgstr "Mimari"
+
+msgid "Audio"
+msgstr "Ses"
+
+msgid "Back"
+msgstr "Geri"
+
+msgid "Badge"
+msgstr "Rozet"
+
+msgid "Badges"
+msgstr "Rozetler"
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "Bookmark"
+msgstr "Yer imi"
+
+msgid "Bookmarks"
+msgstr "Yer imleri"
+
+msgid "Browse"
+msgstr "Göz At"
+
+msgid "Browse Apps"
+msgstr "Uygulamalara Göz at"
+
+msgid "Bug Tracker"
+msgstr "Hata Takipçisi"
+
+msgid "Calendar"
+msgstr "Takvim"
+
+msgid "Camera"
+msgstr "Kamera"
+
+msgid "Cancel"
+msgstr "İptal"
+
+msgid "Category"
+msgstr "Kategori"
+
+msgid "Changelog"
+msgstr "Son Değişiklikler"
+
+msgid "Channel"
+msgstr "Kanal"
+
+msgid "Channels"
+msgstr "Kanallar"
+
+msgid "Child Endangerment"
+msgstr "Çocukları Tehlikeye Atma"
+
+msgid "Choose a category"
+msgstr "Bir kategori seçin"
+
+msgid "Choose a license"
+msgstr "Bir lisans seçin"
+
+msgid "Choose a maintainer"
+msgstr "Bir geliştirici seçin"
+
+msgid "Completed"
+msgstr "Tamamlandı"
+
+msgid "Connectivity"
+msgstr "Bağlantı"
+
+msgid "Contact"
+msgstr "Kişi"
+
+msgid "Contacts"
+msgstr "Kişiler"
+
+msgid "Content Exchange"
+msgstr "İçerik Değişimi"
+
+msgid "Content Exchange Source"
+msgstr "İçerik Değişim Kaynağı"
+
+msgid "Contributors"
+msgstr "Katkıda Bulunanlar"
+
+msgid "Copy to clipboard"
+msgstr "Panoya kopyala"
+
+msgid "Count"
+msgstr "Sayı"
+
+msgid "Create"
+msgstr "Oluştur"
+
+msgid "Debug"
+msgstr "Hata Ayıklama"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Description"
+msgstr "Açıklama"
+
+msgid "Discovery"
+msgstr "Keşfet"
+
+msgid "Document Files"
+msgstr "Belge Dosyaları"
+
+msgid "Donate"
+msgstr "Bağış Yap"
+
+msgid "Donate URL"
+msgstr "Bağış URL' i"
+
+msgid "Download"
+msgstr "İndir"
+
+msgid "Download Stats"
+msgstr "İndirme İstatistikleri"
+
+msgid "Download the OpenStore App"
+msgstr "OpenStore Uygulamasını İndir"
+
+msgid "Downloads"
+msgstr "İndirilenler"
+
+msgid "Downloads of the latest version"
+msgstr "Son sürümün indirmeleri"
+
+msgid "Drag and drop to sort screenshots."
+msgstr "Ekran görüntülerini sıralamak için sürükle ve bırakın."
+
+msgid "Edit"
+msgstr "Düzenle"
+
+msgid "Error"
+msgstr "Hata"
+
+msgid "Feeds"
+msgstr "Yayınlar"
+
+msgid "File"
+msgstr "Dosya"
+
+msgid "File Upload"
+msgstr "Dosya Yükleme"
+
+msgid "Focal"
+msgstr "Focal"
+
+msgid ""
+"For any questions you may have or help you may need just chat with us in our "
+"telegram group. "
+"You can also submit issues, bugs, and feature requests to our GitLab bug "
+"tracker."
+msgstr ""
+"Sorularınız veya ihtiyaç duyabileceğiniz yardımlar için telegram grubumuzda "
+"bizimle sohbet etmeniz yeterli. "
+"Ayrıca GitLab hata izleyicimize sorunları, hataları ve özellik isteklerini "
+"de gönderebilirsiniz."
+
+msgid "Full System Access"
+msgstr "Tam Sistem Erişimi"
+
+msgid "Gambling"
+msgstr "Bahis"
+
+msgid "Get your badge"
+msgstr "Rozetinizi alın"
+
+msgid ""
+"Give a short explanation why you can’t publish the app without extra "
+"privileges. "
+"No need to go into details, a one liner like \"needs to run a daemon in the "
+"background\" will do. "
+"List all the special features you have, if there are more."
+msgstr ""
+"Uygulamayı neden ekstra ayrıcalıklar olmadan yayınlayamayacağınızı kısa bir "
+"açıklama yapın. "
+"Ayrıntılara girmeye gerek yok, \"arka planda bir arka plan programı "
+"çalıştırması gerekiyor\" gibi tek bir satır yeterli olacaktır. "
+"Daha fazlası varsa, sahip olduğunuz tüm özellikleri listeleyin."
+
+msgid "Go back a page"
+msgstr "Bir sayfa geri gidin"
+
+msgid "Go to the next page"
+msgstr "Bir sayfa ileri gidin"
+
+msgid "GPL v3 License"
+msgstr "GPL v3 Lisansı"
+
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr "Rahatsızlık, Zorbalık veya Nefret Söylemi"
+
+msgid "History"
+msgstr "Geçmiş"
+
+msgid "Icon"
+msgstr "Simge"
+
+msgid "ID"
+msgstr "ID"
+
+msgid ""
+"If an application could be published without manual review if it wouldn’t be "
+"for that one cool feature, "
+"publish a stripped down version! "
+"Not everyone will want to install apps with less confinement."
+msgstr ""
+"Bir uygulama manuel inceleme olmadan yayınlanabilseydi ve bu harika özellik "
+"olmasaydı, "
+"sadeleştirilmiş bir versiyonunu yayınlayın! "
+"Herkes daha az kısıtlamaya sahip uygulamaları yüklemek istemeyecektir."
+
+msgid "Illegal Activities"
+msgstr "Yasadışı Aktiviteler"
+
+msgid "In App Purchases"
+msgstr "Uygulama İçi Satın Alma"
+
+msgid "Info"
+msgstr "Bilgi"
+
+msgid "Install"
+msgstr "Kur"
+
+msgid "Install via the OpenStore app"
+msgstr "OpenStore uygulaması ile kur"
+
+msgid "Jump to the first page"
+msgstr "İlk sayfaya atla"
+
+msgid "Jump to the last page"
+msgstr "Son sayfaya atla"
+
+msgid "Keep Display On"
+msgstr "Ekranı Açık Tut"
+
+msgid "Keep your api key private!"
+msgstr "API anahtarınızı gizli tutun!"
+
+msgid "Keywords"
+msgstr "Anahtar sözcükler"
+
+msgid "Language"
+msgstr "Dil"
+
+msgid "Latest Update"
+msgstr "Son Güncelleme"
+
+msgid "Least Popular"
+msgstr "En Az Popüler"
+
+msgid "License"
+msgstr "Lisans"
+
+msgid "Location"
+msgstr "Konum"
+
+msgid "Locked"
+msgstr "Kilitli"
+
+msgid "Log In"
+msgstr "Oturum Aç"
+
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr "Uygulamalarınızı yönetebilmek için OpenStore uygulamasına giriş yapın."
+
+msgid "Log Out"
+msgstr "Oturumu Kapat"
+
+msgid "Login"
+msgstr "Oturum Aç"
+
+msgid "Login to submit your app"
+msgstr "Uygulamanızı yüklemek için oturum açın"
+
+msgid "Login via GitHub"
+msgstr "GitHub ile oturum aç"
+
+msgid "Login via GitLab"
+msgstr "GitLab ile oturum aç"
+
+msgid "Login via Ubuntu One"
+msgstr "Ubuntu One aracılığıyla giriş yapın"
+
+msgid "Maintainer"
+msgstr "Geliştirici"
+
+msgid "Malware"
+msgstr "Zararlı Yazılım"
+
+msgid "Manage"
+msgstr "Yönet"
+
+msgid "Manage Apps"
+msgstr "Uygulamaları Yönet"
+
+msgid "Microphone"
+msgstr "Mikrofon"
+
+msgid "Most Popular"
+msgstr "En Popüler"
+
+msgid "Music Files"
+msgstr "Müzik Dosyaları"
+
+msgid "Name"
+msgstr "İsim"
+
+msgid "Navigate to the downloads folder"
+msgstr "İndirilenler dizinine git"
+
+msgid "Networking"
+msgstr "Ağ araçları"
+
+msgid "New Apps"
+msgstr "Yeni Uygulamalar"
+
+msgid "New Revision"
+msgstr "Yeni Revizyon"
+
+msgid "New revision for %{channel} was created!"
+msgstr "%{channel} için yeni revizyon oluşturuldu!"
+
+msgid "New Revision for %{name}"
+msgstr "%{name} için Yeni Revizyon"
+
+msgid "New revisions for %{channel} were created!"
+msgstr "%{channel} için yeni revizyonlar oluşturuldu!"
+
+msgid "Newest"
+msgstr "En Yeni"
+
+msgid "NFC"
+msgstr "NFC"
+
+msgid "No"
+msgstr "Hayır"
+
+msgid "No apps found."
+msgstr "Uygulama bulunamadı."
+
+msgid "No longer available"
+msgstr "Artık mevcut değil"
+
+msgid "None"
+msgstr "Hiçbiri"
+
+msgid "Not published"
+msgstr "Yayınlanmadı"
+
+msgid "NSFW"
+msgstr "Uygunsuz İçerik"
+
+msgid "NSFW content"
+msgstr "Uygunsuz içerik"
+
+msgid "Older Versions"
+msgstr "Eski versiyonlar"
+
+msgid "Oldest"
+msgstr "En Eski"
+
+msgid "Oldest Update"
+msgstr "En Eski Güncelleme"
+
+msgid ""
+"One of the main goals of the OpenStore is to provide a safe app store for "
+"people of all ages. "
+"To accomplish this goal we do not allow certain types of app to be "
+"published. "
+"Failure to follow the guidelines will result in your app being removed. "
+"Any account with serious infractions may be subject to termination. "
+"The OpenStore team thanks you for helping us promote a better environment "
+"for everyone."
+msgstr ""
+"OpenStore'un ana hedeflerinden biri her yaştan insana güvenli bir uygulama "
+"mağazası sağlamaktır. "
+" Bu hedefe ulaşmak için belirli uygulama türlerinin yayınlanmasına izin "
+"vermiyoruz. "
+" Yönergelere uymamak, uygulamanızın kaldırılmasıyla sonuçlanacaktır. "
+" Ciddi ihlaller içeren herhangi bir hesap kapatılabilir. "
+" OpenStore ekibi, herkes için daha iyi bir ortam sunmamıza yardımcı "
+"olduğunuz için size teşekkür ediyor."
+
+msgid ""
+"Only open source applications allowed for manual review: "
+"As the applications might have arbitrary access to the device, every "
+"manually reviewed app will get a source code review."
+msgstr ""
+"Manuel inceleme için yalnızca açık kaynak uygulamalarına izin verilir: "
+"Uygulamaların cihaza keyfi erişimi olabileceğinden, manuel olarak incelenen "
+"her uygulama bir kaynak kodu incelemesine tabi tutulacaktır."
+
+msgid ""
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
+msgstr ""
+"Şu anda yalnızca YouTube ve Odysee videoları desteklenmektedir. URL'nin "
+"gömülü videoya ait olduğundan emin olun!"
+
+msgid "Open the terminal app"
+msgstr "Uçbirim uygulamasını aç"
+
+msgid "OpenStore API/Server Contributors"
+msgstr "OpenStore API/Sunucu Katkıda Bulunanlar"
+
+msgid "OpenStore App Content Policy"
+msgstr "OpenStore Uygulama İçerik Politikası"
+
+msgid "OpenStore App Contributors"
+msgstr "OpenStore Uygulamasına Katkıda Bulunanlar"
+
+msgid "OpenStore Badges"
+msgstr "OpenStore Rozetleri"
+
+msgid "OpenStore group on Telegram"
+msgstr "Telegram' daki OpenStore grubu"
+
+msgid "OpenStore source on GitLab"
+msgstr "GitLab üzerindeki OpenStore kaynak kodu"
+
+msgid "OpenStore Website Contributors"
+msgstr "OpenStore Websitesine Katkıda Bulunanlar"
+
+msgid "Override Type"
+msgstr "Geçersiz Kılma Türü"
+
+msgid "Package Info"
+msgstr "Paket Bilgisi"
+
+msgid "Page Not Found"
+msgstr "Sayfa Bulunamadı"
+
+msgid "Permissions"
+msgstr "İzinler"
+
+msgid "Picture Files"
+msgstr "Resim Dosyaları"
+
+msgid "Presentation"
+msgstr "Sunum"
+
+msgid "Processing"
+msgstr "İşleniyor"
+
+msgid "Prohibited Apps"
+msgstr "Yasaklı Uygulamalar"
+
+msgid "Promote your app on the OpenStore!"
+msgstr "Uygulamanızı OpenStore'da tanıtın!"
+
+msgid ""
+"Promote your app on the OpenStore! Add these badges to your website, "
+"code repository, social media, or anywhere on the internet. The badges "
+"are available in several different languages and in both PNG and SVG "
+"formats."
+msgstr ""
+"Uygulamanızı OpenStore'da tanıtın! Bu rozetleri web sitenize ekleyin, "
+"kod deposu, sosyal medya veya internetteki herhangi bir yer. Rozetler "
+"birkaç farklı dilde ve hem PNG hem de SVG formatında mevcuttur."
+
+msgid "Public Link"
+msgstr "Ortak Link"
+
+msgid "Publish"
+msgstr "Yayınla"
+
+msgid "Published"
+msgstr "Yayınlandı"
+
+msgid "Published Date"
+msgstr "Yayınlanma Tarihi"
+
+msgid "Publisher"
+msgstr "Yayıncı"
+
+msgid "Push Notifications"
+msgstr "Bildirimler"
+
+msgid "Read Document Files"
+msgstr "Belge Dosyalarını Oku"
+
+msgid "Read Music Files"
+msgstr "Müzik Dosyalarını Okuma"
+
+msgid "Read Picture Files"
+msgstr "Resim DosyalarınıOkuma"
+
+msgid "Read Video Files"
+msgstr "Video Dosyalarını Okuma"
+
+msgid "Relevance"
+msgstr "Alaka Düzeyi"
+
+msgid "Report an Issue"
+msgstr "Bir hata bildir"
+
+msgid "Restricted permission"
+msgstr "Kısıtlanmış izin"
+
+msgid "Review Exceptions"
+msgstr "İstisnaları İncele"
+
+msgid "Reviews"
+msgstr "Yorumlar"
+
+msgid "Revision"
+msgstr "Revizyon"
+
+msgid "RSS Feeds"
+msgstr "RSS Akışları"
+
+msgid "Rules for Submission"
+msgstr "Başvuru Kuralları"
+
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr "Manuel İnceleme Gerektiren Başvurulara İlişkin Kurallar"
+
+msgid "Run the command:"
+msgstr "Komut çalıştır:"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "Screenshots"
+msgstr "Ekran Görüntüleri"
+
+msgid "Screenshots (Limit 5)"
+msgstr "Ekran Görüntüleri (en fazla 5 tane)"
+
+msgid "Search"
+msgstr "Ara"
+
+msgid ""
+"Send us a link to a repository for your app to our telegram group along with "
+"some instructions on how to build it."
+msgstr ""
+"Uygulamanızın nasıl oluşturulacağına ilişkin bazı talimatlarla birlikte "
+"telegram grubumuza uygulamanız için deponun bağlantısını bize gönderin."
+
+msgid "Sensors"
+msgstr "Sensörler"
+
+msgid "Sexually Explicit Content"
+msgstr "Müstehcen İçerik"
+
+msgid "Show All Revisions"
+msgstr "Tüm Revizyonları Göster"
+
+msgid "Show NSFW Content"
+msgstr "Uygunsuz İçerikleri Göster"
+
+msgid "Site Status"
+msgstr "Site Durumu"
+
+msgid "Sort By"
+msgstr "Şuna göre sırala"
+
+msgid "Source"
+msgstr "Kaynak"
+
+msgid "Source Code"
+msgstr "Kaynak Kodu"
+
+msgid "Source URL"
+msgstr "Kaynak URL"
+
+msgid "Stats"
+msgstr "İstatistikler"
+
+msgid "Status"
+msgstr "Durum"
+
+msgid "Submit"
+msgstr "Gönder"
+
+msgid "Submit App"
+msgstr "Uygulamayı Gönder"
+
+msgid "Submit your app"
+msgstr "Uygulamanızı gönderin"
+
+msgid "Success"
+msgstr "Başarılı"
+
+msgid "Support"
+msgstr "Destek"
+
+msgid "Support URL"
+msgstr "Destek URL'si"
+
+msgid "Tag Line"
+msgstr "Etiket Satırı"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Terms"
+msgstr "Şartlar"
+
+msgid "The app you are looking for has been removed or does not exist"
+msgstr "Aradığınız uygulama yok veya silinmiş"
+
+msgid ""
+"The apps available for download from the OpenStore have their own licencing "
+"and terms. "
+"Consult each individual app's page for more information."
+msgstr ""
+"OpenStore'dan indirilebilen uygulamaların kendi lisansları ve koşulları "
+"vardır. "
+"Daha fazla bilgi için her bir uygulamanın sayfasına bakın."
+
+msgid "The changes to %{name} were saved!"
+msgstr "%{name} değişikliği kaydedildi!"
+
+msgid ""
+"The OpenStore a non-profit volunteer project. "
+"Although every effort is made to ensure that everything in the repository is "
+"safe to install, you use it AT YOUR OWN RISK. "
+"Apps uploaded to the OpenStore will be subject to an automated review "
+"process or "
+"a manual review process to check for potential security or privacy issues. "
+"This checking is far from exhaustive though, and there are no guarantees."
+msgstr ""
+"OpenStore kar amacı gütmeyen bir gönüllü projesidir. "
+"Depodaki her şeyin kurulumunun güvenli olmasını sağlamak için her türlü çaba "
+"gösterilse de, onu KENDİ RİSKİNİZDE kullanırsınız. "
+"OpenStore'a yüklenen uygulamalar otomatik veya "
+"Potansiyel güvenlik veya gizlilik sorunlarını kontrol etmek için manuel bir "
+"inceleme sürecine tabi tutulacaktır. "
+"Ancak bu kontrol kapsamlı olmaktan uzaktır ve hiçbir garantisi yoktur."
+
+msgid ""
+"The OpenStore app is installed by default on the UBports builds of Ubuntu "
+"Touch. "
+"But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+"OpenStore uygulaması varsayılan olarak Ubuntu Touch'ın UBports yapılarına "
+"yüklenir. "
+"Ancak OpenStore'u manuel olarak yüklemeniz gerekiyorsa şu adımları izleyin:"
+
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr ""
+"OpenStore birçok muhteşem katkıda bulunanların sayesinde mümkün olmuştur:"
+
+msgid ""
+"The OpenStore is the official app store for Ubuntu Touch. "
+"It is an open source project run by a team of volunteers with help from the "
+"community. "
+"You can discover and install new apps on your Ubuntu Touch device. "
+"You can also upload and manage your own apps for publication. "
+"The OpenStore encourages the apps published within to be open source, but "
+"also accepts proprietary apps."
+msgstr ""
+"OpenStore, Ubuntu Touch'ın resmi uygulama mağazasıdır. "
+"Topluluğun yardımıyla gönüllülerden oluşan bir ekip tarafından yürütülen "
+"açık kaynaklı bir projedir. "
+"Ubuntu Touch cihazınıza yeni uygulamalar keşfedebilir ve yükleyebilirsiniz. "
+"Ayrıca yayınlanmak üzere kendi uygulamalarınızı yükleyebilir ve "
+"yönetebilirsiniz. "
+"OpenStore, içinde yayınlanan uygulamaların açık kaynak olmasını teşvik eder, "
+"ancak aynı zamanda özel uygulamaları da kabul eder."
+
+msgid ""
+"The OpenStore respects your privacy. "
+"We don't track you or your device. "
+"You do not need an account to download and install apps and we do not track "
+"your downloads. "
+"For developer information we count the number of downloads per app "
+"revision. "
+"Information about your device (the cpu architecture, framework versions, OS "
+"version, and OS language) "
+"are sent to the server to allow it to filter apps to only what you can "
+"install and present your native language where possible. "
+"This information is not logged or stored and cannot be used to uniquely "
+"identify you."
+msgstr ""
+"OpenStore gizliliğinize saygı duyar. "
+"Sizi veya cihazınızı takip etmiyoruz. "
+"Uygulamaları indirip yüklemek için bir hesaba ihtiyacınız yoktur ve "
+"indirmelerinizi takip etmiyoruz. "
+"Geliştirici bilgileri için uygulama revizyonu başına indirme sayısını "
+"sayıyoruz. "
+"Cihazınızla ilgili bilgiler (işlemci mimarisi, çerçeve sürümleri, işletim "
+"sistemi sürümü ve işletim sistemi dili) "
+"yalnızca yükleyebileceğiniz ve mümkün olduğunda ana dilinize sunulabilecek "
+"uygulamaların filtrelenmesine izin vermek için sunucuya gönderilir. "
+"Bu bilgiler günlüğe kaydedilmez veya saklanmaz ve sizi benzersiz bir şekilde "
+"tanımlamak için kullanılamaz."
+
+msgid "The page you are looking for has been removed or does not exist"
+msgstr "Aradığınız sayfa kaldırılmış veya mevcut değil"
+
+msgid ""
+"The source code for OpenStore related projects is available under the GPL "
+"v3. "
+"You can find the code on the OpenStore GitLab page."
+msgstr ""
+"OpenStore ile ilgili projelerin kaynak kodu GPL v3 altında mevcuttur. "
+"Kodu OpenStore GitLab sayfasında bulabilirsiniz."
+
+msgid ""
+"There was an error trying to find this app, please refresh and try again."
+msgstr ""
+"Bu uygulamayı bulmaya çalışırken bir hata oluştu. Lütfen yenileyin ve tekrar "
+"deneyin."
+
+msgid ""
+"There was an error trying to load the app list, please refresh and try again."
+msgstr ""
+"Uygulama listesi yüklenmeye çalışılırken bir hata oluştu. Lütfen yenileyin "
+"ve tekrar deneyin."
+
+msgid ""
+"There was an error trying to load the stats, please refresh and try again."
+msgstr ""
+"İstatistikler yüklenirken bir hata oluştu, lütfen yenileyin ve tekrar "
+"deneyin."
+
+msgid "This app contains NSFW material"
+msgstr "Bu uygulama NSFW materyali içeriyor"
+
+msgid ""
+"This app does not have access to restricted system data, see permissions for "
+"more details"
+msgstr ""
+"Bu uygulamanın kısıtlı sistem verilerine erişimi yok, daha fazla ayrıntı "
+"için izinlere bakın"
+
+msgid ""
+"This app has access to restricted system data, see permissions for more "
+"details"
+msgstr ""
+"Bu uygulamanın kısıtlı sistem verilerine erişimi var, daha fazla ayrıntı "
+"için izinlere bakın"
+
+msgid ""
+"This is the unique identifier for your app. "
+"It must match exactly the \"name\" field in your click's manifest.json and "
+"must be all lowercase letters. "
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app "
+"and \"openstore-team\" "
+"is the group or individual authoring the app."
+msgstr ""
+"Bu, uygulamanızın benzersiz tanımlayıcısıdır. "
+"Click dosyanızın manifest.json dosyasındaki \"ad\" alanıyla tam olarak "
+"eşleşmeli ve tümü küçük harflerden oluşmalıdır. "
+"Örneğin: \"openstore.openstore-team\"; burada \"openstore\" uygulamadır ve "
+"\"openstore-team\" "
+"uygulamayı yazan grup veya bireydir."
+
+msgid "This revision is still available"
+msgstr "Bu revizyon hala mevcut"
+
+msgid "This will be added to the beginning of your current changelog"
+msgstr "Bu, mevcut değişiklik günlüğünün başına eklenecek"
+
+msgid "Title"
+msgstr "Başlık"
+
+msgid "Title (A-Z)"
+msgstr "Başlık (A-Z)"
+
+msgid "Title (Z-A)"
+msgstr "Başlık (Z-A)"
+
+msgid "Total"
+msgstr "Toplam"
+
+msgid "Total downloads"
+msgstr "Toplam indirmeler"
+
+msgid "Total:"
+msgstr "Toplam:"
+
+msgid "Translation Languages"
+msgstr "Tercüme Dilleri"
+
+msgid "Translation URL"
+msgstr "Tercüme URL'si"
+
+msgid "Translations"
+msgstr "Tercümeler"
+
+msgid "Try searching for something else"
+msgstr "Başka bir şey aramayı deneyin"
+
+msgid "Type"
+msgstr "Tür"
+
+msgid "Ubuntu Touch"
+msgstr "Ubuntu Touch"
+
+msgid "Ubuntu Touch Apps"
+msgstr "Ubuntu Touch Uygulamaları"
+
+msgid "Uncategorized"
+msgstr "Kategorize edilmemiş"
+
+msgid "Unrestricted read access to:"
+msgstr "Şunlara sınırsız okuma erişimi:"
+
+msgid "Unrestricted write access to:"
+msgstr "Şunlara sınırsız yazma erişimi:"
+
+msgid "Updated"
+msgstr "Güncellenmiş"
+
+msgid "Updated Apps"
+msgstr "Güncellenmiş Uygulamalar"
+
+msgid "Updated Date"
+msgstr "Güncelleme Tarihi"
+
+msgid "Upload Revision via:"
+msgstr "Revizyonu şu yolla yükleyin:"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "URL of App from the Web"
+msgstr "Web'deki Uygulamanın URL'si"
+
+msgid "User Metrics"
+msgstr "Kullanıcı Metrikleri"
+
+msgid "Version"
+msgstr "Sürüm"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Video Files"
+msgstr "Video Dosyaları"
+
+msgid "Video URL"
+msgstr "Video URL'si"
+
+msgid "View Install Instructions"
+msgstr "Kurulum Talimatlarını Görüntüle"
+
+msgid "Violence"
+msgstr "Şiddet"
+
+msgid "Web App"
+msgstr "İnternet Uygulamaları"
+
+msgid "Web Apps"
+msgstr "Web Uygulamaları"
+
+msgid "Webview"
+msgstr "Web Görünümü"
+
+msgid "Welcome %{name}!"
+msgstr "Hoş geldiniz %{name}!"
+
+msgid "Xenial"
+msgstr "Xenial"
+
+msgid "Yes"
+msgstr "Evet"
+
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+"Başka birinin veya başka bir uygulamanın kimliğine bürünmenize izin verilmez."
+
+msgid ""
+"You are only allowed to publish apps that you have permission to distribute."
+msgstr "Yalnızca dağıtma izniniz olan uygulamaları yayınlamanıza izin verilir."
+
+msgid "You must read over the content policy detailed below."
+msgstr "Aşağıda ayrıntıları verilen içerik politikasını okumalısınız."
+
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins. "
+"Where possible, we will contact you regarding any such actions."
+msgstr ""
+"Yöneticilerimizin takdirine bağlı olarak uygulamanız uyarı yapılmadan "
+"kaldırılabilir. "
+"Mümkün olduğu takdirde bu tür işlemlerle ilgili olarak sizinle iletişime "
+"geçeceğiz."
+
+#~ msgid "Author"
+#~ msgstr "Yazar"
+
+#~ msgid "Chat with us on Telegram"
+#~ msgstr "Telegram üzerinden bizimle iletişime geçin"
+
+#~ msgid "Fork us on GitLab"
+#~ msgstr "GitLab üzerinden çatallayın"
+
+#~ msgid "Packager/Publisher"
+#~ msgstr "Paketleyici/Yayımlayıcı"

@@ -1,0 +1,947 @@
+msgid ""
+msgstr ""
+"Project-Id-Version:  "
+"Language: fi "
+"Content-Type: text/plain; charset=UTF-8 "
+"Content-Transfer-Encoding: 8bit "
+"Generated-By: easygettext "
+
+msgid ""
+"*This app contains NSFW content, to view the description and "
+"screenshots, click the above button."
+msgstr ""
+
+msgid "%{name} was successfully deleted"
+msgstr ""
+
+msgid "A comma separated list of keywords"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "About Us"
+msgstr ""
+
+msgid "Accounts"
+msgstr ""
+
+msgid "Add Another Architecture"
+msgstr ""
+
+msgid "Admin"
+msgstr ""
+
+msgid "All Categories"
+msgstr ""
+
+msgid "All Channels"
+msgstr ""
+
+msgid "All Types"
+msgstr ""
+
+msgid "An account is not needed to download or install apps."
+msgstr ""
+
+msgid "An error occured loading your app data"
+msgstr ""
+
+msgid "An unknown error has occurred"
+msgstr ""
+
+msgid ""
+"And many amazing developers, testers, and users from the OpenStore community!"
+msgstr ""
+
+msgid ""
+"Any personal data you decide to give us (e.g. your email address when "
+"registering for an account to upload your apps) "
+"goes no further than us, "
+"and will not be used for anything other than allowing you to maintain your "
+"apps and, in rare cases, "
+"contact you in the event there is an issue with your app. "
+"Additionally, this site uses cookies to keep you logged in to your account."
+msgstr ""
+
+msgid "API Key"
+msgstr ""
+
+msgid "App"
+msgstr ""
+
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr ""
+
+msgid "App Name"
+msgstr ""
+
+msgid "App Stats"
+msgstr ""
+
+msgid "App Submission Tutorial"
+msgstr ""
+
+msgid "App Title"
+msgstr ""
+
+msgid "App Type"
+msgstr ""
+
+msgid "App Types"
+msgstr ""
+
+msgid "Apps"
+msgstr ""
+
+msgid ""
+"Apps containing gambling involving real world money transactions are not "
+"allowed. "
+"This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
+msgstr ""
+
+msgid ""
+"Apps containing or promoting child abuse or child sexual abuse are strictly "
+"prohibited."
+msgstr ""
+
+msgid ""
+"Apps containing or promoting gratuitous violence are not allowed. "
+"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"making, self harm, and grotesque imagery."
+msgstr ""
+
+msgid ""
+"Apps containing or promoting sexually explicit content are not allowed. "
+"This includes, but is not limited to, pornography and services promoting "
+"sexually explicit content."
+msgstr ""
+
+msgid ""
+"Apps not requiring manual review can be submitted by logging in with the "
+"\"Log In\" link above."
+msgstr ""
+
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr ""
+
+msgid ""
+"Apps requiring manual review must be submitted by contacting an admin in our "
+"telegram group."
+msgstr ""
+
+msgid ""
+"Apps that are found to be stealing the users data, trying to escalate their "
+"privileges without user consent, "
+"or executing malicious process are strictly prohibited."
+msgstr ""
+
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission rules and "
+"content policy. "
+"You can review the rules and policies before uploading your app."
+msgstr ""
+
+msgid "Arch"
+msgstr ""
+
+msgid "Architecture"
+msgstr ""
+
+msgid "Audio"
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "Badge"
+msgstr ""
+
+msgid "Badges"
+msgstr ""
+
+msgid "Bluetooth"
+msgstr ""
+
+msgid "Bookmark"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Browse"
+msgstr ""
+
+msgid "Browse Apps"
+msgstr ""
+
+msgid "Bug Tracker"
+msgstr ""
+
+msgid "Calendar"
+msgstr ""
+
+msgid "Camera"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Category"
+msgstr ""
+
+msgid "Changelog"
+msgstr ""
+
+msgid "Channel"
+msgstr ""
+
+msgid "Channels"
+msgstr ""
+
+msgid "Child Endangerment"
+msgstr ""
+
+msgid "Choose a category"
+msgstr ""
+
+msgid "Choose a license"
+msgstr ""
+
+msgid "Choose a maintainer"
+msgstr ""
+
+msgid "Completed"
+msgstr ""
+
+msgid "Connectivity"
+msgstr ""
+
+msgid "Contact"
+msgstr ""
+
+msgid "Contacts"
+msgstr ""
+
+msgid "Content Exchange"
+msgstr ""
+
+msgid "Content Exchange Source"
+msgstr ""
+
+msgid "Contributors"
+msgstr ""
+
+msgid "Copy to clipboard"
+msgstr ""
+
+msgid "Count"
+msgstr ""
+
+msgid "Create"
+msgstr ""
+
+msgid "Debug"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Discovery"
+msgstr ""
+
+msgid "Document Files"
+msgstr ""
+
+msgid "Donate"
+msgstr ""
+
+msgid "Donate URL"
+msgstr ""
+
+msgid "Download"
+msgstr ""
+
+msgid "Download Stats"
+msgstr ""
+
+msgid "Download the OpenStore App"
+msgstr ""
+
+msgid "Downloads"
+msgstr ""
+
+msgid "Downloads of the latest version"
+msgstr ""
+
+msgid "Drag and drop to sort screenshots."
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Error"
+msgstr ""
+
+msgid "Feeds"
+msgstr ""
+
+msgid "File"
+msgstr ""
+
+msgid "File Upload"
+msgstr ""
+
+msgid "Focal"
+msgstr ""
+
+msgid ""
+"For any questions you may have or help you may need just chat with us in our "
+"telegram group. "
+"You can also submit issues, bugs, and feature requests to our GitLab bug "
+"tracker."
+msgstr ""
+
+msgid "Full System Access"
+msgstr ""
+
+msgid "Gambling"
+msgstr ""
+
+msgid "Get your badge"
+msgstr ""
+
+msgid ""
+"Give a short explanation why you can’t publish the app without extra "
+"privileges. "
+"No need to go into details, a one liner like \"needs to run a daemon in the "
+"background\" will do. "
+"List all the special features you have, if there are more."
+msgstr ""
+
+msgid "Go back a page"
+msgstr ""
+
+msgid "Go to the next page"
+msgstr ""
+
+msgid "GPL v3 License"
+msgstr ""
+
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr ""
+
+msgid "History"
+msgstr ""
+
+msgid "Icon"
+msgstr ""
+
+msgid "ID"
+msgstr ""
+
+msgid ""
+"If an application could be published without manual review if it wouldn’t be "
+"for that one cool feature, "
+"publish a stripped down version! "
+"Not everyone will want to install apps with less confinement."
+msgstr ""
+
+msgid "Illegal Activities"
+msgstr ""
+
+msgid "In App Purchases"
+msgstr ""
+
+msgid "Info"
+msgstr ""
+
+msgid "Install"
+msgstr ""
+
+msgid "Install via the OpenStore app"
+msgstr ""
+
+msgid "Jump to the first page"
+msgstr ""
+
+msgid "Jump to the last page"
+msgstr ""
+
+msgid "Keep Display On"
+msgstr ""
+
+msgid "Keep your api key private!"
+msgstr ""
+
+msgid "Keywords"
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "Latest Update"
+msgstr ""
+
+msgid "Least Popular"
+msgstr ""
+
+msgid "License"
+msgstr ""
+
+msgid "Location"
+msgstr ""
+
+msgid "Locked"
+msgstr ""
+
+msgid "Log In"
+msgstr ""
+
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr ""
+
+msgid "Log Out"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "Login to submit your app"
+msgstr ""
+
+msgid "Login via GitHub"
+msgstr ""
+
+msgid "Login via GitLab"
+msgstr ""
+
+msgid "Login via Ubuntu One"
+msgstr ""
+
+msgid "Maintainer"
+msgstr ""
+
+msgid "Malware"
+msgstr ""
+
+msgid "Manage"
+msgstr ""
+
+msgid "Manage Apps"
+msgstr ""
+
+msgid "Microphone"
+msgstr ""
+
+msgid "Most Popular"
+msgstr ""
+
+msgid "Music Files"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Navigate to the downloads folder"
+msgstr ""
+
+msgid "Networking"
+msgstr ""
+
+msgid "New Apps"
+msgstr ""
+
+msgid "New Revision"
+msgstr ""
+
+msgid "New revision for %{channel} was created!"
+msgstr ""
+
+msgid "New Revision for %{name}"
+msgstr ""
+
+msgid "New revisions for %{channel} were created!"
+msgstr ""
+
+msgid "Newest"
+msgstr ""
+
+msgid "NFC"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "No apps found."
+msgstr ""
+
+msgid "No longer available"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Not published"
+msgstr ""
+
+msgid "NSFW"
+msgstr ""
+
+msgid "NSFW content"
+msgstr ""
+
+msgid "Older Versions"
+msgstr ""
+
+msgid "Oldest"
+msgstr ""
+
+msgid "Oldest Update"
+msgstr ""
+
+msgid ""
+"One of the main goals of the OpenStore is to provide a safe app store for "
+"people of all ages. "
+"To accomplish this goal we do not allow certain types of app to be "
+"published. "
+"Failure to follow the guidelines will result in your app being removed. "
+"Any account with serious infractions may be subject to termination. "
+"The OpenStore team thanks you for helping us promote a better environment "
+"for everyone."
+msgstr ""
+
+msgid ""
+"Only open source applications allowed for manual review: "
+"As the applications might have arbitrary access to the device, every "
+"manually reviewed app will get a source code review."
+msgstr ""
+
+msgid ""
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
+msgstr ""
+
+msgid "Open the terminal app"
+msgstr ""
+
+msgid "OpenStore API/Server Contributors"
+msgstr ""
+
+msgid "OpenStore App Content Policy"
+msgstr ""
+
+msgid "OpenStore App Contributors"
+msgstr ""
+
+msgid "OpenStore Badges"
+msgstr ""
+
+msgid "OpenStore group on Telegram"
+msgstr ""
+
+msgid "OpenStore source on GitLab"
+msgstr ""
+
+msgid "OpenStore Website Contributors"
+msgstr ""
+
+msgid "Override Type"
+msgstr ""
+
+msgid "Package Info"
+msgstr ""
+
+msgid "Page Not Found"
+msgstr ""
+
+msgid "Permissions"
+msgstr ""
+
+msgid "Picture Files"
+msgstr ""
+
+msgid "Presentation"
+msgstr ""
+
+msgid "Processing"
+msgstr ""
+
+msgid "Prohibited Apps"
+msgstr ""
+
+msgid "Promote your app on the OpenStore!"
+msgstr ""
+
+msgid ""
+"Promote your app on the OpenStore! Add these badges to your website, "
+"code repository, social media, or anywhere on the internet. The badges "
+"are available in several different languages and in both PNG and SVG "
+"formats."
+msgstr ""
+
+msgid "Public Link"
+msgstr ""
+
+msgid "Publish"
+msgstr ""
+
+msgid "Published"
+msgstr ""
+
+msgid "Published Date"
+msgstr ""
+
+msgid "Publisher"
+msgstr ""
+
+msgid "Push Notifications"
+msgstr ""
+
+msgid "Read Document Files"
+msgstr ""
+
+msgid "Read Music Files"
+msgstr ""
+
+msgid "Read Picture Files"
+msgstr ""
+
+msgid "Read Video Files"
+msgstr ""
+
+msgid "Relevance"
+msgstr ""
+
+msgid "Report an Issue"
+msgstr ""
+
+msgid "Restricted permission"
+msgstr ""
+
+msgid "Review Exceptions"
+msgstr ""
+
+msgid "Reviews"
+msgstr ""
+
+msgid "Revision"
+msgstr ""
+
+msgid "RSS Feeds"
+msgstr ""
+
+msgid "Rules for Submission"
+msgstr ""
+
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr ""
+
+msgid "Run the command:"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Screenshots"
+msgstr ""
+
+msgid "Screenshots (Limit 5)"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid ""
+"Send us a link to a repository for your app to our telegram group along with "
+"some instructions on how to build it."
+msgstr ""
+
+msgid "Sensors"
+msgstr ""
+
+msgid "Sexually Explicit Content"
+msgstr ""
+
+msgid "Show All Revisions"
+msgstr ""
+
+msgid "Show NSFW Content"
+msgstr ""
+
+msgid "Site Status"
+msgstr ""
+
+msgid "Sort By"
+msgstr ""
+
+msgid "Source"
+msgstr ""
+
+msgid "Source Code"
+msgstr ""
+
+msgid "Source URL"
+msgstr ""
+
+msgid "Stats"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Submit App"
+msgstr ""
+
+msgid "Submit your app"
+msgstr ""
+
+msgid "Success"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Support URL"
+msgstr ""
+
+msgid "Tag Line"
+msgstr ""
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Terms"
+msgstr ""
+
+msgid "The app you are looking for has been removed or does not exist"
+msgstr ""
+
+msgid ""
+"The apps available for download from the OpenStore have their own licencing "
+"and terms. "
+"Consult each individual app's page for more information."
+msgstr ""
+
+msgid "The changes to %{name} were saved!"
+msgstr ""
+
+msgid ""
+"The OpenStore a non-profit volunteer project. "
+"Although every effort is made to ensure that everything in the repository is "
+"safe to install, you use it AT YOUR OWN RISK. "
+"Apps uploaded to the OpenStore will be subject to an automated review "
+"process or "
+"a manual review process to check for potential security or privacy issues. "
+"This checking is far from exhaustive though, and there are no guarantees."
+msgstr ""
+
+msgid ""
+"The OpenStore app is installed by default on the UBports builds of Ubuntu "
+"Touch. "
+"But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr ""
+
+msgid ""
+"The OpenStore is the official app store for Ubuntu Touch. "
+"It is an open source project run by a team of volunteers with help from the "
+"community. "
+"You can discover and install new apps on your Ubuntu Touch device. "
+"You can also upload and manage your own apps for publication. "
+"The OpenStore encourages the apps published within to be open source, but "
+"also accepts proprietary apps."
+msgstr ""
+
+msgid ""
+"The OpenStore respects your privacy. "
+"We don't track you or your device. "
+"You do not need an account to download and install apps and we do not track "
+"your downloads. "
+"For developer information we count the number of downloads per app "
+"revision. "
+"Information about your device (the cpu architecture, framework versions, OS "
+"version, and OS language) "
+"are sent to the server to allow it to filter apps to only what you can "
+"install and present your native language where possible. "
+"This information is not logged or stored and cannot be used to uniquely "
+"identify you."
+msgstr ""
+
+msgid "The page you are looking for has been removed or does not exist"
+msgstr ""
+
+msgid ""
+"The source code for OpenStore related projects is available under the GPL "
+"v3. "
+"You can find the code on the OpenStore GitLab page."
+msgstr ""
+
+msgid ""
+"There was an error trying to find this app, please refresh and try again."
+msgstr ""
+
+msgid ""
+"There was an error trying to load the app list, please refresh and try again."
+msgstr ""
+
+msgid ""
+"There was an error trying to load the stats, please refresh and try again."
+msgstr ""
+
+msgid "This app contains NSFW material"
+msgstr ""
+
+msgid ""
+"This app does not have access to restricted system data, see permissions for "
+"more details"
+msgstr ""
+
+msgid ""
+"This app has access to restricted system data, see permissions for more "
+"details"
+msgstr ""
+
+msgid ""
+"This is the unique identifier for your app. "
+"It must match exactly the \"name\" field in your click's manifest.json and "
+"must be all lowercase letters. "
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app "
+"and \"openstore-team\" "
+"is the group or individual authoring the app."
+msgstr ""
+
+msgid "This revision is still available"
+msgstr ""
+
+msgid "This will be added to the beginning of your current changelog"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Title (A-Z)"
+msgstr ""
+
+msgid "Title (Z-A)"
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "Total downloads"
+msgstr ""
+
+msgid "Total:"
+msgstr ""
+
+msgid "Translation Languages"
+msgstr ""
+
+msgid "Translation URL"
+msgstr ""
+
+msgid "Translations"
+msgstr ""
+
+msgid "Try searching for something else"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Ubuntu Touch"
+msgstr ""
+
+msgid "Ubuntu Touch Apps"
+msgstr ""
+
+msgid "Uncategorized"
+msgstr ""
+
+msgid "Unrestricted read access to:"
+msgstr ""
+
+msgid "Unrestricted write access to:"
+msgstr ""
+
+msgid "Updated"
+msgstr ""
+
+msgid "Updated Apps"
+msgstr ""
+
+msgid "Updated Date"
+msgstr ""
+
+msgid "Upload Revision via:"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+msgid "URL of App from the Web"
+msgstr ""
+
+msgid "User Metrics"
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "Video"
+msgstr ""
+
+msgid "Video Files"
+msgstr ""
+
+msgid "Video URL"
+msgstr ""
+
+msgid "View Install Instructions"
+msgstr ""
+
+msgid "Violence"
+msgstr ""
+
+msgid "Web App"
+msgstr ""
+
+msgid "Web Apps"
+msgstr ""
+
+msgid "Webview"
+msgstr ""
+
+msgid "Welcome %{name}!"
+msgstr ""
+
+msgid "Xenial"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+
+msgid ""
+"You are only allowed to publish apps that you have permission to distribute."
+msgstr ""
+
+msgid "You must read over the content policy detailed below."
+msgstr ""
+
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins. "
+"Where possible, we will contact you regarding any such actions."
+msgstr ""

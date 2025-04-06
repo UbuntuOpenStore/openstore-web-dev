@@ -1,0 +1,1222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openstore-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openstore-web 1.0.0 "
+"Report-Msgid-Bugs-To:  "
+"POT-Creation-Date: 2020-08-28 00:36-0400 "
+"PO-Revision-Date: 2020-09-05 21:04+0000 "
+"Last-Translator: tamer dab <dabsantamer@yahoo.com> "
+"Language-Team: Hebrew <https://translate.ubports.com/projects/openstore/open-"
+"storeio/he/> "
+"Language: he "
+"MIME-Version: 1.0 "
+"Content-Type: text/plain; charset=UTF-8 "
+"Content-Transfer-Encoding: 8bit "
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3)); "
+"X-Generator: Weblate 3.11.3 "
+
+#, fuzzy
+#| msgid ""
+#| "*This app contains NSFW content, to view the description and "
+#| "screenshots, click the above button."
+msgid ""
+"*This app contains NSFW content, to view the description and "
+"screenshots, click the above button."
+msgstr ""
+"*אפליקציה זו מכילה תוכן NSFW, לצפייה בתיאור  "
+"וצילומי מסך, לחץ על הלחצן שלמעלה."
+
+msgid "%{name} was successfully deleted"
+msgstr "%{name} נמחק בהצלחה"
+
+msgid "A comma separated list of keywords"
+msgstr "רשימה מופרדת בפסיקים של מילות מפתח"
+
+msgid "About"
+msgstr "אודות"
+
+msgid "About Us"
+msgstr "עלינו"
+
+msgid "Accounts"
+msgstr "חשבונות"
+
+msgid "Add Another Architecture"
+msgstr "הוסף ארכיטקטורה נוספת"
+
+msgid "Admin"
+msgstr "מנהל"
+
+msgid "All Categories"
+msgstr "כל הקטגוריות"
+
+#, fuzzy
+#| msgid "Channels"
+msgid "All Channels"
+msgstr "ערוצים"
+
+msgid "All Types"
+msgstr "כל הסוגים"
+
+msgid "An account is not needed to download or install apps."
+msgstr "אין צורך בחשבון כדי להוריד או להתקין אפליקציות."
+
+msgid "An error occured loading your app data"
+msgstr "אירעה שגיאה בטעינת נתוני האפליקציה שלך"
+
+msgid "An unknown error has occurred"
+msgstr "אירעה שגיאה לא ידועה"
+
+msgid ""
+"And many amazing developers, testers, and users from the OpenStore community!"
+msgstr "והרבה מפתחים, ובודקים ומשתמשים מדהימים רבים מקהילת OpenStore!"
+
+#, fuzzy
+#| msgid ""
+#| "Any personal data you decide to give us (e.g. your email address when "
+#| "registering for an account to upload your apps) "
+#| "goes no further than us, "
+#| "and will not be used for anything other than allowing you to maintain "
+#| "your apps and, in rare cases, "
+#| "contact you in the event there is an issue with your app. "
+#| "Additionally, this site uses cookies to keep you logged in to your "
+#| "account."
+msgid ""
+"Any personal data you decide to give us (e.g. your email address when "
+"registering for an account to upload your apps) "
+"goes no further than us, "
+"and will not be used for anything other than allowing you to maintain your "
+"apps and, in rare cases, "
+"contact you in the event there is an issue with your app. "
+"Additionally, this site uses cookies to keep you logged in to your account."
+msgstr ""
+"כל מידע אישי שתחליט למסור לנו (למשל, כתובת הדוא\"ל שלך בעת ההרשמה לחשבון "
+"להעלאת האפליקציות שלך) "
+"לא מרחיק מאיתנו, "
+"ולא ישמש לשום דבר מלבד לאפשר לך לתחזק את היישומים שלך, ובמקרים נדירים, "
+"לפנות אליך במקרה שיש בעיה באפליקציה שלך. "
+"בנוסף, אתר זה משתמש בעוגיות בכדי לשמור על כניסה לחשבונך."
+
+msgid "API Key"
+msgstr "מפתח API"
+
+msgid "App"
+msgstr "אפליקציה"
+
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr "אפליקציות המכילות או מקדמות את האמור לעיל אסורות בהחלט."
+
+msgid "App Name"
+msgstr "שם האפליקציה"
+
+msgid "App Stats"
+msgstr "סטטיסטיקות אפליקציות"
+
+msgid "App Submission Tutorial"
+msgstr ""
+
+msgid "App Title"
+msgstr "כותרת האפליקציה"
+
+msgid "App Type"
+msgstr "סוג אפליקציה"
+
+msgid "App Types"
+msgstr "סוגי אפליקציות"
+
+msgid "Apps"
+msgstr "אפליקציות"
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing gambling involving real world money transactions are not "
+#| "allowed. "
+#| "This includes, but is not limited to, online casinos, betting, and "
+#| "lotteries."
+msgid ""
+"Apps containing gambling involving real world money transactions are not "
+"allowed. "
+"This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
+msgstr ""
+"אפליקציות המכילות הימורים הכוללים עסקאות כסף אמיתי אינן מורשות. "
+"זה כולל, אך אינו מוגבל, בתי קזינו מקוונים, הימורים והגרלות."
+
+msgid ""
+"Apps containing or promoting child abuse or child sexual abuse are strictly "
+"prohibited."
+msgstr ""
+"אפליקציות המכילות או מקדמות התעללות בילדים או התעללות מינית בילדים אסורות "
+"בהחלט."
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting gratuitous violence are not allowed. "
+#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
+#| "making, self harm, and grotesque imagery."
+msgid ""
+"Apps containing or promoting gratuitous violence are not allowed. "
+"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"making, self harm, and grotesque imagery."
+msgstr ""
+"אפליקציות המכילות או מקדמות אלימות מיותרת אינן מורשות. "
+"זה כולל, אך אינו מוגבל, אלימות, טרור, יצירת פצצה / נשק, פגיעה עצמית ודימויים "
+"גרוטסקיים."
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting sexually explicit content are not allowed. "
+#| "This includes, but is not limited to, pornography and services promoting "
+#| "sexually explicit content."
+msgid ""
+"Apps containing or promoting sexually explicit content are not allowed. "
+"This includes, but is not limited to, pornography and services promoting "
+"sexually explicit content."
+msgstr ""
+"אפליקציות המכילות או מקדמות תוכן מיני מפורש אינן מורשות. "
+"זה כולל, אך אינו מוגבל, פורנוגרפיה ושירותים המקדמים תוכן מיני מפורש."
+
+msgid ""
+"Apps not requiring manual review can be submitted by logging in with the "
+"\"Log In\" link above."
+msgstr ""
+"ניתן להגיש אפליקציות שאינן דורשות בדיקה ידנית באמצעות התחברות באמצעות הקישור "
+"\"התחברות\" שלמעלה."
+
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr "אפליקציות המקדמות פעילויות לא חוקיות (על פי חוקי ארה\"ב) אינן מורשות."
+
+msgid ""
+"Apps requiring manual review must be submitted by contacting an admin in our "
+"telegram group."
+msgstr ""
+"יש להגיש אפליקציות הדורשות בדיקה ידנית על ידי פנייה למנהל בקבוצת ה TELEGRAM "
+"שלנו."
+
+#, fuzzy
+#| msgid ""
+#| "Apps that are found to be stealing the users data, trying to escalate "
+#| "their privileges without user consent, "
+#| "or executing malicious process are strictly prohibited."
+msgid ""
+"Apps that are found to be stealing the users data, trying to escalate their "
+"privileges without user consent, "
+"or executing malicious process are strictly prohibited."
+msgstr ""
+"יישומים שנמצאים גונבים את נתוני המשתמשים ומנסים להסלים את הרשאותיהם ללא "
+"הסכמת המשתמש, "
+"או לבצע הליך זדוני אסור בהחלט."
+
+#, fuzzy
+#| msgid ""
+#| "Apps uploaded to the OpenStore are subject to our submission rules and "
+#| "content policy. "
+#| "You can review the rules and policies before uploading your app."
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission rules and "
+"content policy. "
+"You can review the rules and policies before uploading your app."
+msgstr ""
+"אפליקציות שהועלו ל- OpenStore כפופות לכללי ההגשה ולמדיניות התוכן שלנו. "
+"תוכלו לעיין בכללים ובמדיניות לפני העלאת האפליקציה."
+
+msgid "Arch"
+msgstr "Arch"
+
+msgid "Architecture"
+msgstr "ארכיטקטורה"
+
+msgid "Audio"
+msgstr "אודיו"
+
+msgid "Back"
+msgstr "חזרה"
+
+msgid "Badge"
+msgstr "תג"
+
+msgid "Badges"
+msgstr "תגים"
+
+msgid "Bluetooth"
+msgstr "בלוטות'"
+
+msgid "Bookmark"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Browse"
+msgstr "עיין"
+
+msgid "Browse Apps"
+msgstr "עיין באפליקציות"
+
+msgid "Bug Tracker"
+msgstr "מעקב אחר באגים"
+
+msgid "Calendar"
+msgstr "לוח שנה"
+
+msgid "Camera"
+msgstr "מצלמה"
+
+msgid "Cancel"
+msgstr "ביטול"
+
+msgid "Category"
+msgstr "קטגוריה"
+
+msgid "Changelog"
+msgstr "שינויים"
+
+msgid "Channel"
+msgstr "ערוץ"
+
+msgid "Channels"
+msgstr "ערוצים"
+
+msgid "Child Endangerment"
+msgstr "סכנת ילדים"
+
+msgid "Choose a category"
+msgstr "בחר קטגוריה"
+
+msgid "Choose a license"
+msgstr "בחר רישיון"
+
+msgid "Choose a maintainer"
+msgstr "בחר מתחזק"
+
+msgid "Completed"
+msgstr ""
+
+msgid "Connectivity"
+msgstr "קישוריות"
+
+msgid "Contact"
+msgstr "איש קשר"
+
+msgid "Contacts"
+msgstr "אנשי קשר"
+
+msgid "Content Exchange"
+msgstr "חילופי תוכן"
+
+msgid "Content Exchange Source"
+msgstr "מקור החלפת תוכן"
+
+msgid "Contributors"
+msgstr "תורמים"
+
+msgid "Copy to clipboard"
+msgstr "העתק ללוח"
+
+msgid "Count"
+msgstr "לספור"
+
+msgid "Create"
+msgstr "ליצור"
+
+msgid "Debug"
+msgstr "ניפוי באגים"
+
+msgid "Delete"
+msgstr "מחק"
+
+msgid "Description"
+msgstr "תיאור"
+
+msgid "Discovery"
+msgstr "גלה"
+
+#, fuzzy
+#| msgid "Picture Files"
+msgid "Document Files"
+msgstr "קבצי תמונות"
+
+msgid "Donate"
+msgstr "תרום"
+
+msgid "Donate URL"
+msgstr "קישור לתרומה"
+
+msgid "Download"
+msgstr "הורד"
+
+msgid "Download Stats"
+msgstr "סטטוס הורדה"
+
+msgid "Download the OpenStore App"
+msgstr "הורד את אפליקציית OpenStore"
+
+msgid "Downloads"
+msgstr "הורדות"
+
+msgid "Downloads of the latest version"
+msgstr "הורדות של הגרסה האחרונה"
+
+msgid "Drag and drop to sort screenshots."
+msgstr "גרור ושחרר כדי למיין צילומי מסך."
+
+msgid "Edit"
+msgstr "ערוך"
+
+msgid "Error"
+msgstr "שגיאה"
+
+msgid "Feeds"
+msgstr "פיידים"
+
+msgid "File"
+msgstr "קובץ"
+
+msgid "File Upload"
+msgstr "העלאת קובץ"
+
+msgid "Focal"
+msgstr ""
+
+#, fuzzy
+#| msgid ""
+#| "For any questions you may have or help you may need just chat with us in "
+#| "our telegram group. "
+#| "You can also submit issues, bugs, and feature requests to our GitLab "
+#| "bug tracker."
+msgid ""
+"For any questions you may have or help you may need just chat with us in our "
+"telegram group. "
+"You can also submit issues, bugs, and feature requests to our GitLab bug "
+"tracker."
+msgstr ""
+"בכל שאלה שיש לך או שתעזור לך תצטרך פשוט לשוחח איתנו בקבוצת ה- Telegram "
+"שלנו. "
+"אתה יכול גם לשלוח בעיות, באגים ובקשותב- GitLab bug tracker."
+
+msgid "Full System Access"
+msgstr "גישה מלאה למערכת"
+
+msgid "Gambling"
+msgstr "הימורים"
+
+msgid "Get your badge"
+msgstr "קבל את התג שלך"
+
+#, fuzzy
+#| msgid ""
+#| "Give a short explanation why you can’t publish the app without extra "
+#| "privileges. "
+#| "No need to go into details, a one liner like \"needs to run a daemon in "
+#| "the background\" will do. "
+#| "List all the special features you have, if there are more."
+msgid ""
+"Give a short explanation why you can’t publish the app without extra "
+"privileges. "
+"No need to go into details, a one liner like \"needs to run a daemon in the "
+"background\" will do. "
+"List all the special features you have, if there are more."
+msgstr ""
+"תן הסבר קצר מדוע אינך יכול לפרסם את האפליקציה ללא הרשאות נוספות. "
+"אין צורך להיכנס לפרטים, בשורה אחת כמו \"צריך להריץ דמון ברקע\" . "
+"ציין את כל התכונות המיוחדות שיש לך, אם ישנן יותר."
+
+msgid "Go back a page"
+msgstr "חזור דף אחורה"
+
+msgid "Go to the next page"
+msgstr "עבור לדף הבא"
+
+msgid "GPL v3 License"
+msgstr "רישיון GPL v3"
+
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr "הטרדות, בריונות או דיבור שנאה"
+
+msgid "History"
+msgstr "היסטוריה"
+
+msgid "Icon"
+msgstr "אייקון"
+
+msgid "ID"
+msgstr "ID"
+
+#, fuzzy
+#| msgid ""
+#| "If an application could be published without manual review if it wouldn’t "
+#| "be for that one cool feature, "
+#| "publish a stripped down version! "
+#| "Not everyone will want to install apps with less confinement."
+msgid ""
+"If an application could be published without manual review if it wouldn’t be "
+"for that one cool feature, "
+"publish a stripped down version! "
+"Not everyone will want to install apps with less confinement."
+msgstr ""
+"אם ניתן היה לפרסם יישום ללא בדיקה ידנית אלמלא התכונה המגניבה הזו, "
+"פרסם גרסה מופשטת! "
+"לא כולם ירצו להתקין אפליקציות עם פחות כליאה."
+
+msgid "Illegal Activities"
+msgstr "פעילויות לא חוקיות"
+
+msgid "In App Purchases"
+msgstr "רכישות באפליקציות"
+
+msgid "Info"
+msgstr "מידע"
+
+msgid "Install"
+msgstr "התקנה"
+
+msgid "Install via the OpenStore app"
+msgstr "התקן דרך אפליקציית OpenStore"
+
+msgid "Jump to the first page"
+msgstr "עבור לדף הראשון"
+
+msgid "Jump to the last page"
+msgstr "עבור לדף האחרון"
+
+msgid "Keep Display On"
+msgstr "תצוגה מופעלת תמיד"
+
+msgid "Keep your api key private!"
+msgstr "שמור על מפתח ה- api שלך באפן פרטי!"
+
+msgid "Keywords"
+msgstr "מילות מפתח"
+
+msgid "Language"
+msgstr "שפה"
+
+msgid "Latest Update"
+msgstr "עדכון אחרון"
+
+msgid "Least Popular"
+msgstr ""
+
+msgid "License"
+msgstr "רשיון"
+
+msgid "Location"
+msgstr "מיקום"
+
+msgid "Locked"
+msgstr "נעול"
+
+msgid "Log In"
+msgstr "התחברות"
+
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr "התחבר ל- OpenStore כדי לנהל את האפליקציות שלך."
+
+msgid "Log Out"
+msgstr "להתנתק"
+
+msgid "Login"
+msgstr "התחברות"
+
+msgid "Login to submit your app"
+msgstr "התחבר כדי להגיש את האפליקציה שלך"
+
+msgid "Login via GitHub"
+msgstr "התחבר דרך GitHub"
+
+msgid "Login via GitLab"
+msgstr "התחבר דרך GitLab"
+
+msgid "Login via Ubuntu One"
+msgstr "התחבר דרך Ubuntu One"
+
+msgid "Maintainer"
+msgstr "מתחזק"
+
+msgid "Malware"
+msgstr "תוכנה זדונית"
+
+msgid "Manage"
+msgstr "נהול"
+
+msgid "Manage Apps"
+msgstr "נהל אפליקציות"
+
+msgid "Microphone"
+msgstr "מיקרופון"
+
+msgid "Most Popular"
+msgstr ""
+
+msgid "Music Files"
+msgstr "קבצי מוסיקה"
+
+msgid "Name"
+msgstr "שם"
+
+msgid "Navigate to the downloads folder"
+msgstr "נווט לתיקיית ההורדות"
+
+msgid "Networking"
+msgstr "רשת"
+
+msgid "New Apps"
+msgstr "אפליקציות חדשות"
+
+msgid "New Revision"
+msgstr "תיקון חדש"
+
+msgid "New revision for %{channel} was created!"
+msgstr "תיקון חדש ל %{channel} נוצר!"
+
+msgid "New Revision for %{name}"
+msgstr "תיקון חדש ל %{name}"
+
+msgid "New revisions for %{channel} were created!"
+msgstr "תיקונים חדשים עבור %{channel} נוצרו!"
+
+msgid "Newest"
+msgstr "חדש ביותר"
+
+msgid "NFC"
+msgstr ""
+
+msgid "No"
+msgstr "לא"
+
+msgid "No apps found."
+msgstr "לא נמצאו אפליקציות."
+
+msgid "No longer available"
+msgstr "לא קיים יותר"
+
+msgid "None"
+msgstr "כלום"
+
+msgid "Not published"
+msgstr "לא פורסם"
+
+msgid "NSFW"
+msgstr "NSFW"
+
+msgid "NSFW content"
+msgstr "תוכן NSFW"
+
+#, fuzzy
+#| msgid "Version"
+msgid "Older Versions"
+msgstr "גרסה"
+
+msgid "Oldest"
+msgstr "הוותיק ביותר"
+
+msgid "Oldest Update"
+msgstr "העדכון הישן ביותר"
+
+#, fuzzy
+#| msgid ""
+#| "One of the main goals of the OpenStore is to provide a safe app store for "
+#| "people of all ages. "
+#| "To accomplish this goal we do not allow certain types of app to be "
+#| "published. "
+#| "Failure to follow the guidelines will result in your app being removed. "
+#| "Any account with serious infractions may be subject to termination. "
+#| "The OpenStore team thanks you for helping us promote a better environment "
+#| "for everyone."
+msgid ""
+"One of the main goals of the OpenStore is to provide a safe app store for "
+"people of all ages. "
+"To accomplish this goal we do not allow certain types of app to be "
+"published. "
+"Failure to follow the guidelines will result in your app being removed. "
+"Any account with serious infractions may be subject to termination. "
+"The OpenStore team thanks you for helping us promote a better environment "
+"for everyone."
+msgstr ""
+"אחת המטרות העיקריות של OpenStore היא לספק חנות אפליקציות בטוחה לאנשים בכל "
+"הגילאים. "
+"כדי להשיג מטרה זו איננו מאפשרים פרסום של סוגים מסוימים של אפליקציות. "
+"אי מילוי ההנחיות יביא להסרת האפליקציה שלך. "
+"כל חשבון עם הפרות חמורות עשוי להיות מועמד להסרה. "
+"צוות OpenStore מודה לך שעזרת לנו לקדם סביבה טובה יותר לכולם."
+
+#, fuzzy
+#| msgid ""
+#| "Only open source applications allowed for manual review: "
+#| "As the applications might have arbitrary access to the device, every "
+#| "manually reviewed app will get a source code review."
+msgid ""
+"Only open source applications allowed for manual review: "
+"As the applications might have arbitrary access to the device, every "
+"manually reviewed app will get a source code review."
+msgstr ""
+"רק יישומי קוד פתוח מותרים לבדיקה ידנית: "
+"מכיוון שליישומים עשויה להיות גישה שרירותית למכשיר, כל אפליקציה שנבדקה "
+"ידנית תקבל בדיקת קוד מקור."
+
+#, fuzzy
+#| msgid ""
+#| "Only YouTube videos are supported at this time. Make sure the url is for "
+#| "the embedded video!"
+msgid ""
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
+msgstr ""
+"בשלב זה תומכים רק בסרטוני YouTube. ודא שכתובת האתר מיועדת לסרטון המוטמע!"
+
+msgid "Open the terminal app"
+msgstr "פתח את אפליקציית המסוף"
+
+msgid "OpenStore API/Server Contributors"
+msgstr "תורמי API/שרת OpenStore"
+
+msgid "OpenStore App Content Policy"
+msgstr "מדיניות תוכן אפליקציות OpenStore"
+
+msgid "OpenStore App Contributors"
+msgstr "תורמי אפליקציות OpenStore"
+
+msgid "OpenStore Badges"
+msgstr "תגי OpenStore"
+
+msgid "OpenStore group on Telegram"
+msgstr "קבוצת OpenStore בטלגרם"
+
+msgid "OpenStore source on GitLab"
+msgstr "מקור OpenStore ב- GitLab"
+
+msgid "OpenStore Website Contributors"
+msgstr "תורמי אתר OpenStore"
+
+msgid "Override Type"
+msgstr "עקוף סוג"
+
+msgid "Package Info"
+msgstr "פרטי חבילה"
+
+msgid "Page Not Found"
+msgstr "הדף לא נמצא"
+
+msgid "Permissions"
+msgstr "הרשאות"
+
+msgid "Picture Files"
+msgstr "קבצי תמונות"
+
+msgid "Presentation"
+msgstr "מצגת"
+
+msgid "Processing"
+msgstr ""
+
+msgid "Prohibited Apps"
+msgstr "אפליקציות אסורות"
+
+msgid "Promote your app on the OpenStore!"
+msgstr "קדם את האפליקציה שלך ב- OpenStore!"
+
+#, fuzzy
+#| msgid ""
+#| "Promote your app on the OpenStore! Add these badges to your website, "
+#| "code repository, social media, or anywhere on the internet. The badges "
+#| "are available in several different languages and in both PNG and SVG "
+#| "formats."
+msgid ""
+"Promote your app on the OpenStore! Add these badges to your website, "
+"code repository, social media, or anywhere on the internet. The badges "
+"are available in several different languages and in both PNG and SVG "
+"formats."
+msgstr ""
+"קדם את האפליקציה שלך ב- OpenStore! הוסף את התגים האלה לאתר שלך, "
+"מאגר קוד, מדיה חברתית, או בכל מקום באינטרנט. התגים "
+"זמינים במספר שפות שונות וגם ב- PNG וגם ב- SVG "
+"פורמטים."
+
+msgid "Public Link"
+msgstr "קישור ציבורי"
+
+msgid "Publish"
+msgstr "פרסם"
+
+msgid "Published"
+msgstr "פורסם"
+
+msgid "Published Date"
+msgstr "תאריך פרסום"
+
+#, fuzzy
+#| msgid "Published"
+msgid "Publisher"
+msgstr "פורסם"
+
+msgid "Push Notifications"
+msgstr "התראות"
+
+#, fuzzy
+#| msgid "Read Picture Files"
+msgid "Read Document Files"
+msgstr "קרא קבצי תמונות"
+
+msgid "Read Music Files"
+msgstr "קרא קבצי מוסיקה"
+
+msgid "Read Picture Files"
+msgstr "קרא קבצי תמונות"
+
+msgid "Read Video Files"
+msgstr "קרא קבצי וידאו"
+
+msgid "Relevance"
+msgstr "רלוונטיות"
+
+msgid "Report an Issue"
+msgstr "דווח על בעיה"
+
+msgid "Restricted permission"
+msgstr "אישור מוגבל"
+
+msgid "Review Exceptions"
+msgstr ""
+
+#, fuzzy
+#| msgid "Webview"
+msgid "Reviews"
+msgstr "תצוגת אינטרנט"
+
+msgid "Revision"
+msgstr "תיקון"
+
+msgid "RSS Feeds"
+msgstr "הזנות RSS"
+
+msgid "Rules for Submission"
+msgstr "כללי הגשה"
+
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr "כללי הגשה הדורשים בדיקה ידנית"
+
+msgid "Run the command:"
+msgstr "הרץ את הפקודה:"
+
+msgid "Save"
+msgstr "שמור"
+
+msgid "Screenshots"
+msgstr "צילומי מסך"
+
+msgid "Screenshots (Limit 5)"
+msgstr "צילומי מסך (מוגבל ל 5)"
+
+msgid "Search"
+msgstr "חיפוש"
+
+msgid ""
+"Send us a link to a repository for your app to our telegram group along with "
+"some instructions on how to build it."
+msgstr ""
+"שלח לנו קישור למאגר לאפליקציה שלך לקבוצת ה- Telegram שלנו יחד עם כמה הוראות "
+"כיצד לבנות אותה."
+
+msgid "Sensors"
+msgstr "חיישנים"
+
+msgid "Sexually Explicit Content"
+msgstr "תוכן מיני מפורש"
+
+msgid "Show All Revisions"
+msgstr "הצג את כל התקונים"
+
+msgid "Show NSFW Content"
+msgstr "הצג תוכן NSFW"
+
+msgid "Site Status"
+msgstr "סטטוס אתר"
+
+msgid "Sort By"
+msgstr "מיין לפי"
+
+msgid "Source"
+msgstr "מקור"
+
+msgid "Source Code"
+msgstr "קוד מקור"
+
+msgid "Source URL"
+msgstr "קשור המקור"
+
+msgid "Stats"
+msgstr "סטטיסטיקה"
+
+msgid "Status"
+msgstr "סטטוס"
+
+msgid "Submit"
+msgstr "שלח"
+
+msgid "Submit App"
+msgstr "הגש אפליקציה"
+
+msgid "Submit your app"
+msgstr "הגש את האפליקציה שלך"
+
+msgid "Success"
+msgstr "הצליח"
+
+msgid "Support"
+msgstr "תמיכה"
+
+msgid "Support URL"
+msgstr "כתובת URL לתמיכה"
+
+msgid "Tag Line"
+msgstr "קו תגים"
+
+msgid "Telegram"
+msgstr "טליגרם"
+
+msgid "Terms"
+msgstr "תנאים"
+
+msgid "The app you are looking for has been removed or does not exist"
+msgstr "האפליקציה שאתה מחפש הוסרה או לא קיימת"
+
+#, fuzzy
+#| msgid ""
+#| "The apps available for download from the OpenStore have their own "
+#| "licencing and terms. "
+#| "Consult each individual app's page for more information."
+msgid ""
+"The apps available for download from the OpenStore have their own licencing "
+"and terms. "
+"Consult each individual app's page for more information."
+msgstr ""
+"לאפליקציות הזמינות להורדה מ- OpenStore יש רישוי ותנאים משלהם. "
+"עיין בדף של כל אפליקציה למידע נוסף."
+
+msgid "The changes to %{name} were saved!"
+msgstr "השינויים ב- %{name} נשמרו!"
+
+#, fuzzy
+#| msgid ""
+#| "The OpenStore a non-profit volunteer project. "
+#| "Although every effort is made to ensure that everything in the "
+#| "repository is safe to install, you use it AT YOUR OWN RISK. "
+#| "Apps uploaded to the OpenStore will be subject to an automated review "
+#| "process or "
+#| "a manual review process to check for potential security or privacy "
+#| "issues. "
+#| "This checking is far from exhaustive though, and there are no "
+#| "guarantees."
+msgid ""
+"The OpenStore a non-profit volunteer project. "
+"Although every effort is made to ensure that everything in the repository is "
+"safe to install, you use it AT YOUR OWN RISK. "
+"Apps uploaded to the OpenStore will be subject to an automated review "
+"process or "
+"a manual review process to check for potential security or privacy issues. "
+"This checking is far from exhaustive though, and there are no guarantees."
+msgstr ""
+"OpenStore פרויקט התנדבותי ללא מטרות רווח. "
+"למרות שנעשה כל מאמץ להבטיח כי כל המאגר במאגר יהיה בטוח להתקנה, אתה משתמש "
+"בו תוך סיכון משלך. "
+"אפליקציות שיועלו ל- OpenStore יהיו כפופות לתהליך בדיקה אוטומטי או "
+"תהליך בדיקה ידני לבדיקת בעיות אבטחה או פרטיות אפשריות. "
+"בדיקה זו רחוקה מלהיות ממצה, ואין כל ערבויות."
+
+#, fuzzy
+#| msgid ""
+#| "The OpenStore app is installed by default on the UBports builds of Ubuntu "
+#| "Touch. "
+#| "But if you need to install the OpenStore manually, follow these steps:"
+msgid ""
+"The OpenStore app is installed by default on the UBports builds of Ubuntu "
+"Touch. "
+"But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+"אפליקציית OpenStore מותקנת כברירת מחדל בפתוח UBports של אובונטו טאץ '. "
+"אך אם אתה צריך להתקין את OpenStore באופן ידני, בצע את הצעדים הבאים:"
+
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr "OpenStore מתאפשר על ידי תורמים מדהימים רבים:"
+
+#, fuzzy
+#| msgid ""
+#| "The OpenStore is the official app store for Ubuntu Touch. "
+#| "It is an open source project run by a team of volunteers with help from "
+#| "the community. "
+#| "You can discover and install new apps on your Ubuntu Touch device. "
+#| "You can also upload and manage your own apps for publication. "
+#| "The OpenStore encourages the apps published within to be open source, "
+#| "but also accepts proprietary apps."
+msgid ""
+"The OpenStore is the official app store for Ubuntu Touch. "
+"It is an open source project run by a team of volunteers with help from the "
+"community. "
+"You can discover and install new apps on your Ubuntu Touch device. "
+"You can also upload and manage your own apps for publication. "
+"The OpenStore encourages the apps published within to be open source, but "
+"also accepts proprietary apps."
+msgstr ""
+"OpenStore היא חנות האפליקציות הרשמית של אובונטו טאץ '. "
+"זהו פרויקט קוד פתוח המנוהל על ידי צוות מתנדבים בעזרת הקהילה. "
+"אתה יכול לגלות ולהתקין אפליקציות חדשות במכשיר ה- Ubuntu Touch שלך. "
+"אתה יכול גם להעלות ולנהל אפליקציות משלך לפרסום. "
+"OpenStore מעודד את האפליקציות המתפרסמות בתוך קוד פתוח, אך מקבלת גם "
+"אפליקציות קנייניות."
+
+#, fuzzy
+#| msgid ""
+#| "The OpenStore respects your privacy. "
+#| "We don't track you or your device. "
+#| "You do not need an account to download and install apps and we do not "
+#| "track your downloads. "
+#| "For developer information we count the number of downloads per app "
+#| "revision. "
+#| "Information about your device (the cpu architecture, framework "
+#| "versions, OS version, and OS language) "
+#| "are sent to the server to allow it to filter apps to only what you can "
+#| "install and present your native language where possible. "
+#| "This information is not logged or stored and cannot be used to uniquely "
+#| "identify you."
+msgid ""
+"The OpenStore respects your privacy. "
+"We don't track you or your device. "
+"You do not need an account to download and install apps and we do not track "
+"your downloads. "
+"For developer information we count the number of downloads per app "
+"revision. "
+"Information about your device (the cpu architecture, framework versions, OS "
+"version, and OS language) "
+"are sent to the server to allow it to filter apps to only what you can "
+"install and present your native language where possible. "
+"This information is not logged or stored and cannot be used to uniquely "
+"identify you."
+msgstr ""
+"OpenStore מכבד את פרטיותך. "
+"אנחנו לא עוקבים אחריך ולא אחר המכשיר שלך. "
+"אינך זקוק לחשבון כדי להוריד ולהתקין אפליקציות ואנחנו לא עוקבים אחר "
+"ההורדות שלך. "
+"למידע על מפתחים אנו סופרים את מספר ההורדות לכל גרסת אפליקציה. "
+"מידע על המכשיר שלך (ארכיטקטורת המעבד, גרסאות המסגרת, גרסת מערכת ההפעלה "
+"ושפת מערכת ההפעלה) "
+"נשלחים לשרת כדי לאפשר לו לסנן אפליקציות רק למה שאתה יכול להתקין ולהציג את "
+"שפת האם שלך במידת האפשר. "
+"מידע זה אינו רשום או מאוחסן ולא ניתן להשתמש בו כדי לזהות אותך באופן "
+"ייחודי."
+
+msgid "The page you are looking for has been removed or does not exist"
+msgstr "הדף שאתה מחפש הוסר או לא קיים"
+
+#, fuzzy
+#| msgid ""
+#| "The source code for OpenStore related projects is available under the GPL "
+#| "v3. "
+#| "You can find the code on the OpenStore GitLab page."
+msgid ""
+"The source code for OpenStore related projects is available under the GPL "
+"v3. "
+"You can find the code on the OpenStore GitLab page."
+msgstr ""
+"קוד המקור לפרויקטים הקשורים ל- OpenStore זמין תחת GPL v3. "
+"אתה יכול למצוא את הקוד בדף OpenStore GitLab."
+
+msgid ""
+"There was an error trying to find this app, please refresh and try again."
+msgstr "אירעה שגיאה בניסיון למצוא את האפליקציה הזו, אנא רענן ונסה שוב."
+
+msgid ""
+"There was an error trying to load the app list, please refresh and try again."
+msgstr "אירעה שגיאה בניסיון לטעון את רשימת היישומים, אנא רענן ונסה שוב."
+
+msgid ""
+"There was an error trying to load the stats, please refresh and try again."
+msgstr "אירעה שגיאה בניסיון לטעון את הנתונים הסטטיסטיים. אנא רענן ונסה שוב."
+
+msgid "This app contains NSFW material"
+msgstr "יישום זה מכיל תוכן NSFW"
+
+msgid ""
+"This app does not have access to restricted system data, see permissions for "
+"more details"
+msgstr "לאפליקציה זו אין גישה לנתוני מערכת מוגבלים, ראה הרשאות לפרטים נוספים"
+
+msgid ""
+"This app has access to restricted system data, see permissions for more "
+"details"
+msgstr "לאפליקציה זו יש גישה לנתוני מערכת מוגבלים, ראה הרשאות לפרטים נוספים"
+
+#, fuzzy
+#| msgid ""
+#| "This is the unique identifier for your app. "
+#| "It must match exactly the \"name\" field in your click's manifest.json "
+#| "and must be all lowercase letters. "
+#| "For example: \"openstore.openstore-team\", where \"openstore\" is the "
+#| "app and \"openstore-team\" "
+#| "is the group or individual authoring the app."
+msgid ""
+"This is the unique identifier for your app. "
+"It must match exactly the \"name\" field in your click's manifest.json and "
+"must be all lowercase letters. "
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app "
+"and \"openstore-team\" "
+"is the group or individual authoring the app."
+msgstr ""
+"זהו המזהה הייחודי לאפליקציה שלך. "
+"עליו להתאים בדיוק לשדה ה\"שם \" ב- manifest.jsonועליו לכלול אותיות "
+"קטנות. "
+"לדוגמא: \"openstore.openstore-team\", כאשר \"openstore\" היא האפליקציה ו- "
+"\"openstore-team\" "
+"היא הקבוצה או האדם המחבר את האפליקציה."
+
+msgid "This revision is still available"
+msgstr "תיקון זה עדיין זמין"
+
+msgid "This will be added to the beginning of your current changelog"
+msgstr "זה יתווסף לתחילת רשימת השינויים הנוכחית שלך"
+
+msgid "Title"
+msgstr "כותרת"
+
+msgid "Title (A-Z)"
+msgstr "כותרת (A-Z)"
+
+msgid "Title (Z-A)"
+msgstr "כותרת (Z-A)"
+
+msgid "Total"
+msgstr "סה\"כ"
+
+msgid "Total downloads"
+msgstr "סה\"כ הורדות"
+
+msgid "Total:"
+msgstr "סה\"כ:"
+
+msgid "Translation Languages"
+msgstr "שפות תרגום"
+
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translation URL"
+msgstr "שפות תרגום"
+
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translations"
+msgstr "שפות תרגום"
+
+msgid "Try searching for something else"
+msgstr "נסה לחפש משהו אחר"
+
+msgid "Type"
+msgstr "סוג"
+
+msgid "Ubuntu Touch"
+msgstr "אובונטו טאץ'"
+
+msgid "Ubuntu Touch Apps"
+msgstr "אפליקציות אובונטו טאץ'"
+
+msgid "Uncategorized"
+msgstr "לא מסווג"
+
+msgid "Unrestricted read access to:"
+msgstr "גישה לקריאה ללא הגבלה ל:"
+
+msgid "Unrestricted write access to:"
+msgstr "גישה בלתי מוגבלת לכתיבה ל:"
+
+msgid "Updated"
+msgstr "מעודכן"
+
+msgid "Updated Apps"
+msgstr "אפליקציות מעודכנות"
+
+msgid "Updated Date"
+msgstr "תאריך עדכון"
+
+msgid "Upload Revision via:"
+msgstr "העלה תקון באמצעות:"
+
+msgid "URL"
+msgstr "קשור"
+
+msgid "URL of App from the Web"
+msgstr "קישור האפליקציה מהאינטרנט"
+
+msgid "User Metrics"
+msgstr "מדדי משתמשים"
+
+msgid "Version"
+msgstr "גרסה"
+
+msgid "Video"
+msgstr "וידאו"
+
+msgid "Video Files"
+msgstr "קבצי וידאו"
+
+msgid "Video URL"
+msgstr "קישור לוידאו"
+
+msgid "View Install Instructions"
+msgstr "צפו בהוראות ההתקנה"
+
+msgid "Violence"
+msgstr "אלימות"
+
+msgid "Web App"
+msgstr "אפליקציית אינטרנט"
+
+msgid "Web Apps"
+msgstr "יישומי אינטרנט"
+
+msgid "Webview"
+msgstr "תצוגת אינטרנט"
+
+msgid "Welcome %{name}!"
+msgstr "ברוך/ה הבא/ה %{name}!"
+
+msgid "Xenial"
+msgstr "Xenial"
+
+msgid "Yes"
+msgstr "כן"
+
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+
+msgid ""
+"You are only allowed to publish apps that you have permission to distribute."
+msgstr "מותר לפרסם רק אפליקציות שיש לך הרשאה להפיץ."
+
+msgid "You must read over the content policy detailed below."
+msgstr "עליך לקרוא את מדיניות התוכן המפורטת להלן."
+
+#, fuzzy
+#| msgid ""
+#| "Your app can be pulled without warning at the discretion of our admins. "
+#| "Where possible, we will contact you regarding any such actions."
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins. "
+"Where possible, we will contact you regarding any such actions."
+msgstr ""
+"ניתן למשוך את האפליקציה שלך ללא אזהרה על פי שיקול דעתם של מנהלינו. "
+"במידת האפשר, ניצור איתך קשר בנוגע לכל פעולה כזו."
+
+#~ msgid "Author"
+#~ msgstr "מחבר"
+
+#~ msgid "Framework"
+#~ msgstr "מסגרת"
+
+#~ msgid "Packager/Publisher"
+#~ msgstr "מתחזק/מפיץ"
+
+#~ msgid "Web App+"
+#~ msgstr "יישום אינטרנט+"

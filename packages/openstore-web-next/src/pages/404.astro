@@ -2,11 +2,15 @@
 export const prerender = false;
 
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { initializeI18N } from "@/lib/i18n";
+import { t } from "i18next";
+
+await initializeI18N("en_US");
 ---
 
-<BaseLayout title="OpenStore" pageTitle="OpenStore" description="The open source app store for Ubuntu Touch">
+<BaseLayout title="OpenStore" pageTitle="OpenStore" description={t("The open source app store for Ubuntu Touch")}>
   <section class="section text-center">
-    <h1 class="text-4xl">Not Found</h1>
-    <p>The app or page you are looking for could not be found. Try using the search bar.</p>
+    <h1 class="text-4xl">{t("Not Found")}</h1>
+    <p>{t("The app or page you are looking for could not be found. Try using the search bar.")}</p>
   </section>
 </BaseLayout>

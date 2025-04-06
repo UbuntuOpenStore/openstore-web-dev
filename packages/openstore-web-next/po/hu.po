@@ -1,0 +1,1263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openstore-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openstore-web 1.0.0 "
+"Report-Msgid-Bugs-To:  "
+"POT-Creation-Date: 2020-08-28 00:36-0400 "
+"PO-Revision-Date: 2022-08-11 18:31+0000 "
+"Last-Translator: Lundrin <berenyi.vilmos@tutanota.com> "
+"Language-Team: Hungarian <https://translate.ubports.com/projects/openstore/"
+"open-storeio/hu/> "
+"Language: hu "
+"MIME-Version: 1.0 "
+"Content-Type: text/plain; charset=UTF-8 "
+"Content-Transfer-Encoding: 8bit "
+"Plural-Forms: nplurals=2; plural=n != 1; "
+"X-Generator: Weblate 3.11.3 "
+
+#, fuzzy
+#| msgid ""
+#| "*This app contains NSFW content, to view the description and "
+#| "screenshots, click the above button."
+msgid ""
+"*This app contains NSFW content, to view the description and "
+"screenshots, click the above button."
+msgstr ""
+"*Az alkalmazás felnőtt tartalommal rendelkezik. A leírás és a "
+"képernyőkép megtekintéséhez kattintson a lenti gombra."
+
+msgid "%{name} was successfully deleted"
+msgstr "%{name} sikeresen törölve"
+
+msgid "A comma separated list of keywords"
+msgstr "Vesszővel elválasztott kifejezések listája"
+
+msgid "About"
+msgstr "Bővebben"
+
+msgid "About Us"
+msgstr "Rólunk"
+
+msgid "Accounts"
+msgstr "Fiókok"
+
+msgid "Add Another Architecture"
+msgstr "Másik architektúra hozáadása"
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "All Categories"
+msgstr "Összes kategória"
+
+#, fuzzy
+#| msgid "Channels"
+msgid "All Channels"
+msgstr "Csatornák"
+
+msgid "All Types"
+msgstr "Összes típus"
+
+msgid "An account is not needed to download or install apps."
+msgstr "Nem szükséges fiók az almalmazások letöltséhez vagy telepítéséhez."
+
+msgid "An error occured loading your app data"
+msgstr "Hiba történt az alkalmazás adatainak betöltése során"
+
+msgid "An unknown error has occurred"
+msgstr "Ismeretlen hiba történt"
+
+msgid ""
+"And many amazing developers, testers, and users from the OpenStore community!"
+msgstr ""
+"És még sok csodálatos fejlesztő, tesztelő és felhasználók az OpenStore "
+"közösségből!"
+
+#, fuzzy
+#| msgid ""
+#| "Any personal data you decide to give us (e.g. your email address when "
+#| "registering for an account to upload your apps) "
+#| "goes no further than us, "
+#| "and will not be used for anything other than allowing you to maintain "
+#| "your apps and, in rare cases, "
+#| "contact you in the event there is an issue with your app. "
+#| "Additionally, this site uses cookies to keep you logged in to your "
+#| "account."
+msgid ""
+"Any personal data you decide to give us (e.g. your email address when "
+"registering for an account to upload your apps) "
+"goes no further than us, "
+"and will not be used for anything other than allowing you to maintain your "
+"apps and, in rare cases, "
+"contact you in the event there is an issue with your app. "
+"Additionally, this site uses cookies to keep you logged in to your account."
+msgstr ""
+"Bármely személyes adata, melyet részünkre bocsát (pl. e-mail címe, melyet "
+"regisztrációkor megad) "
+"nem adjuk ki senki másnak, "
+"és nem használhatók semmi másra csak az almalmazások karbantartására, "
+"kivételes esetekben "
+"kapcsolatfelvételre Önnel ha probléma merülne fel valamelyik "
+"alkalmazással. "
+"Ezenkívül az almalmazás sütiket használ, a fiókba való bejelentkezés során."
+
+msgid "API Key"
+msgstr "API kulcs"
+
+msgid "App"
+msgstr "App"
+
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr ""
+"A fentiek bármelyikét tartalmazó vagy azt népszerűsítő alkalmazás szigorúan "
+"tiltott."
+
+msgid "App Name"
+msgstr "App neve"
+
+msgid "App Stats"
+msgstr "App statisztikák"
+
+msgid "App Submission Tutorial"
+msgstr ""
+
+msgid "App Title"
+msgstr "App címe"
+
+msgid "App Type"
+msgstr "App típusa"
+
+msgid "App Types"
+msgstr "App típusok"
+
+msgid "Apps"
+msgstr "Appok"
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing gambling involving real world money transactions are not "
+#| "allowed. "
+#| "This includes, but is not limited to, online casinos, betting, and "
+#| "lotteries."
+msgid ""
+"Apps containing gambling involving real world money transactions are not "
+"allowed. "
+"This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
+msgstr ""
+"Valós pénzzel végzett tranzakciókat és szerencsejátékokat tartalmazó "
+"alkalmazások nem engedélyezettek. "
+"Ez nem kizárólag de magában foglalja, az online kaszinókat, a fogadásokat és "
+"a lottókat."
+
+msgid ""
+"Apps containing or promoting child abuse or child sexual abuse are strictly "
+"prohibited."
+msgstr ""
+"Szigorúan tilosak a gyermekbántalmazást vagy a gyermekek szexuális "
+"bántalmazását "
+"tartalmazó vagy azokat népszerűsítő alkalmazások."
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting gratuitous violence are not allowed. "
+#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
+#| "making, self harm, and grotesque imagery."
+msgid ""
+"Apps containing or promoting gratuitous violence are not allowed. "
+"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"making, self harm, and grotesque imagery."
+msgstr ""
+"Az indokolatlan erőszakot tartalmazó vagy azt népszerűsítő alkalmazások nem "
+"engedélyezettek. "
+"Ez nem kizárólag de magában foglalja, az erőszakot, a terrorizmust, a bombák/"
+"fegyverek gyártását, az önkárosítást és a groteszk képeket."
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting sexually explicit content are not allowed. "
+#| "This includes, but is not limited to, pornography and services promoting "
+#| "sexually explicit content."
+msgid ""
+"Apps containing or promoting sexually explicit content are not allowed. "
+"This includes, but is not limited to, pornography and services promoting "
+"sexually explicit content."
+msgstr ""
+"Szexuális tartalommal rendelkező vagy azt népszerűsítő alkalmazások nem "
+"engedélyezettek. "
+"Ez nem kizárólag, de magában foglalja, a pornográfiát és a szexuális jellegű "
+"tartalmat népszerűsítő szolgáltatásokat."
+
+msgid ""
+"Apps not requiring manual review can be submitted by logging in with the "
+"\"Log In\" link above."
+msgstr ""
+"A manuális felülvizsgálatot nem igénylő alkalmazásokat a \"Bejelentkezés\" "
+"gombbal történő bejelentkezéssel lehet beküldeni."
+
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr ""
+"Az illegális tevékenységeket (az USA törvényei alapján) népszerűsítő "
+"alkalmazások nem engedélyezettek."
+
+msgid ""
+"Apps requiring manual review must be submitted by contacting an admin in our "
+"telegram group."
+msgstr ""
+"A kézi felülvizsgálatot igénylő alkalmazásokat úgy tudja beküldeni, hogy "
+"kapcsolatba lép a telegram csatornánk adminisztrátorával."
+
+#, fuzzy
+#| msgid ""
+#| "Apps that are found to be stealing the users data, trying to escalate "
+#| "their privileges without user consent, "
+#| "or executing malicious process are strictly prohibited."
+msgid ""
+"Apps that are found to be stealing the users data, trying to escalate their "
+"privileges without user consent, "
+"or executing malicious process are strictly prohibited."
+msgstr ""
+"Az az alkalmazás, melyről kiderül, hogy lopja a felhasználói adatokat és "
+"felhasználói beleegyezés nélkül  "
+"próbálja kiterjeszteni a jogosultságait vagy rosszindulatú folyamatokat hajt "
+"végre: szigorúan tiltott."
+
+#, fuzzy
+#| msgid ""
+#| "Apps uploaded to the OpenStore are subject to our submission rules and "
+#| "content policy. "
+#| "You can review the rules and policies before uploading your app."
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission rules and "
+"content policy. "
+"You can review the rules and policies before uploading your app."
+msgstr ""
+"Az OpenStore-ra feltöltött alkalmazásokra a beküldési szabályaink és a "
+"tartalmi irányelveink vonatkoznak. "
+"Az alkalmazás feltöltése előtt áttekintheti a szabályokat és irányelveket."
+
+msgid "Arch"
+msgstr "Arch"
+
+msgid "Architecture"
+msgstr "Architektúra"
+
+msgid "Audio"
+msgstr "Hang"
+
+msgid "Back"
+msgstr "Vissza"
+
+msgid "Badge"
+msgstr "Jelvény"
+
+msgid "Badges"
+msgstr "Jelvények"
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "Bookmark"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Browse"
+msgstr "Böngészés"
+
+msgid "Browse Apps"
+msgstr "Appok Böngészése"
+
+msgid "Bug Tracker"
+msgstr "Bug Tracker"
+
+msgid "Calendar"
+msgstr "Naptár"
+
+msgid "Camera"
+msgstr "Kamera"
+
+msgid "Cancel"
+msgstr "Mégsem"
+
+msgid "Category"
+msgstr "Kategória"
+
+msgid "Changelog"
+msgstr "Változáslista"
+
+msgid "Channel"
+msgstr "Csatorna"
+
+msgid "Channels"
+msgstr "Csatornák"
+
+msgid "Child Endangerment"
+msgstr "Gyermekveszélyeztetés"
+
+msgid "Choose a category"
+msgstr "Válasszon egy kategóriát"
+
+msgid "Choose a license"
+msgstr "Válasszon egy licencet"
+
+msgid "Choose a maintainer"
+msgstr "Válasszon egy fejlesztőt"
+
+msgid "Completed"
+msgstr ""
+
+msgid "Connectivity"
+msgstr "Hálózati kapcsolatok"
+
+msgid "Contact"
+msgstr "Kapcsolat"
+
+msgid "Contacts"
+msgstr "Névjegyek"
+
+msgid "Content Exchange"
+msgstr "Tartalom-csere"
+
+msgid "Content Exchange Source"
+msgstr "Tartalom-csere Forrás"
+
+msgid "Contributors"
+msgstr "Hozzájárulók"
+
+msgid "Copy to clipboard"
+msgstr "Másolás vágólapra"
+
+msgid "Count"
+msgstr "Szám"
+
+msgid "Create"
+msgstr "Létrehoz"
+
+msgid "Debug"
+msgstr "Hibakeresés"
+
+msgid "Delete"
+msgstr "Törlés"
+
+msgid "Description"
+msgstr "Leírás"
+
+msgid "Discovery"
+msgstr "Felfedezés"
+
+#, fuzzy
+#| msgid "Picture Files"
+msgid "Document Files"
+msgstr "Képfájlok"
+
+msgid "Donate"
+msgstr "Adományoz"
+
+msgid "Donate URL"
+msgstr "Adományozási URL"
+
+msgid "Download"
+msgstr "Letöltés"
+
+msgid "Download Stats"
+msgstr "Letöltési Statisztikák"
+
+msgid "Download the OpenStore App"
+msgstr "Openstore-App letöltése"
+
+msgid "Downloads"
+msgstr "Letöltések"
+
+msgid "Downloads of the latest version"
+msgstr "Legújabb verziót letöltötték"
+
+msgid "Drag and drop to sort screenshots."
+msgstr "Fogd és vidd a képernyőmentések rendezéséhez."
+
+msgid "Edit"
+msgstr "Szerkesztés"
+
+msgid "Error"
+msgstr "Hiba"
+
+msgid "Feeds"
+msgstr "Hírek"
+
+msgid "File"
+msgstr "Fájl"
+
+msgid "File Upload"
+msgstr "Fájl Feltöltése"
+
+msgid "Focal"
+msgstr ""
+
+#, fuzzy
+#| msgid ""
+#| "For any questions you may have or help you may need just chat with us in "
+#| "our telegram group. "
+#| "You can also submit issues, bugs, and feature requests to our GitLab "
+#| "bug tracker."
+msgid ""
+"For any questions you may have or help you may need just chat with us in our "
+"telegram group. "
+"You can also submit issues, bugs, and feature requests to our GitLab bug "
+"tracker."
+msgstr ""
+"Ha kérdésed van, vagy segítségre van szükséged, írj nekünk a telegram "
+"csoportunkban. "
+"Hibajelentéseket és funkció kéréseket a GitLab bug trackerünkön is leadhat."
+
+msgid "Full System Access"
+msgstr "Teljes Rendszerhozzáérés"
+
+msgid "Gambling"
+msgstr "Szerencsejáték"
+
+msgid "Get your badge"
+msgstr "Szerezze meg a jelvényét"
+
+#, fuzzy
+#| msgid ""
+#| "Give a short explanation why you can’t publish the app without extra "
+#| "privileges. "
+#| "No need to go into details, a one liner like \"needs to run a daemon in "
+#| "the background\" will do. "
+#| "List all the special features you have, if there are more."
+msgid ""
+"Give a short explanation why you can’t publish the app without extra "
+"privileges. "
+"No need to go into details, a one liner like \"needs to run a daemon in the "
+"background\" will do. "
+"List all the special features you have, if there are more."
+msgstr ""
+"Írjon egy rövid magyarázatot, mért nem tudja kiadni az alkalmazást extra "
+"hozzáférések nélkül. "
+"Nem kell részletekbe menni, egy egysoros, mint \"futtatnia kell egy daemon-"
+"t a háttérben\" megteszi. "
+"Sorolja fel a különleges funkcióit, ha több is van."
+
+msgid "Go back a page"
+msgstr "Vissza az előző oldalra"
+
+msgid "Go to the next page"
+msgstr "Lépés a következő oldalra"
+
+msgid "GPL v3 License"
+msgstr "GPL v3 Licenc"
+
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr "Zaklatás, Bullying, vagy Gyűlöletbeszéd"
+
+msgid "History"
+msgstr "Előzmények"
+
+msgid "Icon"
+msgstr "Ikon"
+
+msgid "ID"
+msgstr "ID"
+
+#, fuzzy
+#| msgid ""
+#| "If an application could be published without manual review if it wouldn’t "
+#| "be for that one cool feature, "
+#| "publish a stripped down version! "
+#| "Not everyone will want to install apps with less confinement."
+msgid ""
+"If an application could be published without manual review if it wouldn’t be "
+"for that one cool feature, "
+"publish a stripped down version! "
+"Not everyone will want to install apps with less confinement."
+msgstr ""
+"Ha egy alkalmazás nem adható ki manuális elbírálás nélkül, ha nem lenne az a "
+"különleges része, "
+"adjon ki egy visszafogottabb változatot! "
+"Nem mindenki szeretne telepíteni egy alkalmazást kevesebb elszigeteléssel."
+
+msgid "Illegal Activities"
+msgstr "Illegális Tevékenységek"
+
+msgid "In App Purchases"
+msgstr "Alkalmazáson belüli vásárlások"
+
+msgid "Info"
+msgstr "Infó"
+
+msgid "Install"
+msgstr "Telepítés"
+
+msgid "Install via the OpenStore app"
+msgstr "Letöltés az OpenStore alkalmazással"
+
+msgid "Jump to the first page"
+msgstr "Ugrás az első oldalra"
+
+msgid "Jump to the last page"
+msgstr "Ugrás az utolsó oldalra"
+
+msgid "Keep Display On"
+msgstr "Kijelző ébrentartása"
+
+msgid "Keep your api key private!"
+msgstr "Tartsa az API kulcsát titokban!"
+
+msgid "Keywords"
+msgstr "Kulcsszavak"
+
+msgid "Language"
+msgstr "Nyelv"
+
+msgid "Latest Update"
+msgstr "Legfrissebb"
+
+msgid "Least Popular"
+msgstr ""
+
+msgid "License"
+msgstr "Licensz"
+
+msgid "Location"
+msgstr "Tartózkodási hely"
+
+msgid "Locked"
+msgstr "Lezárva"
+
+msgid "Log In"
+msgstr "Bejelentkezés"
+
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr "Lépjen be az OpenStore-ba hogy kezelhesse az alkalmazásait."
+
+msgid "Log Out"
+msgstr "Kijelentkezés"
+
+msgid "Login"
+msgstr "Bejelentkezés"
+
+msgid "Login to submit your app"
+msgstr "Lépjen be, hogy kiadhassa az alkalmazását"
+
+msgid "Login via GitHub"
+msgstr "Bejelentkezés Github-bal"
+
+msgid "Login via GitLab"
+msgstr "Bejelentkezés Gitlab-bal"
+
+msgid "Login via Ubuntu One"
+msgstr "Bejelentkezés Ubuntu One-nal"
+
+msgid "Maintainer"
+msgstr "Fejlesztő"
+
+msgid "Malware"
+msgstr "Kártékony Szoftver"
+
+msgid "Manage"
+msgstr "Kezelés"
+
+msgid "Manage Apps"
+msgstr "Alkalmazás Kezelése"
+
+msgid "Microphone"
+msgstr "Mikrofon"
+
+msgid "Most Popular"
+msgstr ""
+
+msgid "Music Files"
+msgstr "Zenei fájlok"
+
+msgid "Name"
+msgstr "Név"
+
+msgid "Navigate to the downloads folder"
+msgstr "Navigálás a letöltések mappába"
+
+msgid "Networking"
+msgstr "Hálózatok"
+
+msgid "New Apps"
+msgstr "Új Alkalmazások"
+
+msgid "New Revision"
+msgstr "Új Verzió"
+
+msgid "New revision for %{channel} was created!"
+msgstr "Új verzió létrehozva %{channel}-hoz!"
+
+msgid "New Revision for %{name}"
+msgstr "Új verzió %{name}-hoz"
+
+msgid "New revisions for %{channel} were created!"
+msgstr "Új verziók létrehozva %{channel}-hoz!"
+
+msgid "Newest"
+msgstr "Legújabb"
+
+msgid "NFC"
+msgstr ""
+
+msgid "No"
+msgstr "Nem"
+
+msgid "No apps found."
+msgstr "Nem találtunk ilyen alkalmazást."
+
+msgid "No longer available"
+msgstr "Már nem elérhető"
+
+msgid "None"
+msgstr "Nincs"
+
+msgid "Not published"
+msgstr "Nincs kiadva"
+
+msgid "NSFW"
+msgstr "NSFW"
+
+msgid "NSFW content"
+msgstr "NSFW tartalom (18+)"
+
+#, fuzzy
+#| msgid "Version"
+msgid "Older Versions"
+msgstr "Verzió"
+
+msgid "Oldest"
+msgstr "Legrégebbi"
+
+msgid "Oldest Update"
+msgstr "Legrégebben frissítve"
+
+#, fuzzy
+#| msgid ""
+#| "One of the main goals of the OpenStore is to provide a safe app store for "
+#| "people of all ages. "
+#| "To accomplish this goal we do not allow certain types of app to be "
+#| "published. "
+#| "Failure to follow the guidelines will result in your app being removed. "
+#| "Any account with serious infractions may be subject to termination. "
+#| "The OpenStore team thanks you for helping us promote a better environment "
+#| "for everyone."
+msgid ""
+"One of the main goals of the OpenStore is to provide a safe app store for "
+"people of all ages. "
+"To accomplish this goal we do not allow certain types of app to be "
+"published. "
+"Failure to follow the guidelines will result in your app being removed. "
+"Any account with serious infractions may be subject to termination. "
+"The OpenStore team thanks you for helping us promote a better environment "
+"for everyone."
+msgstr ""
+"Az OpenStore egyik fő célja egy biztonságos alkalmazásáruház biztosítása az "
+"összes korosztály számára. "
+"Ezen cél elérése érdekében bizonyos típusú alkalmazásokat nem engedünk "
+"kiadni. "
+"A megszabott szabályok megszegése az alkalmazás eltávolításához vezet. "
+"Súlyos szabályszegés a felhasználó tiltásához vezethet. "
+"Az OpenStore csapat köszöni a segítségét egy mindenkinek jobb környezet "
+"létrehozásában."
+
+#, fuzzy
+#| msgid ""
+#| "Only open source applications allowed for manual review: "
+#| "As the applications might have arbitrary access to the device, every "
+#| "manually reviewed app will get a source code review."
+msgid ""
+"Only open source applications allowed for manual review: "
+"As the applications might have arbitrary access to the device, every "
+"manually reviewed app will get a source code review."
+msgstr ""
+"Csak nyílt forráskódú alkalmazásokat lehet manuális elbírálásra benyújtani: "
+"Mivel az alkalmazásoknak lehet korlátlan hozzáférése a készülékhez, ezért "
+"minden manuálisan elbírált alkalmazás kódját auditálják."
+
+#, fuzzy
+#| msgid ""
+#| "Only YouTube videos are supported at this time. Make sure the url is for "
+#| "the embedded video!"
+msgid ""
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
+msgstr ""
+"Jelenleg csak YouTube videók támogatottak. Győződjön meg, hogy az url a "
+"beágyazott videóé!"
+
+msgid "Open the terminal app"
+msgstr "Nyissa meg a terminál alkalmazást"
+
+msgid "OpenStore API/Server Contributors"
+msgstr "OpenStore API/Server Hozzájárulók"
+
+msgid "OpenStore App Content Policy"
+msgstr "OpenStore Alkalmazások Tartalmi Szabályzata"
+
+msgid "OpenStore App Contributors"
+msgstr "OpenStore Alkalmazás Hozzájárulói"
+
+msgid "OpenStore Badges"
+msgstr "OpenStore Jelvények"
+
+msgid "OpenStore group on Telegram"
+msgstr "OpenStore csoport Telegramon"
+
+msgid "OpenStore source on GitLab"
+msgstr "OpenStore forráskód GitLab-on"
+
+msgid "OpenStore Website Contributors"
+msgstr "OpenStore Honlap Hozzájárulói"
+
+msgid "Override Type"
+msgstr "Override Type"
+
+msgid "Package Info"
+msgstr "Csomag Infó"
+
+msgid "Page Not Found"
+msgstr "Oldal Nem Található"
+
+msgid "Permissions"
+msgstr "Jogosultságok"
+
+msgid "Picture Files"
+msgstr "Képfájlok"
+
+msgid "Presentation"
+msgstr "Prezentáció"
+
+msgid "Processing"
+msgstr ""
+
+msgid "Prohibited Apps"
+msgstr "Tiltott Alkalmazások"
+
+msgid "Promote your app on the OpenStore!"
+msgstr "Hirdesse az alkalmazását az OpenStore-on!"
+
+#, fuzzy
+#| msgid ""
+#| "Promote your app on the OpenStore! Add these badges to your website, "
+#| "code repository, social media, or anywhere on the internet. The badges "
+#| "are available in several different languages and in both PNG and SVG "
+#| "formats."
+msgid ""
+"Promote your app on the OpenStore! Add these badges to your website, "
+"code repository, social media, or anywhere on the internet. The badges "
+"are available in several different languages and in both PNG and SVG "
+"formats."
+msgstr ""
+"Hirdesse az alkalmazását az OpenStore-on! Adja hozzá ezeket a jelvényeket a "
+"honlapjához, Kód tárolójához, közösségi médiájához, vagy bárhol az "
+"interneten. A jelvények elérhetők több különböző nyelven PNG és SVG "
+"formátumban is."
+
+msgid "Public Link"
+msgstr "Nyilvános Link"
+
+msgid "Publish"
+msgstr "Kiadás"
+
+msgid "Published"
+msgstr "Kiadva"
+
+msgid "Published Date"
+msgstr "Kiadás Dátuma"
+
+#, fuzzy
+#| msgid "Published"
+msgid "Publisher"
+msgstr "Kiadva"
+
+msgid "Push Notifications"
+msgstr "Push értesítések"
+
+#, fuzzy
+#| msgid "Read Picture Files"
+msgid "Read Document Files"
+msgstr "Képfájlok olvasása"
+
+msgid "Read Music Files"
+msgstr "Zenei fájlok olvasása"
+
+msgid "Read Picture Files"
+msgstr "Képfájlok olvasása"
+
+msgid "Read Video Files"
+msgstr "Videófájlok olvasása"
+
+msgid "Relevance"
+msgstr "Relevancia"
+
+msgid "Report an Issue"
+msgstr "Hiba Jelentése"
+
+msgid "Restricted permission"
+msgstr "Korlátozott Engedélyek"
+
+msgid "Review Exceptions"
+msgstr ""
+
+#, fuzzy
+#| msgid "Webview"
+msgid "Reviews"
+msgstr "Webview"
+
+msgid "Revision"
+msgstr "Verzió"
+
+msgid "RSS Feeds"
+msgstr "RSS Feeds"
+
+msgid "Rules for Submission"
+msgstr "Kiadás Feltételei"
+
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr "Feltételek a Manuális Elbírálást Igénylő Kiadásokhoz"
+
+msgid "Run the command:"
+msgstr "Futtassa a parancsot:"
+
+msgid "Save"
+msgstr "Mentés"
+
+msgid "Screenshots"
+msgstr "Képernyőmentések"
+
+msgid "Screenshots (Limit 5)"
+msgstr "Képernyőmentések (max. 5)"
+
+msgid "Search"
+msgstr "Keresés"
+
+msgid ""
+"Send us a link to a repository for your app to our telegram group along with "
+"some instructions on how to build it."
+msgstr ""
+"Küldjön egy linket az alkalmazása repository-jához a telegram csoportunkban "
+"egy rövid útmutatóval a buildeléséhez."
+
+msgid "Sensors"
+msgstr "Szenzorok"
+
+msgid "Sexually Explicit Content"
+msgstr "Szexuális Tartalom"
+
+msgid "Show All Revisions"
+msgstr "Összes Verzió Mutatása"
+
+msgid "Show NSFW Content"
+msgstr "NSFW Tartalom Mutatása"
+
+msgid "Site Status"
+msgstr "Honlap Státusz"
+
+msgid "Sort By"
+msgstr "Rendezés"
+
+msgid "Source"
+msgstr "Forráskód"
+
+msgid "Source Code"
+msgstr "Forráskód"
+
+msgid "Source URL"
+msgstr "Forráskód URL"
+
+msgid "Stats"
+msgstr "Statisztika"
+
+msgid "Status"
+msgstr "Státusz"
+
+msgid "Submit"
+msgstr "Küldés"
+
+msgid "Submit App"
+msgstr "Alkalmazás Kiadása"
+
+msgid "Submit your app"
+msgstr "Adja ki az alkalmazását"
+
+msgid "Success"
+msgstr "Siker"
+
+msgid "Support"
+msgstr "Támogatás"
+
+msgid "Support URL"
+msgstr "Támogatás URL"
+
+msgid "Tag Line"
+msgstr "Címkék"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Terms"
+msgstr "Felhasználási feltételek"
+
+msgid "The app you are looking for has been removed or does not exist"
+msgstr "A keresett alkalmazást eltávolították, vagy nem létezik"
+
+#, fuzzy
+#| msgid ""
+#| "The apps available for download from the OpenStore have their own "
+#| "licencing and terms. "
+#| "Consult each individual app's page for more information."
+msgid ""
+"The apps available for download from the OpenStore have their own licencing "
+"and terms. "
+"Consult each individual app's page for more information."
+msgstr ""
+"Az OpenStore-ról letölthető alkalmazások mind külön, saját licenc "
+"szabályzattal rendelkeznek. "
+"Keresse fel az adott alkalmazás oldalát további információért."
+
+msgid "The changes to %{name} were saved!"
+msgstr "Változtatások a(z) %{name}-hoz mentve!"
+
+#, fuzzy
+#| msgid ""
+#| "The OpenStore a non-profit volunteer project. "
+#| "Although every effort is made to ensure that everything in the "
+#| "repository is safe to install, you use it AT YOUR OWN RISK. "
+#| "Apps uploaded to the OpenStore will be subject to an automated review "
+#| "process or "
+#| "a manual review process to check for potential security or privacy "
+#| "issues. "
+#| "This checking is far from exhaustive though, and there are no "
+#| "guarantees."
+msgid ""
+"The OpenStore a non-profit volunteer project. "
+"Although every effort is made to ensure that everything in the repository is "
+"safe to install, you use it AT YOUR OWN RISK. "
+"Apps uploaded to the OpenStore will be subject to an automated review "
+"process or "
+"a manual review process to check for potential security or privacy issues. "
+"This checking is far from exhaustive though, and there are no guarantees."
+msgstr ""
+"Az OpenStore egy non-profit önkéntesek által fenntartott projekt. "
+"Bár mindent megteszünk, hogy minden a tárunkban megbízható, és "
+"biztonságosan telepíthető, csak SAJÁT FELELŐSSÉGÉRE HASZNÁLJA. "
+"Az OpenStore-ra feltöltött alkalmazások átesnek egy automatizált "
+"elbíráláson, vagy "
+"egy manuális elbírálási eljáráson potenciális biztonsági és adatvédelmi "
+"hibák kiszűrése érdekében. "
+"Ezek az ellenőrzések azonban korántsem kimerítőek és semmit sem "
+"garantálhatunk."
+
+#, fuzzy
+#| msgid ""
+#| "The OpenStore app is installed by default on the UBports builds of Ubuntu "
+#| "Touch. "
+#| "But if you need to install the OpenStore manually, follow these steps:"
+msgid ""
+"The OpenStore app is installed by default on the UBports builds of Ubuntu "
+"Touch. "
+"But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+"Az OpenStore alkalmazás alapból telepítve van a UBports által fejlesztett "
+"Ubuntu Touch rendszereken. "
+"Ha azonban manuálisan kell telepítenie, kövesse ezeket a lépéseket:"
+
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr "Az OpenStore-t számos nagyszerű hozzájáruló tette lehetővé:"
+
+#, fuzzy
+#| msgid ""
+#| "The OpenStore is the official app store for Ubuntu Touch. "
+#| "It is an open source project run by a team of volunteers with help from "
+#| "the community. "
+#| "You can discover and install new apps on your Ubuntu Touch device. "
+#| "You can also upload and manage your own apps for publication. "
+#| "The OpenStore encourages the apps published within to be open source, "
+#| "but also accepts proprietary apps."
+msgid ""
+"The OpenStore is the official app store for Ubuntu Touch. "
+"It is an open source project run by a team of volunteers with help from the "
+"community. "
+"You can discover and install new apps on your Ubuntu Touch device. "
+"You can also upload and manage your own apps for publication. "
+"The OpenStore encourages the apps published within to be open source, but "
+"also accepts proprietary apps."
+msgstr ""
+"Az OpenStore a hivatalos alkalmazás áruháza az Ubuntu Touch-nak. "
+"Ez egy nyílt forráskódú projekt, melyet egy csapat önkéntes vezet a "
+"közösség segítségével. "
+"Felfedezhet és telepíthet új alkalmazásokat az Ubuntu Touch Készülékére. "
+"Feltöltheti és kezelheti a saját alkalmazásait, amiket ki szeretne adni. "
+"Az OpenStore támogatja, hogy a kiadott alkalmazások nyílt forráskódúak "
+"legyenek, de zárt forráskódú programokat is elfogad."
+
+#, fuzzy
+#| msgid ""
+#| "The OpenStore respects your privacy. "
+#| "We don't track you or your device. "
+#| "You do not need an account to download and install apps and we do not "
+#| "track your downloads. "
+#| "For developer information we count the number of downloads per app "
+#| "revision. "
+#| "Information about your device (the cpu architecture, framework "
+#| "versions, OS version, and OS language) "
+#| "are sent to the server to allow it to filter apps to only what you can "
+#| "install and present your native language where possible. "
+#| "This information is not logged or stored and cannot be used to uniquely "
+#| "identify you."
+msgid ""
+"The OpenStore respects your privacy. "
+"We don't track you or your device. "
+"You do not need an account to download and install apps and we do not track "
+"your downloads. "
+"For developer information we count the number of downloads per app "
+"revision. "
+"Information about your device (the cpu architecture, framework versions, OS "
+"version, and OS language) "
+"are sent to the server to allow it to filter apps to only what you can "
+"install and present your native language where possible. "
+"This information is not logged or stored and cannot be used to uniquely "
+"identify you."
+msgstr ""
+"Az OpenStore tiszteletben tartja az adataihoz való jogát. "
+"Nem követjük nyomon önt vagy a készülékét. "
+"Nincs szüksége felhasználói fiókra, hogy letöltsön és telepítsen "
+"alkalmazásokat, nem követjük nyomon a letöltéseit. "
+"Fejlesztői információnak számon tartjuk a letöltések számát "
+"alkalmazásverziónként. "
+"Készüléke információi (processzorarchitektúra, framework verzió, operációs "
+"rendszer verzió, és rendszer nyelve) "
+"elküldésre kerülnek a szervernek, hogy szűrje csak azokat az "
+"alkalmazásokat, amiket telepíteni tud, és az anyanyelvét jelenítse meg, ha "
+"lehetséges. "
+"Ezt az információt nem tároljuk, és nem lehet felhasználni az ön "
+"azonosítására."
+
+msgid "The page you are looking for has been removed or does not exist"
+msgstr "A keresett oldalt eltávolították, vagy nem létezik"
+
+#, fuzzy
+#| msgid ""
+#| "The source code for OpenStore related projects is available under the GPL "
+#| "v3. "
+#| "You can find the code on the OpenStore GitLab page."
+msgid ""
+"The source code for OpenStore related projects is available under the GPL "
+"v3. "
+"You can find the code on the OpenStore GitLab page."
+msgstr ""
+"Az OpenStore-hoz tartozó projektek GPL v3 licenc alatt érhetők el. "
+"A forráskódot megtekintheti az OpenStore GitLab oldalán."
+
+msgid ""
+"There was an error trying to find this app, please refresh and try again."
+msgstr ""
+"Hiba történt az alkalmazás keresése közben, kérem frissítse az oldalt és "
+"próbálja újra."
+
+msgid ""
+"There was an error trying to load the app list, please refresh and try again."
+msgstr ""
+"Hiba történt az alkalmazáslista betöltése közben, kérem frissítse az oldalt "
+"és próbálja újra."
+
+msgid ""
+"There was an error trying to load the stats, please refresh and try again."
+msgstr ""
+"Hiba történt az statisztika betöltése közben, kérem frissítse az oldalt és "
+"próbálja újra."
+
+msgid "This app contains NSFW material"
+msgstr "Ez az alkalmazás NSFW (18+) tartalmat tartalmaz"
+
+msgid ""
+"This app does not have access to restricted system data, see permissions for "
+"more details"
+msgstr ""
+"Ez az alkalmazás nem fér hozzá a lezárt rendszer adataihoz, nézze meg az "
+"engedélyeket a részletekért"
+
+msgid ""
+"This app has access to restricted system data, see permissions for more "
+"details"
+msgstr ""
+"Ez az alkalmazás hozzá fér a lezárt rendszer adataihoz, nézze meg az "
+"engedélyeket a részletekért"
+
+#, fuzzy
+#| msgid ""
+#| "This is the unique identifier for your app. "
+#| "It must match exactly the \"name\" field in your click's manifest.json "
+#| "and must be all lowercase letters. "
+#| "For example: \"openstore.openstore-team\", where \"openstore\" is the "
+#| "app and \"openstore-team\" "
+#| "is the group or individual authoring the app."
+msgid ""
+"This is the unique identifier for your app. "
+"It must match exactly the \"name\" field in your click's manifest.json and "
+"must be all lowercase letters. "
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app "
+"and \"openstore-team\" "
+"is the group or individual authoring the app."
+msgstr ""
+"Ez az azonosítója az alkalmazásának. "
+"Ennek pontosan meg kell egyeznie a \"name\" mezővel a click manifest.json "
+"fájljában és csak kisbetűs lehet. "
+"Pl.: \"openstore.openstore-team\", ahol \"openstore\" az alkalmazás, és "
+"\"openstore-team\" "
+"a csapat vagy személy, aki fejleszti az alkalmazást."
+
+msgid "This revision is still available"
+msgstr "Ez a verzió még mindig elérhető"
+
+msgid "This will be added to the beginning of your current changelog"
+msgstr "Ez a szöveg a jelenlegi újdonságok lista tetejére fog kerülni"
+
+msgid "Title"
+msgstr "Név"
+
+msgid "Title (A-Z)"
+msgstr "Név (A-Z)"
+
+msgid "Title (Z-A)"
+msgstr "Név (Z-A)"
+
+msgid "Total"
+msgstr "Összes"
+
+msgid "Total downloads"
+msgstr "Összes letöltés"
+
+msgid "Total:"
+msgstr "Összes:"
+
+msgid "Translation Languages"
+msgstr "Lefordított Nyelvek"
+
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translation URL"
+msgstr "Lefordított Nyelvek"
+
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translations"
+msgstr "Lefordított Nyelvek"
+
+msgid "Try searching for something else"
+msgstr "Próbáljon keresni valami mást"
+
+msgid "Type"
+msgstr "Típus"
+
+msgid "Ubuntu Touch"
+msgstr "Ubuntu Touch"
+
+msgid "Ubuntu Touch Apps"
+msgstr "Ubuntu Touch Alkalmazások"
+
+msgid "Uncategorized"
+msgstr "Nem kategorizált"
+
+msgid "Unrestricted read access to:"
+msgstr "Korlátozatlan olvasási hozzáférés ehhez:"
+
+msgid "Unrestricted write access to:"
+msgstr "Korlátozatlan írási hozzáférés ehhez:"
+
+msgid "Updated"
+msgstr "Frissítve"
+
+msgid "Updated Apps"
+msgstr "Frissített Alkalmazások"
+
+msgid "Updated Date"
+msgstr "Frissítés Dátuma"
+
+msgid "Upload Revision via:"
+msgstr "Verzió feltöltése ezzel:"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "URL of App from the Web"
+msgstr "Alkalmazás URL címe az internetről"
+
+msgid "User Metrics"
+msgstr "Felhasználói metrika"
+
+msgid "Version"
+msgstr "Verzió"
+
+msgid "Video"
+msgstr "Videó"
+
+msgid "Video Files"
+msgstr "Videófájlok"
+
+msgid "Video URL"
+msgstr "Videó URL"
+
+msgid "View Install Instructions"
+msgstr "Telepítési Útmutató Megtekintése"
+
+msgid "Violence"
+msgstr "Erőszak"
+
+msgid "Web App"
+msgstr "WebApp"
+
+msgid "Web Apps"
+msgstr "WebAppok"
+
+msgid "Webview"
+msgstr "Webview"
+
+msgid "Welcome %{name}!"
+msgstr "Üdvözöljük %{name}!"
+
+msgid "Xenial"
+msgstr "Xenial"
+
+msgid "Yes"
+msgstr "Igen"
+
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+
+msgid ""
+"You are only allowed to publish apps that you have permission to distribute."
+msgstr ""
+"Csak olyan alkalmazásokat adhat ki, melyek terjesztéséhet engedélye van."
+
+msgid "You must read over the content policy detailed below."
+msgstr "El kell olvasnia a lenti tartalmi szabályzatot."
+
+#, fuzzy
+#| msgid ""
+#| "Your app can be pulled without warning at the discretion of our admins. "
+#| "Where possible, we will contact you regarding any such actions."
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins. "
+"Where possible, we will contact you regarding any such actions."
+msgstr ""
+"Az alkalmazását az adminisztrátorok figyelmeztetés nélkül eltávolíthatják, "
+"ha szükségesnek látják. "
+"Amennyiben lehetséges, kapcsolatba lépünk önnel ilyen helyzetekben."
+
+#~ msgid "Author"
+#~ msgstr "Közzétevő"
+
+#~ msgid "Framework"
+#~ msgstr "Framework"
+
+#~ msgid "Packager/Publisher"
+#~ msgstr "Csomagoló/Kiadó"
+
+#~ msgid "Web App+"
+#~ msgstr "WebApp+"

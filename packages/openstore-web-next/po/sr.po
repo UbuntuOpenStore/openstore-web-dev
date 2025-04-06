@@ -1,0 +1,1104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openstore-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openstore-web 1.0.0 "
+"Report-Msgid-Bugs-To:  "
+"POT-Creation-Date: 2019-11-30 00:38-0500 "
+"PO-Revision-Date: 2021-07-24 23:19+0000 "
+"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch> "
+"Language-Team: Serbian <https://translate.ubports.com/projects/openstore/"
+"open-storeio/sr/> "
+"Language: sr "
+"MIME-Version: 1.0 "
+"Content-Type: text/plain; charset=UTF-8 "
+"Content-Transfer-Encoding: 8bit "
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2; "
+"X-Generator: Weblate 3.11.3 "
+
+msgid ""
+"*This app contains NSFW content, to view the description and "
+"screenshots, click the above button."
+msgstr ""
+"*Ова апликација поседује садржај који није прикладан ако сте на радном "
+"месту "
+"Да бисте видели опис и слике екрана, кликните на дугме изнад."
+
+msgid "%{name} was successfully deleted"
+msgstr "Успешно обрисано: %{name}"
+
+msgid "A comma separated list of keywords"
+msgstr "Листа кључних речи одвојена зарезима"
+
+msgid "About"
+msgstr "О програму"
+
+msgid "About Us"
+msgstr "О нама"
+
+msgid "Accounts"
+msgstr "Налози"
+
+msgid "Add Another Architecture"
+msgstr "Додај другу архитектуру"
+
+msgid "Admin"
+msgstr ""
+
+msgid "All Categories"
+msgstr "Све категорије"
+
+#, fuzzy
+#| msgid "Channels"
+msgid "All Channels"
+msgstr "Канали"
+
+msgid "All Types"
+msgstr "Сви типови"
+
+msgid "An account is not needed to download or install apps."
+msgstr "Није потребан налог за преузимање или инсталирање апликација."
+
+msgid "An error occured loading your app data"
+msgstr "Десила се грешка током учитавања података ваше апликације"
+
+msgid "An unknown error has occurred"
+msgstr "Десила се непозната грешка"
+
+msgid ""
+"And many amazing developers, testers, and users from the OpenStore community!"
+msgstr ""
+"И многи други сјајни програмери, тестери и корисници из OpenStore заједнице!"
+
+msgid ""
+"Any personal data you decide to give us (e.g. your email address when "
+"registering for an account to upload your apps) "
+"goes no further than us, "
+"and will not be used for anything other than allowing you to maintain your "
+"apps and, in rare cases, "
+"contact you in the event there is an issue with your app. "
+"Additionally, this site uses cookies to keep you logged in to your account."
+msgstr ""
+"Било какви приватни подаци које нам дате (нпр. Ваша емаил адреса током "
+"регистрације налога) не иду даље од нас, "
+"и неће бити коришћени низашта друго него да Вам омогуће да одржавате своје "
+"апликације и, у ретким случајевима, "
+"да можемо да Вас контактирамо у случају да постоји проблем са Вашом "
+"апликацијом. "
+"Уз то, овај сајт користи колачиће да бисте могли остати улоговани на свој "
+"налог."
+
+msgid "API Key"
+msgstr "API кључ"
+
+msgid "App"
+msgstr "Апликација"
+
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr ""
+"Апликације које садже или промовише било шта од наведеног су строго "
+"забрањене."
+
+msgid "App Name"
+msgstr "Назив апликације"
+
+msgid "App Stats"
+msgstr "Статистика апликације"
+
+msgid "App Submission Tutorial"
+msgstr ""
+
+msgid "App Title"
+msgstr "Наслов апликације"
+
+msgid "App Type"
+msgstr "Тип апликације"
+
+msgid "App Types"
+msgstr "Типови апликација"
+
+msgid "Apps"
+msgstr "Апликације"
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing gambling involving real world money transactions are not "
+#| "allowed. "
+#| "This includes, but is not limited to, online casinos, betting, and "
+#| "lotteries."
+msgid ""
+"Apps containing gambling involving real world money transactions are not "
+"allowed. "
+"This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
+msgstr ""
+"Апликације које се баве коцкањем и које укључују праве новчане трансакције, "
+"нису дозвољене. "
+"Ово укључује, али се не ограничава на, онлајн казино, кладионице и лутрије."
+
+msgid ""
+"Apps containing or promoting child abuse or child sexual abuse are strictly "
+"prohibited."
+msgstr ""
+"Апликације које се баве или промовишу злостављање деце или сексуалну "
+"експлоатацију деце су строго забрањене."
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting gratuitous violence are not allowed. "
+#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
+#| "making, self harm, and grotesque imagery."
+msgid ""
+"Apps containing or promoting gratuitous violence are not allowed. "
+"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"making, self harm, and grotesque imagery."
+msgstr ""
+"Апликације које промовишу неоправдано насиље су забрањене. "
+"Ово уклључује, али се не ограничава на, насиље, тероризам, прављење оружја/"
+"бомби, само-повређивање и гротескне слике."
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting sexually explicit content are not allowed. "
+#| "This includes, but is not limited to, pornography and services promoting "
+#| "sexually explicit content."
+msgid ""
+"Apps containing or promoting sexually explicit content are not allowed. "
+"This includes, but is not limited to, pornography and services promoting "
+"sexually explicit content."
+msgstr ""
+"Апликације које садрже или промовишу сексуално експлицитан садржај нису "
+"дозвољене. "
+"Ово уклључује, али се не ограничава на, порнографију и услуге које промовишу "
+"сексуално експлицитан садржај."
+
+msgid ""
+"Apps not requiring manual review can be submitted by logging in with the "
+"\"Log In\" link above."
+msgstr ""
+"Апликације које не захтевају мануалну проверу могу да се предају тако што се "
+"улогујете кликом на горњи линк \"Пријава\"."
+
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr ""
+"Апликације које промовишу илегалне активности (у складу са законом у САД) су "
+"забрањене."
+
+msgid ""
+"Apps requiring manual review must be submitted by contacting an admin in our "
+"telegram group."
+msgstr ""
+"Апликације које захтевају мануалну проверу морају да се предају "
+"контактирањем неког од администратора у нашој Telegram групи."
+
+#, fuzzy
+#| msgid ""
+#| "Apps that are found to be stealing the users data, trying to escalate "
+#| "their privileges without user consent, "
+#| "or executing malicious process are strictly prohibited."
+msgid ""
+"Apps that are found to be stealing the users data, trying to escalate their "
+"privileges without user consent, "
+"or executing malicious process are strictly prohibited."
+msgstr ""
+"Апликације за које се утврди да краду корисничке податке, покушавају да "
+"остваре веће привилегије "
+"без дозволе корисника или извршавају малициозан код, ће бити строго "
+"забрањене."
+
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission rules and "
+"content policy. "
+"You can review the rules and policies before uploading your app."
+msgstr ""
+"Апликације предате на OpenStore подлежу нашим условима објављивања као и "
+"полисом "
+"дозвољеног садржаја. Прегледајте прво та правила и полису пре предаје "
+"апликације."
+
+msgid "Arch"
+msgstr ""
+
+msgid "Architecture"
+msgstr "Архитектура"
+
+msgid "Audio"
+msgstr "Звук"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Badge"
+msgstr "Беџ"
+
+msgid "Badges"
+msgstr "Беџеви"
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "Bookmark"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Browse"
+msgstr "Преглед"
+
+msgid "Browse Apps"
+msgstr "Преглед апликација"
+
+msgid "Bug Tracker"
+msgstr "Пријава кварова"
+
+msgid "Calendar"
+msgstr "Календар"
+
+msgid "Camera"
+msgstr "Камера"
+
+msgid "Cancel"
+msgstr "Одустани"
+
+msgid "Category"
+msgstr "Категорија"
+
+msgid "Changelog"
+msgstr "Листа измена"
+
+msgid "Channel"
+msgstr "Канал"
+
+msgid "Channels"
+msgstr "Канали"
+
+msgid "Child Endangerment"
+msgstr "Угрожавање деце"
+
+msgid "Choose a category"
+msgstr "Одаберите категорију"
+
+msgid "Choose a license"
+msgstr "Одаберите лиценцу"
+
+msgid "Choose a maintainer"
+msgstr "Одаберите особу за одржавање"
+
+msgid "Completed"
+msgstr ""
+
+msgid "Connectivity"
+msgstr "Повезивост"
+
+msgid "Contact"
+msgstr "Контакт"
+
+msgid "Contacts"
+msgstr "Контакти"
+
+msgid "Content Exchange"
+msgstr "Размена садржаја"
+
+msgid "Content Exchange Source"
+msgstr "Извор размене садржаја"
+
+msgid "Contributors"
+msgstr "Сарадници"
+
+msgid "Copy to clipboard"
+msgstr "Копирај у клипборд"
+
+msgid "Count"
+msgstr "Количина"
+
+msgid "Create"
+msgstr "Направи"
+
+msgid "Debug"
+msgstr "Debug"
+
+msgid "Delete"
+msgstr "Обриши"
+
+msgid "Description"
+msgstr "Опис"
+
+msgid "Discovery"
+msgstr "Откриће"
+
+#, fuzzy
+#| msgid "Picture Files"
+msgid "Document Files"
+msgstr "Слике"
+
+msgid "Donate"
+msgstr "Донације"
+
+msgid "Donate URL"
+msgstr "Линк за донације"
+
+msgid "Download"
+msgstr "Преузмите"
+
+msgid "Download Stats"
+msgstr "Преузмите статистику"
+
+msgid "Download the OpenStore App"
+msgstr "Преузмите апликацију OpenStore"
+
+msgid "Downloads"
+msgstr "Преузимања"
+
+msgid "Downloads of the latest version"
+msgstr "Преузимања последње верзије"
+
+msgid "Drag and drop to sort screenshots."
+msgstr "Превуците и пустите да бисте сортирали снимке екрана."
+
+msgid "Edit"
+msgstr "Измени"
+
+msgid "Error"
+msgstr "Грешка"
+
+msgid "Feeds"
+msgstr "Извори"
+
+msgid "File"
+msgstr "Фајл"
+
+msgid "File Upload"
+msgstr "Слање фајла"
+
+msgid "Focal"
+msgstr ""
+
+msgid ""
+"For any questions you may have or help you may need just chat with us in our "
+"telegram group. "
+"You can also submit issues, bugs, and feature requests to our GitLab bug "
+"tracker."
+msgstr ""
+"Ако имате било какво питање или Вам је потребна помоћ, слободно проћаскајте "
+"са нама у нашој Telegram групи. "
+"Такође, можете нам пријавити проблеме, багове, као и послати предлог нових "
+"функционалности на наш GitLab bug tracker."
+
+msgid "Full System Access"
+msgstr "Потпуни приступ систему"
+
+msgid "Gambling"
+msgstr "Коцкање"
+
+msgid "Get your badge"
+msgstr "Узмите Ваш беџ"
+
+msgid ""
+"Give a short explanation why you can’t publish the app without extra "
+"privileges. "
+"No need to go into details, a one liner like \"needs to run a daemon in the "
+"background\" will do. "
+"List all the special features you have, if there are more."
+msgstr ""
+"Напишите кратко објашњење зашто Ваша апликаиција захтева додатне "
+"привилегије. "
+"Нема потребе да идете превише у детаље, довољно је кратко написати нпр. "
+"\"треба да покрене сервис у позадини\". Наведите све посебне функционалности "
+"које "
+"постоје, уколико их има више."
+
+msgid "Go back a page"
+msgstr "Назад на претходну страну"
+
+msgid "Go to the next page"
+msgstr "Напред на следећу страну"
+
+msgid "GPL v3 License"
+msgstr "GPL v3 лиценца"
+
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr "Узнемиравање, малтретирање или говор мржње"
+
+msgid "History"
+msgstr "Историја"
+
+msgid "Icon"
+msgstr "Иконица"
+
+msgid "ID"
+msgstr "Идентификатор"
+
+msgid ""
+"If an application could be published without manual review if it wouldn’t be "
+"for that one cool feature, "
+"publish a stripped down version! "
+"Not everyone will want to install apps with less confinement."
+msgstr ""
+
+msgid "Illegal Activities"
+msgstr "Илегалне активности"
+
+msgid "In App Purchases"
+msgstr "Куповина унутар апликације"
+
+msgid "Info"
+msgstr "Инфо"
+
+msgid "Install"
+msgstr "Инсталирај"
+
+msgid "Install via the OpenStore app"
+msgstr "Инсталирајте кроз OpenStore апликацију"
+
+msgid "Jump to the first page"
+msgstr "Скок на прву страну"
+
+msgid "Jump to the last page"
+msgstr "Скок на последњу страну"
+
+msgid "Keep Display On"
+msgstr "Одржава екран укључен"
+
+msgid "Keep your api key private!"
+msgstr "Заштитите приватност вашег АПИ кључа!"
+
+msgid "Keywords"
+msgstr "Кључне речи"
+
+msgid "Language"
+msgstr "Језик"
+
+msgid "Latest Update"
+msgstr "Најновија верзија"
+
+msgid "Least Popular"
+msgstr ""
+
+msgid "License"
+msgstr "Лиценца"
+
+msgid "Location"
+msgstr "Локација"
+
+msgid "Locked"
+msgstr ""
+
+msgid "Log In"
+msgstr "Пријава"
+
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr "Улогујте се на OpenStore да бисте управљали Вашим апликацијама."
+
+msgid "Log Out"
+msgstr "Одјава"
+
+msgid "Login"
+msgstr "Пријава"
+
+msgid "Login to submit your app"
+msgstr "Пријавите се да бисте предали своју апликацију"
+
+msgid "Login via GitHub"
+msgstr "Пријава путем GitHub-a"
+
+msgid "Login via GitLab"
+msgstr "Пријава путем GitLab-a"
+
+#, fuzzy
+#| msgid "Login via Ubuntu"
+msgid "Login via Ubuntu One"
+msgstr "Пријава путем Ubuntu-a"
+
+msgid "Maintainer"
+msgstr "Особа за одржавање"
+
+msgid "Malware"
+msgstr "Злонамеран програм"
+
+msgid "Manage"
+msgstr "Управљај"
+
+msgid "Manage Apps"
+msgstr "Управљај апликацијама"
+
+msgid "Microphone"
+msgstr "Микрофон"
+
+msgid "Most Popular"
+msgstr ""
+
+msgid "Music Files"
+msgstr "Музички фајлови"
+
+msgid "Name"
+msgstr "Назив"
+
+msgid "Navigate to the downloads folder"
+msgstr "Иди на фолдер за преузимања"
+
+msgid "Networking"
+msgstr "Мрежа"
+
+msgid "New Apps"
+msgstr "Нове апликације"
+
+msgid "New Revision"
+msgstr "Нова ревизија"
+
+msgid "New revision for %{channel} was created!"
+msgstr "Креирана је нова ревизија за %{channel}!"
+
+msgid "New Revision for %{name}"
+msgstr "Нова ревизија за %{name}"
+
+msgid "New revisions for %{channel} were created!"
+msgstr "Креиране су нове ревизије за %{channel}!"
+
+msgid "Newest"
+msgstr "Најновије"
+
+msgid "NFC"
+msgstr ""
+
+msgid "No"
+msgstr "Не"
+
+msgid "No apps found."
+msgstr "Нема пронађених апликација."
+
+msgid "No longer available"
+msgstr "Није више доступно"
+
+msgid "None"
+msgstr "Ниједно"
+
+msgid "Not published"
+msgstr "Није објављено"
+
+msgid "NSFW"
+msgstr "Није адекватно ако сте на радном месту"
+
+msgid "NSFW content"
+msgstr "Садржај који није прикладан за радно место"
+
+#, fuzzy
+#| msgid "Version"
+msgid "Older Versions"
+msgstr "Верзија"
+
+msgid "Oldest"
+msgstr "Најстарије"
+
+msgid "Oldest Update"
+msgstr "Најстарија верзија"
+
+#, fuzzy
+#| msgid ""
+#| "One of the main goals of the OpenStore is to provide a safe app store for "
+#| "people of all ages. "
+#| "To accomplish this goal we do not allow certain types of app to be "
+#| "published. "
+#| "Failure to follow the guidelines will result in your app being removed. "
+#| "Any account with serious infractions may be subject to termination. "
+#| "The OpenStore team thanks you for helping us promote a better environment "
+#| "for everyone."
+msgid ""
+"One of the main goals of the OpenStore is to provide a safe app store for "
+"people of all ages. "
+"To accomplish this goal we do not allow certain types of app to be "
+"published. "
+"Failure to follow the guidelines will result in your app being removed. "
+"Any account with serious infractions may be subject to termination. "
+"The OpenStore team thanks you for helping us promote a better environment "
+"for everyone."
+msgstr ""
+"Један од главних циљева OpenStore-а је да пружи могућност преузимања "
+"безбедних апликација, за људе свих узраста. "
+"Да бисмо постигли тај циљ, објављивање одређених типова апликација не "
+"дозвољавамо. "
+"Уколико не будете пратили упутства, може се десити да Ваша апликација буде "
+"уклоњена. "
+"Сваки налог са озбиљним прекршајима може бити подложан укидању. "
+"OpenStore тим Вам захваљује што нам помажете у промовисању бољег окружења за "
+"све."
+
+msgid ""
+"Only open source applications allowed for manual review: "
+"As the applications might have arbitrary access to the device, every "
+"manually reviewed app will get a source code review."
+msgstr ""
+"За ручни преглед дозвољене су само апликације отвореног кода: "
+"Како апликације могу имати произвољни приступ уређају, свака ручно "
+"прегледана апликација ће имати прегледан изворни код."
+
+#, fuzzy
+#| msgid ""
+#| "Only YouTube videos are supported at this time. Make sure the url is for "
+#| "the embedded video!"
+msgid ""
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
+msgstr ""
+"Тренутно су подржани само YouTube видео снимци. Проверите да ли је линк "
+"намењен за ембедовање!"
+
+msgid "Open the terminal app"
+msgstr "Отворите апликацију за терминал"
+
+msgid "OpenStore API/Server Contributors"
+msgstr "Сарадници за OpenStore API/Server"
+
+msgid "OpenStore App Content Policy"
+msgstr "Полиса садржаја за OpenStore"
+
+msgid "OpenStore App Contributors"
+msgstr "Сарадници за OpenStore апликацију"
+
+msgid "OpenStore Badges"
+msgstr "Беџеви за OpenStore"
+
+msgid "OpenStore group on Telegram"
+msgstr "Telegram група за OpenStore"
+
+msgid "OpenStore source on GitLab"
+msgstr "Изворни код за OpenStore на GitLab-у"
+
+msgid "OpenStore Website Contributors"
+msgstr "Сарадници за OpenStore веб сајт"
+
+msgid "Override Type"
+msgstr ""
+
+msgid "Package Info"
+msgstr "Инфо о пакету"
+
+msgid "Page Not Found"
+msgstr "Страница није пронађена"
+
+msgid "Permissions"
+msgstr "Дозволе"
+
+msgid "Picture Files"
+msgstr "Слике"
+
+msgid "Presentation"
+msgstr "Презентација"
+
+msgid "Processing"
+msgstr ""
+
+msgid "Prohibited Apps"
+msgstr "Забрањене апликације"
+
+msgid "Promote your app on the OpenStore!"
+msgstr "Промовишите Вашу апликацију на OpenStore!"
+
+msgid ""
+"Promote your app on the OpenStore! Add these badges to your website, "
+"code repository, social media, or anywhere on the internet. The badges "
+"are available in several different languages and in both PNG and SVG "
+"formats."
+msgstr ""
+
+msgid "Public Link"
+msgstr "Јавни линк"
+
+msgid "Publish"
+msgstr "Објави"
+
+msgid "Published"
+msgstr "Објављено"
+
+msgid "Published Date"
+msgstr "Датум објаве"
+
+#, fuzzy
+#| msgid "Published"
+msgid "Publisher"
+msgstr "Објављено"
+
+msgid "Push Notifications"
+msgstr "Push нотификације"
+
+#, fuzzy
+#| msgid "Read Picture Files"
+msgid "Read Document Files"
+msgstr "Читање слика"
+
+msgid "Read Music Files"
+msgstr "Читање музичких фајлова"
+
+msgid "Read Picture Files"
+msgstr "Читање слика"
+
+msgid "Read Video Files"
+msgstr "Читање видео снимака"
+
+msgid "Relevance"
+msgstr "Релевантност"
+
+msgid "Report an Issue"
+msgstr "Пријавите проблем"
+
+msgid "Restricted permission"
+msgstr "Ограничене дозволе"
+
+msgid "Review Exceptions"
+msgstr ""
+
+#, fuzzy
+#| msgid "Revision"
+msgid "Reviews"
+msgstr "Ревизија"
+
+msgid "Revision"
+msgstr "Ревизија"
+
+msgid "RSS Feeds"
+msgstr "Извори за RSS"
+
+msgid "Rules for Submission"
+msgstr "Правила за објављивање"
+
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr "Правила за објављивања која захтевају мануелни преглед"
+
+msgid "Run the command:"
+msgstr "Покрени команду:"
+
+msgid "Save"
+msgstr "Сними"
+
+msgid "Screenshots"
+msgstr "Снимци екрана"
+
+msgid "Screenshots (Limit 5)"
+msgstr "Снимци екрана (макс. 5)"
+
+msgid "Search"
+msgstr "Претрага"
+
+msgid ""
+"Send us a link to a repository for your app to our telegram group along with "
+"some instructions on how to build it."
+msgstr ""
+"Пошаљите нам линк ка репозиторијуму за Вашу апликацију на нашу Telegram "
+"групу, заједно са неким инструкцијама како да то избилдамо."
+
+msgid "Sensors"
+msgstr "Сензори"
+
+msgid "Sexually Explicit Content"
+msgstr "Сексуално експлицитан садржај"
+
+#, fuzzy
+#| msgid "New Revision"
+msgid "Show All Revisions"
+msgstr "Нова ревизија"
+
+msgid "Show NSFW Content"
+msgstr "Прикажи садржај који није прикладан за радно место"
+
+msgid "Site Status"
+msgstr "Статус сајта"
+
+msgid "Sort By"
+msgstr "Сортирање по"
+
+msgid "Source"
+msgstr "Извор"
+
+#, fuzzy
+#| msgid "Source"
+msgid "Source Code"
+msgstr "Извор"
+
+msgid "Source URL"
+msgstr "Линк на извор"
+
+msgid "Stats"
+msgstr "Статистика"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Submit"
+msgstr "Пошаљи"
+
+msgid "Submit App"
+msgstr "Предај апликацију"
+
+msgid "Submit your app"
+msgstr "Предајте Вашу апликацију"
+
+msgid "Success"
+msgstr "Успех"
+
+msgid "Support"
+msgstr "Подршка"
+
+msgid "Support URL"
+msgstr "Линк за подршку"
+
+msgid "Tag Line"
+msgstr "Таг линија"
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Terms"
+msgstr "Услови"
+
+msgid "The app you are looking for has been removed or does not exist"
+msgstr "Апликација коју тражите је уклоњена или не постоји"
+
+msgid ""
+"The apps available for download from the OpenStore have their own licencing "
+"and terms. "
+"Consult each individual app's page for more information."
+msgstr ""
+
+msgid "The changes to %{name} were saved!"
+msgstr ""
+
+msgid ""
+"The OpenStore a non-profit volunteer project. "
+"Although every effort is made to ensure that everything in the repository is "
+"safe to install, you use it AT YOUR OWN RISK. "
+"Apps uploaded to the OpenStore will be subject to an automated review "
+"process or "
+"a manual review process to check for potential security or privacy issues. "
+"This checking is far from exhaustive though, and there are no guarantees."
+msgstr ""
+
+msgid ""
+"The OpenStore app is installed by default on the UBports builds of Ubuntu "
+"Touch. "
+"But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr ""
+
+msgid ""
+"The OpenStore is the official app store for Ubuntu Touch. "
+"It is an open source project run by a team of volunteers with help from the "
+"community. "
+"You can discover and install new apps on your Ubuntu Touch device. "
+"You can also upload and manage your own apps for publication. "
+"The OpenStore encourages the apps published within to be open source, but "
+"also accepts proprietary apps."
+msgstr ""
+
+msgid ""
+"The OpenStore respects your privacy. "
+"We don't track you or your device. "
+"You do not need an account to download and install apps and we do not track "
+"your downloads. "
+"For developer information we count the number of downloads per app "
+"revision. "
+"Information about your device (the cpu architecture, framework versions, OS "
+"version, and OS language) "
+"are sent to the server to allow it to filter apps to only what you can "
+"install and present your native language where possible. "
+"This information is not logged or stored and cannot be used to uniquely "
+"identify you."
+msgstr ""
+
+msgid "The page you are looking for has been removed or does not exist"
+msgstr "Страница коју тражите је уклоњена или не постоји"
+
+msgid ""
+"The source code for OpenStore related projects is available under the GPL "
+"v3. "
+"You can find the code on the OpenStore GitLab page."
+msgstr ""
+
+msgid ""
+"There was an error trying to find this app, please refresh and try again."
+msgstr ""
+
+msgid ""
+"There was an error trying to load the app list, please refresh and try again."
+msgstr ""
+
+msgid ""
+"There was an error trying to load the stats, please refresh and try again."
+msgstr ""
+
+msgid "This app contains NSFW material"
+msgstr ""
+
+msgid ""
+"This app does not have access to restricted system data, see permissions for "
+"more details"
+msgstr ""
+
+msgid ""
+"This app has access to restricted system data, see permissions for more "
+"details"
+msgstr ""
+
+msgid ""
+"This is the unique identifier for your app. "
+"It must match exactly the \"name\" field in your click's manifest.json and "
+"must be all lowercase letters. "
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app "
+"and \"openstore-team\" "
+"is the group or individual authoring the app."
+msgstr ""
+
+msgid "This revision is still available"
+msgstr ""
+
+msgid "This will be added to the beginning of your current changelog"
+msgstr ""
+
+msgid "Title"
+msgstr "Наслов"
+
+msgid "Title (A-Z)"
+msgstr "Наслов (А-Ш)"
+
+msgid "Title (Z-A)"
+msgstr "Наслов (Ш-А)"
+
+msgid "Total"
+msgstr "Укупно"
+
+msgid "Total downloads"
+msgstr "Укупно преузимања"
+
+msgid "Total:"
+msgstr "Укупно:"
+
+msgid "Translation Languages"
+msgstr ""
+
+msgid "Translation URL"
+msgstr ""
+
+msgid "Translations"
+msgstr ""
+
+msgid "Try searching for something else"
+msgstr "Пробајте да тражите нешто друго"
+
+msgid "Type"
+msgstr ""
+
+msgid "Ubuntu Touch"
+msgstr ""
+
+msgid "Ubuntu Touch Apps"
+msgstr ""
+
+msgid "Uncategorized"
+msgstr ""
+
+msgid "Unrestricted read access to:"
+msgstr ""
+
+msgid "Unrestricted write access to:"
+msgstr ""
+
+msgid "Updated"
+msgstr ""
+
+msgid "Updated Apps"
+msgstr ""
+
+msgid "Updated Date"
+msgstr ""
+
+msgid "Upload Revision via:"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+msgid "URL of App from the Web"
+msgstr ""
+
+msgid "User Metrics"
+msgstr ""
+
+msgid "Version"
+msgstr "Верзија"
+
+msgid "Video"
+msgstr "Видео"
+
+msgid "Video Files"
+msgstr ""
+
+msgid "Video URL"
+msgstr ""
+
+msgid "View Install Instructions"
+msgstr "Погледајте инструкције за инсталацију"
+
+msgid "Violence"
+msgstr "Насиље"
+
+msgid "Web App"
+msgstr "Web App"
+
+msgid "Web Apps"
+msgstr ""
+
+msgid "Webview"
+msgstr ""
+
+msgid "Welcome %{name}!"
+msgstr "Добродошли %{name}!"
+
+msgid "Xenial"
+msgstr ""
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+
+msgid ""
+"You are only allowed to publish apps that you have permission to distribute."
+msgstr ""
+
+msgid "You must read over the content policy detailed below."
+msgstr ""
+
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins. "
+"Where possible, we will contact you regarding any such actions."
+msgstr ""
+
+#~ msgid "Author"
+#~ msgstr "Аутор"
+
+#~ msgid "Chat with us on Telegram"
+#~ msgstr "Ћаскајте са нама путем Telegram-a"
+
+#~ msgid "Fork us on GitLab"
+#~ msgstr "Форкујте нас на GitLab-у"
+
+#~ msgid "Framework"
+#~ msgstr "Фрејмворк"
+
+#~ msgid "Packager/Publisher"
+#~ msgstr "Пакује/Објављује"
+
+#~ msgid "Scope"
+#~ msgstr "Подручје"
+
+#~ msgid "Scopes"
+#~ msgstr "Подручја"
+
+#~ msgid "Web App+"
+#~ msgstr "Web App+"

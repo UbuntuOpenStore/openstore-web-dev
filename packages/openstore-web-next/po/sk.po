@@ -1,0 +1,1036 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openstore-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openstore-web 1.0.0 "
+"Report-Msgid-Bugs-To:  "
+"POT-Creation-Date: 2019-11-30 00:38-0500 "
+"PO-Revision-Date: 2020-07-29 12:38+0000 "
+"Last-Translator: dano6 <dano.kutka@gmail.com> "
+"Language-Team: Slovak <https://translate.ubports.com/projects/openstore/open-"
+"storeio/sk/> "
+"Language: sk "
+"MIME-Version: 1.0 "
+"Content-Type: text/plain; charset=UTF-8 "
+"Content-Transfer-Encoding: 8bit "
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2; "
+"X-Generator: Weblate 3.11.3 "
+
+msgid ""
+"*This app contains NSFW content, to view the description and "
+"screenshots, click the above button."
+msgstr ""
+"*Táto aplikácia obsahuje materiály určené iba pre dospelých, pre navštívenie "
+"obsahu, "
+"popisov a snímok obrazovky, kliknite na vyššie uvedené tlačidlo."
+
+msgid "%{name} was successfully deleted"
+msgstr "%{name} bol úspešne vymazaný"
+
+msgid "A comma separated list of keywords"
+msgstr "Zoznam kľúčových slov oddelených čiarkou"
+
+msgid "About"
+msgstr "O OpenStore"
+
+msgid "About Us"
+msgstr "O nás"
+
+msgid "Accounts"
+msgstr "Účty"
+
+msgid "Add Another Architecture"
+msgstr "Pridať ďalšiu architektúru"
+
+msgid "Admin"
+msgstr ""
+
+msgid "All Categories"
+msgstr "Všetky kategórie"
+
+#, fuzzy
+#| msgid "Channels"
+msgid "All Channels"
+msgstr "Kanály"
+
+msgid "All Types"
+msgstr "Všetky typy"
+
+msgid "An account is not needed to download or install apps."
+msgstr ""
+"Na stiahnutie, alebo inštaláciu aplikácií, nie je potrebné mať zriadený účet."
+
+msgid "An error occured loading your app data"
+msgstr "Pri nahrávaní dát aplikácie prišlo k chybe"
+
+msgid "An unknown error has occurred"
+msgstr "Prišlo k neznámej chybe"
+
+msgid ""
+"And many amazing developers, testers, and users from the OpenStore community!"
+msgstr ""
+"A veľa úžasných vývojárov, testerov a používateľov z OpenStore komunity!"
+
+msgid ""
+"Any personal data you decide to give us (e.g. your email address when "
+"registering for an account to upload your apps) "
+"goes no further than us, "
+"and will not be used for anything other than allowing you to maintain your "
+"apps and, in rare cases, "
+"contact you in the event there is an issue with your app. "
+"Additionally, this site uses cookies to keep you logged in to your account."
+msgstr ""
+
+msgid "API Key"
+msgstr "API kľúč"
+
+msgid "App"
+msgstr "Aplikácia"
+
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr ""
+"Aplikácia obsahujúce alebo propagujúce čokoľvek z vyššie uvedeného sú prísne "
+"zakázané."
+
+msgid "App Name"
+msgstr "Názov aplikácie"
+
+msgid "App Stats"
+msgstr "Štatistiky aplikácie"
+
+msgid "App Submission Tutorial"
+msgstr ""
+
+msgid "App Title"
+msgstr "Názov aplikácie"
+
+msgid "App Type"
+msgstr "Druh aplikácie"
+
+msgid "App Types"
+msgstr "Typy aplikácie"
+
+msgid "Apps"
+msgstr "Aplikácie"
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing gambling involving real world money transactions are not "
+#| "allowed. "
+#| "This includes, but is not limited to, online casinos, betting, and "
+#| "lotteries."
+msgid ""
+"Apps containing gambling involving real world money transactions are not "
+"allowed. "
+"This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
+msgstr ""
+"Aplikácie obsahujúce hazard so skutočnými peniazmi, niesú dovolené. "
+"To zahrňuje aj, ale nejde výlučne iba o online kasína, stávkovanie, a "
+"lotérie."
+
+msgid ""
+"Apps containing or promoting child abuse or child sexual abuse are strictly "
+"prohibited."
+msgstr ""
+"Aplikácie obsahujúce, alebo propagujúce zneužívanie detí, či sexuálne "
+"zneužívanie detí sú prístne zakázané."
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting sexually explicit content are not allowed. "
+#| "This includes, but is not limited to, pornography and services promoting "
+#| "sexually explicit content."
+msgid ""
+"Apps containing or promoting gratuitous violence are not allowed. "
+"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"making, self harm, and grotesque imagery."
+msgstr ""
+"Aplikácie obsahujúce, alebo propagujúce sexuálne chúlostivý obsah niesú "
+"povolené. "
+"To zahŕňa aj, ale nie výlučne iba pornografiu a služby propagujúce sexuálne "
+"chúlostivý obsah."
+
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting sexually explicit content are not allowed. "
+#| "This includes, but is not limited to, pornography and services promoting "
+#| "sexually explicit content."
+msgid ""
+"Apps containing or promoting sexually explicit content are not allowed. "
+"This includes, but is not limited to, pornography and services promoting "
+"sexually explicit content."
+msgstr ""
+"Aplikácie obsahujúce, alebo propagujúce sexuálne chúlostivý obsah niesú "
+"povolené. "
+"To zahŕňa aj, ale nie výlučne iba pornografiu a služby propagujúce sexuálne "
+"chúlostivý obsah."
+
+msgid ""
+"Apps not requiring manual review can be submitted by logging in with the "
+"\"Log In\" link above."
+msgstr ""
+"Aplikácie, ktoré nevyžadujú manuálne kontrolovanie, môžu byť pridané po "
+"prihlásení sa pomocou vyššie uvedeného odkazu \"Prihlásiť sa\"."
+
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr ""
+"Aplikácie podporujúce nelegálne činnosti (podľa práv v USA) niesú dovolené."
+
+msgid ""
+"Apps requiring manual review must be submitted by contacting an admin in our "
+"telegram group."
+msgstr ""
+"Aplikácie, ktoré vyžadujú manuálne kontrolovanie, musia byť predložené pred "
+"správcu v našej skupine na Telegrame."
+
+msgid ""
+"Apps that are found to be stealing the users data, trying to escalate their "
+"privileges without user consent, "
+"or executing malicious process are strictly prohibited."
+msgstr ""
+
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission rules and "
+"content policy. "
+"You can review the rules and policies before uploading your app."
+msgstr ""
+"Aplikácie nahrané do OpenStore podliehajú naším pravidlám pre odovzdávanie, "
+"a zásadám o obsahu. "
+"Pred nahraním aplikácie si môžete pravidlá a zásady skontrolovať."
+
+msgid "Arch"
+msgstr ""
+
+msgid "Architecture"
+msgstr "Architektúra"
+
+msgid "Audio"
+msgstr "Zvuk"
+
+msgid "Back"
+msgstr "Späť"
+
+msgid "Badge"
+msgstr "Značenie"
+
+msgid "Badges"
+msgstr "Značenia"
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "Bookmark"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Browse"
+msgstr "Hľadať"
+
+msgid "Browse Apps"
+msgstr "Prehľadávať aplikácie"
+
+msgid "Bug Tracker"
+msgstr ""
+
+msgid "Calendar"
+msgstr "Kalendár"
+
+msgid "Camera"
+msgstr "Fotoaparát"
+
+msgid "Cancel"
+msgstr "Zrušiť"
+
+msgid "Category"
+msgstr "Kategória"
+
+msgid "Changelog"
+msgstr "Zoznam zmien"
+
+msgid "Channel"
+msgstr "Kanál"
+
+msgid "Channels"
+msgstr "Kanály"
+
+msgid "Child Endangerment"
+msgstr "Ohrozenie dieťaťa"
+
+msgid "Choose a category"
+msgstr "Vyberte kategóriu"
+
+msgid "Choose a license"
+msgstr "Vyberte licenciu"
+
+msgid "Choose a maintainer"
+msgstr "Vyberte správcu"
+
+msgid "Completed"
+msgstr ""
+
+msgid "Connectivity"
+msgstr "Pripojenie"
+
+msgid "Contact"
+msgstr "Kontakt"
+
+msgid "Contacts"
+msgstr "Kontakty"
+
+msgid "Content Exchange"
+msgstr "Zdieľaný obsah"
+
+msgid "Content Exchange Source"
+msgstr "Spravovanie zdieľaného obsahu"
+
+msgid "Contributors"
+msgstr "Prispievatelia"
+
+msgid "Copy to clipboard"
+msgstr "Kopírovať do schránky"
+
+msgid "Count"
+msgstr "Celkovo"
+
+msgid "Create"
+msgstr "Vytvoriť"
+
+msgid "Debug"
+msgstr "Odskúšať"
+
+msgid "Delete"
+msgstr "Vymazať"
+
+msgid "Description"
+msgstr "Popis"
+
+msgid "Discovery"
+msgstr "Objavovať"
+
+#, fuzzy
+#| msgid "Picture Files"
+msgid "Document Files"
+msgstr "Subory s obrázkami"
+
+msgid "Donate"
+msgstr "Darovať"
+
+msgid "Donate URL"
+msgstr "Darovacia URL adresa"
+
+msgid "Download"
+msgstr "Stiahnúť"
+
+msgid "Download Stats"
+msgstr "Štatistiky stiahnutí"
+
+msgid "Download the OpenStore App"
+msgstr "Stiahnúť aplikáciu OpenStore"
+
+msgid "Downloads"
+msgstr "Sťahovania"
+
+msgid "Downloads of the latest version"
+msgstr "Počet stiahnutí poslednej verzie"
+
+msgid "Drag and drop to sort screenshots."
+msgstr "Uchopte, a pretiahnite pre zoradenie snímkov."
+
+msgid "Edit"
+msgstr "Upraviť"
+
+msgid "Error"
+msgstr "Chyba"
+
+msgid "Feeds"
+msgstr "Zdroje"
+
+msgid "File"
+msgstr "Súbor"
+
+msgid "File Upload"
+msgstr "Nahrať súbor"
+
+msgid "Focal"
+msgstr ""
+
+msgid ""
+"For any questions you may have or help you may need just chat with us in our "
+"telegram group. "
+"You can also submit issues, bugs, and feature requests to our GitLab bug "
+"tracker."
+msgstr ""
+
+msgid "Full System Access"
+msgstr "Úplný prístup k systému"
+
+msgid "Gambling"
+msgstr "Hazard"
+
+msgid "Get your badge"
+msgstr "Získajte svoj odznak"
+
+msgid ""
+"Give a short explanation why you can’t publish the app without extra "
+"privileges. "
+"No need to go into details, a one liner like \"needs to run a daemon in the "
+"background\" will do. "
+"List all the special features you have, if there are more."
+msgstr ""
+
+msgid "Go back a page"
+msgstr "Naspäť o jednu stranu"
+
+msgid "Go to the next page"
+msgstr "Prejsť na následujúcu stranu"
+
+msgid "GPL v3 License"
+msgstr "Licencia GPL v3"
+
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr ""
+
+msgid "History"
+msgstr "História"
+
+msgid "Icon"
+msgstr "Ikonka"
+
+msgid "ID"
+msgstr ""
+
+msgid ""
+"If an application could be published without manual review if it wouldn’t be "
+"for that one cool feature, "
+"publish a stripped down version! "
+"Not everyone will want to install apps with less confinement."
+msgstr ""
+
+msgid "Illegal Activities"
+msgstr "Nelegálne činnosti"
+
+msgid "In App Purchases"
+msgstr "Nákupy v aplikácii"
+
+msgid "Info"
+msgstr "Informácie"
+
+msgid "Install"
+msgstr "Inštalovať"
+
+msgid "Install via the OpenStore app"
+msgstr "Inštalovať cez aplikáciu OpenStore"
+
+msgid "Jump to the first page"
+msgstr "Preskočiť na prvú stranu"
+
+msgid "Jump to the last page"
+msgstr "Preskočiť na poslednú stranu"
+
+msgid "Keep Display On"
+msgstr "Ponechať zapnutý displej"
+
+msgid "Keep your api key private!"
+msgstr "Ponechajte svoj API kľúč v súkromí!"
+
+msgid "Keywords"
+msgstr "Kľúčové slová"
+
+msgid "Language"
+msgstr "Jazyk"
+
+msgid "Latest Update"
+msgstr "Najnovšia aktualizácia"
+
+msgid "Least Popular"
+msgstr ""
+
+msgid "License"
+msgstr "Licencia"
+
+msgid "Location"
+msgstr "Umiestnenie"
+
+msgid "Locked"
+msgstr ""
+
+msgid "Log In"
+msgstr "Prihlásiť sa"
+
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr "Prihláste sa do OpenStore, aby ste mohli spravovať svoje aplikácie."
+
+msgid "Log Out"
+msgstr "Odhlásiť sa"
+
+msgid "Login"
+msgstr "Prihlásenie"
+
+msgid "Login to submit your app"
+msgstr "Prihláste sa, ak chcete nahrať vašu aplikáciu"
+
+msgid "Login via GitHub"
+msgstr "Prihlásiť sa pomocou GitHubu"
+
+msgid "Login via GitLab"
+msgstr "Prihlásiť sa pomocou GitLabu"
+
+#, fuzzy
+#| msgid "Login via Ubuntu"
+msgid "Login via Ubuntu One"
+msgstr "Prihlásiť sa pomocou Ubuntu účtu"
+
+msgid "Maintainer"
+msgstr "Správca"
+
+msgid "Malware"
+msgstr "Škodlivý kód"
+
+msgid "Manage"
+msgstr "Spravovať"
+
+msgid "Manage Apps"
+msgstr "Spravovať aplikácie"
+
+msgid "Microphone"
+msgstr "Mikrofón"
+
+msgid "Most Popular"
+msgstr ""
+
+msgid "Music Files"
+msgstr "Hudobné súbory"
+
+msgid "Name"
+msgstr "Názov"
+
+msgid "Navigate to the downloads folder"
+msgstr "Prejsť do zložky so stiahnutými súbormi"
+
+msgid "Networking"
+msgstr "Sieť"
+
+msgid "New Apps"
+msgstr "Nové aplikácie"
+
+msgid "New Revision"
+msgstr "Nová revízia"
+
+msgid "New revision for %{channel} was created!"
+msgstr "Nová revízia pre %{channel} bola vytvorená!"
+
+msgid "New Revision for %{name}"
+msgstr "Nová revízia pre %{name}"
+
+msgid "New revisions for %{channel} were created!"
+msgstr "Nové revízie pre %{channel} boli vytvorené!"
+
+msgid "Newest"
+msgstr "Najnovšie"
+
+msgid "NFC"
+msgstr ""
+
+msgid "No"
+msgstr "Nie"
+
+msgid "No apps found."
+msgstr "Žiadné aplikácie nenájdené."
+
+msgid "No longer available"
+msgstr "Už viac nedostupný/á"
+
+msgid "None"
+msgstr "Žiadné"
+
+msgid "Not published"
+msgstr "Nezverejnené"
+
+msgid "NSFW"
+msgstr "Pre dospelých"
+
+msgid "NSFW content"
+msgstr "Obsah pre dospelých"
+
+msgid "Older Versions"
+msgstr ""
+
+msgid "Oldest"
+msgstr "Najstaršie"
+
+msgid "Oldest Update"
+msgstr "Najstaršia aktualizácia"
+
+msgid ""
+"One of the main goals of the OpenStore is to provide a safe app store for "
+"people of all ages. "
+"To accomplish this goal we do not allow certain types of app to be "
+"published. "
+"Failure to follow the guidelines will result in your app being removed. "
+"Any account with serious infractions may be subject to termination. "
+"The OpenStore team thanks you for helping us promote a better environment "
+"for everyone."
+msgstr ""
+
+msgid ""
+"Only open source applications allowed for manual review: "
+"As the applications might have arbitrary access to the device, every "
+"manually reviewed app will get a source code review."
+msgstr ""
+
+msgid ""
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
+msgstr ""
+
+msgid "Open the terminal app"
+msgstr "Otvoriť aplikáciuTerminál"
+
+msgid "OpenStore API/Server Contributors"
+msgstr "Prispievatelia do OpenStore API/Serveru"
+
+msgid "OpenStore App Content Policy"
+msgstr "Zásady obsahu pre OpenStore aplikácie"
+
+msgid "OpenStore App Contributors"
+msgstr "Prispievatelia do OpenStore aplikácie"
+
+msgid "OpenStore Badges"
+msgstr "OpenStore označenia"
+
+msgid "OpenStore group on Telegram"
+msgstr "Skupina OpenStore na Telegrame"
+
+msgid "OpenStore source on GitLab"
+msgstr "Zdrojový kód OpenStore na Gitlabe"
+
+msgid "OpenStore Website Contributors"
+msgstr "Prispievatelia OpenStore webstránky"
+
+msgid "Override Type"
+msgstr ""
+
+msgid "Package Info"
+msgstr ""
+
+msgid "Page Not Found"
+msgstr ""
+
+msgid "Permissions"
+msgstr "Oprávnenia"
+
+msgid "Picture Files"
+msgstr "Subory s obrázkami"
+
+msgid "Presentation"
+msgstr ""
+
+msgid "Processing"
+msgstr ""
+
+msgid "Prohibited Apps"
+msgstr ""
+
+msgid "Promote your app on the OpenStore!"
+msgstr ""
+
+msgid ""
+"Promote your app on the OpenStore! Add these badges to your website, "
+"code repository, social media, or anywhere on the internet. The badges "
+"are available in several different languages and in both PNG and SVG "
+"formats."
+msgstr ""
+
+msgid "Public Link"
+msgstr ""
+
+msgid "Publish"
+msgstr ""
+
+msgid "Published"
+msgstr ""
+
+msgid "Published Date"
+msgstr ""
+
+#, fuzzy
+#| msgid "Packager/Publisher"
+msgid "Publisher"
+msgstr "Autor/Vydavateľ"
+
+msgid "Push Notifications"
+msgstr "Push Oznámenia"
+
+#, fuzzy
+#| msgid "Read Picture Files"
+msgid "Read Document Files"
+msgstr "Načítať súbory s obrázkami"
+
+msgid "Read Music Files"
+msgstr "Načítať hudobné súbory"
+
+msgid "Read Picture Files"
+msgstr "Načítať súbory s obrázkami"
+
+msgid "Read Video Files"
+msgstr "Načítať video súbory"
+
+msgid "Relevance"
+msgstr ""
+
+msgid "Report an Issue"
+msgstr ""
+
+msgid "Restricted permission"
+msgstr ""
+
+msgid "Review Exceptions"
+msgstr ""
+
+#, fuzzy
+#| msgid "Webview"
+msgid "Reviews"
+msgstr "Webový režim"
+
+msgid "Revision"
+msgstr ""
+
+msgid "RSS Feeds"
+msgstr ""
+
+msgid "Rules for Submission"
+msgstr ""
+
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr ""
+
+msgid "Run the command:"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Screenshots"
+msgstr ""
+
+msgid "Screenshots (Limit 5)"
+msgstr ""
+
+msgid "Search"
+msgstr "Hľadať"
+
+msgid ""
+"Send us a link to a repository for your app to our telegram group along with "
+"some instructions on how to build it."
+msgstr ""
+
+msgid "Sensors"
+msgstr "Senzory"
+
+msgid "Sexually Explicit Content"
+msgstr ""
+
+#, fuzzy
+#| msgid "New Revision"
+msgid "Show All Revisions"
+msgstr "Nová revízia"
+
+msgid "Show NSFW Content"
+msgstr ""
+
+msgid "Site Status"
+msgstr ""
+
+msgid "Sort By"
+msgstr ""
+
+msgid "Source"
+msgstr ""
+
+msgid "Source Code"
+msgstr ""
+
+msgid "Source URL"
+msgstr ""
+
+msgid "Stats"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Submit App"
+msgstr ""
+
+msgid "Submit your app"
+msgstr ""
+
+msgid "Success"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Support URL"
+msgstr ""
+
+msgid "Tag Line"
+msgstr ""
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Terms"
+msgstr ""
+
+msgid "The app you are looking for has been removed or does not exist"
+msgstr ""
+
+msgid ""
+"The apps available for download from the OpenStore have their own licencing "
+"and terms. "
+"Consult each individual app's page for more information."
+msgstr ""
+
+msgid "The changes to %{name} were saved!"
+msgstr ""
+
+msgid ""
+"The OpenStore a non-profit volunteer project. "
+"Although every effort is made to ensure that everything in the repository is "
+"safe to install, you use it AT YOUR OWN RISK. "
+"Apps uploaded to the OpenStore will be subject to an automated review "
+"process or "
+"a manual review process to check for potential security or privacy issues. "
+"This checking is far from exhaustive though, and there are no guarantees."
+msgstr ""
+
+msgid ""
+"The OpenStore app is installed by default on the UBports builds of Ubuntu "
+"Touch. "
+"But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr ""
+
+msgid ""
+"The OpenStore is the official app store for Ubuntu Touch. "
+"It is an open source project run by a team of volunteers with help from the "
+"community. "
+"You can discover and install new apps on your Ubuntu Touch device. "
+"You can also upload and manage your own apps for publication. "
+"The OpenStore encourages the apps published within to be open source, but "
+"also accepts proprietary apps."
+msgstr ""
+
+msgid ""
+"The OpenStore respects your privacy. "
+"We don't track you or your device. "
+"You do not need an account to download and install apps and we do not track "
+"your downloads. "
+"For developer information we count the number of downloads per app "
+"revision. "
+"Information about your device (the cpu architecture, framework versions, OS "
+"version, and OS language) "
+"are sent to the server to allow it to filter apps to only what you can "
+"install and present your native language where possible. "
+"This information is not logged or stored and cannot be used to uniquely "
+"identify you."
+msgstr ""
+
+msgid "The page you are looking for has been removed or does not exist"
+msgstr ""
+
+msgid ""
+"The source code for OpenStore related projects is available under the GPL "
+"v3. "
+"You can find the code on the OpenStore GitLab page."
+msgstr ""
+
+msgid ""
+"There was an error trying to find this app, please refresh and try again."
+msgstr ""
+
+msgid ""
+"There was an error trying to load the app list, please refresh and try again."
+msgstr ""
+
+msgid ""
+"There was an error trying to load the stats, please refresh and try again."
+msgstr ""
+
+msgid "This app contains NSFW material"
+msgstr ""
+
+msgid ""
+"This app does not have access to restricted system data, see permissions for "
+"more details"
+msgstr ""
+
+msgid ""
+"This app has access to restricted system data, see permissions for more "
+"details"
+msgstr ""
+
+msgid ""
+"This is the unique identifier for your app. "
+"It must match exactly the \"name\" field in your click's manifest.json and "
+"must be all lowercase letters. "
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app "
+"and \"openstore-team\" "
+"is the group or individual authoring the app."
+msgstr ""
+
+msgid "This revision is still available"
+msgstr ""
+
+msgid "This will be added to the beginning of your current changelog"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Title (A-Z)"
+msgstr ""
+
+msgid "Title (Z-A)"
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "Total downloads"
+msgstr "Celkový počet stiahnutí"
+
+msgid "Total:"
+msgstr ""
+
+msgid "Translation Languages"
+msgstr ""
+
+msgid "Translation URL"
+msgstr ""
+
+msgid "Translations"
+msgstr ""
+
+msgid "Try searching for something else"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Ubuntu Touch"
+msgstr ""
+
+msgid "Ubuntu Touch Apps"
+msgstr ""
+
+msgid "Uncategorized"
+msgstr ""
+
+msgid "Unrestricted read access to:"
+msgstr ""
+
+msgid "Unrestricted write access to:"
+msgstr ""
+
+msgid "Updated"
+msgstr ""
+
+msgid "Updated Apps"
+msgstr ""
+
+msgid "Updated Date"
+msgstr ""
+
+msgid "Upload Revision via:"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+msgid "URL of App from the Web"
+msgstr ""
+
+msgid "User Metrics"
+msgstr "Metriky používateľa"
+
+msgid "Version"
+msgstr ""
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Video Files"
+msgstr "Video súbory"
+
+msgid "Video URL"
+msgstr ""
+
+msgid "View Install Instructions"
+msgstr ""
+
+msgid "Violence"
+msgstr ""
+
+msgid "Web App"
+msgstr "Webová aplikácia"
+
+msgid "Web Apps"
+msgstr ""
+
+msgid "Webview"
+msgstr "Webový režim"
+
+msgid "Welcome %{name}!"
+msgstr ""
+
+msgid "Xenial"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+
+msgid ""
+"You are only allowed to publish apps that you have permission to distribute."
+msgstr ""
+
+msgid "You must read over the content policy detailed below."
+msgstr ""
+
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins. "
+"Where possible, we will contact you regarding any such actions."
+msgstr ""
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Chat with us on Telegram"
+#~ msgstr "Chatujte s nami na Telegrame"
+
+#~ msgid "Fork us on GitLab"
+#~ msgstr "Forknite nás na GitLabe"
+
+#~ msgid "Framework"
+#~ msgstr "Framework"
+
+#~ msgid "Scope"
+#~ msgstr "Rozsah"
+
+#~ msgid "Web App+"
+#~ msgstr "Webová aplikácia+"

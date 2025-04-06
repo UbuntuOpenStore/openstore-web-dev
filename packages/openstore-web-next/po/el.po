@@ -1,0 +1,992 @@
+msgid ""
+msgstr ""
+"Project-Id-Version:  "
+"PO-Revision-Date: 2021-09-21 00:46+0000 "
+"Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com> "
+"Language-Team: Greek <https://translate.ubports.com/projects/openstore/open-"
+"storeio/el/> "
+"Language: el "
+"Content-Type: text/plain; charset=UTF-8 "
+"Content-Transfer-Encoding: 8bit "
+"Plural-Forms: nplurals=2; plural=n != 1; "
+"X-Generator: Weblate 3.11.3 "
+"Generated-By: easygettext "
+
+#, fuzzy
+#| msgid ""
+#| "*This app contains NSFW content, to view the description and "
+#| "screenshots, click the above button."
+msgid ""
+"*This app contains NSFW content, to view the description and "
+"screenshots, click the above button."
+msgstr ""
+"*Αυτή η εφαρμογή περιέχει NSFW περιεχόμενο, για να δείτε τη περιγραφή και "
+"στιγμιότυπα, πατήστε το παραπάνω κουμπί."
+
+msgid "%{name} was successfully deleted"
+msgstr "%{name} διαγράφτηκε επιτυχώς"
+
+msgid "A comma separated list of keywords"
+msgstr "Μια λίστα λέξεων κλειδιών χωρισμένη με κόμμα"
+
+msgid "About"
+msgstr "Σχετικά με"
+
+msgid "About Us"
+msgstr "Σχετικά με Εμάς"
+
+msgid "Accounts"
+msgstr "Λογαριασμοί"
+
+msgid "Add Another Architecture"
+msgstr "Προσθήκη Άλλης Αρχιτεκτονικής"
+
+msgid "Admin"
+msgstr "Διαχειριστής"
+
+msgid "All Categories"
+msgstr "Όλες οι Κατηγορίες"
+
+#, fuzzy
+#| msgid "Channels"
+msgid "All Channels"
+msgstr "Κανάλια"
+
+msgid "All Types"
+msgstr "Όλοι οι Τύποι"
+
+msgid "An account is not needed to download or install apps."
+msgstr "Δεν απαιτείται λογαριασμός για λήψη ή εγκατάσταση εφαρμογών."
+
+msgid "An error occured loading your app data"
+msgstr "Παρουσιάστηκε σφάλμα κατά τη φόρτωση των δεδομένων της εφαρμογής σας"
+
+msgid "An unknown error has occurred"
+msgstr "Προέκυψε άγνωστο σφάλμα"
+
+msgid ""
+"And many amazing developers, testers, and users from the OpenStore community!"
+msgstr ""
+"Και πολλοί εκπληκτικοί προγραμματιστές, δοκιμαστές και χρήστες από την "
+"κοινότητα του OpenStore!"
+
+#, fuzzy
+#| msgid ""
+#| "Any personal data you decide to give us (e.g. your email address when "
+#| "registering for an account to upload your apps) "
+#| "goes no further than us, "
+#| "and will not be used for anything other than allowing you to maintain "
+#| "your apps and, in rare cases, "
+#| "contact you in the event there is an issue with your app. "
+#| "Additionally, this site uses cookies to keep you logged in to your "
+#| "account."
+msgid ""
+"Any personal data you decide to give us (e.g. your email address when "
+"registering for an account to upload your apps) "
+"goes no further than us, "
+"and will not be used for anything other than allowing you to maintain your "
+"apps and, in rare cases, "
+"contact you in the event there is an issue with your app. "
+"Additionally, this site uses cookies to keep you logged in to your account."
+msgstr ""
+"Τυχόν προσωπικά δεδομένα που αποφασίζετε να μας δώσετε (π.χ. η διεύθυνση "
+"ηλεκτρονικού ταχυδρομείου σας κατά την εγγραφή σε λογαριασμό για τη "
+"μεταφόρτωση των εφαρμογών σας) "
+"δεν πάει πιο μακριά από εμάς, "
+"και δεν θα χρησιμοποιηθεί για τίποτα άλλο εκτός από το να σας επιτρέπει να "
+"διατηρείτε τις εφαρμογές σας και, σε σπάνιες περιπτώσεις, "
+"να επικοινωνήσουμε μαζί σας σε περίπτωση που υπάρχει πρόβλημα με την "
+"εφαρμογή σας. "
+"Επιπλέον, αυτός ο ιστότοπος χρησιμοποιεί cookies για να σας κρατήσει "
+"συνδεδεμένους στον λογαριασμό σας."
+
+msgid "API Key"
+msgstr "Κλειδί API"
+
+msgid "App"
+msgstr "Εφαρμογή"
+
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr ""
+"Εφαρμογές που περιέχουν ή προωθούν οποιοδήποτε από τα παραπάνω απαγορεύονται "
+"αυστηρά."
+
+msgid "App Name"
+msgstr "Όνομα Εφαρμογής"
+
+msgid "App Stats"
+msgstr "Στατιστικά Εφαρμογής"
+
+msgid "App Submission Tutorial"
+msgstr ""
+
+msgid "App Title"
+msgstr "Τίτλος Εφαρμογής"
+
+msgid "App Type"
+msgstr "Είδος Εφαρμογής"
+
+msgid "App Types"
+msgstr "Είδη Εφαρμογής"
+
+msgid "Apps"
+msgstr "Εφαρμογές"
+
+msgid ""
+"Apps containing gambling involving real world money transactions are not "
+"allowed. "
+"This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
+msgstr ""
+
+msgid ""
+"Apps containing or promoting child abuse or child sexual abuse are strictly "
+"prohibited."
+msgstr ""
+
+msgid ""
+"Apps containing or promoting gratuitous violence are not allowed. "
+"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"making, self harm, and grotesque imagery."
+msgstr ""
+
+msgid ""
+"Apps containing or promoting sexually explicit content are not allowed. "
+"This includes, but is not limited to, pornography and services promoting "
+"sexually explicit content."
+msgstr ""
+
+msgid ""
+"Apps not requiring manual review can be submitted by logging in with the "
+"\"Log In\" link above."
+msgstr ""
+
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr ""
+
+msgid ""
+"Apps requiring manual review must be submitted by contacting an admin in our "
+"telegram group."
+msgstr ""
+
+msgid ""
+"Apps that are found to be stealing the users data, trying to escalate their "
+"privileges without user consent, "
+"or executing malicious process are strictly prohibited."
+msgstr ""
+
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission rules and "
+"content policy. "
+"You can review the rules and policies before uploading your app."
+msgstr ""
+
+msgid "Arch"
+msgstr "Αρχιτεκτονική"
+
+msgid "Architecture"
+msgstr "Αρχιτεκτονική"
+
+msgid "Audio"
+msgstr "Ήχος"
+
+msgid "Back"
+msgstr "Πίσω"
+
+msgid "Badge"
+msgstr "Σήμα"
+
+msgid "Badges"
+msgstr "Σήματα"
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "Bookmark"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Browse"
+msgstr "Αναζήτηση"
+
+msgid "Browse Apps"
+msgstr ""
+
+msgid "Bug Tracker"
+msgstr ""
+
+msgid "Calendar"
+msgstr "Ημερολόγιο"
+
+msgid "Camera"
+msgstr "Κάμερα"
+
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+msgid "Category"
+msgstr "Κατηγορία"
+
+msgid "Changelog"
+msgstr "Changelog"
+
+msgid "Channel"
+msgstr "Κανάλι"
+
+msgid "Channels"
+msgstr "Κανάλια"
+
+msgid "Child Endangerment"
+msgstr ""
+
+msgid "Choose a category"
+msgstr "Επιλέξτε κατηγορία"
+
+msgid "Choose a license"
+msgstr ""
+
+msgid "Choose a maintainer"
+msgstr ""
+
+msgid "Completed"
+msgstr "Ολοκληρώθηκε"
+
+msgid "Connectivity"
+msgstr "Συνδεσιμότητα"
+
+msgid "Contact"
+msgstr "Επαφή"
+
+msgid "Contacts"
+msgstr "Επαφές"
+
+msgid "Content Exchange"
+msgstr ""
+
+msgid "Content Exchange Source"
+msgstr ""
+
+msgid "Contributors"
+msgstr "Συντελεστές"
+
+msgid "Copy to clipboard"
+msgstr "Αντιγραφή στο πρόχειρο"
+
+msgid "Count"
+msgstr "Πλήθος"
+
+msgid "Create"
+msgstr "Δημιουργία"
+
+msgid "Debug"
+msgstr "Αποσφαλμάτωση"
+
+msgid "Delete"
+msgstr "Διαγραφή"
+
+msgid "Description"
+msgstr "Περιγραφή"
+
+msgid "Discovery"
+msgstr ""
+
+#, fuzzy
+#| msgid "Picture Files"
+msgid "Document Files"
+msgstr "Αρχεία εικόνας"
+
+msgid "Donate"
+msgstr "Δωρεά"
+
+msgid "Donate URL"
+msgstr ""
+
+msgid "Download"
+msgstr "Λήψη"
+
+msgid "Download Stats"
+msgstr "Στατιστικά λήψεων"
+
+msgid "Download the OpenStore App"
+msgstr ""
+
+msgid "Downloads"
+msgstr "Λήψεις"
+
+msgid "Downloads of the latest version"
+msgstr ""
+
+msgid "Drag and drop to sort screenshots."
+msgstr ""
+
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+msgid "Error"
+msgstr "Σφάλμα"
+
+msgid "Feeds"
+msgstr "Ροές"
+
+msgid "File"
+msgstr "Αρχείο"
+
+msgid "File Upload"
+msgstr "Μεταφόρτωση αρχείου"
+
+msgid "Focal"
+msgstr "Focal"
+
+msgid ""
+"For any questions you may have or help you may need just chat with us in our "
+"telegram group. "
+"You can also submit issues, bugs, and feature requests to our GitLab bug "
+"tracker."
+msgstr ""
+
+msgid "Full System Access"
+msgstr ""
+
+msgid "Gambling"
+msgstr "Τζόγος"
+
+msgid "Get your badge"
+msgstr ""
+
+msgid ""
+"Give a short explanation why you can’t publish the app without extra "
+"privileges. "
+"No need to go into details, a one liner like \"needs to run a daemon in the "
+"background\" will do. "
+"List all the special features you have, if there are more."
+msgstr ""
+
+msgid "Go back a page"
+msgstr ""
+
+msgid "Go to the next page"
+msgstr "Μετάβαση στην επόμενη σελίδα"
+
+msgid "GPL v3 License"
+msgstr "Άδεια χρήσης GPL v3"
+
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr ""
+
+msgid "History"
+msgstr "Ιστορικό"
+
+msgid "Icon"
+msgstr "Εικονίδιο"
+
+msgid "ID"
+msgstr "Ταυτότητα"
+
+msgid ""
+"If an application could be published without manual review if it wouldn’t be "
+"for that one cool feature, "
+"publish a stripped down version! "
+"Not everyone will want to install apps with less confinement."
+msgstr ""
+
+msgid "Illegal Activities"
+msgstr "Παράνομες δραστηριότητες"
+
+msgid "In App Purchases"
+msgstr ""
+
+msgid "Info"
+msgstr "Πληροφορίες"
+
+msgid "Install"
+msgstr "Εγκατάσταση"
+
+msgid "Install via the OpenStore app"
+msgstr ""
+
+msgid "Jump to the first page"
+msgstr ""
+
+msgid "Jump to the last page"
+msgstr "Μετάβαση στην τελευταία σελίδα"
+
+msgid "Keep Display On"
+msgstr ""
+
+msgid "Keep your api key private!"
+msgstr ""
+
+msgid "Keywords"
+msgstr "Λέξεις κλειδιά"
+
+msgid "Language"
+msgstr "Γλώσσα"
+
+msgid "Latest Update"
+msgstr "Τελευταία ενημέρωση"
+
+msgid "Least Popular"
+msgstr ""
+
+msgid "License"
+msgstr "Άδεια χρήσης"
+
+msgid "Location"
+msgstr "Τοποθεσία"
+
+msgid "Locked"
+msgstr "Κλειδωμένα"
+
+msgid "Log In"
+msgstr "Σύνδεση"
+
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr ""
+
+msgid "Log Out"
+msgstr "Αποσύνδεση"
+
+msgid "Login"
+msgstr "Σύνδεση"
+
+msgid "Login to submit your app"
+msgstr ""
+
+msgid "Login via GitHub"
+msgstr "Σύνδεση μέσω Github"
+
+msgid "Login via GitLab"
+msgstr "Σύνδεση μέσω GitLab"
+
+msgid "Login via Ubuntu One"
+msgstr "Σύνδεση μέσω Ubuntu One"
+
+msgid "Maintainer"
+msgstr "Συντηρητής"
+
+msgid "Malware"
+msgstr ""
+
+msgid "Manage"
+msgstr "Διαχείριση"
+
+msgid "Manage Apps"
+msgstr "Διαχείριση εφαρμογών"
+
+msgid "Microphone"
+msgstr "Μικρόφωνο"
+
+msgid "Most Popular"
+msgstr "Τα πιο δημοφιλή"
+
+msgid "Music Files"
+msgstr "Αρχεία μουσικής"
+
+msgid "Name"
+msgstr "Όνομα"
+
+msgid "Navigate to the downloads folder"
+msgstr ""
+
+msgid "Networking"
+msgstr ""
+
+msgid "New Apps"
+msgstr "Νέες εφαρμογές"
+
+msgid "New Revision"
+msgstr "Νέα αναθεώρηση"
+
+msgid "New revision for %{channel} was created!"
+msgstr ""
+
+msgid "New Revision for %{name}"
+msgstr ""
+
+msgid "New revisions for %{channel} were created!"
+msgstr ""
+
+msgid "Newest"
+msgstr "Νεότερη"
+
+msgid "NFC"
+msgstr ""
+
+msgid "No"
+msgstr "Όχι"
+
+msgid "No apps found."
+msgstr "Δεν βρέθηκαν εφαρμογές."
+
+msgid "No longer available"
+msgstr "Δεν είναι πλέον διαθέσιμα"
+
+msgid "None"
+msgstr "Kανένα"
+
+msgid "Not published"
+msgstr "Δεν δημοσιεύτηκε"
+
+msgid "NSFW"
+msgstr "NSFW"
+
+msgid "NSFW content"
+msgstr ""
+
+msgid "Older Versions"
+msgstr "Άλλες εκδόσεις"
+
+msgid "Oldest"
+msgstr "Παλαιότερο"
+
+msgid "Oldest Update"
+msgstr ""
+
+msgid ""
+"One of the main goals of the OpenStore is to provide a safe app store for "
+"people of all ages. "
+"To accomplish this goal we do not allow certain types of app to be "
+"published. "
+"Failure to follow the guidelines will result in your app being removed. "
+"Any account with serious infractions may be subject to termination. "
+"The OpenStore team thanks you for helping us promote a better environment "
+"for everyone."
+msgstr ""
+
+msgid ""
+"Only open source applications allowed for manual review: "
+"As the applications might have arbitrary access to the device, every "
+"manually reviewed app will get a source code review."
+msgstr ""
+
+msgid ""
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
+msgstr ""
+
+msgid "Open the terminal app"
+msgstr ""
+
+msgid "OpenStore API/Server Contributors"
+msgstr ""
+
+msgid "OpenStore App Content Policy"
+msgstr ""
+
+msgid "OpenStore App Contributors"
+msgstr ""
+
+msgid "OpenStore Badges"
+msgstr "Σήματα OpenStore"
+
+msgid "OpenStore group on Telegram"
+msgstr ""
+
+msgid "OpenStore source on GitLab"
+msgstr ""
+
+msgid "OpenStore Website Contributors"
+msgstr ""
+
+msgid "Override Type"
+msgstr ""
+
+msgid "Package Info"
+msgstr "Πληροφορίες πακέτου"
+
+msgid "Page Not Found"
+msgstr "Η Σελίδα δεν βρέθηκε"
+
+msgid "Permissions"
+msgstr "Δικαιώματα"
+
+msgid "Picture Files"
+msgstr "Αρχεία εικόνας"
+
+msgid "Presentation"
+msgstr "Παρουσίαση"
+
+msgid "Processing"
+msgstr "Γίνεται επεξεργασία"
+
+msgid "Prohibited Apps"
+msgstr ""
+
+msgid "Promote your app on the OpenStore!"
+msgstr ""
+
+msgid ""
+"Promote your app on the OpenStore! Add these badges to your website, "
+"code repository, social media, or anywhere on the internet. The badges "
+"are available in several different languages and in both PNG and SVG "
+"formats."
+msgstr ""
+
+msgid "Public Link"
+msgstr "Δημόσιος σύνδεσμος"
+
+msgid "Publish"
+msgstr "Δημοσίευση"
+
+msgid "Published"
+msgstr ""
+
+msgid "Published Date"
+msgstr "Ημερομηνία δημοσίευσης"
+
+#, fuzzy
+#| msgid "Publish"
+msgid "Publisher"
+msgstr "Δημοσίευση"
+
+msgid "Push Notifications"
+msgstr ""
+
+msgid "Read Document Files"
+msgstr ""
+
+msgid "Read Music Files"
+msgstr ""
+
+msgid "Read Picture Files"
+msgstr ""
+
+msgid "Read Video Files"
+msgstr ""
+
+msgid "Relevance"
+msgstr "Συνάφεια"
+
+msgid "Report an Issue"
+msgstr "Υποβάλετε ένα σφάλμα"
+
+msgid "Restricted permission"
+msgstr ""
+
+msgid "Review Exceptions"
+msgstr ""
+
+msgid "Reviews"
+msgstr "Κριτικές"
+
+msgid "Revision"
+msgstr "Αναθεώρηση"
+
+msgid "RSS Feeds"
+msgstr "Τροφοδοσίες RSS"
+
+msgid "Rules for Submission"
+msgstr ""
+
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr ""
+
+msgid "Run the command:"
+msgstr "Εκτέλεση της εντολής:"
+
+msgid "Save"
+msgstr "Αποθήκευση"
+
+msgid "Screenshots"
+msgstr "Στιγμιότυπα οθόνης"
+
+msgid "Screenshots (Limit 5)"
+msgstr ""
+
+msgid "Search"
+msgstr "Αναζήτηση"
+
+msgid ""
+"Send us a link to a repository for your app to our telegram group along with "
+"some instructions on how to build it."
+msgstr ""
+
+msgid "Sensors"
+msgstr "Αισθητήρες"
+
+msgid "Sexually Explicit Content"
+msgstr ""
+
+msgid "Show All Revisions"
+msgstr "Εμφάνιση όλων των αναθεωρήσεων"
+
+msgid "Show NSFW Content"
+msgstr ""
+
+msgid "Site Status"
+msgstr ""
+
+msgid "Sort By"
+msgstr "Ταξινόμηση κατά"
+
+msgid "Source"
+msgstr "Πηγή"
+
+msgid "Source Code"
+msgstr "Πηγαίος κώδικας"
+
+msgid "Source URL"
+msgstr ""
+
+msgid "Stats"
+msgstr "Στατιστικά"
+
+msgid "Status"
+msgstr "Κατάσταση"
+
+msgid "Submit"
+msgstr "Υποβολή"
+
+msgid "Submit App"
+msgstr "Υποβολή εφαρμογής"
+
+msgid "Submit your app"
+msgstr "Υποβάλετε την εφαρμογή σας"
+
+msgid "Success"
+msgstr "Επιτυχία"
+
+msgid "Support"
+msgstr "Υποστήριξη"
+
+msgid "Support URL"
+msgstr ""
+
+msgid "Tag Line"
+msgstr ""
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Terms"
+msgstr "Όροι"
+
+msgid "The app you are looking for has been removed or does not exist"
+msgstr ""
+
+msgid ""
+"The apps available for download from the OpenStore have their own licencing "
+"and terms. "
+"Consult each individual app's page for more information."
+msgstr ""
+
+msgid "The changes to %{name} were saved!"
+msgstr ""
+
+msgid ""
+"The OpenStore a non-profit volunteer project. "
+"Although every effort is made to ensure that everything in the repository is "
+"safe to install, you use it AT YOUR OWN RISK. "
+"Apps uploaded to the OpenStore will be subject to an automated review "
+"process or "
+"a manual review process to check for potential security or privacy issues. "
+"This checking is far from exhaustive though, and there are no guarantees."
+msgstr ""
+
+msgid ""
+"The OpenStore app is installed by default on the UBports builds of Ubuntu "
+"Touch. "
+"But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr ""
+
+msgid ""
+"The OpenStore is the official app store for Ubuntu Touch. "
+"It is an open source project run by a team of volunteers with help from the "
+"community. "
+"You can discover and install new apps on your Ubuntu Touch device. "
+"You can also upload and manage your own apps for publication. "
+"The OpenStore encourages the apps published within to be open source, but "
+"also accepts proprietary apps."
+msgstr ""
+
+msgid ""
+"The OpenStore respects your privacy. "
+"We don't track you or your device. "
+"You do not need an account to download and install apps and we do not track "
+"your downloads. "
+"For developer information we count the number of downloads per app "
+"revision. "
+"Information about your device (the cpu architecture, framework versions, OS "
+"version, and OS language) "
+"are sent to the server to allow it to filter apps to only what you can "
+"install and present your native language where possible. "
+"This information is not logged or stored and cannot be used to uniquely "
+"identify you."
+msgstr ""
+
+msgid "The page you are looking for has been removed or does not exist"
+msgstr ""
+
+msgid ""
+"The source code for OpenStore related projects is available under the GPL "
+"v3. "
+"You can find the code on the OpenStore GitLab page."
+msgstr ""
+
+msgid ""
+"There was an error trying to find this app, please refresh and try again."
+msgstr ""
+
+msgid ""
+"There was an error trying to load the app list, please refresh and try again."
+msgstr ""
+
+msgid ""
+"There was an error trying to load the stats, please refresh and try again."
+msgstr ""
+
+msgid "This app contains NSFW material"
+msgstr ""
+
+msgid ""
+"This app does not have access to restricted system data, see permissions for "
+"more details"
+msgstr ""
+
+msgid ""
+"This app has access to restricted system data, see permissions for more "
+"details"
+msgstr ""
+
+msgid ""
+"This is the unique identifier for your app. "
+"It must match exactly the \"name\" field in your click's manifest.json and "
+"must be all lowercase letters. "
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app "
+"and \"openstore-team\" "
+"is the group or individual authoring the app."
+msgstr ""
+
+msgid "This revision is still available"
+msgstr ""
+
+msgid "This will be added to the beginning of your current changelog"
+msgstr ""
+
+msgid "Title"
+msgstr "Τίτλος"
+
+msgid "Title (A-Z)"
+msgstr "Τίτλος (Α-Ω)"
+
+msgid "Title (Z-A)"
+msgstr "Τίτλος (Ω-Α)"
+
+msgid "Total"
+msgstr "Σύνολο"
+
+msgid "Total downloads"
+msgstr "Συνολικές λήψεις"
+
+msgid "Total:"
+msgstr "Σύνολο:"
+
+msgid "Translation Languages"
+msgstr ""
+
+msgid "Translation URL"
+msgstr ""
+
+msgid "Translations"
+msgstr ""
+
+msgid "Try searching for something else"
+msgstr ""
+
+msgid "Type"
+msgstr "Τύπος"
+
+msgid "Ubuntu Touch"
+msgstr "Ubuntu Touch"
+
+msgid "Ubuntu Touch Apps"
+msgstr "Εφαρμογές Ubuntu Touch"
+
+msgid "Uncategorized"
+msgstr "Μη κατηγοριοποιημένα"
+
+msgid "Unrestricted read access to:"
+msgstr ""
+
+msgid "Unrestricted write access to:"
+msgstr ""
+
+msgid "Updated"
+msgstr "Ενημερωμένο"
+
+msgid "Updated Apps"
+msgstr ""
+
+msgid "Updated Date"
+msgstr ""
+
+msgid "Upload Revision via:"
+msgstr ""
+
+msgid "URL"
+msgstr "URL"
+
+msgid "URL of App from the Web"
+msgstr ""
+
+msgid "User Metrics"
+msgstr ""
+
+msgid "Version"
+msgstr "Έκδοση"
+
+msgid "Video"
+msgstr "Βίντεο"
+
+msgid "Video Files"
+msgstr "Αρχεία βίντεο"
+
+msgid "Video URL"
+msgstr ""
+
+msgid "View Install Instructions"
+msgstr "Προβολή οδηγιών εγκατάστασης"
+
+msgid "Violence"
+msgstr "Βία"
+
+msgid "Web App"
+msgstr ""
+
+msgid "Web Apps"
+msgstr ""
+
+msgid "Webview"
+msgstr ""
+
+msgid "Welcome %{name}!"
+msgstr "Καλώς ήλθες %{name}!"
+
+msgid "Xenial"
+msgstr "Xenial"
+
+msgid "Yes"
+msgstr "Ναι"
+
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+
+msgid ""
+"You are only allowed to publish apps that you have permission to distribute."
+msgstr ""
+
+msgid "You must read over the content policy detailed below."
+msgstr ""
+
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins. "
+"Where possible, we will contact you regarding any such actions."
+msgstr ""
+
+#~ msgid "Author"
+#~ msgstr "Δημιουργός"
