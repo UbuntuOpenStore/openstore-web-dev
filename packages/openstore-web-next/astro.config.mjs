@@ -15,15 +15,19 @@ const { SITE, SENTRY_DSN, SENTRY_PROJECT, SENTRY_AUTH_TOKEN } = loadEnv(process.
 // https://astro.build/config
 export default defineConfig({
   site: SITE ?? "https://open-store.io/",
-  integrations: [preact({ compat: true }), sentry({
-    dsn: SENTRY_DSN,
-    sourceMapsUploadOptions: {
-      project: SENTRY_PROJECT,
-      authToken: SENTRY_AUTH_TOKEN,
-    },
-  }), db()],
+  integrations: [
+    preact({ compat: true }),
+    sentry({
+      dsn: SENTRY_DSN,
+      sourceMapsUploadOptions: {
+        project: SENTRY_PROJECT,
+        authToken: SENTRY_AUTH_TOKEN,
+      },
+    }),
+    db(),
+  ],
   prefetch: {
-    prefetchAll: false
+    prefetchAll: false,
   },
   output: "static",
   adapter: node({
