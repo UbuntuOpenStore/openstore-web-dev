@@ -1,9 +1,9 @@
 ---
 export const prerender = false;
 
-import { initializeI18N } from "@/lib/i18n";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Discover from "@/components/Discover.astro";
+import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
 
 await initializeI18N("en_US"); // TODO get this from the URL

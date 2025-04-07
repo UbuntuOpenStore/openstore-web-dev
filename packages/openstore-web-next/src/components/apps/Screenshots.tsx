@@ -6,7 +6,7 @@ import SvgGoPrevious from "../icons/GoPrevious";
 import SvgGoNext from "../icons/GoNext";
 import SvgClose from "../icons/Close";
 
-const Screenshots = ({ images, videoUrl, nsfw }: { images: string[], videoUrl?: string, nsfw?: boolean }) => {
+const Screenshots = ({ images, videoUrl, nsfw, messages }: { images: string[], videoUrl?: string, nsfw?: boolean, messages: { nsfw: string } }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
    const [isRevealed, setIsRevealed] = useState(!nsfw);
@@ -44,7 +44,7 @@ const Screenshots = ({ images, videoUrl, nsfw }: { images: string[], videoUrl?: 
             onClick={() => setIsRevealed(true)}
             className="text-lg font-semibold"
           >
-            This app contains NSFW content, to click to reveal the screenshots.
+            {messages.nsfw}
           </Button>
         </div>
       </div>

@@ -37,7 +37,40 @@ const { category } = Astro.props;
     <CategoryList class="mx-12 w-96 mb-2 hidden md:block" />
 
     <div class="w-full">
-      <SearchApps category={category.category} categoryName={category.translation} client:only="preact" />
+      <SearchApps
+        category={category.category}
+        categoryName={category.translation}
+        messages={{
+          all: t("All Types"),
+          apps: t("Apps"),
+          bookmarks: t("Bookmarks"),
+          webapps: t("Web Apps"),
+          filter: t("Filter by Type"),
+          new: t("New!"),
+          app: t("App"),
+          bookmark: t("Bookmark"),
+          webapp: t("Web App"),
+          notFound: t("No apps found"),
+          previous: t("Go back a page"),
+          next: t("Go to the next page"),
+          error: t("There was an error loading the app list. Please try again later."),
+          search: t("Search"),
+          sortBy: t("Sort by:"),
+          sortOptions: t("Sort Options"),
+          options: {
+            relevance: t("Relevance"),
+            "-calculated_rating": t("Most Popular"),
+            calculated_rating: t("Least Popular"),
+            name: t("Title (A-Z)"),
+            "-name": t("Title (Z-A)"),
+            "-published_date": t("Newest"),
+            published_date: t("Oldest"),
+            "-updated_date": t("Latest Update"),
+            updated_date: t("Oldest Update"),
+          },
+        }}
+        client:only="preact"
+      />
     </div>
   </section>
 </BaseLayout>

@@ -64,6 +64,7 @@ export const languages = {
   zh_Hant: "Chinese (Traditional)",
 };
 
+// TODO dynamic imports for the client-side code
 export async function initializeI18N(lang: keyof typeof languages) {
   return i18next.init({
     lng: lang,

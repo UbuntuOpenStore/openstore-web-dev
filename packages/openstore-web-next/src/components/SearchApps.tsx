@@ -15,24 +15,53 @@ const DEFAULT_SORT = '-published_date';
 const DEFAULT_TYPE = '';
 const DEFAULT_CHANNEL = 'focal';
 
-const SORT_OPTIONS = [
-  { value: "relevance", label: "Relevance" },
-  { value: "-calculated_rating", label: "Most Popular" },
-  { value: "calculated_rating", label: "Least Popular" },
-  { value: "name", label: "Title (A-Z)" },
-  { value: "-name", label: "Title (Z-A)" },
-  { value: "-published_date", label: "Newest" },
-  { value: "published_date", label: "Oldest" },
-  { value: "-updated_date", label: "Latest Update" },
-  { value: "updated_date", label: "Oldest Update" },
-];
-
 type Props = {
   category?: string;
   categoryName?: string;
+  messages: {
+    all: string,
+    app: string,
+    apps: string,
+    bookmark: string,
+    bookmarks: string,
+    webapp: string,
+    webapps: string,
+    filter: string,
+    new: string,
+    notFound: string,
+    previous: string,
+    next: string,
+    error: string,
+    search: string,
+    sortBy: string,
+    sortOptions: string,
+    options: {
+      relevance: string,
+      "-calculated_rating": string,
+      calculated_rating: string,
+      name: string,
+      "-name": string,
+      "-published_date": string,
+      published_date: string,
+      "-updated_date": string,
+      updated_date: string,
+    }
+  }
 };
 
-const SearchApps = ({ category, categoryName }: Props) => {
+const SearchApps = ({ category, categoryName, messages }: Props) => {
+  const SORT_OPTIONS = [
+  { value: "relevance", label: messages.options.relevance },
+  { value: "-calculated_rating", label: messages.options['-calculated_rating'] },
+  { value: "calculated_rating", label: messages.options.calculated_rating },
+  { value: "name", label: messages.options.name },
+  { value: "-name", label: messages.options["-name"] },
+  { value: "-published_date", label: messages.options["-published_date"] },
+  { value: "published_date", label: messages.options.published_date },
+  { value: "-updated_date", label: messages.options["-updated_date"] },
+  { value: "updated_date", label: messages.options.updated_date },
+];
+
   const hash = new URLSearchParams(document.location.hash.substring(1));
   const hashPage = parseInt(hash.get('page') ?? '0');
 
@@ -69,7 +98,7 @@ const SearchApps = ({ category, categoryName }: Props) => {
     setLoading(true);
 
     const skip = page * PAGE_SIZE;
-    const url = new URL(`${import.meta.env.PUBLIC_API_URL}api/v4/apps`);
+    const url = new URL(`${import.meta.env.PUBLIC_API_URL}api/v4/apps`); // TODO pass lang from URL
     url.searchParams.append('limit', PAGE_SIZE.toString());
     url.searchParams.append('skip', skip.toString());
     url.searchParams.append('search', term);
@@ -139,29 +168,33 @@ const SearchApps = ({ category, categoryName }: Props) => {
       <div class="flex justify-between flex-col md:flex-row">
         <div class="flex mx-4">
           <h1 class="text-4xl">
-            Search{" "}
+            {messages.search}{" "}
 
-            {query.type === AppType.APP && (<>Apps</>)}
-            {query.type === AppType.BOOKMARK && (<>Bookmarks</>)}
-            {query.type === AppType.WEBAPP && (<>Web Apps</>)}
+            {query.type === AppType.APP && (<>{messages.apps}</>)}
+            {query.type === AppType.BOOKMARK && (<>{messages.bookmarks}</>)}
+            {query.type === AppType.WEBAPP && (<>{messages.webapps}</>)}
 
             {categoryName && (
-              <>{" "}in {categoryName}</>
+              <>{" "}- {categoryName}</>
             )}
           </h1>
 
-          <FilterDialog type={query.type as AppType | ''} onChange={setType} />
+          <FilterDialog
+            type={query.type as AppType | ''}
+            onChange={setType}
+            messages={messages}
+          />
         </div>
 
         <div class="mx-4">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" className="w-full md:w-auto">
-                Sort by: {SORT_OPTIONS.find((option) => option.value === query.sort)!.label}
+                {messages.sortBy} {SORT_OPTIONS.find((option) => option.value === query.sort)!.label}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56 mr-4">
-              <DropdownMenuLabel>Sort Options</DropdownMenuLabel>
+              <DropdownMenuLabel>{messages.sortOptions}</DropdownMenuLabel>
               <DropdownMenuSeparator />
               {SORT_OPTIONS.map((option) => (
                 <DropdownMenuItem key={option.value} onClick={() => setSort(option.value)}>
@@ -175,7 +208,7 @@ const SearchApps = ({ category, categoryName }: Props) => {
 
       {error ? (
         <div class="h-full text-2xl text-red">
-          There was an error loading the app list. Please try again later.
+          {messages.error}
         </div>
       ) : (
         <>
@@ -187,15 +220,23 @@ const SearchApps = ({ category, categoryName }: Props) => {
             <>
               {apps.length > 0 ? (
                 <>
-                  <AppList apps={apps} />
+                  <AppList
+                    apps={apps}
+                    messages={messages}
+                  />
 
                   {totalPages > 1 && (
-                    <Pagination currentPage={page} totalPages={totalPages} onPageChanged={(p) => setPageWrapper(p)} />
+                    <Pagination
+                      currentPage={page}
+                      totalPages={totalPages}
+                      onPageChanged={(p) => setPageWrapper(p)}
+                      messages={messages}
+                    />
                   )}
                 </>
               ) : (
                 <div class="h-full text-2xl">
-                  No apps found
+                  {messages.notFound}
                 </div>
               )}
             </>

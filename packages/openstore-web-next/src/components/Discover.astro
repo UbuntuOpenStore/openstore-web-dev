@@ -3,6 +3,10 @@ import HighlightedApps from "@/components/apps/HighlightedApps";
 import { DEFAULT_CHANNEL, DiscoverSchema } from "../lib/schema";
 import AppList from "@/components/apps/AppList";
 import { categorySlug } from "@/lib/utils";
+import { initializeI18N } from "@/lib/i18n";
+import { t } from "i18next";
+
+await initializeI18N("en_US");
 
 const discoverResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/discover?channel=${DEFAULT_CHANNEL}`); // TODO send lang from URL
 const discoverData = await discoverResponse.json();
@@ -29,7 +33,15 @@ const { highlights, categories } = DiscoverSchema.parse(discoverData.data);
           </h2>
           <p class="mb-4 text-center">{category.tagline}</p>
 
-          <AppList apps={category.apps} />
+          <AppList
+            apps={category.apps}
+            messages={{
+              new: t("New!"),
+              app: t("App"),
+              bookmark: t("Bookmark"),
+              webapp: t("Web App"),
+            }}
+          />
         </div>
 
         {index < categories.length - 1 && <div class="mx-auto w-full max-w-6xl h-1 bg-ubuntu-gradient rounded-full mb-4" />}

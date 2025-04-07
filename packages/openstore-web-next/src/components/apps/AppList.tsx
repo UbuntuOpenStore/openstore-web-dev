@@ -2,7 +2,7 @@ import type { SlimAppData } from "@/lib/schema";
 import TopRating from "./TopRating";
 import AppTypeBadges from "./AppTypeBadges";
 
-const AppList = ({ apps }: { apps: SlimAppData[] }) => {
+const AppList = ({ apps, messages }: { apps: SlimAppData[], messages: { new: string, app: string, bookmark: string, webapp: string } }) => {
   return (
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
       {
@@ -22,7 +22,7 @@ const AppList = ({ apps }: { apps: SlimAppData[] }) => {
 
               <TopRating ratings={app.ratings} />
 
-              <AppTypeBadges types={app.types} publishedDate={app.published_date} />
+              <AppTypeBadges types={app.types} publishedDate={app.published_date} messages={messages} />
             </div>
           </div>
         ))

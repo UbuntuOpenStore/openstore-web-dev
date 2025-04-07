@@ -143,14 +143,30 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
           </p>
         )}
 
-        <AppTypeBadges types={app.types} />
+        <AppTypeBadges
+          types={app.types}
+          messages={{
+            new: t("New!"),
+            app: t("App"),
+            bookmark: t("Bookmark"),
+            webapp: t("Web App"),
+          }}
+        />
 
         <p class="mt-4 text-xl">{app.tagline}</p>
       </div>
     </div>
 
     <div class="flex gap-4 items-center">
-      <DownloadDialog app={app} client:load />
+      <DownloadDialog
+        app={app}
+        messages={{
+          download: t("Download"),
+          downloadApp: t("Download %{app}"),
+          olderVersions: t("Older versions"),
+        }}
+        client:load
+      />
 
       <a href={`openstore://${app.id}`} title={t("Install via the OpenStore app")} class="btn w-full bg-ubuntu-orange text-white font-bold"
         >{t("Install")}</a
@@ -165,7 +181,7 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
   <div class="mx-auto w-full max-w-6xl h-1 bg-ubuntu-gradient rounded-full"></div>
 
   <section class="section">
-    <Screenshots images={app.screenshots} videoUrl={app.video_url} nsfw={app.nsfw} client:idle />
+    <Screenshots images={app.screenshots} videoUrl={app.video_url} nsfw={app.nsfw} messages={{ nsfw: t("This app contains NSFW content, to click to reveal the screenshots.")}} client:idle />
   </section>
 
   <section class="section">

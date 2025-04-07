@@ -13,12 +13,16 @@ type Props = {
   currentPage: number;
   totalPages: number;
   onPageChanged: (page: number) => void;
+  messages: {
+    previous: string,
+    next: string,
+  }
 };
 
-const Pagination = ({ currentPage, totalPages, onPageChanged }: Props) => {
+const Pagination = ({ currentPage, totalPages, onPageChanged, messages }: Props) => {
   return (
     <div class="flex gap-4 justify-center">
-      <button disabled={currentPage <= 0} class={`${currentPage <= 0 ? 'text-gray-400' : 'cursor-pointer'}`} onClick={() => onPageChanged(currentPage - 1)} title="Go back a page">
+      <button disabled={currentPage <= 0} class={`${currentPage <= 0 ? 'text-gray-400' : 'cursor-pointer'}`} onClick={() => onPageChanged(currentPage - 1)} title={messages.previous}>
         <SvgGoPrevious />
       </button>
 
@@ -32,7 +36,7 @@ const Pagination = ({ currentPage, totalPages, onPageChanged }: Props) => {
 
       {currentPage >= 0 && (totalPages - currentPage) >= 3 && (<span class="text-gray-400">...</span>)}
 
-      <button disabled={currentPage >= totalPages} class={`${currentPage >= totalPages ? 'text-gray-400' : 'cursor-pointer'}`} onClick={() => onPageChanged(currentPage + 1)} title="Go to the next page">
+      <button disabled={currentPage >= totalPages} class={`${currentPage >= totalPages ? 'text-gray-400' : 'cursor-pointer'}`} onClick={() => onPageChanged(currentPage + 1)} title={messages.next}>
         <SvgGoNext />
       </button>
     </div>
