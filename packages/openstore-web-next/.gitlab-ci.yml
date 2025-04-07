@@ -18,6 +18,7 @@ stages:
 check:
   stage: check
   script:
+    - node --run convert-po
     - node --run check
 
 deploy:
