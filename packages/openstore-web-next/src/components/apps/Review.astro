@@ -6,6 +6,10 @@ import SvgNeutral from "@/components/icons/Neutral";
 import SvgHappy from "@/components/icons/Happy";
 import SvgThumbsDown from "@/components/icons/ThumbsDown";
 import SvgBuggy from "@/components/icons/Buggy";
+import { initializeI18N } from "@/lib/i18n";
+import { t } from "i18next";
+
+await initializeI18N("en_US");
 
 const ICON_MAP = {
   [RatingType.THUMBS_UP]: SvgThumbsUp,
@@ -15,7 +19,8 @@ const ICON_MAP = {
   [RatingType.BUGGY]: SvgBuggy,
 };
 
-const dateFormatter = new Intl.DateTimeFormat(undefined, {
+const dateFormatter = new Intl.DateTimeFormat("en", {
+  // TODO get lang from the URL
   dateStyle: "medium",
 });
 
@@ -35,7 +40,7 @@ const Icon = ICON_MAP[review.rating];
   <div>
     <p class="text-lg font-bold">{review.author}</p>
     <p class="text-sm text-gray-600">
-      Reviewed {dateFormatter.format(review.date)} for version {review.version}
+      {t("Reviwed %{date} for version %{version}").replace("%{date}", dateFormatter.format(review.date)).replace("%{version}", review.version)}
     </p>
     <p>{review.body}</p>
   </div>

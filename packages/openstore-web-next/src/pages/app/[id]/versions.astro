@@ -5,6 +5,10 @@ import { AppSchema, type AppRevisionData } from "@/lib/schema";
 import { categorySlug } from "@/lib/utils";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import SvgHome from "@/components/icons/Home";
+import { initializeI18N } from "@/lib/i18n";
+import { t } from "i18next";
+
+await initializeI18N("en_US");
 
 const { id } = Astro.params;
 
@@ -39,7 +43,7 @@ function titleCase(value: string) {
 }
 ---
 
-<BaseLayout title={app.name} pageTitle={`${app.name} - Versions | OpenStore`} description={app.tagline}>
+<BaseLayout title={app.name} pageTitle={`${app.name} - ${t("Versions")} | OpenStore`} description={app.tagline}>
   <section class="section flex">
     <a href="/">
       <SvgHome />

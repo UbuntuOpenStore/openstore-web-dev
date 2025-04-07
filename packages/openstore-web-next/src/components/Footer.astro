@@ -1,3 +1,10 @@
+---
+import { initializeI18N } from "@/lib/i18n";
+import { t } from "i18next";
+
+await initializeI18N("en_US");
+---
+
 <footer class="bg-primary text-white">
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
     <div class="md:flex md:justify-between py-3 md:py-4">
@@ -19,9 +26,9 @@
       </div>
 
       <div class="text-sm flex flex-col mt-4 md:mt-0">
-        <a href="https://gitlab.com/theopenstore/openstore-meta/issues" class="underline">Report an Issue</a>
-        <a href="/telegram" class="underline">Chat with us on Telegram</a>
-        <a href="https://stats.uptimerobot.com/R6Z8mtJ8P" class="underline">Site Status</a>
+        <a href="https://gitlab.com/theopenstore/openstore-meta/issues" class="underline">{t("Report an Issue")}</a>
+        <a href="/telegram" class="underline">{t("Chat with us on Telegram")}</a>
+        <a href="https://stats.uptimerobot.com/R6Z8mtJ8P" class="underline">{t("Site Status")}</a>
       </div>
     </div>
   </div>

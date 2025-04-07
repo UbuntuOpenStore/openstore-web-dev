@@ -2,6 +2,10 @@
 import SvgNavigationMenu from "./icons/NavigationMenu";
 import LoginLogout from "./LoginLogout";
 import SearchBar from "./SearchBar";
+import { initializeI18N } from "@/lib/i18n";
+import { t } from "i18next";
+
+await initializeI18N("en_US");
 ---
 
 <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-primary mb-6" id="header">
@@ -34,18 +38,16 @@ import SearchBar from "./SearchBar";
         </li>
 
         <li>
-          <a class="header-link" href="/submit/">
-            Submit
-          </a>
+          <a class="header-link" href="/submit/">{t("Submit")}</a>
         </li>
         <li>
-          <a class="header-link" href="/apps/">Browse</a>
+          <a class="header-link" href="/apps/">{t("Browse")}</a>
         </li>
         <li>
-          <a class="header-link" href="/apps/categories/">Categories</a>
+          <a class="header-link" href="/apps/categories/">{t("Categories")}</a>
         </li>
         <li>
-          <a class="header-link" href="/about/">About</a>
+          <a class="header-link" href="/about/">{t("About")}</a>
         </li>
 
         <LoginLogout client:only="preact" />
