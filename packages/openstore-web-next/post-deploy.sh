@@ -11,6 +11,7 @@ cd $BASE/$VERSION
 
 rm -f $BASE/current
 ln -s $BASE/$VERSION $BASE/current
+chmod 777 $BASE/current/*.db
 
 sudo systemctl restart openstore-web-next$ENV
 
