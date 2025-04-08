@@ -29,7 +29,7 @@ import SvgHome from "@/components/icons/Home";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
 
-await initializeI18N("en_US");
+await initializeI18N(Astro.currentLocale);
 
 const { id } = Astro.params;
 

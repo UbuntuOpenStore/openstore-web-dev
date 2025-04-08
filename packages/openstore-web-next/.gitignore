@@ -24,3 +24,5 @@ pnpm-debug.log*
 .idea/
 
 src/locales/*.json
+astro_tmp_pages_*
+astro.db

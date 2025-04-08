@@ -9,7 +9,7 @@ import SvgBuggy from "@/components/icons/Buggy";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
 
-await initializeI18N("en_US");
+await initializeI18N(Astro.currentLocale);
 
 const ICON_MAP = {
   [RatingType.THUMBS_UP]: SvgThumbsUp,

@@ -27,7 +27,7 @@ export async function getStaticPaths() {
   });
 }
 
-await initializeI18N("en_US");
+await initializeI18N(Astro.currentLocale);
 
 const { category } = Astro.props;
 ---

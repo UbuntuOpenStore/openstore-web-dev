@@ -5,7 +5,7 @@ import CategoryList from "@/components/CategoryList.astro";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
 
-await initializeI18N("en_US");
+await initializeI18N(Astro.currentLocale);
 ---
 
 <BaseLayout title="OpenStore" pageTitle={t("Apps") + " | OpenStore"} description={t("The open source app store for Ubuntu Touch")}>

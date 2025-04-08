@@ -8,7 +8,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
 
-await initializeI18N("en_US");
+await initializeI18N(Astro.currentLocale);
 
 const apikey = Astro.cookies.get("apikey")?.value;
 if (apikey) {

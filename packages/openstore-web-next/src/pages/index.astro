@@ -6,7 +6,7 @@ import Discover from "@/components/Discover.astro";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
 
-await initializeI18N("en_US"); // TODO get this from the URL
+await initializeI18N(Astro.currentLocale);
 ---
 
 <BaseLayout title="OpenStore" pageTitle="OpenStore" description={t("The open source app store for Ubuntu Touch")}>

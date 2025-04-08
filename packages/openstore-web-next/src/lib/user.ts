@@ -1,6 +1,7 @@
-import { db, UserCache, sql } from "astro:db";
-import { UserSchema } from "./schema";
+import { db, sql, UserCache } from 'astro:db';
 import crypto from 'node:crypto';
+
+import { UserSchema } from './schema';
 
 export async function getUser(apikey: string) {
   const hash = crypto.createHash('sha256');

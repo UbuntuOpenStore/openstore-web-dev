@@ -1,4 +1,4 @@
-import { z } from "astro/zod";
+import { z } from 'astro/zod';
 
 export enum RatingType {
   THUMBS_UP = 'THUMBS_UP',

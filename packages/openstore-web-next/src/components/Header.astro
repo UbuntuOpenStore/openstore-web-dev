@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
 
-await initializeI18N("en_US");
+await initializeI18N(Astro.currentLocale);
 ---
 
 <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-primary mb-6" id="header">
