@@ -28,6 +28,7 @@ type Props = {
     webapp: string,
     webapps: string,
     filter: string,
+    showNsfwFilter: string,
     new: string,
     notFound: string,
     previous: string,
@@ -69,7 +70,7 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
 
   const storeTerm = useStore(searchTerm);
   // Get from the hash as a backup so we don't overwrite the hash before it gets stored in SearchBar.tsx
-  const term = storeTerm || hash.get('search') || '';
+  const term = storeTerm ?? (hash.get('search') || '');
 
   const [page, setPage] = useState(isNaN(hashPage) ? 0 : hashPage);
   const [totalPages, setTotalPages] = useState(0);
@@ -78,6 +79,7 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
     sort: hash.get('sort') ?? DEFAULT_SORT,
     type: hash.get('type') ?? DEFAULT_TYPE,
     channel: hash.get('channel') ?? DEFAULT_CHANNEL,
+    showNsfw: hash.get('nsfw') === 'true' ? true : undefined,
   });
   const [apps, setApps] = useState<SlimAppData[]>([]);
   const [loading, setLoading] = useState(false);
@@ -108,6 +110,7 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
     url.searchParams.append('type', query.type);
     url.searchParams.append('category', category ?? '');
     url.searchParams.append('channel', query.channel);
+    url.searchParams.append('nsfw', query.showNsfw ? '' : 'false');
 
     const updateHash = new URLSearchParams();
     if (term) {
@@ -127,6 +130,9 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
     }
     if (page > 0) {
       updateHash.append('page', page.toString());
+    }
+    if (query.showNsfw) {
+      updateHash.append('nsfw', 'true');
     }
 
     document.location.hash = updateHash.size > 0 ? `#${updateHash.toString()}` : '';
@@ -161,8 +167,8 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
     setQuery((previous) => ({ ...previous, sort: value}));
   }, []);
 
-  const setType = useCallback((value: AppType | '') => {
-    setQuery((previous) => ({ ...previous, type: value}));
+  const setFilters = useCallback((value: AppType | '', showNsfw: boolean) => {
+    setQuery((previous) => ({ ...previous, type: value, showNsfw: showNsfw ? true : undefined }));
   }, []);
 
   return (
@@ -183,7 +189,8 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
 
           <FilterDialog
             type={query.type as AppType | ''}
-            onChange={setType}
+            showNsfw={!!query.showNsfw}
+            onChange={setFilters}
             messages={messages}
           />
         </div>
