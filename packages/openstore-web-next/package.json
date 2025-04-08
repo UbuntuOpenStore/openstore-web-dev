@@ -11,7 +11,8 @@
     "check": "astro check",
     "sync": "astro sync",
     "convert-icons": "svgr --out-dir src/components/icons/ src/assets/icons/ && sed -i 's/#000/currentColor/g' src/components/icons/* && sed -i 's/gray/currentColor/g' src/components/icons/*",
-    "convert-po": "bash -c 'for file in po/*.po; do LANG=$(basename \"$file\" .po); ./node_modules/.bin/i18next-conv -l \"$LANG\" -s \"po/$LANG.po\" -t \"src/locales/$LANG.json\"; done'"
+    "convert-po": "bash -c 'for file in po/*.po; do LANG=$(basename \"$file\" .po); ./node_modules/.bin/i18next-conv -l \"$LANG\" -s \"po/$LANG.po\" -t \"src/locales/$LANG.json\"; done'",
+    "pot-file": "node ./scripts/extract-strings.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
