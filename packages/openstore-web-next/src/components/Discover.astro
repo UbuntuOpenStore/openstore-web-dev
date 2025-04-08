@@ -2,19 +2,20 @@
 import HighlightedApps from "@/components/apps/HighlightedApps";
 import { DEFAULT_CHANNEL, DiscoverSchema } from "../lib/schema";
 import AppList from "@/components/apps/AppList";
-import { categorySlug } from "@/lib/utils";
+import { categorySlug, getRelativeLocaleUrl, localeSlugToCode } from "@/lib/utils";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
 
 await initializeI18N(Astro.currentLocale);
+const lang = localeSlugToCode(Astro.currentLocale);
 
-const discoverResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/discover?channel=${DEFAULT_CHANNEL}`); // TODO send lang from URL
+const discoverResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/discover?channel=${DEFAULT_CHANNEL}&lang=${lang}`);
 const discoverData = await discoverResponse.json();
 const { highlights, categories } = DiscoverSchema.parse(discoverData.data);
 ---
 
 <section class="py-3 px-3 mx-auto w-full max-w-2xl md:px-4">
-  <HighlightedApps highlights={highlights} client:load />
+  <HighlightedApps highlights={highlights} currentLocale={Astro.currentLocale} client:load />
 </section>
 
 <section class="section">
@@ -24,7 +25,7 @@ const { highlights, categories } = DiscoverSchema.parse(discoverData.data);
         <div>
           <h2 class="text-2xl text-center">
             {category.referral ? (
-              <a href={`/apps/${categorySlug(category.referral)}`} class="underline">
+              <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${categorySlug(category.referral)}`)} class="underline">
                 {category.name}
               </a>
             ) : (
@@ -41,6 +42,7 @@ const { highlights, categories } = DiscoverSchema.parse(discoverData.data);
               bookmark: t("Bookmark"),
               webapp: t("Web App"),
             }}
+            currentLocale={Astro.currentLocale}
           />
         </div>
 

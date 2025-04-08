@@ -2,7 +2,7 @@
 export const prerender = false;
 
 import { AppSchema, type AppRevisionData } from "@/lib/schema";
-import { categorySlug } from "@/lib/utils";
+import { categorySlug, getRelativeLocaleUrl } from "@/lib/utils";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import SvgHome from "@/components/icons/Home";
 import { initializeI18N } from "@/lib/i18n";
@@ -45,7 +45,7 @@ function titleCase(value: string) {
 
 <BaseLayout title={app.name} pageTitle={`${app.name} - ${t("Versions")} | OpenStore`} description={app.tagline}>
   <section class="section flex">
-    <a href="/">
+    <a href={getRelativeLocaleUrl(Astro.currentLocale, "/")}>
       <SvgHome />
     </a>
 
@@ -53,14 +53,14 @@ function titleCase(value: string) {
       app.category && (
         <div class="ml-1">
           /{" "}
-          <a href={`/apps/${categorySlug(app.category)}`} class="underline">
+          <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${categorySlug(app.category)}`)} class="underline">
             {app.category}
           </a>
         </div>
       )
     }
 
-    <div class="ml-1">/ <a href={`/app/${app.id}`} class="underline">{app.name}</a></div>
+    <div class="ml-1">/ <a href={getRelativeLocaleUrl(Astro.currentLocale, `/app/${app.id}`)} class="underline">{app.name}</a></div>
   </section>
 
   <section class="flex flex-col md:flex-row justify-between section">

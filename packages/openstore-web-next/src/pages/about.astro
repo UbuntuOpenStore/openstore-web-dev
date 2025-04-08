@@ -2,6 +2,7 @@
 import CopyToClipboard from "@/components/CopyToClipboard";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { initializeI18N } from "@/lib/i18n";
+import { getRelativeLocaleUrl } from "@/lib/utils";
 import { t } from "i18next";
 
 await initializeI18N(Astro.currentLocale);
@@ -23,7 +24,7 @@ await initializeI18N(Astro.currentLocale);
 
     <p>{t("Promote your app on the OpenStore!")}</p>
 
-    <a href="/badge/" class="underline">{t("Get your badge")}</a>
+    <a href={getRelativeLocaleUrl(Astro.currentLocale, "/badge/")} class="underline">{t("Get your badge")}</a>
   </section>
 
   <section class="section space-y-4">
@@ -35,7 +36,7 @@ await initializeI18N(Astro.currentLocale);
 
     <ol class="list-decimal ml-4">
       <li>
-        <a href="/app/openstore.openstore-team" target="_blank" class="underline">{t("Download the OpenStore App")}</a>
+        <a href={getRelativeLocaleUrl(Astro.currentLocale, "/app/openstore.openstore-team")} target="_blank" class="underline">{t("Download the OpenStore App")}</a>
       </li>
       <li>{t("Open the terminal app on your Ubuntu Touch device")}</li>
       <li>{t("Navigate to the downloads folder")}</li>
@@ -96,7 +97,7 @@ await initializeI18N(Astro.currentLocale);
       {t("Apps uploaded to the OpenStore are subject to our submission rules and content policy. You can review the rules and policies before uploading your app.")}
     </p>
 
-    <a href="/submit/" class="underline">{t("Submit your app")}</a>
+    <a href={getRelativeLocaleUrl(Astro.currentLocale, "/submit/")} class="underline">{t("Submit your app")}</a>
 
     <br />
 

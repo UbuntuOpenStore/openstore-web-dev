@@ -92,6 +92,6 @@ await initializeI18N(Astro.currentLocale);
       </li>
     </ul>
 
-    <SubmitAppForm client:only="preact" />
+    <SubmitAppForm currentLocale={Astro.currentLocale} client:only="preact" />
   </section>
 </BaseLayout>

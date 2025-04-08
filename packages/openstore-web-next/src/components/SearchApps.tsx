@@ -9,6 +9,7 @@ import FilterDialog from "./FilterDialog";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
 import * as Sentry from "@sentry/astro";
+import { localeSlugToCode } from "@/lib/utils";
 
 const PAGE_SIZE = 32;
 const DEFAULT_SORT = '-published_date';
@@ -46,10 +47,11 @@ type Props = {
       "-updated_date": string,
       updated_date: string,
     }
-  }
+  },
+  currentLocale: string | undefined,
 };
 
-const SearchApps = ({ category, categoryName, messages }: Props) => {
+const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) => {
   const SORT_OPTIONS = [
   { value: "relevance", label: messages.options.relevance },
   { value: "-calculated_rating", label: messages.options['-calculated_rating'] },
@@ -98,7 +100,7 @@ const SearchApps = ({ category, categoryName, messages }: Props) => {
     setLoading(true);
 
     const skip = page * PAGE_SIZE;
-    const url = new URL(`${import.meta.env.PUBLIC_API_URL}api/v4/apps`); // TODO pass lang from URL
+    const url = new URL(`${import.meta.env.PUBLIC_API_URL}api/v4/apps?lang=${localeSlugToCode(currentLocale)}`);
     url.searchParams.append('limit', PAGE_SIZE.toString());
     url.searchParams.append('skip', skip.toString());
     url.searchParams.append('search', term);
@@ -222,6 +224,7 @@ const SearchApps = ({ category, categoryName, messages }: Props) => {
                 <>
                   <AppList
                     apps={apps}
+                    currentLocale={currentLocale}
                     messages={messages}
                   />
 

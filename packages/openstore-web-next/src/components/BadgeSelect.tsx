@@ -1,5 +1,6 @@
 import { useState } from "preact/hooks";
 import CopyToClipboard from "./CopyToClipboard";
+import { localeSlugToCode } from "@/lib/utils";
 
 const LANGUAGES = [
   { code: "en_US", label: "English" },
@@ -22,8 +23,10 @@ const LANGUAGES = [
   { code: "sv", label: "Swedish" },
 ];
 
-const BadgeSelect = ({ appId }: { appId?: string }) => {
-  const [language, setLanguage] = useState('en_US'); // TODO default to the current language displayed (if it exists)
+const BadgeSelect = ({ appId, currentLocale }: { appId?: string, currentLocale?: string }) => {
+  const code = localeSlugToCode(currentLocale);
+  const defaultLanguage = LANGUAGES.find((lang) => lang.code === code);
+  const [language, setLanguage] = useState(defaultLanguage?.code ?? 'en_US');
 
   const appUrl = `${import.meta.env.SITE}app/${appId}`;
   const svgUrl = `${import.meta.env.SITE}badges/${language}.svg`;

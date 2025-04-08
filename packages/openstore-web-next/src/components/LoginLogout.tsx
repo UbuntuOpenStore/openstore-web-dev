@@ -1,4 +1,6 @@
-const LoginLogout = ({ messages } : { messages: { manage: string, logout: string, login: string } }) => {
+import { getRelativeLocaleUrl } from "@/lib/utils";
+
+const LoginLogout = ({ messages, currentLocale } : { currentLocale: string | undefined, messages: { manage: string, logout: string, login: string } }) => {
   if (document.cookie.includes('apikey=')) {
     return (
       <>
@@ -7,7 +9,7 @@ const LoginLogout = ({ messages } : { messages: { manage: string, logout: string
         </li>
 
         <li>
-          <a class="header-link" href="/logout/">{messages.logout}</a>
+          <a class="header-link" href={getRelativeLocaleUrl(currentLocale, "/logout/")}>{messages.logout}</a>
         </li>
       </>
     );
@@ -15,7 +17,7 @@ const LoginLogout = ({ messages } : { messages: { manage: string, logout: string
 
   return (
     <li>
-      <a class="header-link" href="/login/">{messages.login}</a>
+      <a class="header-link" href={getRelativeLocaleUrl(currentLocale, "/login/")}>{messages.login}</a>
     </li>
   );
 }

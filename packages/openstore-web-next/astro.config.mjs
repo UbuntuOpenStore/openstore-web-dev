@@ -7,9 +7,18 @@ import { loadEnv } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 import db from "@astrojs/db";
 import sitemap from "@astrojs/sitemap";
+import { i18n, filterSitemapByDefaultLocale } from "astro-i18n-aut/integration";
+import localesJson from "./src/locales.json";
 
 // https://docs.astro.build/en/guides/environment-variables/#in-the-astro-config-file
 const { SITE, SENTRY_DSN, SENTRY_PROJECT, SENTRY_AUTH_TOKEN } = loadEnv(process.env.NODE_ENV ?? 'production', process.cwd(), "");
+
+const defaultLocale = "en-us";
+const locales = { "en-us": "en_US"};
+for (const locale of localesJson) {
+  // @ts-ignore
+  locales[locale.slug] = locale.code;
+}
 
 // https://astro.build/config
 export default defineConfig({
@@ -25,42 +34,22 @@ export default defineConfig({
       },
     }),
     db(),
-    sitemap(),
+    i18n({
+      locales,
+      defaultLocale,
+      exclude: ["pages/api/**/*", "pages/manage/**/*"],
+    }),
+    sitemap({
+      i18n: {
+        locales,
+        defaultLocale,
+      },
+      filter: filterSitemapByDefaultLocale({ defaultLocale }),
+    }),
   ],
   i18n: {
-    locales: [
-     "en-us",
-
-      "ar",
-      "be",
-      "ca",
-      "cs",
-      "de",
-      "el",
-      "es",
-      "fi",
-      "fr",
-      "gl",
-      "he",
-      "hu",
-      "it",
-      "lt",
-      "nb-no",
-      "nl",
-      "pl",
-      "pt-br",
-      "pt-pt",
-      "pt",
-      "ru",
-      "sc",
-      "sk",
-      "sv",
-      "ta",
-      "tr",
-      "zh-hans",
-      "zh-hant",
-    ],
-    defaultLocale: "en-us",
+    locales: Object.keys(locales),
+    defaultLocale,
   },
   prefetch: {
     prefetchAll: false,

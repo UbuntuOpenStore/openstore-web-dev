@@ -3,9 +3,9 @@ import SvgSpinner from "../icons/Spinner";
 import type { JSX } from "preact/jsx-runtime";
 import SvgCheck from "../icons/Check";
 import SvgClose from "../icons/Close";
-import { getClientApiKey } from "@/lib/utils";
+import { getClientApiKey, getRelativeLocaleUrl } from "@/lib/utils";
 
-const SubmitAppForm = () => {
+const SubmitAppForm = ({ currentLocale }: { currentLocale: string | undefined }) => {
   const [saving, setSaving] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
@@ -52,7 +52,7 @@ const SubmitAppForm = () => {
   if (!apikey) {
     return (
       <p>
-        <a href="/login/" class="underline">You must be logged in to submit your app.</a>
+        <a href={getRelativeLocaleUrl(currentLocale, "/login/")} class="underline">You must be logged in to submit your app.</a>
       </p>
     );
   }

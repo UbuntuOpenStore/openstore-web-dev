@@ -6,12 +6,14 @@ import { CategoriesSchema, type CategoryData } from "@/lib/schema";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
 
+await initializeI18N(Astro.currentLocale);
+
 export type Props = {
   category: CategoryData;
 };
 
 export async function getStaticPaths() {
-  const response = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/categories?all=true`); // TODO send the language from the URL
+  const response = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/categories?all=true`);
   const { data } = await response.json();
   const categories = CategoriesSchema.parse(data);
 
@@ -26,8 +28,6 @@ export async function getStaticPaths() {
     };
   });
 }
-
-await initializeI18N(Astro.currentLocale);
 
 const { category } = Astro.props;
 ---
@@ -69,6 +69,7 @@ const { category } = Astro.props;
             updated_date: t("Oldest Update"),
           },
         }}
+        currentLocale={Astro.currentLocale}
         client:only="preact"
       />
     </div>

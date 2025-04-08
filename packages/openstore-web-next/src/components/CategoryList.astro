@@ -1,12 +1,12 @@
 ---
 import { CategoriesSchema } from "@/lib/schema";
-import { cn } from "@/lib/utils";
+import { cn, getRelativeLocaleUrl, localeSlugToCode } from "@/lib/utils";
 
 export type Props = {
   class?: string;
 };
 
-const response = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/categories?all=true`);
+const response = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/categories?all=true&lang=${localeSlugToCode(Astro.currentLocale)}`);
 const { data } = await response.json();
 const categories = CategoriesSchema.parse(data);
 ---
@@ -16,10 +16,10 @@ const categories = CategoriesSchema.parse(data);
     categories.map((category) => (
       <div>
         <div class="text-lg flex gap-2 mb-2">
-          <a href={`/apps/${category.slug}`}>
+          <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${category.slug}`)}>
             <img src={category.icon} alt="" class="h-6 w-6" />
           </a>
-          <a href={`/apps/${category.slug}`} class="underline">
+          <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${category.slug}`)} class="underline">
             {category.translation}
           </a>
         </div>

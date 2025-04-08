@@ -2,7 +2,7 @@
 export const prerender = false;
 
 import { AppSchema, ReviewsSchema } from "@/lib/schema";
-import { categorySlug } from "@/lib/utils";
+import { categorySlug, getRelativeLocaleUrl, localeSlugToCode } from "@/lib/utils";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import CircleIcon from "@/components/CircleIcon.astro";
 import DownloadDialog from "@/components/apps/DownloadDialog";
@@ -30,12 +30,13 @@ import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
 
 await initializeI18N(Astro.currentLocale);
+const lang = localeSlugToCode(Astro.currentLocale);
 
 const { id } = Astro.params;
 
 const [appResponse, reviewsResponse] = await Promise.all([
-  fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/apps/${id}`), // TODO send lang to api (it will support it in the future)
-  fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/apps/${id}/reviews`),
+  fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/apps/${id}?lang=${lang}`),
+  fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/apps/${id}/reviews?lang=${lang}`),
 ]);
 
 if (appResponse.status === 404) {
@@ -99,10 +100,10 @@ const RESTRICTED_PERMISSIONS = new Set([
   "unconfined",
 ]);
 
-const dateFormatter = new Intl.DateTimeFormat("en", { // TODO get this from the url
+const dateFormatter = new Intl.DateTimeFormat(Astro.currentLocale ?? 'en', {
   dateStyle: "medium",
 });
-const numberFormatter = new Intl.NumberFormat("en"); // TODO get this from the url
+const numberFormatter = new Intl.NumberFormat(Astro.currentLocale ?? 'en');
 function domainFormatter(url: string) {
   return new URL(url).host;
 }
@@ -122,11 +123,11 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
 <BaseLayout title={app.name} pageTitle={`${app.name} | OpenStore`} description={app.tagline}>
   {app.category && (
     <section class="section flex">
-      <a href="/">
+      <a href={getRelativeLocaleUrl(Astro.currentLocale, "/")}>
         <SvgHome />
       </a>
 
-      <div class="ml-1">/ <a href={`/apps/${categorySlug(app.category)}`} class="underline">{app.category}</a></div>
+      <div class="ml-1">/ <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${categorySlug(app.category)}`)} class="underline">{app.category}</a></div>
     </section>
   )}
 
@@ -139,7 +140,7 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
         <h1 class="text-4xl">{app.name}</h1>
         {app.publisher && (
           <p>
-            by <a href={publisherUrl.toString()} class="underline">{app.publisher}</a>
+            by <a href={getRelativeLocaleUrl(Astro.currentLocale, publisherUrl.toString())} class="underline">{app.publisher}</a>
           </p>
         )}
 
@@ -165,6 +166,7 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
           downloadApp: t("Download %{app}"),
           olderVersions: t("Older versions"),
         }}
+        currentLocale={Astro.currentLocale}
         client:load
       />
 

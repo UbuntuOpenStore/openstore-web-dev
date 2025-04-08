@@ -30,6 +30,7 @@
     "@tailwindcss/vite": "^4.0.12",
     "astro": "^5.5.4",
     "astro-capo": "^0.0.1",
+    "astro-i18n-aut": "^0.7.3",
     "astro-seo": "^0.8.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",

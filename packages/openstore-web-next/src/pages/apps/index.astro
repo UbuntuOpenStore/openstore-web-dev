@@ -43,6 +43,7 @@ await initializeI18N(Astro.currentLocale);
             updated_date: t("Oldest Update"),
           },
         }}
+        currentLocale={Astro.currentLocale}
         client:only="preact"
       />
     </div>

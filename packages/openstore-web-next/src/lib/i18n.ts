@@ -31,50 +31,16 @@ import ug from '../locales/ug.json';
 import zh_Hans from '../locales/zh_Hans.json';
 import zh_Hant from '../locales/zh_Hant.json';
 
-export const LANGUAGES = {
-  en_US: 'English',
+import localesJson from '../locales.json';
+import { localeSlugToCode } from './utils';
 
-  ar: "Arabic",
-  be: "Belarusian",
-  ca: "Catalan",
-  cs: "Czech",
-  de: "German",
-  el: "Greek",
-  es: "Spanish",
-  fi: "Finnish",
-  fr: "French",
-  gl: "Galician",
-  he: "Hebrew",
-  hu: "Hungarian",
-  it: "Italian",
-  lt: "Lithuanian",
-  nb_NO: "Norwegian Bokmål",
-  nl: "Dutch",
-  pl: "Polish",
-  pt_BR: 'Portuguese (Brazil)',
-  pt_PT: "Portuguese (Portugal)",
-  pt: "Portuguese",
-  ru: "Russian",
-  sc: "Sardinian",
-  sk: "Slovak",
-  sv: "Swedish",
-  ta: "Tamil",
-  tr: "Turkish",
-  zh_Hans: "Chinese (Simplified)",
-  zh_Hant: "Chinese (Traditional)",
-};
-
-const LANGUAGE_CODES = Object.keys(LANGUAGES);
+export const LOCALES = localesJson;
 
 export async function initializeI18N(locale = 'en-us') {
-  const compare = locale.replaceAll('-', "_");
-  const localeCode = LANGUAGE_CODES.find((code) => code.toLowerCase() === compare);
-  if (!localeCode) {
-    throw new Error(`Unknown locale: ${locale}`);
-  }
+  const code = localeSlugToCode(locale);
 
   return i18next.init({
-    lng: localeCode,
+    lng: code,
     resources: {
       ar: { translation: ar },
       be: { translation: be },

@@ -19,8 +19,7 @@ const ICON_MAP = {
   [RatingType.BUGGY]: SvgBuggy,
 };
 
-const dateFormatter = new Intl.DateTimeFormat("en", {
-  // TODO get lang from the URL
+const dateFormatter = new Intl.DateTimeFormat(Astro.currentLocale ?? 'en', {
   dateStyle: "medium",
 });
 
