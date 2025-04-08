@@ -21,6 +21,14 @@ export function getRelativeLocaleUrl(locale: string | undefined, path: string) {
   return getRelativeLocaleUrlAstro(locale ?? 'en-us', path);
 }
 
+export function removeLocaleFromPath(path: string) {
+  for (const locale of localesJson) {
+    path = path.replace(`/${locale.slug}/`, '');
+  }
+
+  return path;
+}
+
 export function localeSlugToCode(locale = 'en-us') {
   const compare = locale.replaceAll('-', "_");
   const found = localesJson.find((l) => l.code.toLowerCase() === compare);
