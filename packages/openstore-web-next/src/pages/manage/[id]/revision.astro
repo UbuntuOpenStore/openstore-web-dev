@@ -33,7 +33,7 @@ if (appResponse.status !== 200) {
 const app = await appResponse.json().then(({ data }) => AppManageSchema.parse(data));
 ---
 
-<BaseLayout title="OpenStore" pageTitle={`Manage ${app.name} | OpenStore`} description={app.tagline}>
+<BaseLayout title="OpenStore" pageTitle={`Manage ${app.name} | OpenStore`} description={app.tagline} schema={undefined}>
   <ManageHeader app={app} breadcrumb="New Revision" />
 
   <div class="grow">

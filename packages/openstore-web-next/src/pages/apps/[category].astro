@@ -5,6 +5,7 @@ import CategoryList from "@/components/CategoryList.astro";
 import { CategoriesSchema, type CategoryData } from "@/lib/schema";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
+import { generateSchema } from "@/lib/json-schema";
 
 await initializeI18N(Astro.currentLocale);
 
@@ -32,7 +33,15 @@ export async function getStaticPaths() {
 const { category } = Astro.props;
 ---
 
-<BaseLayout title="OpenStore" pageTitle={t("Categories") + " | OpenStore"} description={t("The open source app store for Ubuntu Touch")}>
+<BaseLayout
+  title="OpenStore"
+  pageTitle={category.translation + " | OpenStore"}
+  description={t("The open source app store for Ubuntu Touch")}
+  schema={generateSchema(category.translation, [
+    { name: "Apps", path: "/apps/" },
+    { name: category.category, path: `/apps/${category.slug}/` },
+  ])}
+>
   <section class="grow flex flex-row">
     <CategoryList class="mx-12 w-96 mb-2 hidden md:block" />
 

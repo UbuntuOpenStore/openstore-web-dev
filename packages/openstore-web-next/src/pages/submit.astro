@@ -2,12 +2,13 @@
 import SubmitAppForm from "@/components/manage/SubmitAppForm";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { initializeI18N } from "@/lib/i18n";
+import { generateSchema } from "@/lib/json-schema";
 import { t } from "i18next";
 
 await initializeI18N(Astro.currentLocale);
 ---
 
-<BaseLayout title="OpenStore" pageTitle={`${t("Submit")} | OpenStore`} description={t("The open source app store for Ubuntu Touch")}>
+<BaseLayout title="OpenStore" pageTitle={`${t("Submit")} | OpenStore`} description={t("The open source app store for Ubuntu Touch")} schema={generateSchema(t('Submit'), [{ name: 'Submit', path: '/submit/' }])}>
   <section class="section space-y-4">
     <h1 class="text-4xl">{t("Submit Your App to the OpenStore")}</h1>
 

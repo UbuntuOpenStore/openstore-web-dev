@@ -8,7 +8,7 @@ import { t } from "i18next";
 await initializeI18N(Astro.currentLocale);
 ---
 
-<BaseLayout title="OpenStore" pageTitle="OpenStore" description={t("The open source app store for Ubuntu Touch")}>
+<BaseLayout title="OpenStore" pageTitle="OpenStore" description={t("The open source app store for Ubuntu Touch")} schema={undefined}>
   <section class="section text-center">
     <h1 class="text-4xl">{t("Not Found")}</h1>
     <p>{t("The app or page you are looking for could not be found. Try using the search bar.")}</p>

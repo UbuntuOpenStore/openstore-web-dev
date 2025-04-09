@@ -28,6 +28,7 @@ import SvgExternalLink from "@/components/icons/ExternalLink";
 import SvgHome from "@/components/icons/Home";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
+import { generateSchema } from "@/lib/json-schema";
 
 await initializeI18N(Astro.currentLocale);
 const lang = localeSlugToCode(Astro.currentLocale);
@@ -120,7 +121,12 @@ const publisherUrl = new URL('/apps/', import.meta.env.SITE);
 publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
 ---
 
-<BaseLayout title={app.name} pageTitle={`${app.name} | OpenStore`} description={app.tagline}>
+<BaseLayout
+  title={app.name}
+  pageTitle={`${app.name} | OpenStore`}
+  description={app.tagline}
+  schema={generateSchema(app.name, [{ name: "Apps", path: "/apps/" }, { name: app.name, path: `/app/${app.id}/` }], app)}
+>
   {app.category && (
     <section class="section flex">
       <a href={getRelativeLocaleUrl(Astro.currentLocale, "/")}>

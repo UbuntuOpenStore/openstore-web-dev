@@ -4,7 +4,7 @@ import { i18nextToPot } from "i18next-conv";
 
 const directoryPath = "./src";
 const fileExtensions = [".ts", ".tsx", ".astro"];
-const pattern = /[{ ]t\s*\(["'](.*?)["']\s*\)/g; // Pattern to match t("example") or t('example')
+const pattern = /[{ ]t\(\s*["'](.*?)["']\s*\)/g; // Pattern to match t("example") or t('example')
 
 const extractedStrings = {};
 
@@ -29,7 +29,7 @@ async function walkDirectory(dirPath) {
 
 async function processFile(filePath) {
   try {
-    const content = (await fs.readFile(filePath, "utf8")).replace('\n', ''); // Collapse everything to one line to find stuff split into multiple lines
+    const content = (await fs.readFile(filePath, "utf8")).replaceAll('\n', ''); // Collapse everything to one line to find stuff split into multiple lines
     const relativePath = path.relative(directoryPath, filePath);
 
     let match;

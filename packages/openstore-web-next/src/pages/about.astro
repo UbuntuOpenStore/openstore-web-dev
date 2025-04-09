@@ -4,11 +4,17 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { initializeI18N } from "@/lib/i18n";
 import { getRelativeLocaleUrl } from "@/lib/utils";
 import { t } from "i18next";
+import { generateSchema } from "@/lib/json-schema";
 
 await initializeI18N(Astro.currentLocale);
 ---
 
-<BaseLayout title="OpenStore" pageTitle={`${t("About")} | OpenStore`} description={t("The open source app store for Ubuntu Touch")}>
+<BaseLayout
+  title="OpenStore"
+  pageTitle={`${t("About")} | OpenStore`}
+  description={t("The open source app store for Ubuntu Touch")}
+  schema={generateSchema(t("About"), [{ name: "About", path: "/about/" }])}
+>
   <section class="section space-y-4">
     <h1 class="text-4xl">{t("About the OpenStore")}</h1>
 

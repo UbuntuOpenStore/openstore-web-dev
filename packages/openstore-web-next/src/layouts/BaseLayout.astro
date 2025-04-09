@@ -4,7 +4,8 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
-import { Head } from 'astro-capo';
+import { Head } from "astro-capo";
+import { generateSchema } from "@/lib/json-schema";
 
 export type Props = {
   pageTitle: string;
@@ -13,9 +14,10 @@ export type Props = {
   image?: string;
   imageAlt?: string;
   noindex?: boolean;
+  schema: ReturnType<typeof generateSchema> | undefined,
 };
 
-const { pageTitle, title, description, image, imageAlt, noindex } = Astro.props;
+const { pageTitle, title, description, image, imageAlt, noindex, schema } = Astro.props;
 
 const ogImage = new URL(image ?? "/images/logo.webp", import.meta.env.SITE).href;
 const ogImageAlt = imageAlt || "OpenStore logo";
@@ -51,7 +53,8 @@ const ogImageAlt = imageAlt || "OpenStore logo";
 
     <link rel="alternate" href="/rss/updates.xml" type="application/rss+xml" title="RSS feed" />
 
-    {/* TODO json schema */}
+    {schema && <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />}
+
     <ClientRouter />
   </Head>
 
@@ -61,7 +64,7 @@ const ogImageAlt = imageAlt || "OpenStore logo";
     <Footer />
 
     <script is:inline>
-      document.addEventListener('astro:page-load', () => {
+      document.addEventListener("astro:page-load", () => {
         const menu = document.querySelector("[data-toggle-menu]");
 
         menu.addEventListener(

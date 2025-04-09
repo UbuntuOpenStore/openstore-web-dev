@@ -43,7 +43,7 @@ const apps = await appResponse.json().then(({ data }) => AppSearchSchema.parse(d
 const totalPages = Math.ceil(apps.count / PAGE_SIZE) - 1;
 ---
 
-<BaseLayout title="OpenStore" pageTitle="Manage | OpenStore" description="The open source app store for Ubuntu Touch">
+<BaseLayout title="OpenStore" pageTitle="Manage | OpenStore" description="The open source app store for Ubuntu Touch" schema={undefined}>
   <section class="section space-y-4 grow">
     <h1 class="text-4xl">Welcome {user.name || user.username}</h1>
 

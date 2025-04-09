@@ -7,6 +7,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import SvgHome from "@/components/icons/Home";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
+import { generateSchema } from "@/lib/json-schema";
 
 await initializeI18N(Astro.currentLocale);
 
@@ -43,7 +44,16 @@ function titleCase(value: string) {
 }
 ---
 
-<BaseLayout title={app.name} pageTitle={`${app.name} - ${t("Versions")} | OpenStore`} description={app.tagline}>
+<BaseLayout
+  title={app.name}
+  pageTitle={`${app.name} - ${t("Versions")} | OpenStore`}
+  description={app.tagline}
+  schema={generateSchema(`${app.name} - ${t("Versions")}`, [
+    { name: "Apps", path: "/apps/" },
+    { name: app.name, path: `/app/${app.id}/` },
+    { name: `${app.name} - Versions`, path: `/app/${app.id}/versions/` },
+  ], app)}
+>
   <section class="section flex">
     <a href={getRelativeLocaleUrl(Astro.currentLocale, "/")}>
       <SvgHome />
