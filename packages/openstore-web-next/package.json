@@ -3,8 +3,8 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev --host",
-    "start": "astro dev --host",
+    "dev": "npm run pot-file && astro dev --host",
+    "start": "npm run pot-file && astro dev --host",
     "build": "npm run convert-po && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",

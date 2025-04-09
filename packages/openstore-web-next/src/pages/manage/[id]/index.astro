@@ -83,51 +83,53 @@ if (user.role === "admin") {
 <BaseLayout title="OpenStore" pageTitle={`Manage ${app.name} | OpenStore`} description={app.tagline}>
   <ManageHeader app={app} breadcrumb="Edit" />
 
-  <ManageAppForm user={user} app={app} maintainers={maintainers} client:only="preact" />
+  <div class="grow">
+    <ManageAppForm user={user} app={app} maintainers={maintainers} client:only="preact" />
 
-  <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
+    <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full mx-auto max-w-6xl"></div>
 
-  <section class="section space-y-2">
-    <h2 class="text-2xl">Package Details</h2>
+    <section class="section space-y-2">
+      <h2 class="text-2xl">Package Details</h2>
 
-    <table>
-      <tr class="border-b-1 border-b-gray-300">
-        <td class="p-2 font-bold">ID</td>
-        <td>{app.id}</td>
-      </tr>
+      <table>
+        <tr class="border-b-1 border-b-gray-300">
+          <td class="p-2 font-bold">ID</td>
+          <td>{app.id}</td>
+        </tr>
 
-      <tr class="border-b-1 border-b-gray-300">
-        <td class="p-2 font-bold">Publisher</td>
-        <td>{app.publisher || "None"}</td>
-      </tr>
+        <tr class="border-b-1 border-b-gray-300">
+          <td class="p-2 font-bold">Publisher</td>
+          <td>{app.publisher || "None"}</td>
+        </tr>
 
-      {
-        app.published_date && (
-          <tr class="border-b-1 border-b-gray-300">
-            <td class="p-2 font-bold">Published Date</td>
-            <td>{new Date(app.published_date).toLocaleString()}</td>
-          </tr>
-        )
-      }
+        {
+          app.published_date && (
+            <tr class="border-b-1 border-b-gray-300">
+              <td class="p-2 font-bold">Published Date</td>
+              <td>{new Date(app.published_date).toLocaleString()}</td>
+            </tr>
+          )
+        }
 
-      {
-        app.updated_date && (
-          <tr class="border-b-1 border-b-gray-300">
-            <td class="p-2 font-bold">Updated Date</td>
-            <td>{new Date(app.updated_date).toLocaleString()}</td>
-          </tr>
-        )
-      }
+        {
+          app.updated_date && (
+            <tr class="border-b-1 border-b-gray-300">
+              <td class="p-2 font-bold">Updated Date</td>
+              <td>{new Date(app.updated_date).toLocaleString()}</td>
+            </tr>
+          )
+        }
 
-      <tr class="border-b-1 border-b-gray-300">
-        <td class="p-2 font-bold">{app.architectures.length > 1 ? "Architectures" : "Architecture"}</td>
-        <td>{app.architectures.length > 0 ? app.architectures.join(", ") : "None"}</td>
-      </tr>
+        <tr class="border-b-1 border-b-gray-300">
+          <td class="p-2 font-bold">{app.architectures.length > 1 ? "Architectures" : "Architecture"}</td>
+          <td>{app.architectures.length > 0 ? app.architectures.join(", ") : "None"}</td>
+        </tr>
 
-      <tr class="border-b-1 border-b-gray-300">
-        <td class="p-2 pr-4 font-bold whitespace-nowrap">Translation Languages</td>
-        <td>{app.languages.length > 0 ? app.languages.join(", ") : "None"}</td>
-      </tr>
-    </table>
-  </section>
+        <tr class="border-b-1 border-b-gray-300">
+          <td class="p-2 pr-4 font-bold whitespace-nowrap">Translation Languages</td>
+          <td>{app.languages.length > 0 ? app.languages.join(", ") : "None"}</td>
+        </tr>
+      </table>
+    </section>
+  </div>
 </BaseLayout>

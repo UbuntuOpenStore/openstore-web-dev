@@ -53,14 +53,14 @@ function titleCase(value: string) {
       app.category && (
         <div class="ml-1">
           /{" "}
-          <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${categorySlug(app.category)}`)} class="underline">
+          <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${categorySlug(app.category)}/`)} class="underline">
             {app.category}
           </a>
         </div>
       )
     }
 
-    <div class="ml-1">/ <a href={getRelativeLocaleUrl(Astro.currentLocale, `/app/${app.id}`)} class="underline">{app.name}</a></div>
+    <div class="ml-1">/ <a href={getRelativeLocaleUrl(Astro.currentLocale, `/app/${app.id}/`)} class="underline">{app.name}</a></div>
   </section>
 
   <section class="flex flex-col md:flex-row justify-between section">

@@ -127,7 +127,7 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
         <SvgHome />
       </a>
 
-      <div class="ml-1">/ <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${categorySlug(app.category)}`)} class="underline">{app.category}</a></div>
+      <div class="ml-1">/ <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${categorySlug(app.category)}/`)} class="underline">{app.category}</a></div>
     </section>
   )}
 

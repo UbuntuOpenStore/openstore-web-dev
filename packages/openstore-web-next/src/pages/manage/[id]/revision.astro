@@ -36,5 +36,7 @@ const app = await appResponse.json().then(({ data }) => AppManageSchema.parse(da
 <BaseLayout title="OpenStore" pageTitle={`Manage ${app.name} | OpenStore`} description={app.tagline}>
   <ManageHeader app={app} breadcrumb="New Revision" />
 
-  <RevisionForm app={app} client:only="preact" />
+  <div class="grow">
+    <RevisionForm app={app} client:only="preact" />
+  </div>
 </BaseLayout>

@@ -36,10 +36,10 @@ const app = await appResponse.json().then(({ data }) => AppManageSchema.parse(da
 <BaseLayout title="OpenStore" pageTitle={`Manage ${app.name} | OpenStore`} description={app.tagline}>
   <ManageHeader app={app} breadcrumb="Badge" />
 
-  <section class="section mb-8 h-full">
+  <section class="section mb-8 grow">
     <h2 class="text-2xl">Badge</h2>
 
-    <div class="w-full">
+    <div class="w-full mt-4">
       <BadgeSelect appId={app.id} client:load />
     </div>
   </section>

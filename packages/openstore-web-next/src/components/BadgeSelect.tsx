@@ -28,7 +28,7 @@ const BadgeSelect = ({ appId, currentLocale }: { appId?: string, currentLocale?:
   const defaultLanguage = LANGUAGES.find((lang) => lang.code === code);
   const [language, setLanguage] = useState(defaultLanguage?.code ?? 'en_US');
 
-  const appUrl = `${import.meta.env.SITE}app/${appId}`;
+  const appUrl = `${import.meta.env.SITE}app/${appId}/`;
   const svgUrl = `${import.meta.env.SITE}badges/${language}.svg`;
   const svgHtml = `<a href="${appUrl}"><img src="${svgUrl}" alt="OpenStore" /></a>`;
   const svgMarkdown = `[![OpenStore](${svgUrl})](${appUrl})`;

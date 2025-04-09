@@ -10,13 +10,13 @@ const AppList = ({ apps, messages, currentLocale }: { apps: SlimAppData[], curre
         apps.map((app) => (
           <div class="flex flex-row gap-4 max-w-xl mb-4 p-4">
             <div>
-              <a href={getRelativeLocaleUrl(currentLocale, `/app/${app.id}`)}>
+              <a href={getRelativeLocaleUrl(currentLocale, `/app/${app.id}/`)}>
                 <img class="rounded-2xl" src={app.icon} alt={app.name} width="64" height="64" loading="eager" style={`view-transition-name: app-${app.id.replace(/\./g, '-')}`} />
               </a>
             </div>
             <div>
               <h1 class="text-lg">
-                <a href={getRelativeLocaleUrl(currentLocale, `/app/${app.id}`)} class="underline">
+                <a href={getRelativeLocaleUrl(currentLocale, `/app/${app.id}/`)} class="underline">
                   {app.name}
                 </a>
               </h1>

@@ -36,7 +36,7 @@ const DownloadDialog = ({ app, messages, currentLocale } : { app: AppData, curre
             </div>
 
             <div class="pt-4 text-center">
-              <a href={getRelativeLocaleUrl(currentLocale, `/app/${app.id}/versions`)} class="underline">{messages.olderVersions}</a>
+              <a href={getRelativeLocaleUrl(currentLocale, `/app/${app.id}/versions/`)} class="underline">{messages.olderVersions}</a>
             </div>
         </DialogHeader>
       </DialogContent>

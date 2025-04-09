@@ -44,7 +44,7 @@ const totalPages = Math.ceil(apps.count / PAGE_SIZE) - 1;
 ---
 
 <BaseLayout title="OpenStore" pageTitle="Manage | OpenStore" description="The open source app store for Ubuntu Touch">
-  <section class="section space-y-4">
+  <section class="section space-y-4 grow">
     <h1 class="text-4xl">Welcome {user.name || user.username}</h1>
 
     <form action="" method="GET">
@@ -73,7 +73,7 @@ const totalPages = Math.ceil(apps.count / PAGE_SIZE) - 1;
         apps.packages.map((app) => (
           <div class="flex flex-row gap-4 max-w-xl mb-4 p-4">
             <div>
-              <a href={`/manage/${app.id}`}>
+              <a href={`/manage/${app.id}/`}>
                 <img
                   class="rounded-2xl"
                   src={app.icon}
@@ -87,7 +87,7 @@ const totalPages = Math.ceil(apps.count / PAGE_SIZE) - 1;
             </div>
             <div>
               <h1 class="text-lg">
-                <a href={`/manage/${app.id}`} class="underline">
+                <a href={`/manage/${app.id}/`} class="underline">
                   {app.name}
                 </a>
               </h1>

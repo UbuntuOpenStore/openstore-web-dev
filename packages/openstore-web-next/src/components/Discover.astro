@@ -25,7 +25,7 @@ const { highlights, categories } = DiscoverSchema.parse(discoverData.data);
         <div>
           <h2 class="text-2xl text-center">
             {category.referral ? (
-              <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${categorySlug(category.referral)}`)} class="underline">
+              <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${categorySlug(category.referral)}/`)} class="underline">
                 {category.name}
               </a>
             ) : (
