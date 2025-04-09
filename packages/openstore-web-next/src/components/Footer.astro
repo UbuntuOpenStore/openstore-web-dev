@@ -25,13 +25,13 @@ await initializeI18N(Astro.currentLocale);
         </p>
       </div>
 
-      <div class="text-sm flex flex-col mt-4 md:mt-0">
+      <div class="text-sm flex flex-col my-4">
         <a href="https://gitlab.com/theopenstore/openstore-meta/issues" class="underline">{t("Report an Issue")}</a>
         <a href="/telegram" class="underline">{t("Chat with us on Telegram")}</a>
         <a href="https://stats.uptimerobot.com/R6Z8mtJ8P" class="underline">{t("Site Status")}</a>
       </div>
 
-      <div class="text-sm flex flex-col">
+      <div class="text-sm flex flex-col mt-4 md:mt-0">
         <LanguageSelect currentLocale={Astro.currentLocale} currentPath={Astro.url.pathname} client:idle />
       </div>
     </div>
