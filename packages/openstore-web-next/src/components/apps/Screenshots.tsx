@@ -40,12 +40,12 @@ const Screenshots = ({ images, videoUrl, nsfw, messages }: { images: string[], v
         }`}
       >
         <div className="flex h-full items-center justify-center">
-          <Button
+          <div
             onClick={() => setIsRevealed(true)}
-            className="text-lg font-semibold"
+            className="text-lg font-semibold max-w-full cursor-pointer p-2 rounded-xl bg-primary text-white"
           >
             {messages.nsfw}
-          </Button>
+          </div>
         </div>
       </div>
 
@@ -66,17 +66,18 @@ const Screenshots = ({ images, videoUrl, nsfw, messages }: { images: string[], v
       </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="max-w-(--breakpoint-lg) w-full h-screen flex items-center justify-center bg-primary/90 p-0 h-5/6 border-primary">
+        <DialogContent className="max-w-full md:max-w-lg h-screen flex items-center justify-center bg-primary/90 p-0 md:h-5/6 border-primary" hideClose>
           <div className="relative w-full h-full flex items-center justify-center">
             <img
               src={images[currentImageIndex]}
               alt=""
-              className="max-w-full max-h-full object-contain"
+              className="max-w-full max-h-full object-contain py-8 px-16"
             />
+
             <Button
               variant="ghost"
               size="icon"
-              className="absolute top-4 right-4 text-white"
+              className="absolute top-4 right-4 text-white cursor-pointer"
               onClick={closeLightbox}
             >
               <SvgClose className="h-6 w-6" />
@@ -84,7 +85,7 @@ const Screenshots = ({ images, videoUrl, nsfw, messages }: { images: string[], v
             <Button
               variant="ghost"
               size="icon"
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white cursor-pointer"
               onClick={prevImage}
             >
               <SvgGoPrevious className="h-8 w-8" />
@@ -92,7 +93,7 @@ const Screenshots = ({ images, videoUrl, nsfw, messages }: { images: string[], v
             <Button
               variant="ghost"
               size="icon"
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white cursor-pointer"
               onClick={nextImage}
             >
               <SvgGoNext className="h-8 w-8" />
