@@ -4,7 +4,7 @@ import { AppSearchSchema, AppType, type SlimAppData } from "@/lib/schema";
 import Pagination from "./Pagination";
 import SvgSpinner from "./icons/Spinner";
 import { useStore } from "@nanostores/preact";
-import { searchTerm } from "@/stores";
+import { searchTerm, searchTermInitialized } from "@/stores";
 import FilterDialog from "./FilterDialog";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
@@ -69,13 +69,13 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
   const hashPage = parseInt(hash.get('page') ?? '0');
 
   const storeTerm = useStore(searchTerm);
-  // Get from the hash as a backup so we don't overwrite the hash before it gets stored in SearchBar.tsx
-  const term = storeTerm ?? (hash.get('search') || '');
+  const initialized = useStore(searchTermInitialized);
 
   const [page, setPage] = useState(isNaN(hashPage) ? 0 : hashPage);
   const [totalPages, setTotalPages] = useState(0);
   const [query, setQuery] = useState({
-    search: '',
+    // Get from the hash as a backup so we don't overwrite the hash before it gets stored in SearchBar.tsx
+    search: storeTerm || hash.get('search') || '',
     sort: hash.get('sort') ?? DEFAULT_SORT,
     type: hash.get('type') ?? DEFAULT_TYPE,
     channel: hash.get('channel') ?? DEFAULT_CHANNEL,
@@ -86,17 +86,19 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    // Update the query when the term changes
-
-    if (term != query.search) {
-      setQuery((previous) => ({
-        ...previous,
-        sort: term === '' ? DEFAULT_SORT : 'relevance',
-        search: term,
-      }));
-      setPage(0);
+    // We only want to do this after it has been initialized, otherwise we get 2 updates, one with and one without the search term
+    if (initialized) {
+      // Update the query when the term changes
+      if (storeTerm != query.search) {
+        setQuery((previous) => ({
+          ...previous,
+          sort: storeTerm === '' ? DEFAULT_SORT : 'relevance',
+          search: storeTerm,
+        }));
+        setPage(0);
+      }
     }
-  }, [term, query]);
+  }, [storeTerm, initialized, query.search]);
 
   useMemo(async () => {
     setLoading(true);
@@ -105,7 +107,7 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
     const url = new URL(`${import.meta.env.PUBLIC_API_URL}api/v4/apps?lang=${localeSlugToCode(currentLocale)}`);
     url.searchParams.append('limit', PAGE_SIZE.toString());
     url.searchParams.append('skip', skip.toString());
-    url.searchParams.append('search', term);
+    url.searchParams.append('search', query.search);
     url.searchParams.append('sort', query.sort);
     url.searchParams.append('type', query.type);
     url.searchParams.append('category', category ?? '');
@@ -113,8 +115,8 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
     url.searchParams.append('nsfw', query.showNsfw ? '' : 'false');
 
     const updateHash = new URLSearchParams();
-    if (term) {
-      updateHash.append('search', term);
+    if (query.search) {
+      updateHash.append('search', query.search);
     }
     if (query.sort !== DEFAULT_SORT) {
       updateHash.append('sort', query.sort);

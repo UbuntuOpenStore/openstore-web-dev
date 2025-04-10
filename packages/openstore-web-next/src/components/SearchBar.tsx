@@ -1,19 +1,18 @@
 import { useStore } from '@nanostores/preact';
-import { searchTerm } from '@/stores';
+import { searchTerm, searchTermInitialized } from '@/stores';
 import SvgSearch from './icons/Search';
 import { useDebouncedCallback } from 'use-debounce';
 import { useEffect, useState } from 'preact/hooks';
 
 const SearchBar = ({ messages }: { messages: { search: string }}) => {
   const term = useStore(searchTerm);
-  const [initialized, setInitialized] = useState(false);
+  const initialized = useStore(searchTermInitialized);
 
   useEffect(() => {
     if (!initialized) {
       const hash = new URLSearchParams(document.location.hash.substring(1));
       searchTerm.set(hash.get('search') ?? '');
-
-      setInitialized(true);
+      searchTermInitialized.set(true);
     }
   }, [initialized]);
 
@@ -23,6 +22,7 @@ const SearchBar = ({ messages }: { messages: { search: string }}) => {
     if (!document.location.pathname.startsWith('/apps/')) {
       const updateHash = new URLSearchParams();
       updateHash.append('search', value);
+      updateHash.append('sort', 'relevance');
 
       document.location.replace(`/apps/#${updateHash.toString()}`)
     }
