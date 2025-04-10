@@ -25,8 +25,8 @@ const HighlightedApps = ({ highlights, currentLocale }: { highlights: DiscoverDa
         }
       </CarouselContent>
 
-      <CarouselPrevious className="hidden md:flex" />
-      <CarouselNext className="hidden md:flex" />
+      <CarouselPrevious class="hidden md:flex" />
+      <CarouselNext class="hidden md:flex" />
     </Carousel>
   );
 }

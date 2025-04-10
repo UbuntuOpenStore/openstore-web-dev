@@ -15,18 +15,18 @@ const LanguageSelect = ({ currentLocale, currentPath }: { currentLocale: string 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="sm" className="h-8 gap-1 text-black cursor-pointer">
-          <SvgGlobe className="h-4 w-4" />
+        <Button variant="outline" size="sm" class="h-8 gap-1 text-black cursor-pointer">
+          <SvgGlobe class="h-4 w-4" />
           <span>{currentLanguage?.name}</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="max-h-64 overflow-auto">
+      <DropdownMenuContent align="end" class="max-h-64 overflow-auto">
         {localesJson.map((locale) => (
           <DropdownMenuItem
             key={locale.slug}
             asChild
           >
-            <a href={getRelativeLocaleUrl(locale.slug, path)} className="cursor-pointer">{locale.name}</a>
+            <a href={getRelativeLocaleUrl(locale.slug, path)} class="cursor-pointer">{locale.name}</a>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

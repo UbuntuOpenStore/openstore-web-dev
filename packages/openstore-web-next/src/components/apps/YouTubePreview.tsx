@@ -22,26 +22,26 @@ const YouTubePreview = ({ videoUrl }: { videoUrl: string }) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <button className="relative group overflow-hidden rounded-2xl shadow-lg focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+        <button class="relative group overflow-hidden rounded-2xl shadow-lg focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-opacity-50">
           <img
             src={thumbnailUrl}
             alt="Video thumbnail"
-            className="w-full h-auto object-cover"
+            class="w-full h-auto object-cover"
           />
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <SvgPlay class="w-16 h-16 text-white" />
           </div>
-          <span className="sr-only">Play video</span>
+          <span class="sr-only">Play video</span>
         </button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[800px] p-0 h-1/2 border-primary">
-        <div className="aspect-w-16 aspect-h-9">
+      <DialogContent class="sm:max-w-[800px] p-0 h-1/2 border-primary">
+        <div class="aspect-w-16 aspect-h-9">
           {embedUrl && (
             <iframe
               src={embedUrl}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className="w-full h-full"
+              class="w-full h-full"
             ></iframe>
           )}
         </div>

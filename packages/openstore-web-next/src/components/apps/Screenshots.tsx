@@ -35,14 +35,14 @@ const Screenshots = ({ images, videoUrl, nsfw, messages }: { images: string[], v
   return (
     <div class="relative">
       <div
-        className={`absolute inset-0 backdrop-blur-md transition-opacity duration-300 ${
+        class={`absolute inset-0 backdrop-blur-md transition-opacity duration-300 ${
           isRevealed ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
-        <div className="flex h-full items-center justify-center">
+        <div class="flex h-full items-center justify-center">
           <div
             onClick={() => setIsRevealed(true)}
-            className="text-lg font-semibold max-w-full cursor-pointer p-2 rounded-xl bg-primary text-white"
+            class="text-lg font-semibold max-w-full cursor-pointer p-2 rounded-xl bg-primary text-white"
           >
             {messages.nsfw}
           </div>
@@ -66,37 +66,37 @@ const Screenshots = ({ images, videoUrl, nsfw, messages }: { images: string[], v
       </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="max-w-full md:max-w-lg h-screen flex items-center justify-center bg-primary/90 p-0 md:h-5/6 border-primary" hideClose>
-          <div className="relative w-full h-full flex items-center justify-center">
+        <DialogContent class="max-w-full md:max-w-lg h-screen flex items-center justify-center bg-primary/90 p-0 md:h-5/6 border-primary" hideClose>
+          <div class="relative w-full h-full flex items-center justify-center">
             <img
               src={images[currentImageIndex]}
               alt=""
-              className="max-w-full max-h-full object-contain py-8 px-16"
+              class="max-w-full max-h-full object-contain py-8 px-16"
             />
 
             <Button
               variant="ghost"
               size="icon"
-              className="absolute top-4 right-4 text-white cursor-pointer"
+              class="absolute top-4 right-4 text-white cursor-pointer"
               onClick={closeLightbox}
             >
-              <SvgClose className="h-6 w-6" />
+              <SvgClose class="h-6 w-6" />
             </Button>
             <Button
               variant="ghost"
               size="icon"
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white cursor-pointer"
+              class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white cursor-pointer"
               onClick={prevImage}
             >
-              <SvgGoPrevious className="h-8 w-8" />
+              <SvgGoPrevious class="h-8 w-8" />
             </Button>
             <Button
               variant="ghost"
               size="icon"
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white cursor-pointer"
+              class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white cursor-pointer"
               onClick={nextImage}
             >
-              <SvgGoNext className="h-8 w-8" />
+              <SvgGoNext class="h-8 w-8" />
             </Button>
           </div>
         </DialogContent>

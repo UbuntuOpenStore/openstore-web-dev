@@ -24,9 +24,9 @@ const DownloadDialog = ({ app, messages, currentLocale } : { app: AppData, curre
       <DialogTrigger asChild>
         <button class="btn w-full bg-ubuntu-purple text-white font-bold cursor-pointer">{messages.download}</button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent class="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle className="mb-4">{messages.downloadApp.replace("%{app}", app.name)}</DialogTitle>
+          <DialogTitle class="mb-4">{messages.downloadApp.replace("%{app}", app.name)}</DialogTitle>
             <div class="mt-4 space-y-4">
               {downloads.map((download) => (
                 <a href={download.download_url!} target="_blank" class="btn w-full bg-ubuntu-purple text-white font-bold">

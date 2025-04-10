@@ -200,11 +200,11 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
         <div class="mx-4">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="w-full md:w-auto">
+              <Button variant="outline" class="w-full md:w-auto">
                 {messages.sortBy} {SORT_OPTIONS.find((option) => option.value === query.sort)!.label}
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56 mr-4">
+            <DropdownMenuContent class="w-56 mr-4">
               <DropdownMenuLabel>{messages.sortOptions}</DropdownMenuLabel>
               <DropdownMenuSeparator />
               {SORT_OPTIONS.map((option) => (

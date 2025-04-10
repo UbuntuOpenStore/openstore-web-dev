@@ -37,9 +37,9 @@ const FilterDialog = ({ type, showNsfw, onChange, messages } : FilterDialogProps
           <SvgFilters class="ml-4 mt-2" />
         </button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent class="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle className="mb-4">{messages.filter}</DialogTitle>
+          <DialogTitle class="mb-4">{messages.filter}</DialogTitle>
             <div class="space-y-4 text-sm text-neutral-500">
               <div class="flex items-center space-x-2">
                 <input type="radio" checked={!type} onClick={() => onChangeWrapper('', showNsfw)} id="all" />
