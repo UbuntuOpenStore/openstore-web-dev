@@ -5,6 +5,7 @@ import { initializeI18N } from "@/lib/i18n";
 import { getRelativeLocaleUrl } from "@/lib/utils";
 import { t } from "i18next";
 import { generateSchema } from "@/lib/json-schema";
+import SvgExternalLink from "@/components/icons/ExternalLink";
 
 await initializeI18N(Astro.currentLocale);
 ---
@@ -19,16 +20,24 @@ await initializeI18N(Astro.currentLocale);
     <h1 class="text-4xl">{t("About the OpenStore")}</h1>
 
     <p>
-      {t("The OpenStore is the official app store for Ubuntu Touch. It is an open source project run by a team of volunteers with help from the community. You can discover and install new apps on your Ubuntu Touch device. You can also upload and manage your own apps for publication. The OpenStore encourages the apps published within to be open source, but also accepts proprietary apps.")}
+      {
+        t(
+          "The OpenStore is the official app store for Ubuntu Touch. It is an open source project run by a team of volunteers with help from the community. You can discover and install new apps on your Ubuntu Touch device. You can also upload and manage your own apps for publication. The OpenStore encourages the apps published within to be open source, but also accepts proprietary apps."
+        )
+      }
     </p>
 
-    <a href="http://ubuntu-touch.io/" class="underline" target="_blank">{t("Learn more about Ubuntu Touch")}</a>
+    <a href="http://ubuntu-touch.io/" class="underline" target="_blank"
+      >{t("Learn more about Ubuntu Touch")}<SvgExternalLink class="inline ml-2 -mt-1" /></a
+    >
   </section>
 
   <section class="section space-y-4">
     <h2 class="text-2xl">{t("Badges")}</h2>
 
     <p>{t("Promote your app on the OpenStore!")}</p>
+
+    <img src="/badges/en_US.svg" alt="" class="h-12" />
 
     <a href={getRelativeLocaleUrl(Astro.currentLocale, "/badge/")} class="underline">{t("Get your badge")}</a>
   </section>
@@ -37,12 +46,18 @@ await initializeI18N(Astro.currentLocale);
     <h2 class="text-2xl">{t("Install")}</h2>
 
     <p>
-      {t("The OpenStore app is installed by default on the UBports builds of Ubuntu Touch. But if you need to install the OpenStore manually, follow these steps:")}
+      {
+        t(
+          "The OpenStore app is installed by default on the UBports builds of Ubuntu Touch. But if you need to install the OpenStore manually, follow these steps:"
+        )
+      }
     </p>
 
     <ol class="list-decimal ml-4">
       <li>
-        <a href={getRelativeLocaleUrl(Astro.currentLocale, "/app/openstore.openstore-team/")} target="_blank" class="underline">{t("Download the OpenStore App")}</a>
+        <a href={getRelativeLocaleUrl(Astro.currentLocale, "/app/openstore.openstore-team/")} target="_blank" class="underline"
+          >{t("Download the OpenStore App")}</a
+        >
       </li>
       <li>{t("Open the terminal app on your Ubuntu Touch device")}</li>
       <li>{t("Navigate to the downloads folder")}</li>
@@ -58,10 +73,15 @@ await initializeI18N(Astro.currentLocale);
     <h2 class="text-2xl">{t("Contact")}</h2>
 
     <p>
-      {t("For any questions you may have or help you may need just chat with us in our telegram group. You can also submit issues, bugs, and feature requests to our GitLab bug tracker.")}
+      {
+        t(
+          "For any questions you may have or help you may need just chat with us in our telegram group. You can also submit issues, bugs, and feature requests to our GitLab bug tracker."
+        )
+      }
     </p>
 
-    <a href="/telegram" class="underline" target="_blank">{t("OpenStore group on Telegram")}</a>
+    <a href="/telegram" class="underline" target="_blank">{t("OpenStore group on Telegram")}<SvgExternalLink class="inline ml-2 -mt-1" /></a
+    >
 
     <br />
 
@@ -71,16 +91,28 @@ await initializeI18N(Astro.currentLocale);
   <section class="section space-y-4">
     <h2 class="text-2xl">{t("License")}</h2>
 
-    <p>{t("The source code for OpenStore related projects is available under the GPL v3. You can find the code on the OpenStore GitLab page.")}</p>
+    <p>
+      {
+        t(
+          "The source code for OpenStore related projects is available under the GPL v3. You can find the code on the OpenStore GitLab page."
+        )
+      }
+    </p>
 
     <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" class="underline" target="_blank">{t("GPL v3 License")}</a>
 
     <br />
 
-    <a href="https://gitlab.com/theopenstore/" target="_blank">{t("OpenStore source on GitLab")}</a>
+    <a href="https://gitlab.com/theopenstore/" target="_blank"
+      >{t("OpenStore source on GitLab")}<SvgExternalLink class="inline ml-2 -mt-1" /></a
+    >
 
     <p>
-      {t("The apps available for download from the OpenStore have their own licencing and terms. Consult each individual app's page for more information.")}
+      {
+        t(
+          "The apps available for download from the OpenStore have their own licensing and terms. Consult each individual app's page for more information."
+        )
+      }
     </p>
   </section>
 
@@ -88,19 +120,35 @@ await initializeI18N(Astro.currentLocale);
     <h2 class="text-2xl">{t("Terms")}</h2>
 
     <p>
-      {t("The OpenStore a non-profit volunteer project. Although every effort is made to ensure that everything in the repository is safe to install, you use it AT YOUR OWN RISK. Apps uploaded to the OpenStore will be subject to an automated review process or a manual review process to check for potential security or privacy issues. This checking is far from exhaustive though, and there are no guarantees.")}
+      {
+        t(
+          "The OpenStore a non-profit volunteer project. Although every effort is made to ensure that everything in the repository is safe to install, you use it AT YOUR OWN RISK. Apps uploaded to the OpenStore will be subject to an automated review process or a manual review process to check for potential security or privacy issues. This checking is far from exhaustive though, and there are no guarantees."
+        )
+      }
     </p>
 
     <p>
-      {t("The OpenStore respects your privacy. We don't track you or your device. You do not need an account to download and install apps and we do not track your downloads. For developer information we count the number of downloads per app revision. Information about your device (the cpu architecture, framework versions, OS version, and OS language) are sent to the server to allow it to filter apps to only what you can install and present your native language where possible. This information is not logged or stored and cannot be used to uniquely identify you.")}
+      {
+        t(
+          "The OpenStore respects your privacy. We don't track you or your device. You do not need an account to download and install apps and we do not track your downloads. For developer information we count the number of downloads per app revision. Information about your device (the cpu architecture, framework versions, OS version, and OS language) are sent to the server to allow it to filter apps to only what you can install and present your native language where possible. This information is not logged or stored and cannot be used to uniquely identify you."
+        )
+      }
     </p>
 
     <p>
-      {t("Any personal data you decide to give us (e.g. your email address when registering for an account to upload your apps) goes no further than us, and will not be used for anything other than allowing you to maintain your apps and, in rare cases, contact you in the event there is an issue with your app. Additionally, this site uses cookies to keep you logged in to your account.")}
+      {
+        t(
+          "Any personal data you decide to give us (e.g. your email address when registering for an account to upload your apps) goes no further than us, and will not be used for anything other than allowing you to maintain your apps and, in rare cases, contact you in the event there is an issue with your app. Additionally, this site uses cookies to keep you logged in to your account."
+        )
+      }
     </p>
 
     <p>
-      {t("Apps uploaded to the OpenStore are subject to our submission rules and content policy. You can review the rules and policies before uploading your app.")}
+      {
+        t(
+          "Apps uploaded to the OpenStore are subject to our submission rules and content policy. You can review the rules and policies before uploading your app."
+        )
+      }
     </p>
 
     <a href={getRelativeLocaleUrl(Astro.currentLocale, "/submit/")} class="underline">{t("Submit your app")}</a>
@@ -108,7 +156,7 @@ await initializeI18N(Astro.currentLocale);
     <br />
 
     <a href="https://bhdouglass.com/blog/how-to-publish-an-ubuntu-touch-app/" class="underline" target="_blank">
-      {t("App Submission Tutorial")}
+      {t("App Submission Tutorial")}<SvgExternalLink class="inline ml-2 -mt-1" />
     </a>
   </section>
 
@@ -121,22 +169,24 @@ await initializeI18N(Astro.currentLocale);
       <ul class="list-disc ml-4">
         <li>
           <a href="https://gitlab.com/theopenstore/openstore-api/-/graphs/master" class="underline" target="_blank">
-            {t("OpenStore API/Server Contributors")}
+            {t("OpenStore API/Server Contributors")}<SvgExternalLink class="inline ml-2 -mt-1" />
           </a>
         </li>
         <li>
           <a href="https://gitlab.com/theopenstore/openstore-web/-/graphs/master" class="underline" target="_blank">
-            {t("OpenStore Website Contributors")}
+            {t("OpenStore Website Contributors")}<SvgExternalLink class="inline ml-2 -mt-1" />
           </a>
         </li>
         <li>
           <a href="https://gitlab.com/theopenstore/openstore-app/-/graphs/master" class="underline" target="_blank">
-            {t("OpenStore App Contributors")}
+            {t("OpenStore App Contributors")}<SvgExternalLink class="inline ml-2 -mt-1" />
           </a>
         </li>
         <li>
           <a href="/telegram" class="underline" target="_blank">
-            {t("And many amazing developers, testers, and users from the OpenStore community!")}
+            {t("And many amazing developers, testers, and users from the OpenStore community!")}<SvgExternalLink
+              class="inline ml-2 -mt-1"
+            />
           </a>
         </li>
       </ul>

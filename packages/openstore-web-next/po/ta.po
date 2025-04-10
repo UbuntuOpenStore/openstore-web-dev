@@ -1059,7 +1059,7 @@ msgstr "நீங்கள் தேடும் பயன்பாடு அக
 
 #: ./src/views/About.vue:88
 msgid ""
-"The apps available for download from the OpenStore have their own licencing and terms.\n"
+"The apps available for download from the OpenStore have their own licensing and terms.\n"
 "Consult each individual app's page for more information."
 msgstr ""
 "திறந்த கடையிலிருந்து பதிவிறக்கம் செய்யக் கிடைக்கும் பயன்பாடுகள் அவற்றின் சொந்த உரிமம் மற்றும்"

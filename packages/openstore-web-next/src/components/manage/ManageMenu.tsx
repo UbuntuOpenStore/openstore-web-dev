@@ -8,8 +8,8 @@ const ManageMenu = ({ id }: { id: string }) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost">
-          <SvgNavigationMenu />
+        <Button variant="ghost" className="py-1 px-2">
+          <SvgNavigationMenu class="!h-6 !w-6" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>

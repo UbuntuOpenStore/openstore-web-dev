@@ -47,55 +47,53 @@ const totalPages = Math.ceil(apps.count / PAGE_SIZE) - 1;
   <section class="section space-y-4 grow">
     <h1 class="text-4xl">Welcome {user.name || user.username}</h1>
 
-    <form action="" method="GET">
-      <div class="relative max-w-sm w-full h-full">
-        <input
-          type="text"
-          placeholder="Search..."
-          aria-label="Search"
-          class="w-full h-full py-2 px-4 pr-10 rounded-full border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
-          value={term}
-          name="search"
-          id="search"
-        />
+    <div class="flex justify-between">
+      <form action="" method="GET">
+        <div class="relative max-w-sm w-full h-full">
+          <input
+            type="text"
+            placeholder="Search..."
+            aria-label="Search"
+            class="w-full h-full py-2 px-4 pr-10 rounded-full border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+            value={term}
+            name="search"
+            id="search"
+          />
 
-        <button type="submit" class="absolute right-3 top-1/2 transform -translate-y-1/2">
-          <SvgSearch class="h-5 w-5 text-gray-500 cursor-pointer" />
-        </button>
-      </div>
+          <button type="submit" class="absolute right-3 top-1/2 transform -translate-y-1/2">
+            <SvgSearch class="h-5 w-5 text-gray-500 cursor-pointer" />
+          </button>
+        </div>
 
-      {/* Reset the page when the user searches */}
-      <input type="hidden" name="page" id="page" value="0" />
-    </form>
+        {/* Reset the page when the user searches */}
+        <input type="hidden" name="page" id="page" value="0" />
+      </form>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+      <a href="/submit/" class="btn bg-ubuntu-orange text-white">Submit App</a>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4">
       {
         apps.packages.map((app) => (
-          <div class="flex flex-row gap-4 max-w-xl mb-4 p-4">
+          <a href={`/manage/${app.id}/`} class="flex flex-row gap-4 max-w-xl mb-4 py-2 px-1 md:p-4">
+            <img
+              class="rounded-2xl max-w-[64px] max-h-[64px]"
+              src={app.icon}
+              alt=""
+              width="64"
+              height="64"
+              loading="lazy"
+              style={`view-transition-name: app-${app.id.replace(/\./g, "-")}`}
+            />
             <div>
-              <a href={`/manage/${app.id}/`}>
-                <img
-                  class="rounded-2xl"
-                  src={app.icon}
-                  alt=""
-                  width="64"
-                  height="64"
-                  loading="lazy"
-                  style={`view-transition-name: app-${app.id.replace(/\./g, "-")}`}
-                />
-              </a>
-            </div>
-            <div>
-              <h1 class="text-lg">
-                <a href={`/manage/${app.id}/`} class="underline">
-                  {app.name}
-                </a>
-              </h1>
+              <div class="text-lg font-bold">
+                {app.name}
+              </div>
 
               <p>{app.publisher}</p>
-              <p class={app.published ? "text-green-400" : "text-gray-400"}>{app.published ? "Published" : "Not Published"}</p>
+              <p class={app.published ? "text-ubuntu-purple" : "text-gray-400"}>{app.published ? "Published" : "Not Published"}</p>
             </div>
-          </div>
+          </a>
         ))
       }
     </div>

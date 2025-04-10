@@ -902,10 +902,10 @@ msgstr "Праграма, якую вы шукаеце, не існуе альб
 #, fuzzy
 #| msgid ""
 #| "The apps available for download from the OpenStore have their own "
-#| "licencing and terms. "
+#| "licensing and terms. "
 #| "Consult each individual app's page for more information."
 msgid ""
-"The apps available for download from the OpenStore have their own licencing "
+"The apps available for download from the OpenStore have their own licensing "
 "and terms. "
 "Consult each individual app's page for more information."
 msgstr ""

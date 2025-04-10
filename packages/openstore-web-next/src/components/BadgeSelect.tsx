@@ -51,8 +51,8 @@ const BadgeSelect = ({ appId, currentLocale }: { appId?: string, currentLocale?:
         </select>
       </div>
 
-      <div class="flex flex-row text-center">
-        <div class="w-1/2 space-y-4 mx-4">
+      <div class="flex flex-col md:flex-row text-center gap-4">
+        <div class="flex flex-col gap-4 md:w-1/2">
           <h2 class="text-2xl">PNG</h2>
 
           {appId ? (
@@ -75,7 +75,7 @@ const BadgeSelect = ({ appId, currentLocale }: { appId?: string, currentLocale?:
           )}
         </div>
 
-        <div class="w-1/2 space-y-4">
+        <div class="flex flex-col gap-4 md:w-1/2">
           <h2 class="text-2xl">SVG</h2>
 
           {appId ? (

@@ -246,7 +246,7 @@ const ManageAppForm = ({ user, app, maintainers }: ManageAppFormProps) => {
         </>
       )}
 
-      <section class="section flex gap-4 items-center">
+      <section class="section flex gap-4 items-center mb-4">
         <button type="submit" class="btn bg-ubuntu-orange text-white font-bold cursor-pointer" disabled={saving}>
           Save
 

@@ -1018,7 +1018,7 @@ msgstr "你查找的应用已经被移除或不存在"
 
 #: src/views/About.vue:88
 msgid ""
-"The apps available for download from the OpenStore have their own licencing "
+"The apps available for download from the OpenStore have their own licensing "
 "and terms.\n"
 "Consult each individual app's page for more information."
 msgstr ""

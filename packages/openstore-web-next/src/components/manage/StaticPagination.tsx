@@ -30,15 +30,15 @@ const StaticPagination = ({ currentPage, totalPages, baseUrl }: Props) => {
         <SvgGoPrevious />
       </a>
 
-      {currentPage >= 3 && (<>...</>)}
+      {currentPage >= 3 && (<span class="text-gray-600 mt-1">...</span>)}
 
-      {currentPage >= 2 && (<a class="underline cursor-pointer" title={buttonTitle(currentPage - 2)} href={makeUrl(currentPage - 2)}>{formatPage(currentPage - 2)}</a>)}
-      {currentPage >= 1 && (<a class="underline" title={buttonTitle(currentPage - 1)} href={makeUrl(currentPage - 1)}>{formatPage(currentPage - 1)}</a>)}
-      <a class="underline cursor-pointer font-bold" title={buttonTitle(currentPage)} href={makeUrl(currentPage)}>{formatPage(currentPage)}</a>
-      {currentPage >= 0 && (totalPages - currentPage) >= 1 && (<a class="underline cursor-pointer" title={buttonTitle(currentPage + 1)} href={makeUrl(currentPage + 1)}>{formatPage(currentPage + 1)}</a>)}
-      {currentPage >= 0 && (totalPages - currentPage) >= 2 && (<a class="underline cursor-pointer" title={buttonTitle(currentPage + 2)} href={makeUrl(currentPage + 2)}>{formatPage(currentPage + 2)}</a>)}
+      {currentPage >= 2 && (<a class="pagination-btn" title={buttonTitle(currentPage - 2)} href={makeUrl(currentPage - 2)}>{formatPage(currentPage - 2)}</a>)}
+      {currentPage >= 1 && (<a class="pagination-btn" title={buttonTitle(currentPage - 1)} href={makeUrl(currentPage - 1)}>{formatPage(currentPage - 1)}</a>)}
+      <a class="pagination-btn bg-white text-black" title={buttonTitle(currentPage)} href={makeUrl(currentPage)}>{formatPage(currentPage)}</a>
+      {currentPage >= 0 && (totalPages - currentPage) >= 1 && (<a class="pagination-btn" title={buttonTitle(currentPage + 1)} href={makeUrl(currentPage + 1)}>{formatPage(currentPage + 1)}</a>)}
+      {currentPage >= 0 && (totalPages - currentPage) >= 2 && (<a class="pagination-btn" title={buttonTitle(currentPage + 2)} href={makeUrl(currentPage + 2)}>{formatPage(currentPage + 2)}</a>)}
 
-      {currentPage >= 0 && (totalPages - currentPage) >= 3 && (<span class="text-gray-400">...</span>)}
+      {currentPage >= 0 && (totalPages - currentPage) >= 3 && (<span class="text-gray-600 mt-1">...</span>)}
 
       <a disabled={currentPage >= totalPages} class={`${currentPage >= totalPages ? 'text-gray-400' : 'cursor-pointer'}`} href={makeUrl(currentPage + 1)} title="Go to the next page">
         <SvgGoNext />

@@ -831,7 +831,7 @@ msgid "The app you are looking for has been removed or does not exist"
 msgstr "你查找的应用已经被移除或不存在"
 
 msgid ""
-"The apps available for download from the OpenStore have their own licencing "
+"The apps available for download from the OpenStore have their own licensing "
 "and terms. "
 "Consult each individual app's page for more information."
 msgstr ""

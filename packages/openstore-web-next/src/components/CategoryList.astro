@@ -15,14 +15,11 @@ const categories = CategoriesSchema.parse(data);
   {
     categories.map((category) => (
       <div>
-        <div class="text-lg flex gap-2 mb-2">
-          <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${category.slug}/`)}>
-            <img src={category.icon} alt="" class="h-6 w-6" />
-          </a>
-          <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${category.slug}/`)} class="underline">
-            {category.translation}
-          </a>
-        </div>
+        <a href={getRelativeLocaleUrl(Astro.currentLocale, `/apps/${category.slug}/`)} class="text-lg flex gap-2 mb-2 text-ubuntu-orange font-bold">
+          <img src={category.icon} alt="" class="h-6 w-6" />
+
+          {category.translation}
+        </a>
 
         <div class="w-full h-[1px] bg-ubuntu-gradient rounded-full" />
       </div>

@@ -868,7 +868,7 @@ msgid "The app you are looking for has been removed or does not exist"
 msgstr "Приложение, которое Вы ищете, не существует или было удалено"
 
 msgid ""
-"The apps available for download from the OpenStore have their own licencing "
+"The apps available for download from the OpenStore have their own licensing "
 "and terms. "
 "Consult each individual app's page for more information."
 msgstr ""
