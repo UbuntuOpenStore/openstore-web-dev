@@ -15,7 +15,7 @@ await initializeI18N(Astro.currentLocale);
   description={t("The open source app store for Ubuntu Touch")}
   schema={generateSchema(t("Apps"), [{ name: "Apps", path: "/apps/" }])}
 >
-  <section class="grow flex flex-row">
+  <section class="grow flex flex-row section">
     <CategoryList class="mx-12 w-96 mb-2 hidden md:block" />
 
     <div class="w-full">

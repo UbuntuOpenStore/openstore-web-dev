@@ -8,15 +8,15 @@ const ManageMenu = ({ id }: { id: string }) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" class="py-1 px-2">
+        <Button variant="ghost" class="py-1 px-2 cursor-pointer">
           <SvgNavigationMenu class="!h-6 !w-6" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
-        <DropdownMenuItem asChild><a href={baseUrl}>Edit</a></DropdownMenuItem>
-        <DropdownMenuItem asChild><a href={`${baseUrl}revision/`}>New Revision</a></DropdownMenuItem>
-        <DropdownMenuItem asChild><a href={`${baseUrl}stats/`}>Stats</a></DropdownMenuItem>
-        <DropdownMenuItem asChild><a href={`${baseUrl}badge/`}>Badge</a></DropdownMenuItem>
+        <DropdownMenuItem asChild><a href={baseUrl} className="cursor-pointer">Edit</a></DropdownMenuItem>
+        <DropdownMenuItem asChild><a href={`${baseUrl}revision/`} className="cursor-pointer">New Revision</a></DropdownMenuItem>
+        <DropdownMenuItem asChild><a href={`${baseUrl}stats/`} className="cursor-pointer">Stats</a></DropdownMenuItem>
+        <DropdownMenuItem asChild><a href={`${baseUrl}badge/`} className="cursor-pointer">Badge</a></DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

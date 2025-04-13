@@ -15,13 +15,13 @@ const AppTypeBadges = ({ types, publishedDate, messages }: { types: AppData['typ
   return (
     <div class="mt-1 space-x-1">
       {isNew && (
-        <span class="rounded-lg bg-ubuntu-orange text-white px-1 py-0.5 text-xs">
+        <span class="rounded-lg bg-ubuntu-orange text-white px-1.5 py-1 text-xs">
           {messages.new}
         </span>
       )}
 
       {types.filter((type) => ALL_TYPES.includes(type)).map((type) => (
-        <span class="rounded-lg bg-primary text-white px-1 py-0.5 text-xs">
+        <span class="rounded-lg bg-primary text-white px-1.5 py-1 text-xs">
           {type === AppType.APP && (<>{messages.app}</>)}
           {type === AppType.BOOKMARK && (<>{messages.bookmark}</>)}
           {type === AppType.WEBAPP && (<>{messages.webapp}</>)}

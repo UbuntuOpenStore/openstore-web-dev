@@ -16,7 +16,7 @@ const app = appResponse.status === 200 ? await appResponse.json().then(({ data }
 ---
 
 {app ? (
-  <ManageHeader app={app} breadcrumb="New Revision" />
+  <ManageHeader app={app} breadcrumb="Revision" />
 
   <div class="grow">
     <RevisionForm app={app} client:only="preact" />

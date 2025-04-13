@@ -68,7 +68,7 @@ const SubmitAppForm = ({ currentLocale }: { currentLocale: string | undefined })
         </div>
 
         <div class="flex flex-row-reverse">
-          <p class="text-xs text-gray-500 text-right max-w-3/4">
+          <p class="text-xs text-gray-500 md:text-right md:max-w-3/4">
             This is the unique identifier for your app. It must match exactly the "name" field in your click's manifest.json and must be all
             lowercase letters. For example: "openstore.openstore-team", where "openstore" is the app and "openstore-team" is the group or
             individual authoring the app.
