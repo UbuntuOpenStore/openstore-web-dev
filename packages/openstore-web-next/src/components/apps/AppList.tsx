@@ -8,7 +8,7 @@ const AppList = ({ apps, messages, currentLocale }: { apps: SlimAppData[], curre
     <div class="grid grid-cols-2 md:grid-cols-4">
       {
         apps.map((app) => (
-          <a href={getRelativeLocaleUrl(currentLocale, `/app/${app.id}/`)} class="flex flex-row gap-4 max-w-xl mb-4 py-2 px-1 md:p-4">
+          <a href={getRelativeLocaleUrl(currentLocale, `/app/${app.id}/`)} class="flex flex-row gap-4 max-w-xl mb-4 py-2 px-1 md:p-4" data-astro-prefetch>
             <img
               class="rounded-2xl max-w-[64px] max-h-[64px]"
               src={app.icon}

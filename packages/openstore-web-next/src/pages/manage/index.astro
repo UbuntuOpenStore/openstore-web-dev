@@ -1,16 +1,11 @@
 ---
-import SvgSearch from "@/components/icons/Search";
-import StaticPagination from "@/components/manage/StaticPagination";
+import ManageList from "@/components/manage/ManageList.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { AppSearchSchema } from "@/lib/schema";
 import { getUser } from "@/lib/user";
 
 export const prerender = false;
 
 const url = new URL(Astro.request.url);
-const term = url.searchParams.get("search") ?? "";
-const hashPage = parseInt(url.searchParams.get("page") ?? "0");
-const currentPage = isNaN(hashPage) || hashPage < 0 ? 0 : hashPage;
 
 if (url.searchParams.has("key")) {
   const expires = new Date();
@@ -25,79 +20,17 @@ if (!apikey) {
   return Astro.redirect("/login/");
 }
 
-const PAGE_SIZE = 32;
-const skip = currentPage * PAGE_SIZE;
-const appSearchUrl = new URL(`${import.meta.env.PUBLIC_API_URL}api/v3/manage`);
-appSearchUrl.searchParams.append("apikey", apikey);
-appSearchUrl.searchParams.append("limit", PAGE_SIZE.toString());
-appSearchUrl.searchParams.append("skip", skip.toString());
-appSearchUrl.searchParams.append("search", term);
-
-const [user, appResponse] = await Promise.all([getUser(apikey), fetch(appSearchUrl)]);
-if (!user || appResponse.status !== 200) {
+const user = await getUser(apikey);
+if (!user) {
   Astro.cookies.delete("apikey");
   return Astro.redirect("/login/");
 }
-
-const apps = await appResponse.json().then(({ data }) => AppSearchSchema.parse(data));
-const totalPages = Math.ceil(apps.count / PAGE_SIZE) - 1;
 ---
 
 <BaseLayout title="OpenStore" pageTitle="Manage | OpenStore" description="The open source app store for Ubuntu Touch" schema={undefined}>
   <section class="section space-y-4 grow">
     <h1 class="text-4xl">Welcome {user.name || user.username}</h1>
 
-    <div class="flex justify-between">
-      <form action="" method="GET">
-        <div class="relative max-w-sm w-full h-full">
-          <input
-            type="text"
-            placeholder="Search..."
-            aria-label="Search"
-            class="w-full h-full py-2 px-4 pr-10 rounded-full border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
-            value={term}
-            name="search"
-            id="search"
-          />
-
-          <button type="submit" class="absolute right-3 top-1/2 transform -translate-y-1/2">
-            <SvgSearch class="h-5 w-5 text-gray-500 cursor-pointer" />
-          </button>
-        </div>
-
-        {/* Reset the page when the user searches */}
-        <input type="hidden" name="page" id="page" value="0" />
-      </form>
-
-      <a href="/submit/" class="btn bg-ubuntu-orange text-white">Submit App</a>
-    </div>
-
-    <div class="grid grid-cols-2 md:grid-cols-4">
-      {
-        apps.packages.map((app) => (
-          <a href={`/manage/${app.id}/`} class="flex flex-row gap-4 max-w-xl mb-4 py-2 px-1 md:p-4">
-            <img
-              class="rounded-2xl max-w-[64px] max-h-[64px]"
-              src={app.icon}
-              alt=""
-              width="64"
-              height="64"
-              loading="lazy"
-              style={`view-transition-name: app-${app.id.replace(/\./g, "-")}`}
-            />
-            <div>
-              <div class="text-lg font-bold">
-                {app.name}
-              </div>
-
-              <p>{app.publisher}</p>
-              <p class={app.published ? "text-ubuntu-purple" : "text-gray-400"}>{app.published ? "Published" : "Not Published"}</p>
-            </div>
-          </a>
-        ))
-      }
-    </div>
-
-    {totalPages > 1 && <StaticPagination currentPage={currentPage} totalPages={totalPages} baseUrl={`/manage/?search=${term}`} />}
+    <ManageList server:defer />
   </section>
 </BaseLayout>

@@ -39,16 +39,18 @@ await initializeI18N(Astro.currentLocale);
         </li>
 
         <li>
-          <a class="header-link" href={getRelativeLocaleUrl(Astro.currentLocale, "/submit/")}>{t("Submit")}</a>
+          <a class="header-link" href={getRelativeLocaleUrl(Astro.currentLocale, "/submit/")} data-astro-prefetch="tap">{t("Submit")}</a>
         </li>
         <li>
-          <a class="header-link" href={getRelativeLocaleUrl(Astro.currentLocale, "/apps/")}>{t("Browse")}</a>
+          <a class="header-link" href={getRelativeLocaleUrl(Astro.currentLocale, "/apps/")} data-astro-prefetch="tap">{t("Browse")}</a>
         </li>
         <li>
-          <a class="header-link" href={getRelativeLocaleUrl(Astro.currentLocale, "/apps/categories/")}>{t("Categories")}</a>
+          <a class="header-link" href={getRelativeLocaleUrl(Astro.currentLocale, "/apps/categories/")} data-astro-prefetch="tap"
+            >{t("Categories")}</a
+          >
         </li>
         <li>
-          <a class="header-link" href={getRelativeLocaleUrl(Astro.currentLocale, "/about/")}>{t("About")}</a>
+          <a class="header-link" href={getRelativeLocaleUrl(Astro.currentLocale, "/about/")} data-astro-prefetch="tap">{t("About")}</a>
         </li>
 
         <LoginLogout

@@ -1,46 +1,25 @@
 ---
-import BadgeSelect from "@/components/BadgeSelect";
-import ManageHeader from "@/components/manage/ManageHeader.astro";
+import BadgePage from "@/components/manage/BadgePage.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { AppManageSchema } from "@/lib/schema";
 
 export const prerender = false;
 
 const { id } = Astro.params;
+if (!id) {
+  return Astro.redirect("/manage/");
+}
+
 const apikey = Astro.cookies.get("apikey")?.value;
 if (!apikey) {
   return Astro.redirect("/login/");
 }
-
-const appResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${id}?apikey=${apikey}`);
-
-if (appResponse.status === 404) {
-  return new Response(null, {
-    status: 404,
-    statusText: "Not found",
-  });
-}
-
-if (appResponse.status === 403) {
-  return Astro.redirect("/manage/");
-}
-
-if (appResponse.status !== 200) {
-  Astro.cookies.delete("apikey");
-  return Astro.redirect("/login/");
-}
-
-const app = await appResponse.json().then(({ data }) => AppManageSchema.parse(data));
 ---
 
-<BaseLayout title="OpenStore" pageTitle={`Manage ${app.name} | OpenStore`} description={app.tagline} schema={undefined}>
-  <ManageHeader app={app} breadcrumb="Badge" />
-
-  <section class="section mb-8 grow">
-    <h2 class="text-2xl">Badge</h2>
-
-    <div class="w-full mt-4">
-      <BadgeSelect appId={app.id} client:load />
-    </div>
-  </section>
+<BaseLayout
+  title="OpenStore"
+  pageTitle="Manage App Badge | OpenStore"
+  description="The open source app store for Ubuntu Touch"
+  schema={undefined}
+>
+  <BadgePage id={id} server:defer />
 </BaseLayout>
