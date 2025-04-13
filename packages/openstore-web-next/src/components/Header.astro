@@ -1,8 +1,8 @@
 ---
 import { getRelativeLocaleUrl } from "@/lib/utils";
 import SvgNavigationMenu from "./icons/NavigationMenu";
-import LoginLogout from "./LoginLogout";
 import SearchBar from "./SearchBar";
+import LoginLogout from "./LoginLogout.astro";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
 
@@ -53,15 +53,7 @@ await initializeI18N(Astro.currentLocale);
           <a class="header-link" href={getRelativeLocaleUrl(Astro.currentLocale, "/about/")} data-astro-prefetch="tap">{t("About")}</a>
         </li>
 
-        <LoginLogout
-          currentLocale={Astro.currentLocale}
-          messages={{
-            manage: t("Manage"),
-            logout: t("Logout"),
-            login: t("Login"),
-          }}
-          client:only="preact"
-        />
+        <LoginLogout server:defer />
       </ul>
     </nav>
   </div>
