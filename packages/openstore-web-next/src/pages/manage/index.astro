@@ -1,4 +1,5 @@
 ---
+import Loading from "@/components/Loading.astro";
 import ManageList from "@/components/manage/ManageList.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getUser } from "@/lib/user";
@@ -31,6 +32,8 @@ if (!user) {
   <section class="section space-y-4 grow">
     <h1 class="text-4xl">Welcome {user.name || user.username}</h1>
 
-    <ManageList server:defer />
+    <ManageList server:defer>
+      <Loading slot="fallback" />
+    </ManageList>
   </section>
 </BaseLayout>

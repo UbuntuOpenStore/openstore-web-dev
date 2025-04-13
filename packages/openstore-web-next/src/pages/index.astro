@@ -4,6 +4,8 @@ import Discover from "@/components/Discover.astro";
 import { initializeI18N } from "@/lib/i18n";
 import { t } from "i18next";
 import { generateSchema } from "@/lib/json-schema";
+import SvgSpinner from "@/components/icons/Spinner";
+import Loading from "@/components/Loading.astro";
 
 await initializeI18N(Astro.currentLocale);
 ---
@@ -16,8 +18,10 @@ await initializeI18N(Astro.currentLocale);
 >
   <section class="section text-center grow">
     <h1 class="text-4xl">OpenStore</h1>
-    <p><a href="https://ubuntu-touch.io/" class="underline">{t("The open source app store for Ubuntu Touch")}</a></p>
+    <p>{t("The open source app store for Ubuntu Touch")}</p>
   </section>
 
-  <Discover server:defer />
+  <Discover server:defer>
+    <Loading slot="fallback" />
+  </Discover>
 </BaseLayout>

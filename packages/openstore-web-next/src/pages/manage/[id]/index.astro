@@ -1,4 +1,5 @@
 ---
+import Loading from "@/components/Loading.astro";
 import ManagePage from "@/components/manage/ManagePage.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getUser } from "@/lib/user";
@@ -28,5 +29,7 @@ if (!user) {
   description="The open source app store for Ubuntu Touch"
   schema={undefined}
 >
-  <ManagePage id={id} user={user} server:defer />
+  <ManagePage id={id} user={user} server:defer>
+    <Loading slot="fallback" />
+  </ManagePage>
 </BaseLayout>

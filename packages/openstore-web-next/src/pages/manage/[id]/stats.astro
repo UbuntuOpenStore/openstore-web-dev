@@ -1,4 +1,5 @@
 ---
+import Loading from "@/components/Loading.astro";
 import StatsPage from "@/components/manage/StatsPage.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
@@ -21,5 +22,7 @@ if (!apikey) {
   description="The open source app store for Ubuntu Touch"
   schema={undefined}
 >
-  <StatsPage id={id} server:defer />
+  <StatsPage id={id} server:defer>
+    <Loading slot="fallback" />
+  </StatsPage>
 </BaseLayout>
