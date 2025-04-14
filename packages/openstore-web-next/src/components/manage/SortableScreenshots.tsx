@@ -45,7 +45,7 @@ const SortableScreenshots = ({ screenshots }: { screenshots: string[] }) => {
   }, []);
 
   return (
-    <div class="flex flex-row gap-4">
+    <div class="flex flex-row gap-4 overflow-auto">
       <DndContext
         sensors={sensors}
         collisionDetection={closestCenter}

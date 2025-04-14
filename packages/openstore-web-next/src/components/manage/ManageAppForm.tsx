@@ -115,19 +115,19 @@ const ManageAppForm = ({ user, app, maintainers }: ManageAppFormProps) => {
 
         <div class="form-group">
           <label for="screenshot_files" class="form-label">Screenshots (Limit 5)</label>
-          <div class="w-full">
-            <input
-              type="file"
-              id="screenshot_files"
-              name="screenshot_files"
-              accept="image/*"
-              multiple
-              disabled={app.screenshots.length >= 5}
-              class="mb-4 w-full text-sm text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-gray-50 file:text-gray-700 hover:file:bg-gray-100 file:cursor-pointer border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            />
-
-            <SortableScreenshots screenshots={app.screenshots} />
-          </div>
+          <input
+            type="file"
+            id="screenshot_files"
+            name="screenshot_files"
+            accept="image/*"
+            multiple
+            disabled={app.screenshots.length >= 5}
+            class="w-full text-sm text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-gray-50 file:text-gray-700 hover:file:bg-gray-100 file:cursor-pointer border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div class="form-group">
+          <div class="form-label">{/* Intentionally left blank */}</div>
+          <SortableScreenshots screenshots={app.screenshots} />
         </div>
       </section>
 
