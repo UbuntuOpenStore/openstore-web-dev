@@ -4,11 +4,12 @@ import StaticPagination from "@/components/manage/StaticPagination";
 import { AppSearchSchema } from "@/lib/schema";
 import ManageError from "./ManageError.astro";
 
-const url = new URL(Astro.request.url);
-const term = url.searchParams.get("search") ?? "";
-const hashPage = parseInt(url.searchParams.get("page") ?? "0");
-const currentPage = isNaN(hashPage) || hashPage < 0 ? 0 : hashPage;
+export type Props = {
+  term: string;
+  currentPage: number;
+};
 
+const { term, currentPage } = Astro.props;
 const apikey = Astro.cookies.get("apikey")!.value;
 
 const PAGE_SIZE = 32;
@@ -24,59 +25,65 @@ const apps = appResponse.status === 200 ? await appResponse.json().then(({ data 
 const totalPages = Math.ceil((apps?.count ?? 0) / PAGE_SIZE) - 1;
 ---
 
-{apps === undefined ? (
-  <ManageError status={appResponse.status} />
-) : (
-  <>
-    <div class="flex justify-between gap-4">
-      <form action="" method="GET">
-        <div class="relative max-w-sm">
-          <input
-            type="text"
-            placeholder="Search..."
-            aria-label="Search"
-            class="w-full h-full py-2 px-4 pr-10 rounded-full border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
-            value={term}
-            name="search"
-            id="search"
-          />
-
-          <button type="submit" class="absolute right-3 top-1/2 transform -translate-y-1/2">
-            <SvgSearch class="h-5 w-5 text-gray-500 cursor-pointer" />
-          </button>
-        </div>
-
-        {/* Reset the page when the user searches */}
-        <input type="hidden" name="page" id="page" value="0" />
-      </form>
-
-      <a href="/submit/" class="btn bg-ubuntu-orange text-white">Submit</a>
-    </div>
-
-    <div class="grid grid-cols-2 md:grid-cols-4">
-      {
-        apps.packages.map((app) => (
-          <a href={`/manage/${app.id}/`} class="flex flex-row gap-4 max-w-xl mb-4 py-2 px-1 md:p-4">
-            <img
-              class="rounded-2xl max-w-[64px] max-h-[64px]"
-              src={app.icon}
-              alt=""
-              width="64"
-              height="64"
-              loading="lazy"
-              style={`view-transition-name: app-${app.id.replace(/\./g, "-")}`}
+{
+  apps === undefined ? (
+    <ManageError status={appResponse.status} />
+  ) : (
+    <>
+      <div class="flex justify-between gap-4">
+        <form action="" method="GET">
+          <div class="relative max-w-sm">
+            <input
+              type="text"
+              placeholder="Search..."
+              aria-label="Search"
+              class="w-full h-full py-2 px-4 pr-10 rounded-full border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+              value={term}
+              name="search"
+              id="search"
             />
-            <div>
-              <div class="text-md md:text-lg text-ellipsis line-clamp-2 font-bold">{app.name}</div>
 
-              <p>{app.publisher}</p>
-              <p class={app.published ? "text-ubuntu-purple" : "text-gray-400"}>{app.published ? "Published" : "Not Published"}</p>
-            </div>
-          </a>
-        ))
-      }
-    </div>
+            <button type="submit" class="absolute right-3 top-1/2 transform -translate-y-1/2">
+              <SvgSearch class="h-5 w-5 text-gray-500 cursor-pointer" />
+            </button>
+          </div>
 
-    {totalPages > 1 && <StaticPagination currentPage={currentPage} totalPages={totalPages} baseUrl={`/manage/?search=${term}`} />}
-  </>
-)}
+          {/* Reset the page when the user searches */}
+          <input type="hidden" name="page" id="page" value="0" />
+        </form>
+
+        <a href="/submit/" class="btn bg-ubuntu-orange text-white">
+          Submit
+        </a>
+      </div>
+
+      {apps.count > 0 ? (
+        <div class="grid grid-cols-2 md:grid-cols-4">
+          {apps.packages.map((app) => (
+            <a href={`/manage/${app.id}/`} class="flex flex-row gap-4 max-w-xl mb-4 py-2 px-1 md:p-4">
+              <img
+                class="rounded-2xl max-w-[64px] max-h-[64px]"
+                src={app.icon}
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+                style={`view-transition-name: app-${app.id.replace(/\./g, "-")}`}
+              />
+              <div>
+                <div class="text-md md:text-lg text-ellipsis line-clamp-2 font-bold break-all">{app.name}</div>
+
+                <p>{app.publisher}</p>
+                <p class={app.published ? "text-ubuntu-purple" : "text-gray-400"}>{app.published ? "Published" : "Not Published"}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div class="h-full text-2xl">No apps found</div>
+      )}
+
+      {totalPages > 1 && <StaticPagination currentPage={currentPage} totalPages={totalPages} baseUrl={`/manage/?search=${term}`} />}
+    </>
+  )
+}

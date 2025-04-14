@@ -19,7 +19,7 @@ const AppList = ({ apps, messages, currentLocale }: { apps: SlimAppData[], curre
               style={`view-transition-name: app-${app.id.replace(/\./g, '-')}`}
             />
             <div>
-              <div class="text-md md:text-lg text-ellipsis line-clamp-2 font-bold">
+              <div class="text-md md:text-lg text-ellipsis line-clamp-2 font-bold break-all">
                 {app.name}
               </div>
 

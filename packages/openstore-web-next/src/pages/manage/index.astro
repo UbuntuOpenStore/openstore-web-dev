@@ -7,6 +7,9 @@ import { getUser } from "@/lib/user";
 export const prerender = false;
 
 const url = new URL(Astro.request.url);
+const term = url.searchParams.get("search") ?? "";
+const hashPage = parseInt(url.searchParams.get("page") ?? "0");
+const currentPage = isNaN(hashPage) || hashPage < 0 ? 0 : hashPage;
 
 if (url.searchParams.has("key")) {
   const expires = new Date();
@@ -32,7 +35,7 @@ if (!user) {
   <section class="section space-y-4 grow">
     <h1 class="text-4xl">Welcome {user.name || user.username}</h1>
 
-    <ManageList server:defer>
+    <ManageList term={term} currentPage={currentPage} server:defer>
       <Loading slot="fallback" />
     </ManageList>
   </section>
