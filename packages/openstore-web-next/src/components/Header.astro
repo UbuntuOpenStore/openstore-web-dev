@@ -35,7 +35,7 @@ await initializeI18N(Astro.currentLocale);
     >
       <ul class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base h-full">
         <li class="md:mr-4 text-black">
-          <SearchBar client:only="preact" messages={{ search: t("Search...") }} />
+          <SearchBar isDark client:only="preact" messages={{ search: t("Search...") }} />
         </li>
 
         <li>

@@ -2,9 +2,10 @@ import { useStore } from '@nanostores/preact';
 import { searchTerm, searchTermInitialized } from '@/stores';
 import SvgSearch from './icons/Search';
 import { useDebouncedCallback } from 'use-debounce';
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect } from 'preact/hooks';
+import { cn } from '@/lib/utils';
 
-const SearchBar = ({ messages }: { messages: { search: string }}) => {
+const SearchBar = ({ messages, isDark }: { messages: { search: string }, isDark: boolean}) => {
   const term = useStore(searchTerm);
   const initialized = useStore(searchTermInitialized);
 
@@ -34,7 +35,10 @@ const SearchBar = ({ messages }: { messages: { search: string }}) => {
         type="text"
         placeholder={messages.search}
         aria-label="Search"
-        class="w-full h-full py-2 px-4 pr-10 rounded-full border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+        class={cn(
+          "w-full h-full py-2 px-4 pr-10 rounded-full border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent",
+          isDark ? 'text-white' : 'text-black',
+        )}
         value={term}
         onInput={(e) => debounceSetTerm(e.currentTarget.value)}
       />

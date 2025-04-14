@@ -10,6 +10,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
 import { Button } from "./ui/button";
 import * as Sentry from "@sentry/astro";
 import { localeSlugToCode } from "@/lib/utils";
+import SearchBar from "./SearchBar";
 
 const PAGE_SIZE = 32;
 const DEFAULT_SORT = '-published_date';
@@ -175,8 +176,8 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
 
   return (
     <div class="h-full space-y-4 mb-4">
-      <div class="flex justify-between flex-col md:flex-row">
-        <div class="flex mx-4">
+      <div class="flex justify-between flex-col md:flex-row gap-4">
+        <div class="flex md:mx-4">
           <h1 class="text-4xl">
             {messages.search}{" "}
 
@@ -197,7 +198,11 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
           />
         </div>
 
-        <div class="mx-4">
+        <div class="md:hidden">
+          <SearchBar isDark={false} messages={messages} />
+        </div>
+
+        <div class="md:mx-4">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" class="w-full md:w-auto">
