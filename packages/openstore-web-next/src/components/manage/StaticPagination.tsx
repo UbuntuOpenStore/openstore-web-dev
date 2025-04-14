@@ -26,7 +26,7 @@ const StaticPagination = ({ currentPage, totalPages, baseUrl }: Props) => {
 
   return (
     <div class="flex gap-4 justify-center">
-      <a disabled={currentPage <= 0} class={`${currentPage <= 0 ? 'text-gray-400' : 'cursor-pointer'}`} href={makeUrl(currentPage - 1)} title="Go back a page">
+      <a class={`${currentPage <= 0 ? 'text-gray-400' : 'cursor-pointer'}`} href={makeUrl(currentPage - 1)} title="Go back a page">
         <SvgGoPrevious />
       </a>
 
@@ -40,7 +40,7 @@ const StaticPagination = ({ currentPage, totalPages, baseUrl }: Props) => {
 
       {currentPage >= 0 && (totalPages - currentPage) >= 3 && (<span class="text-gray-600 mt-1">...</span>)}
 
-      <a disabled={currentPage >= totalPages} class={`${currentPage >= totalPages ? 'text-gray-400' : 'cursor-pointer'}`} href={makeUrl(currentPage + 1)} title="Go to the next page">
+      <a class={`${currentPage >= totalPages ? 'text-gray-400' : 'cursor-pointer'}`} href={makeUrl(currentPage + 1)} title="Go to the next page">
         <SvgGoNext />
       </a>
     </div>
