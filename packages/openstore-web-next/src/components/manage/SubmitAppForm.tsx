@@ -33,7 +33,7 @@ const SubmitAppForm = ({ currentLocale }: { currentLocale: string | undefined })
       if (response.ok) {
         setSuccess(true);
 
-        location.pathname = `/manage/${formData.get('id')}`;
+        location.pathname = `/manage/${formData.get('id')}/`;
       }
       else {
         const errorBody = await response.json()

@@ -256,7 +256,7 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
         ))}
       </ul>
 
-      {app.permissions.length === 0 && app.read_paths.length === 0 && app.write_paths.length && (
+      {app.permissions.length === 0 && app.read_paths.length === 0 && app.write_paths.length === 0 && (
         <p class="text-center">{t("No permissions needed")}</p>
       )}
     </div>
@@ -290,8 +290,8 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
 
             <div class="text-center">
               {app.source && (
-                <a href={app.source} class="underline">{t("Get involved")}</a>
-                <a href={app.source} class="inline-block -mb-1">
+                <a href={app.source} class="underline" rel="noopener noreferrer nofollow">{t("Get involved")}</a>
+                <a href={app.source} class="inline-block -mb-1" rel="noopener noreferrer nofollow">
                   <SvgExternalLink />
                 </a>
               )}
@@ -337,28 +337,28 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
       title={t("Links")}
     >
       {app.source && (
-        <IconListItem label={t("Source Code")} value={`<a href="${app.source}" class="underline">${domainFormatter(app.source)}</a>`}>
+        <IconListItem label={t("Source Code")} value={`<a href="${app.source}" class="underline" rel="noopener noreferrer nofollow">${domainFormatter(app.source)}</a>`}>
           <SvgSource />
         </IconListItem>
         )
       }
 
       {app.support_url && (
-        <IconListItem label={t("Support")} value={`<a href="${app.support_url}" class="underline">${domainFormatter(app.support_url)}</a>`}>
+        <IconListItem label={t("Support")} value={`<a href="${app.support_url}" class="underline" rel="noopener noreferrer nofollow">${domainFormatter(app.support_url)}</a>`}>
           <SvgUser />
         </IconListItem>
         )
       }
 
       {app.donate_url && (
-        <IconListItem label={t("Donate")} value={`<a href="${app.donate_url}" class="underline">${domainFormatter(app.donate_url)}</a>`}>
+        <IconListItem label={t("Donate")} value={`<a href="${app.donate_url}" class="underline" rel="noopener noreferrer nofollow">${domainFormatter(app.donate_url)}</a>`}>
           <SvgHeart />
         </IconListItem>
         )
       }
 
       {app.translation_url && (
-        <IconListItem label={t("Translations")} value={`<a href="${app.translation_url}" class="underline">${domainFormatter(app.translation_url)}</a>`}>
+        <IconListItem label={t("Translations")} value={`<a href="${app.translation_url}" class="underline" rel="noopener noreferrer nofollow">${domainFormatter(app.translation_url)}</a>`}>
           <SvgGlobe />
         </IconListItem>
         )

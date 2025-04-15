@@ -45,7 +45,7 @@
 }
 
 @utility section {
-  @apply py-3 px-4 mx-auto w-full max-w-6xl md:px-4;
+  @apply py-3 px-4 mx-auto w-full max-w-6xl;
 }
 
 @utility card {

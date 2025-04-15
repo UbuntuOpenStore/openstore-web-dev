@@ -39,10 +39,16 @@ const ManageAppForm = ({ user, app, maintainers }: ManageAppFormProps) => {
             newFormData.append(key, value);
           }
         }
+        else if (key === 'published' || key === 'nsfw' || key === 'locked') {
+          // Skip
+        }
         else {
           newFormData.append(key, value);
         }
       }
+      newFormData.append('published', formData.get('published') ? 'on' : 'off');
+      newFormData.append('nsfw', formData.get('nsfw') ? 'on' : 'off');
+      newFormData.append('locked', formData.get('locked') ? 'on' : 'off');
 
       const response = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${app.id}?apikey=${getClientApiKey()}`, {
         method: "PUT",
