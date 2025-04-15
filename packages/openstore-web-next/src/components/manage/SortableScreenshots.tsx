@@ -16,7 +16,7 @@ import SortableScreenshotItem from './SortableScreenshotItem';
 import { useCallback, useState } from 'preact/hooks';
 
 const SortableScreenshots = ({ screenshots }: { screenshots: string[] }) => {
-  const [sortedScreenshots, setSortedScreenshots] = useState(screenshots);
+  const [sortedScreenshots, setSortedScreenshots] = useState(screenshots); // TODO move state management to ManageAppForm
 
   const sensors = useSensors(
     useSensor(PointerSensor),

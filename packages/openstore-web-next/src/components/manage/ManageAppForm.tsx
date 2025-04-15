@@ -13,9 +13,10 @@ type ManageAppFormProps = {
   user: UserData,
   app: AppManageData,
   maintainers: (UserData & { display_name: string })[],
+  onSave: () => void,
 };
 
-const ManageAppForm = ({ user, app, maintainers }: ManageAppFormProps) => {
+const ManageAppForm = ({ user, app, maintainers, onSave }: ManageAppFormProps) => {
   const [saving, setSaving] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
@@ -58,8 +59,7 @@ const ManageAppForm = ({ user, app, maintainers }: ManageAppFormProps) => {
       if (response.ok) {
         setSuccess(true);
 
-        // Refresh the page to update everything. Since some of the state is outside of this component, this is just simplest
-        location.reload();
+        onSave();
       }
       else {
         const errorBody = await response.json()

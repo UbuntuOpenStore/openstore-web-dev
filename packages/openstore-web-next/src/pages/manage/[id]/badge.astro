@@ -1,6 +1,6 @@
 ---
-import Loading from "@/components/Loading.astro";
-import BadgePage from "@/components/manage/BadgePage.astro";
+import Loading from "@/components/Loading";
+import BadgePage from "@/components/manage/BadgePage";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 export const prerender = false;
@@ -22,7 +22,5 @@ if (!apikey) {
   description="The open source app store for Ubuntu Touch"
   schema={undefined}
 >
-  <BadgePage id={id} server:defer>
-    <Loading slot="fallback" />
-  </BadgePage>
+  <BadgePage id={id} client:only="preact" />
 </BaseLayout>

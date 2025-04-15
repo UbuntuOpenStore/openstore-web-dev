@@ -1,6 +1,5 @@
 ---
-import Loading from "@/components/Loading.astro";
-import RevisionPage from "@/components/manage/RevisionPage.astro";
+import RevisionPage from "@/components/manage/RevisionPage";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 export const prerender = false;
@@ -22,7 +21,5 @@ if (!apikey) {
   description="The open source app store for Ubuntu Touch"
   schema={undefined}
 >
-  <RevisionPage id={id} server:defer>
-    <Loading slot="fallback" />
-  </RevisionPage>
+  <RevisionPage id={id} client:only="preact" />
 </BaseLayout>
