@@ -10,7 +10,7 @@ const ManagePage = ({ id, user }: { id: string, user: UserData }) => {
   const [app, loading, status, refreshApp] = useManageApp(id);
   const maintainers = useManageMaintainers(user.role === 'admin');
 
-  if (loading) {
+  if (!app && loading) {
     return (
       <Loading />
     )

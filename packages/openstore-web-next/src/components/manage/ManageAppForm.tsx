@@ -1,13 +1,14 @@
-import type { AppManageData, UserData } from "@/lib/schema";
+import { AppManageSchema, type AppManageData, type UserData } from "@/lib/schema";
 import { Switch } from "../ui/switch";
 import { APP_TYPE_OPTIONS, CATEGORIES, LICENSES } from "@/lib/constants";
 import SortableScreenshots from "./SortableScreenshots";
-import { useCallback, useState } from "preact/hooks";
+import { useCallback, useRef, useState } from "preact/hooks";
 import SvgSpinner from "../icons/Spinner";
 import type { JSX } from "preact/jsx-runtime";
 import SvgCheck from "../icons/Check";
 import SvgClose from "../icons/Close";
 import { getClientApiKey } from "@/lib/utils";
+import { createRef } from "preact";
 
 type ManageAppFormProps = {
   user: UserData,
@@ -20,6 +21,8 @@ const ManageAppForm = ({ user, app, maintainers, onSave }: ManageAppFormProps) =
   const [saving, setSaving] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
+  const [screenshots, setScreenshots] = useState(app.screenshots);
+  const fileRef = useRef<HTMLInputElement>();
 
   const save = useCallback(async (e: JSX.TargetedSubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -57,6 +60,13 @@ const ManageAppForm = ({ user, app, maintainers, onSave }: ManageAppFormProps) =
       });
 
       if (response.ok) {
+        const appData = AppManageSchema.parse((await response.json()).data);
+        setScreenshots(appData.screenshots);
+
+        if (fileRef.current) {
+          fileRef.current.value = '';
+        }
+
         setSuccess(true);
 
         onSave();
@@ -127,13 +137,14 @@ const ManageAppForm = ({ user, app, maintainers, onSave }: ManageAppFormProps) =
             name="screenshot_files"
             accept="image/*"
             multiple
-            disabled={app.screenshots.length >= 5}
+            disabled={screenshots.length >= 5}
             class="w-full text-sm text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-gray-50 file:text-gray-700 hover:file:bg-gray-100 file:cursor-pointer border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            ref={fileRef as any}
           />
         </div>
         <div class="form-group">
           <div class="form-label">{/* Intentionally left blank */}</div>
-          <SortableScreenshots screenshots={app.screenshots} />
+          <SortableScreenshots screenshots={screenshots} onUpdate={setScreenshots} />
         </div>
       </section>
 

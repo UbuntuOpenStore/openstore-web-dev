@@ -15,8 +15,12 @@ import {
 import SortableScreenshotItem from './SortableScreenshotItem';
 import { useCallback, useState } from 'preact/hooks';
 
-const SortableScreenshots = ({ screenshots }: { screenshots: string[] }) => {
-  const [sortedScreenshots, setSortedScreenshots] = useState(screenshots); // TODO move state management to ManageAppForm
+type SortableScreenshotsProps = {
+  screenshots: string[],
+  onUpdate: (screenshots: string[]) => void,
+};
+
+const SortableScreenshots = ({ screenshots, onUpdate }: SortableScreenshotsProps) => {
 
   const sensors = useSensors(
     useSensor(PointerSensor),
@@ -29,19 +33,15 @@ const SortableScreenshots = ({ screenshots }: { screenshots: string[] }) => {
     const {active, over} = event;
 
     if (active.id !== over.id) {
-      setSortedScreenshots((sortedScreenshots) => {
-        const oldIndex = sortedScreenshots.indexOf(active.id);
-        const newIndex = sortedScreenshots.indexOf(over.id);
+        const oldIndex = screenshots.indexOf(active.id);
+        const newIndex = screenshots.indexOf(over.id);
 
-        return arrayMove(sortedScreenshots, oldIndex, newIndex);
-      });
+        onUpdate(arrayMove(screenshots, oldIndex, newIndex));
     }
   }, []);
 
   const removeScreenshot = useCallback((screenshot: string) => {
-    setSortedScreenshots((sortedScreenshots) => {
-      return sortedScreenshots.filter((ss) => ss !== screenshot);
-    });
+    onUpdate(screenshots.filter((ss) => ss !== screenshot));
   }, []);
 
   return (
@@ -52,10 +52,10 @@ const SortableScreenshots = ({ screenshots }: { screenshots: string[] }) => {
         onDragEnd={handleDragEnd}
       >
         <SortableContext
-          items={sortedScreenshots}
+          items={screenshots}
           strategy={horizontalListSortingStrategy}
         >
-          {sortedScreenshots.map(screenshot => <SortableScreenshotItem key={screenshot} screenshot={screenshot} onRemove={() => removeScreenshot(screenshot)} />)}
+          {screenshots.map(screenshot => <SortableScreenshotItem key={screenshot} screenshot={screenshot} onRemove={() => removeScreenshot(screenshot)} />)}
         </SortableContext>
       </DndContext>
     </div>
