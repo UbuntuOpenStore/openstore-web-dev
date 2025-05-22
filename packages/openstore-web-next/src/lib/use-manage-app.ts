@@ -11,7 +11,7 @@ export const useManageApp = (id: string): [AppManageData | undefined, boolean, n
     setLoading(true);
 
     const apikey = getClientApiKey();
-    fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${id}?apikey=${apikey}`).then((res) => {
+    fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${id}?apikey=${apikey}`, { headers: { 'X-Source': 'openstore-web-next' } }).then((res) => {
       setStatus(res.status);
       return res.status === 200 ? res.json() : undefined;
     }).then((data) => {

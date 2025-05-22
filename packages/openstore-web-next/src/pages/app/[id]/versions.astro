@@ -13,7 +13,7 @@ await initializeI18N(Astro.currentLocale);
 
 const { id } = Astro.params;
 
-const appResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/apps/${id}`);
+const appResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/apps/${id}`, { headers: { 'X-Source': 'openstore-web-next' } });
 if (appResponse.status === 404) {
   return new Response(null, {
     status: 404,

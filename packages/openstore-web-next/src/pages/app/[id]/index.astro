@@ -36,8 +36,8 @@ const lang = localeSlugToCode(Astro.currentLocale);
 const { id } = Astro.params;
 
 const [appResponse, reviewsResponse] = await Promise.all([
-  fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/apps/${id}?lang=${lang}`),
-  fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/apps/${id}/reviews?lang=${lang}`),
+  fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/apps/${id}?lang=${lang}`, { headers: { 'X-Source': 'openstore-web-next' } }),
+  fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/apps/${id}/reviews?lang=${lang}`, { headers: { 'X-Source': 'openstore-web-next' } }),
 ]);
 
 if (appResponse.status === 404) {

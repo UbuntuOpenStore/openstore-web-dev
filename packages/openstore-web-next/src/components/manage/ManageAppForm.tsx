@@ -57,6 +57,7 @@ const ManageAppForm = ({ user, app, maintainers, onSave }: ManageAppFormProps) =
       const response = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v3/manage/${app.id}?apikey=${getClientApiKey()}`, {
         method: "PUT",
         body: newFormData,
+        headers: { 'X-Source': 'openstore-web-next' }
       });
 
       if (response.ok) {

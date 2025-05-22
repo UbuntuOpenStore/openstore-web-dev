@@ -9,7 +9,7 @@ import { t } from "i18next";
 await initializeI18N(Astro.currentLocale);
 const lang = localeSlugToCode(Astro.currentLocale);
 
-const discoverResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/discover?channel=${DEFAULT_CHANNEL}&lang=${lang}`);
+const discoverResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/v4/discover?channel=${DEFAULT_CHANNEL}&lang=${lang}`, { headers: { 'X-Source': 'openstore-web-next' } });
 const discoverData = await discoverResponse.json();
 const { highlights, categories } = DiscoverSchema.parse(discoverData.data);
 ---

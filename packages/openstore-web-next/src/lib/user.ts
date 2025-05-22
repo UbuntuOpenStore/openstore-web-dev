@@ -19,7 +19,7 @@ export async function getUser(apikey: string) {
     }
   }
 
-  const userResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/users/me?apikey=${apikey}`);
+  const userResponse = await fetch(`${import.meta.env.PUBLIC_API_URL}api/users/me?apikey=${apikey}`, { headers: { 'X-Source': 'openstore-web-next' } });
 
   if (userResponse.status !== 200) {
     return undefined;

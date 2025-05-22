@@ -141,7 +141,7 @@ const SearchApps = ({ category, categoryName, messages, currentLocale }: Props) 
     document.location.hash = updateHash.size > 0 ? `#${updateHash.toString()}` : '';
 
     try {
-      const response = await fetch(url);
+      const response = await fetch(url, { headers: { "X-Source": "openstore-web-next" } });
       const { data } = await response.json();
       const search = AppSearchSchema.parse(data);
 

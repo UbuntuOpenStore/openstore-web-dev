@@ -20,7 +20,7 @@ appSearchUrl.searchParams.append("limit", PAGE_SIZE.toString());
 appSearchUrl.searchParams.append("skip", skip.toString());
 appSearchUrl.searchParams.append("search", term);
 
-const appResponse = await fetch(appSearchUrl);
+const appResponse = await fetch(appSearchUrl, { headers: { "X-Source": "openstore-web-next" } });
 const apps = appResponse.status === 200 ? await appResponse.json().then(({ data }) => AppSearchSchema.parse(data)) : undefined;
 const totalPages = Math.ceil((apps?.count ?? 0) / PAGE_SIZE) - 1;
 ---

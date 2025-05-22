@@ -26,3 +26,4 @@ pnpm-debug.log*
 src/locales/*.json
 astro_tmp_pages_*
 astro.db
+TODO.md

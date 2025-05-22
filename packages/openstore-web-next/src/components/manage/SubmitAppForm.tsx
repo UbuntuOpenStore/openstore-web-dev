@@ -26,7 +26,8 @@ const SubmitAppForm = ({ currentLocale }: { currentLocale: string | undefined })
           name: formData.get('name'),
         }),
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'X-Source': 'openstore-web-next',
         }
       });
 

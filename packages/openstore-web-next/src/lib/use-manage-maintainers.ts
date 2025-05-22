@@ -7,7 +7,7 @@ export const useManageMaintainers = (isAdmin: boolean) => {
 
   useEffect(() => {
     const apikey = getClientApiKey();
-    fetch(`${import.meta.env.PUBLIC_API_URL}api/users?apikey=${apikey}`).then((res) => {
+    fetch(`${import.meta.env.PUBLIC_API_URL}api/users?apikey=${apikey}`, { headers: { 'X-Source': 'openstore-web-next' } }).then((res) => {
       if (res.status === 200) {
         return res.json();
       }
