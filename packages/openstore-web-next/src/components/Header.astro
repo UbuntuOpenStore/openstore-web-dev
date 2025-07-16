@@ -44,7 +44,7 @@ await initializeI18N(Astro.currentLocale);
         <li>
           <a class="header-link" href={getRelativeLocaleUrl(Astro.currentLocale, "/apps/")} data-astro-prefetch="tap">{t("Browse")}</a>
         </li>
-        <li>
+        <li class="md:hidden">
           <a class="header-link" href={getRelativeLocaleUrl(Astro.currentLocale, "/apps/categories/")} data-astro-prefetch="tap"
             >{t("Categories")}</a
           >
