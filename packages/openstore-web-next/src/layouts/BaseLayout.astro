@@ -68,7 +68,7 @@ const ogImageAlt = imageAlt || "OpenStore logo";
     <Footer />
 
     <script is:inline>
-      document.addEventListener("astro:page-load", () => {
+      window.onload = function () {
         const menu = document.querySelector("[data-toggle-menu]");
 
         menu.addEventListener(
@@ -81,7 +81,7 @@ const ogImageAlt = imageAlt || "OpenStore logo";
           },
           false
         );
-      });
+      };
     </script>
   </body>
 </html>
