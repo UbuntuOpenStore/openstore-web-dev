@@ -18,7 +18,15 @@ export function getClientApiKey() {
 
 // Specifically not putting these in the i18n module so the client doesn't need to load all the translation files
 export function getRelativeLocaleUrl(locale: string | undefined, path: string) {
-  return getRelativeLocaleUrlAstro(locale ?? 'en-us', path);
+  const url = getRelativeLocaleUrlAstro(locale ?? 'en-us', path);
+
+  if (url.includes('#') && url.endsWith('/')) {
+    // If the URL ends with a slash and has a hash, we need to remove the trailing slash
+    // to prevent issues with the hash not being recognized correctly.
+    return url.slice(0, -1);
+  }
+
+  return url;
 }
 
 export function removeLocaleFromPath(path: string) {

@@ -117,8 +117,7 @@ const isTrustedApp =
   app.id.startsWith("openstore.");
 const isProprietary = app.license.toLowerCase() === "proprietary";
 
-const publisherUrl = new URL('/apps/', import.meta.env.SITE);
-publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
+const publisherUrl = `/apps/#search=publisher:${app.publisher}`;
 ---
 
 <BaseLayout
@@ -146,7 +145,7 @@ publisherUrl.searchParams.append('search', `publisher:${app.publisher}`);
         <h1 class="text-4xl">{app.name}</h1>
         {app.publisher && (
           <p>
-            by <a href={getRelativeLocaleUrl(Astro.currentLocale, publisherUrl.toString())} class="underline">{app.publisher}</a>
+            by <a href={getRelativeLocaleUrl(Astro.currentLocale, publisherUrl)} class="underline">{app.publisher}</a>
           </p>
         )}
 
