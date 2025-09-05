@@ -1,8 +1,0 @@
-[submodule "openstore-api"]
-	path = openstore-api
-	url = git@gitlab.com:theopenstore/openstore-api.git
-	branch = master
-[submodule "openstore-web"]
-	path = openstore-web
-	url = git@gitlab.com:theopenstore/openstore-web.git
-	branch = master
