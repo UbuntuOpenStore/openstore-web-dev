@@ -8,12 +8,13 @@ services:
     volumes:
       - ./openstore-api:/srv/openstore
       - ./.data/clicks:/srv/openstore-data
-      - ./.data/icons:/srv/openstore-icons
-      - ./.data/screenshots:/srv/openstore-screenshots
+      - ./.data/clicks:/srv/data/openstore-data
+      - ./.data/icons:/srv/data/openstore-icons
+      - ./.data/screenshots:/srv/data/openstore-screenshots
     environment:
-      - DATA_DIR=/srv/openstore-data
-      - ICON_DIR=/srv/openstore-icons
-      - IMAGE_DIR=/srv/openstore-screenshots
+      - DATA_DIR=/srv/data/openstore-data
+      - ICON_DIR=/srv/data/openstore-icons
+      - IMAGE_DIR=/srv/data/openstore-screenshots
 
   web:
     image: node:20
@@ -49,3 +50,5 @@ services:
       - ./docker/proxy.conf:/etc/nginx/conf.d/default.conf
       - ./.data/icons:/srv/openstore-icons
       - ./.data/screenshots:/srv/openstore-screenshots
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
