@@ -6,3 +6,4 @@ env.sh
 backup
 .data
 tmp
+node_modules
